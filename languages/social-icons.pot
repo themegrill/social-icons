@@ -1,0 +1,112 @@
+# Copyright (C) 2015 ThemeGrill
+# This file is distributed under the GPLv3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Social Icons 1.0.0\n"
+"Report-Msgid-Bugs-To: themegrill@gmail.com\n"
+"POT-Creation-Date: 2015-12-08 10:13:23+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"X-Generator: grunt-wp-i18n 0.5.3\n"
+
+#: includes/class-widget-social-icons.php:48
+msgid "Displays Social Icons Slots."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Social Icons"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:55
+msgid "Title"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:60
+msgid "Description"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:61
+msgid "Short description to be displayed above the icons."
+msgstr ""
+
+#: includes/class-widget-social-icons.php:67
+msgid "Show icon label"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:72
+msgid "Show Greyscale icons"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:77
+msgid "Open links in new tab"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:82
+msgid "Background Style"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:84
+msgid "None"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:85
+msgid "Square"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:86
+msgid "Rounded"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:95
+msgid "Choose Icon Size"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:100
+msgid "Sortable Socicon"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:101
+msgid ""
+"Note that icons above is for reference and not how they will look on "
+"front-end."
+msgstr ""
+
+#: includes/class-widget-social-icons.php:102
+msgid "Add Icon"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:106
+msgid "Follow Me"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:110
+msgid "Friend me on Facebook"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:225
+msgid "http://"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:226
+msgid "Label"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://bitbucket.org/ThemeGrill/social-icons"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Social Icons widget with link and custom brand color. Beautiful :)"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ThemeGrill"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://themegrill.com"
+msgstr ""

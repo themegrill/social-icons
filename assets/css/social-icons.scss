@@ -1,0 +1,77 @@
+/**
+ * social-icons.scss
+ * Styles applied to Frontend Social Icons Widget.
+ */
+
+/**
+ * Imports
+ */
+@import "socicon";
+
+/**
+ * Styling begins
+ */
+.social-icons-lists {
+
+	.socicon {
+		padding: 10px;
+		font-size: 16px;
+	}
+
+	li.social-icons-list-item {
+		margin: 4px;
+		display: inline-block;
+		border: none !important;
+
+		a.social-icon {
+			text-decoration: none;
+
+			&:focus,
+			&:active {
+				outline: none;
+			}
+
+			&:hover .socicon {
+				opacity: 0.8;
+			}
+
+			span.social-icons-list-label {
+				margin-left: 4px;
+			}
+		}
+	}
+
+	&.show-icons-label {
+		list-style: outside;
+
+		li.social-icons-list-item {
+			display: block;
+		}
+	}
+
+	&.social-icons-greyscale .socicon {
+		color: #fff;
+		background-color: #555;
+	}
+
+	&.icons-background-rounded .socicon {
+		border-radius: 100%;
+	}
+
+	&.icons-background-square .socicon,
+	&.icons-background-rounded .socicon {
+		color: #fff;
+	}
+
+	&.icons-background-none {
+
+		.socicon {
+			padding: 0;
+			background: transparent;
+		}
+
+		&.social-icons-greyscale .socicon {
+			color: #555;
+		}
+	}
+}
