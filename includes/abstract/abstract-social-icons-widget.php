@@ -173,14 +173,9 @@ abstract class TG_Widget extends WP_Widget {
 			}
 
 			/**
-			 * Sanitize the value of an setting.
+			 * Sanitize the value of a setting.
 			 */
 			$instance[ $key ] = apply_filters( 'social_icons_widget_settings_sanitize_option', $instance[ $key ], $new_instance, $key, $setting );
-
-			/**
-			 * Sanitize the value of an setting by its key.
-			 */
-			$instance[ $key ] = apply_filters( "social_icons_widget_settings_sanitize_option_$key", $instance[ $key ], $new_instance, $key, $setting );
 		}
 
 		$this->flush_widget_cache();
@@ -260,8 +255,8 @@ abstract class TG_Widget extends WP_Widget {
 				break;
 
 				// Default: run an action
-				default:
-					do_action( 'social_icons_widget_field_' . $setting['type'], $key, $setting, $class, $value, $instance );
+				default :
+					do_action( 'social_icons_widget_field_' . $setting['type'], $key, $value, $setting, $instance );
 				break;
 			}
 		}

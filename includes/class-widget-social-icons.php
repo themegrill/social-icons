@@ -117,8 +117,8 @@ class TG_Widget_Social_Icons extends TG_Widget {
 
 		// Hooks
 		add_action( 'admin_print_footer_scripts', array( $this, 'admin_js_templates' ) );
-		add_action( 'social_icons_widget_field_social_icons', array( $this, 'widget_field_social_icons' ), 10, 5 );
-		add_action( 'social_icons_widget_settings_sanitize_option_socicon_sortable', array( $this, 'widget_sanitize_socicon_sortable' ), 10, 2 );
+		add_action( 'social_icons_widget_field_social_icons', array( $this, 'widget_field_social_icons' ), 10, 4 );
+		add_action( 'social_icons_widget_settings_sanitize_option', array( $this, 'widget_sanitize_social_icons' ), 10, 4 );
 	}
 
 	/**
@@ -134,12 +134,11 @@ class TG_Widget_Social_Icons extends TG_Widget {
 	 * Outputs the social icons form field.
 	 *
 	 * @param  string $key
-	 * @param  array  $setting
-	 * @param  string $class
 	 * @param  mixed  $value
+	 * @param  array  $setting
 	 * @param  array  $instance
 	 */
-	public function widget_field_social_icons( $key, $setting, $class, $value, $instance ) {
+	public function widget_field_social_icons( $key, $value, $setting, $instance ) {
 		$show_label = isset( $instance['show_label'] ) ? 'show-icons-label' : 'hide-icons-label';
 
 		?>
@@ -177,21 +176,25 @@ class TG_Widget_Social_Icons extends TG_Widget {
 	 *
 	 * @param  array  $instance
 	 * @param  array  $new_instance
+	 * @param  string $key
+	 * @param  array  $setting
 	 * @return array
 	 */
-	public function widget_sanitize_socicon_sortable( $instance, $new_instance ) {
-		$instance = array();
+	public function widget_sanitize_social_icons( $instance, $new_instance, $key, $setting ) {
+		if ( 'social_icons' === $setting['type'] ) {
+			$instance = array();
 
-		for ( $i = 0; $i < count( $new_instance['url-fields'] ); $i++ ) {
-			$url   = $new_instance['url-fields'][ $i ];
-			$label = $new_instance['label-fields'][ $i ];
-			$title = sanitize_key( $this->get_icon( $url ) );
+			for ( $i = 0; $i < count( $new_instance['url-fields'] ); $i++ ) {
+				$url   = $new_instance['url-fields'][ $i ];
+				$label = $new_instance['label-fields'][ $i ];
+				$title = sanitize_key( $this->get_icon( $url ) );
 
-			if ( $url ) {
-				$instance[ $title ] = array(
-					'url'   => $url,
-					'label' => $label
-				);
+				if ( $url ) {
+					$instance[ $title ] = array(
+						'url'   => $url,
+						'label' => $label
+					);
+				}
 			}
 		}
 
