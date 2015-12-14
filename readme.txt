@@ -1,6 +1,6 @@
 === Social Icons ===
 Contributors: themegrill, shivapoudel
-Tags: social, media, icons, brands, widget, social networking, social media.
+Tags: social, media, icons, brands, widget, social networking, social media
 Requires at least: 4.0
 Tested up to: 4.4
 Stable tag: 1.0.0
