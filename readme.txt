@@ -39,8 +39,8 @@ Check the docs at http://themegrill.com/docs/social-icons/
 
 == Screenshots ==
 
-1. Social Icons Widget Form
-2. Social Icons Frontend
+1. Social Icons Widget Form.
+2. Social Icons Slick Frontend.
 
 == Changelog ==
 
