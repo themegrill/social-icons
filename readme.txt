@@ -44,5 +44,9 @@ Check the docs at http://themegrill.com/docs/social-icons/
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 - TBD =
+* Tweak - Typo in readme screenshots section.
+* Refactor - Only one sanitize hook is needed.
+
+= 1.0.0 =
 * Initial Public Release
