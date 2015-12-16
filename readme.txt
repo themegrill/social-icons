@@ -1,6 +1,6 @@
 === Social Icons ===
 Contributors: themegrill, shivapoudel
-Tags: social, media, icons, brands, widget, social networking, social media
+Tags: social, media, icons, brands, widget, social networking, social media, social icon, social icons, social profile, social icon widget
 Requires at least: 4.0
 Tested up to: 4.4
 Stable tag: 1.0.0
@@ -13,6 +13,8 @@ Social Icons provides you with an easy way to display various popular social ico
 Social Icons provides you with an easy way to display various popular social icons via widgets. You can drag the widget in your sidebars and change the settings from the widget form itself.
 
 Get free support at http://themegrill.com/support-forum/
+
+View features http://themegrill.com/plugins/social-icons/
 
 Check the demo at http://demo.themegrill.com/social-icons/
 
