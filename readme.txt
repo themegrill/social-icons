@@ -21,10 +21,10 @@ Check the demo at http://demo.themegrill.com/social-icons/
 Check the docs at http://themegrill.com/docs/social-icons/
 
 ### Features And Options:
-* Supports more than 100 popular social icons.
+* Supports more than 100+ popular social icons.
 * Drag and drop for icon sorting.
-* Option to change icon size.
-* Option for rectangular and circular background.
+* Option to easily change icon size.
+* Supports square, rounded and greyscale background.
 * More features coming on updates.
 
 == Installation ==
