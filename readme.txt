@@ -39,6 +39,10 @@ Check the docs at http://themegrill.com/docs/social-icons/
 
 * This plugin is released under a GPL license.
 
+= Social Icons is awesome! Can I contribute? =
+
+Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/social-icons/) :)
+
 == Screenshots ==
 
 1. Social Icons Widget Form.
