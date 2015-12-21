@@ -1,6 +1,6 @@
 === Social Icons ===
 Contributors: themegrill, shivapoudel
-Tags: social, media, icons, brands, widget, social networking, social media
+Tags: social, media, icons, brands, widget, social networking, social media, social icon, social icons, social profile, social icon widget
 Requires at least: 4.0
 Tested up to: 4.4
 Stable tag: 1.0.0
@@ -14,15 +14,17 @@ Social Icons provides you with an easy way to display various popular social ico
 
 Get free support at http://themegrill.com/support-forum/
 
+View features http://themegrill.com/plugins/social-icons/
+
 Check the demo at http://demo.themegrill.com/social-icons/
 
 Check the docs at http://themegrill.com/docs/social-icons/
 
 ### Features And Options:
-* Supports more than 100 popular social icons.
+* Supports more than 100+ popular social icons.
 * Drag and drop for icon sorting.
-* Option to change icon size.
-* Option for rectangular and circular background.
+* Option to easily change icon size.
+* Supports square, rounded and greyscale background.
 * More features coming on updates.
 
 == Installation ==
@@ -36,6 +38,10 @@ Check the docs at http://themegrill.com/docs/social-icons/
 = What is the plugin license? =
 
 * This plugin is released under a GPL license.
+
+= Social Icons is awesome! Can I contribute? =
+
+Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/social-icons/) :)
 
 == Screenshots ==
 
