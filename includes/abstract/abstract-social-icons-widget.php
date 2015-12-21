@@ -254,7 +254,7 @@ abstract class TG_Widget extends WP_Widget {
 					<?php
 				break;
 
-				// Default: run an action
+				// Default: run an action.
 				default :
 					do_action( 'social_icons_widget_field_' . $setting['type'], $key, $value, $setting, $instance );
 				break;
