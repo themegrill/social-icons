@@ -51,7 +51,8 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 == Changelog ==
 
 = 1.0.1 - TBD =
-* Tweak - Typo in readme screenshots section.
+* Fix - vkontakte icon for vk.com profile.
+* Tweak - Typo in different readme section.
 * Refactor - Only one sanitize hook is needed.
 
 = 1.0.0 =
