@@ -123,7 +123,10 @@ jQuery( function ( $ ) {
 	$( document.body ).on( 'keyup', '.social-icons-field-url', function() {
 		var $this = $( this ), url = $this.val(), found = false;
 
-		if ( url.indexOf( 'feedburner.com' ) !== -1 ) {
+		if ( url.indexOf( 'vk.com' ) !== -1 ) {
+			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-vkontakte' );
+			found = true;
+		} else if ( url.indexOf( 'feedburner.com' ) !== -1 ) {
 			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-rss' );
 			found = true;
 		} else if ( url.indexOf( 'feedburner.google.com' ) !== -1 ) {

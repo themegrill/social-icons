@@ -245,12 +245,16 @@ class TG_Widget_Social_Icons extends TG_Widget {
 		$icon = '';
 
 		if ( $url ) {
-			if ( strstr( $url, 'feedburner.google.com' ) ) {
-				$icon = 'mail';
+			if ( strstr( $url, 'vk.com' ) ) {
+				$icon = 'vkontakte';
 			}
 
-			if ( strstr( $url, 'feedburner.com') ) {
+			if ( strstr( $url, 'feedburner.com' ) ) {
 				$icon = 'rss';
+			}
+
+			if ( strstr( $url, 'feedburner.google.com' ) ) {
+				$icon = 'mail';
 			}
 
 			if ( ! $icon ) {
