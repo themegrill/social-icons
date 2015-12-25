@@ -3,85 +3,7 @@
  */
 jQuery( function ( $ ) {
 	var social_icons = [
-		'twitter',
-		'facebook',
-		'google',
-		'pinterest',
-		'foursquare',
-		'yahoo',
-		'skype',
-		'yelp',
-		'feedburner',
-		'linkedin',
-		'viadeo',
-		'xing',
-		'myspace',
-		'soundcloud',
-		'spotify',
-		'grooveshark',
-		'lastfm',
-		'youtube',
-		'vimeo',
-		'dailymotion',
-		'vine',
-		'flickr',
-		'500px',
-		'instagram',
-		'wordpress',
-		'tumblr',
-		'blogger',
-		'technorati',
-		'reddit',
-		'dribbble',
-		'stumbleupon',
-		'digg',
-		'envato',
-		'behance',
-		'delicious',
-		'deviantart',
-		'forrst',
-		'play',
-		'zerply',
-		'wikipedia',
-		'apple',
-		'flattr',
-		'github',
-		'chimein',
-		'friendfeed',
-		'newsvine',
-		'identica',
-		'bebo',
-		'zynga',
-		'steam',
-		'xbox',
-		'windows',
-		'outlook',
-		'coderwall',
-		'tripadvisor',
-		'appnet',
-		'goodreads',
-		'tripit',
-		'lanyrd',
-		'slideshare',
-		'buffer',
-		'rss',
-		'vkontakte',
-		'disqus',
-		'houzz',
-		'mail',
-		'patreon',
-		'paypal',
-		'playstation',
-		'smugmug',
-		'swarm',
-		'triplej',
-		'yammer',
-		'stackoverflow',
-		'drupal',
-		'odnoklassniki',
-		'android',
-		'meetup',
-		'persona'
+		'modelmayhem', 'mixcloud', 'drupal', 'swarm', 'istock', 'yammer', 'ello', 'stackoverflow', 'persona', 'triplej', 'houzz', 'rss', 'paypal', 'odnoklassniki', 'airbnb', 'periscope', 'outlook', 'coderwall', 'tripadvisor', 'appnet', 'goodreads', 'tripit', 'lanyrd', 'slideshare', 'buffer', 'disqus', 'vkontakte', 'whatsapp', 'patreon', 'storehouse', 'pocket', 'mail', 'blogger', 'technorati', 'reddit', 'dribbble', 'stumbleupon', 'digg', 'envato', 'behance', 'delicious', 'deviantart', 'forrst', 'play', 'zerply', 'wikipedia', 'apple', 'flattr', 'github', 'renren', 'friendfeed', 'newsvine', 'identica', 'bebo', 'zynga', 'steam', 'xbox', 'windows', 'qq', 'douban', 'meetup', 'playstation', 'android', 'snapchat', 'twitter', 'facebook', 'googleplus', 'pinterest', 'foursquare', 'yahoo', 'skype', 'yelp', 'feedburner', 'linkedin', 'viadeo', 'xing', 'myspace', 'soundcloud', 'spotify', 'grooveshark', 'lastfm', 'youtube', 'vimeo', 'dailymotion', 'vine', 'flickr', '500px', 'instagram', 'wordpress', 'tumblr', 'twitch', '8tracks', 'amazon', 'icq', 'smugmug', 'ravelry', 'weibo', 'baidu', 'angellist', 'ebay', 'imdb', 'stayfriends', 'residentadvisor', 'google', 'yandex', 'sharethis', 'bandcamp', 'itunes', 'deezer', 'medium', 'telegram', 'openid', 'amplement'
 	];
 
 	// Hidden Options
@@ -121,13 +43,22 @@ jQuery( function ( $ ) {
 
 	// Detect Social Icons from domain
 	$( document.body ).on( 'keyup', '.social-icons-field-url', function() {
-		var $this = $( this ), url = $this.val(), found = false;
+		var $this = $( this ), url = $this.val().toLowerCase(), found = false;
 
 		if ( url.indexOf( 'vk.com' ) !== -1 ) {
 			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-vkontakte' );
 			found = true;
+		} else if ( url.indexOf( 'last.fm' ) !== -1 ) {
+			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-lastfm' );
+			found = true;
+		} else if ( url.indexOf( 'youtu.be' ) !== -1 ) {
+			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-youtube' );
+			found = true;
 		} else if ( url.indexOf( 'feedburner.com' ) !== -1 ) {
 			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-rss' );
+			found = true;
+		} else if ( url.indexOf( 'plus.google.com' ) !== -1 ) {
+			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-googleplus' );
 			found = true;
 		} else if ( url.indexOf( 'feedburner.google.com' ) !== -1 ) {
 			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-mail' );

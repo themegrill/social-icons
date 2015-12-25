@@ -30,14 +30,7 @@ class TG_Widget_Social_Icons extends TG_Widget {
 	 * @var array
 	 */
 	protected $icons = array(
-		'twitter', 'facebook', 'google', 'pinterest', 'foursquare', 'yahoo', 'skype', 'yelp', 'feedburner',
-		'linkedin', 'viadeo', 'xing', 'myspace', 'soundcloud', 'spotify', 'grooveshark', 'lastfm', 'youtube', 'vimeo',
-		'dailymotion', 'vine', 'flickr', '500px', 'instagram', 'wordpress', 'tumblr', 'blogger', 'technorati', 'reddit',
-		'dribbble', 'stumbleupon', 'digg', 'envato', 'behance', 'delicious', 'deviantart', 'forrst', 'play', 'zerply',
-		'wikipedia', 'apple', 'flattr', 'github', 'chimein', 'friendfeed', 'newsvine', 'identica', 'bebo', 'zynga',
-		'steam', 'xbox', 'windows', 'outlook', 'coderwall', 'tripadvisor', 'appnet', 'goodreads', 'tripit', 'lanyrd',
-		'slideshare', 'buffer', 'rss', 'vkontakte', 'disqus', 'houzz', 'mail', 'patreon', 'paypal', 'playstation',
-		'smugmug', 'swarm', 'triplej', 'yammer', 'stackoverflow', 'drupal', 'odnoklassniki', 'android', 'meetup', 'persona'
+		'modelmayhem', 'mixcloud', 'drupal', 'swarm', 'istock', 'yammer', 'ello', 'stackoverflow', 'persona', 'triplej', 'houzz', 'rss', 'paypal', 'odnoklassniki', 'airbnb', 'periscope', 'outlook', 'coderwall', 'tripadvisor', 'appnet', 'goodreads', 'tripit', 'lanyrd', 'slideshare', 'buffer', 'disqus', 'vkontakte', 'whatsapp', 'patreon', 'storehouse', 'pocket', 'mail', 'blogger', 'technorati', 'reddit', 'dribbble', 'stumbleupon', 'digg', 'envato', 'behance', 'delicious', 'deviantart', 'forrst', 'play', 'zerply', 'wikipedia', 'apple', 'flattr', 'github', 'renren', 'friendfeed', 'newsvine', 'identica', 'bebo', 'zynga', 'steam', 'xbox', 'windows', 'qq', 'douban', 'meetup', 'playstation', 'android', 'snapchat', 'twitter', 'facebook', 'googleplus', 'pinterest', 'foursquare', 'yahoo', 'skype', 'yelp', 'feedburner', 'linkedin', 'viadeo', 'xing', 'myspace', 'soundcloud', 'spotify', 'grooveshark', 'lastfm', 'youtube', 'vimeo', 'dailymotion', 'vine', 'flickr', '500px', 'instagram', 'wordpress', 'tumblr', 'twitch', '8tracks', 'amazon', 'icq', 'smugmug', 'ravelry', 'weibo', 'baidu', 'angellist', 'ebay', 'imdb', 'stayfriends', 'residentadvisor', 'google', 'yandex', 'sharethis', 'bandcamp', 'itunes', 'deezer', 'medium', 'telegram', 'openid', 'amplement'
 	);
 
 	/**
@@ -185,12 +178,11 @@ class TG_Widget_Social_Icons extends TG_Widget {
 			$instance = array();
 
 			for ( $i = 0; $i < count( $new_instance['url-fields'] ); $i++ ) {
-				$url   = $new_instance['url-fields'][ $i ];
-				$label = $new_instance['label-fields'][ $i ];
-				$title = sanitize_key( $this->get_icon( $url ) );
+				$url   = esc_url_raw( $new_instance['url-fields'][ $i ] );
+				$label = sanitize_text_field( $new_instance['label-fields'][ $i ] );
 
 				if ( $url ) {
-					$instance[ $title ] = array(
+					$instance[ sanitize_key( $this->get_icon( $url ) ) ] = array(
 						'url'   => $url,
 						'label' => $label
 					);
@@ -225,7 +217,7 @@ class TG_Widget_Social_Icons extends TG_Widget {
 		?><li class="social-icons-field">
 			<div class="social-icons-wrap">
 				<div class="social-icons-inputs"><?php
-					printf( '<input class="widefat social-icons-field-url" id="%1$s" name="%2$s[]" type="text" placeholder="%3$s" value="%4$s">', $args['url-field-id'], $args['url-field-name'], esc_attr( __( 'http://', 'social-icons' ) ), esc_attr( $args['url-value'] ) );
+					printf( '<input class="widefat social-icons-field-url" id="%1$s" name="%2$s[]" type="text" placeholder="%3$s" value="%4$s">', $args['url-field-id'], $args['url-field-name'], esc_attr( __( 'http://', 'social-icons' ) ), esc_url( $args['url-value'] ) );
 					printf( '<input class="widefat social-icons-field-label" id="%1$s" name="%2$s[]" type="text" placeholder="%3$s" value="%4$s">', $args['label-field-id'], $args['label-field-name'], esc_attr( __( 'Label', 'social-icons' ) ), esc_attr( $args['label-value'] ) );
 				?></div>
 			</div>
@@ -244,13 +236,25 @@ class TG_Widget_Social_Icons extends TG_Widget {
 	protected function get_icon( $url ) {
 		$icon = '';
 
-		if ( $url ) {
+		if ( $url = strtolower( $url ) ) {
 			if ( strstr( $url, 'vk.com' ) ) {
 				$icon = 'vkontakte';
 			}
 
+			if ( strstr( $url, 'last.fm' ) ) {
+				$icon = 'lastfm';
+			}
+
+			if ( strstr( $url, 'youtu.be' ) ) {
+				$icon = 'youtube';
+			}
+
 			if ( strstr( $url, 'feedburner.com' ) ) {
 				$icon = 'rss';
+			}
+
+			if ( strstr( $url, 'plus.google.com' ) ) {
+				$icon = 'googleplus';
 			}
 
 			if ( strstr( $url, 'feedburner.google.com' ) ) {
