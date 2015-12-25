@@ -2,9 +2,9 @@
 # This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Social Icons 1.0.0\n"
+"Project-Id-Version: Social Icons 1.1\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2015-12-08 10:13:23+00:00\n"
+"POT-Creation-Date: 2015-12-25 09:01:48+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "X-Generator: grunt-wp-i18n 0.5.3\n"
 
-#: includes/class-widget-social-icons.php:48
+#: includes/class-widget-social-icons.php:41
 msgid "Displays Social Icons Slots."
 msgstr ""
 
@@ -21,86 +21,89 @@ msgstr ""
 msgid "Social Icons"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:55
+#: includes/class-widget-social-icons.php:48
 msgid "Title"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:60
+#: includes/class-widget-social-icons.php:53
 msgid "Description"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:61
+#: includes/class-widget-social-icons.php:54
 msgid "Short description to be displayed above the icons."
 msgstr ""
 
-#: includes/class-widget-social-icons.php:67
+#: includes/class-widget-social-icons.php:60
 msgid "Show icon label"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:72
+#: includes/class-widget-social-icons.php:65
 msgid "Show Greyscale icons"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:77
+#: includes/class-widget-social-icons.php:70
 msgid "Open links in new tab"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:82
+#: includes/class-widget-social-icons.php:75
 msgid "Background Style"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:84
+#: includes/class-widget-social-icons.php:77
 msgid "None"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:85
+#: includes/class-widget-social-icons.php:78
 msgid "Square"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:86
+#: includes/class-widget-social-icons.php:79
 msgid "Rounded"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:95
+#: includes/class-widget-social-icons.php:88
 msgid "Choose Icon Size"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:100
+#: includes/class-widget-social-icons.php:93
 msgid "Sortable Socicon"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:101
+#: includes/class-widget-social-icons.php:94
 msgid ""
-"Note that icons above is for reference and not how they will look on "
-"front-end."
+"Note that icons above are for reference and not how they will look on "
+"front-end. %sList of icons supported%s"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:102
+#: includes/class-widget-social-icons.php:95
 msgid "Add Icon"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:106
+#: includes/class-widget-social-icons.php:99
 msgid "Follow Me"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:110
+#: includes/class-widget-social-icons.php:103
 msgid "Friend me on Facebook"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:225
+#: includes/class-widget-social-icons.php:220
 msgid "http://"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:226
+#: includes/class-widget-social-icons.php:221
 msgid "Label"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://bitbucket.org/ThemeGrill/social-icons"
+msgid "http://themegrill.com/plugins/social-icons/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Social Icons widget with link and custom brand color. Beautiful :)"
+msgid ""
+"Social Icons provides you with an easy way to display various popular "
+"social icons via widgets. You can drag the widget in your sidebars and "
+"change the settings from the widget form itself."
 msgstr ""
 
 #. Author of the plugin/theme

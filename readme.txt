@@ -3,7 +3,7 @@ Contributors: themegrill, shivapoudel
 Tags: social, media, icons, brands, widget, social networking, social media, social icon, social icons, social profile, social icon widget
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 1.0.0
+Stable tag: 1.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -50,10 +50,10 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
-= 1.0.1 - TBD =
+= 1.1 - 25/12/2015 =
 * Fix - vkontakte icon for vk.com profile.
 * Tweak - Typo in different readme section.
 * Refactor - Only one sanitize hook is needed.
 
-= 1.0.0 =
+= 1.0.0 - 12/12/2015 =
 * Initial Public Release
