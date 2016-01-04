@@ -124,7 +124,7 @@ class TG_Widget_Social_Icons extends TG_Widget {
 	}
 
 	/**
-	 * Outputs the social icons form field.
+	 * Outputs the social icons settings update form.
 	 *
 	 * @param  string $key
 	 * @param  mixed  $value
@@ -165,7 +165,7 @@ class TG_Widget_Social_Icons extends TG_Widget {
 	}
 
 	/**
-	 * Formats social icons when saved in settings.
+	 * Sanitize the social icons value of a setting.
 	 *
 	 * @param  array  $instance
 	 * @param  array  $new_instance
