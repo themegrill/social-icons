@@ -110,11 +110,11 @@ class Social_Icons {
 		$screen = get_current_screen();
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
-		// Register Styles and Scripts
+		// Register Styles and Scripts.
 		wp_register_style( 'social-icons-widgets', plugins_url( '/assets/css/widgets.css', __FILE__ ), array(), self::VERSION );
 		wp_register_script( 'social-icons-widgets', plugins_url( '/assets/js/widgets' . $suffix . '.js', __FILE__ ), array( 'jquery' ), self::VERSION );
 
-		if ( in_array( $screen->id, array( 'widgets' ) ) ) {
+		if ( in_array( $screen->id, array( 'widgets' ) ) || in_array( $screen->id, array( 'customize' ) ) ) {
 			wp_enqueue_style( 'social-icons-widgets' );
 			wp_enqueue_script( 'social-icons-widgets' );
 		}
