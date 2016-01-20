@@ -52,10 +52,6 @@
 	}
 }
 
-.social-icons-field-url + .social-icons-field-label {
-	margin-top: 2px;
-}
-
 .social-icons-add-button {
 	margin-bottom: 10px;
 }
@@ -88,6 +84,10 @@ ul.social-icons-list {
 			.social-icons-inputs {
 				margin-left: 40px;
 				margin-right: 30px;
+
+				input.social-icons-field-label[type="text"] {
+					margin-top: 2px;
+				}
 			}
 		}
 
