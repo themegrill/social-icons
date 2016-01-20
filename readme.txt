@@ -50,6 +50,10 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
+= 1.2 - 20/01/2016 =
+* Fix - Load admin scripts in customize screen.
+* Tweak - Imroved styles for customizer preview.
+
 = 1.1 - 25/12/2015 =
 * Fix - vkontakte icon for vk.com profile.
 * Tweak - Typo in different readme section.
