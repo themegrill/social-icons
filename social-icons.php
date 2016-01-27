@@ -50,6 +50,9 @@ class Social_Icons {
 		// Enqueue Scripts.
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
+
+		// Social Protocols.
+		add_filter( 'kses_allowed_protocols' , array( $this, 'allowed_social_protocols' ) );
 	}
 
 	/**
@@ -118,6 +121,19 @@ class Social_Icons {
 			wp_enqueue_style( 'social-icons-widgets' );
 			wp_enqueue_script( 'social-icons-widgets' );
 		}
+	}
+
+	/**
+	 * List of allowed social protocols in HTML attributes.
+	 * @param  array $protocols Array of allowed protocols.
+	 * @return array
+	 */
+	public function allowed_social_protocols( $protocols ) {
+		$social_protocols = array(
+			'skype'
+		);
+
+		return array_merge( $protocols, $social_protocols );
 	}
 }
 
