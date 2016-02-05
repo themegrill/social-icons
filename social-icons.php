@@ -117,7 +117,7 @@ class Social_Icons {
 		wp_register_style( 'social-icons-widgets', plugins_url( '/assets/css/widgets.css', __FILE__ ), array(), self::VERSION );
 		wp_register_script( 'social-icons-widgets', plugins_url( '/assets/js/widgets' . $suffix . '.js', __FILE__ ), array( 'jquery' ), self::VERSION );
 
-		if ( in_array( $screen->id, array( 'widgets', 'customize' ) ) ) {
+		if ( $screen && in_array( $screen->id, array( 'widgets', 'customize' ) ) ) {
 			wp_enqueue_style( 'social-icons-widgets' );
 			wp_enqueue_script( 'social-icons-widgets' );
 		}
