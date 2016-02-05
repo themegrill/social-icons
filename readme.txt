@@ -50,7 +50,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
-= 1.2 - 20/01/2016 =
+= 1.2 - 28/01/2016 =
 * Fix - Load admin scripts in customize screen.
 * Tweak - Imroved styles for customizer preview.
 * Tweak - Allow skype protocols in HTML attributes.
