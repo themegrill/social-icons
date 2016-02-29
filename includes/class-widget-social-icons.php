@@ -237,27 +237,17 @@ class TG_Widget_Social_Icons extends TG_Widget {
 		$icon = '';
 
 		if ( $url = strtolower( $url ) ) {
-			if ( strstr( $url, 'vk.com' ) ) {
-				$icon = 'vkontakte';
-			}
-
-			if ( strstr( $url, 'last.fm' ) ) {
-				$icon = 'lastfm';
-			}
-
-			if ( strstr( $url, 'youtu.be' ) ) {
-				$icon = 'youtube';
-			}
-
-			if ( strstr( $url, 'feedburner.com' ) ) {
+			if ( strstr( $url, 'feed' ) ) {
 				$icon = 'rss';
-			}
-
-			if ( strstr( $url, 'plus.google.com' ) ) {
+			} elseif( strstr( $url, 'vk.com' ) ) {
+				$icon = 'vkontakte';
+			} elseif ( strstr( $url, 'last.fm' ) ) {
+				$icon = 'lastfm';
+			} elseif ( strstr( $url, 'youtu.be' ) ) {
+				$icon = 'youtube';
+			} elseif ( strstr( $url, 'plus.google.com' ) ) {
 				$icon = 'googleplus';
-			}
-
-			if ( strstr( $url, 'feedburner.google.com' ) ) {
+			} elseif ( strstr( $url, 'feedburner.google.com' ) ) {
 				$icon = 'mail';
 			}
 

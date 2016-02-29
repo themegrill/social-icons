@@ -45,7 +45,10 @@ jQuery( function ( $ ) {
 	$( document.body ).on( 'keyup', '.social-icons-field-url', function() {
 		var $this = $( this ), url = $this.val().toLowerCase(), found = false;
 
-		if ( url.indexOf( 'vk.com' ) !== -1 ) {
+		if ( url.indexOf( 'feed' ) !== -1 ) {
+			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-rss' );
+			found = true;
+		} else if ( url.indexOf( 'vk.com' ) !== -1 ) {
 			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-vkontakte' );
 			found = true;
 		} else if ( url.indexOf( 'last.fm' ) !== -1 ) {
@@ -53,9 +56,6 @@ jQuery( function ( $ ) {
 			found = true;
 		} else if ( url.indexOf( 'youtu.be' ) !== -1 ) {
 			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-youtube' );
-			found = true;
-		} else if ( url.indexOf( 'feedburner.com' ) !== -1 ) {
-			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-rss' );
 			found = true;
 		} else if ( url.indexOf( 'plus.google.com' ) !== -1 ) {
 			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-googleplus' );
