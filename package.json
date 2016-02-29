@@ -5,7 +5,7 @@
   "homepage": "http://themegrill.com/social-icons/",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/themegrill/social-icons"
+    "url": "https://github.com/themegrill/social-icons.git"
   },
   "license": "GPL-3.0+",
   "main": "Gruntfile.js",
