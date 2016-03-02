@@ -58,9 +58,16 @@
 		border-radius: 100%;
 	}
 
-	&.icons-background-square .socicon,
-	&.icons-background-rounded .socicon {
-		color: #fff;
+	&.icons-background-square,
+	&.icons-background-square {
+
+		.socicon {
+			color: #fff;
+		}
+
+		&.centre {
+			text-align: center;
+		}
 	}
 
 	&.icons-background-none {

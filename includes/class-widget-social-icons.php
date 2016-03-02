@@ -74,9 +74,11 @@ class TG_Widget_Social_Icons extends TG_Widget {
 				'std'   => 'square',
 				'label' => __( 'Background Style', 'social-icons' ),
 				'options' => array(
-					'none'    => __( 'None', 'social-icons' ),
-					'square'  => __( 'Square', 'social-icons' ),
-					'rounded' => __( 'Rounded', 'social-icons' ),
+					'none'           => __( 'None', 'social-icons' ),
+					'square'         => __( 'Square', 'social-icons' ),
+					'rounded'        => __( 'Rounded', 'social-icons' ),
+					'square centre'  => __( 'Square Centre', 'social-icons' ),
+					'rounded centre' => __( 'Rounded Centre', 'social-icons' ),
 				)
 			),
 			'socicon_size' => array(

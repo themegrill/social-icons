@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Social Icons 1.2\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2016-02-29 09:37:42+00:00\n"
+"POT-Creation-Date: 2016-03-02 11:25:51+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -61,37 +61,45 @@ msgstr ""
 msgid "Rounded"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:88
+#: includes/class-widget-social-icons.php:80
+msgid "Square Centre"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:81
+msgid "Rounded Centre"
+msgstr ""
+
+#: includes/class-widget-social-icons.php:90
 msgid "Choose Icon Size"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:93
+#: includes/class-widget-social-icons.php:95
 msgid "Sortable Socicon"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:94
+#: includes/class-widget-social-icons.php:96
 msgid ""
 "Note that icons above are for reference and not how they will look on "
 "front-end. %sList of icons supported%s"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:95
+#: includes/class-widget-social-icons.php:97
 msgid "Add Icon"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:99
+#: includes/class-widget-social-icons.php:101
 msgid "Follow Me"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:103
+#: includes/class-widget-social-icons.php:105
 msgid "Friend me on Facebook"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:220
+#: includes/class-widget-social-icons.php:222
 msgid "http://"
 msgstr ""
 
-#: includes/class-widget-social-icons.php:221
+#: includes/class-widget-social-icons.php:223
 msgid "Label"
 msgstr ""
 
