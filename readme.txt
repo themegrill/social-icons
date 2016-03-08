@@ -50,8 +50,10 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
-= 1.3 - XX/02/2016 =
+= 1.3 - 08/03/2016 =
+* Feature - Rounded Center and Square Center Background Style added.
 * Fix - RSS link auto-detect for feed URL like: http://mysite.com/feed
+* Fix - Error handling for screen ids
 
 = 1.2 - 28/01/2016 =
 * Fix - Load admin scripts in customize screen.
