@@ -44,14 +44,9 @@ class Social_Icons {
 		// Include classes.
 		$this->includes();
 
-		// Register Widget.
+		// Hooks.
 		add_action( 'widgets_init', array( $this, 'register_widget' ) );
-
-		// Enqueue Scripts.
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
-
-		// Social Protocols.
 		add_filter( 'kses_allowed_protocols' , array( $this, 'allowed_social_protocols' ) );
 	}
 
@@ -95,15 +90,6 @@ class Social_Icons {
 	 */
 	public function register_widget() {
 		register_widget( 'TG_Widget_Social_Icons' );
-	}
-
-	/**
-	 * Enqueue styles and scripts.
-	 */
-	public function enqueue_scripts() {
-		if ( apply_filters( 'social_icons_is_active_widget', is_active_widget( false, false, 'themegrill_social_icons', true ) ) ) {
-			wp_enqueue_style( 'social-icons', plugins_url( 'assets/css/social-icons.css', __FILE__ ), array(), self::VERSION );
-		}
 	}
 
 	/**
