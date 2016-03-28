@@ -46,8 +46,8 @@ class Social_Icons {
 
 		// Hooks.
 		add_action( 'widgets_init', array( $this, 'register_widget' ) );
-		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
-		add_filter( 'kses_allowed_protocols' , array( $this, 'allowed_social_protocols' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'admin_scripts' ) );
+		add_filter( 'kses_allowed_protocols' , array( $this, 'allowed_protocols' ) );
 	}
 
 	/**
@@ -95,7 +95,7 @@ class Social_Icons {
 	/**
 	 * Enqueue admin styles and scripts.
 	 */
-	public function admin_enqueue_scripts() {
+	public function admin_scripts() {
 		$screen = get_current_screen();
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
@@ -114,7 +114,7 @@ class Social_Icons {
 	 * @param  array $protocols Array of allowed protocols.
 	 * @return array
 	 */
-	public function allowed_social_protocols( $protocols ) {
+	public function allowed_protocols( $protocols ) {
 		$social_protocols = array(
 			'skype'
 		);
