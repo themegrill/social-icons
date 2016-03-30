@@ -57,6 +57,9 @@ jQuery( function ( $ ) {
 		} else if ( url.indexOf( 'youtu.be' ) !== -1 ) {
 			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-youtube' );
 			found = true;
+		} else if ( url.indexOf( 'play.google.com' ) !== -1 ) {
+			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-googleplus' );
+			found = true;
 		} else if ( url.indexOf( 'plus.google.com' ) !== -1 ) {
 			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-googleplus' );
 			found = true;

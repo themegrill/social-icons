@@ -257,6 +257,8 @@ class TG_Widget_Social_Icons extends TG_Widget {
 				$icon = 'lastfm';
 			} elseif ( strstr( $url, 'youtu.be' ) ) {
 				$icon = 'youtube';
+			} elseif ( strstr( $url, 'play.google.com' ) ) {
+				$icon = 'play';
 			} elseif ( strstr( $url, 'plus.google.com' ) ) {
 				$icon = 'googleplus';
 			} elseif ( strstr( $url, 'feedburner.google.com' ) ) {
