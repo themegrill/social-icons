@@ -15,11 +15,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-// Include widget abstract class.
-if ( ! class_exists( 'TG_Widget' ) ) {
-	include_once( 'abstract/abstract-social-icons-widget.php' );
-}
-
 /**
  * TG_Widget_Social_Icons Class
  */

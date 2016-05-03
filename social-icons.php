@@ -45,7 +45,6 @@ class Social_Icons {
 		$this->includes();
 
 		// Hooks.
-		add_action( 'widgets_init', array( $this, 'register_widget' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_scripts' ) );
 		add_filter( 'kses_allowed_protocols' , array( $this, 'allowed_protocols' ) );
 	}
@@ -82,14 +81,7 @@ class Social_Icons {
 	 * Includes.
 	 */
 	private function includes() {
-		include_once( 'includes/class-widget-social-icons.php' );
-	}
-
-	/**
-	 * Register Widgets.
-	 */
-	public function register_widget() {
-		register_widget( 'TG_Widget_Social_Icons' );
+		include_once( 'includes/functions-si-widget.php' );
 	}
 
 	/**
