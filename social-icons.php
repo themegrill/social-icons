@@ -82,6 +82,7 @@ class Social_Icons {
 	 */
 	private function includes() {
 		include_once( 'includes/functions-si-widget.php' );
+		include_once( 'includes/class-si-post-types.php' );
 	}
 
 	/**
