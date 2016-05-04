@@ -18,47 +18,125 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! class_exists( 'Social_Icons' ) ) :
 
 /**
- * Main Social_Icons Class.
+ * Main Social Icons Class.
+ *
+ * @class Social_Icons
+ * @version	1.4.0
  */
-class Social_Icons {
+final class Social_Icons {
 
 	/**
 	 * Plugin version.
 	 * @var string
 	 */
-	const VERSION = '1.3';
+	public $version = '1.4.0';
 
 	/**
 	 * Instance of this class.
 	 * @var object
 	 */
-	protected static $instance = null;
+	protected static $_instance = null;
 
 	/**
-	 * Initialize the plugin.
+	 * Main Social Icons Instance.
+	 *
+	 * Ensure only one instance of Social Icons is loaded or can be loaded.
+	 *
+	 * @static
+	 * @see    SI()
+	 * @return Social_Icons - Main instance.
+	 */
+	public static function get_instance() {
+		if ( is_null( self::$_instance ) ) {
+			self::$_instance = new self();
+		}
+		return self::$_instance;
+	}
+
+	/**
+	 * Cloning is forbidden.
+	 * @since 1.4
+	 */
+	public function __clone() {
+		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'social-icons' ), '1.4' );
+	}
+
+	/**
+	 * Unserializing instances of this class is forbidden.
+	 * @since 1.4
+	 */
+	public function __wakeup() {
+		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'social-icons' ), '1.4' );
+	}
+
+	/**
+	 * Social Icons Constructor.
 	 */
 	private function __construct() {
-		// Load plugin text domain.
-		add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
-
-		// Include classes.
+		$this->define_constants();
 		$this->includes();
+		$this->init_hooks();
 
-		// Hooks.
-		add_action( 'admin_enqueue_scripts', array( $this, 'admin_scripts' ) );
+		do_action( 'social_icons_loaded' );
+	}
+
+	/**
+	 * Hook into actions and filters.
+	 */
+	private function init_hooks() {
+		add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
 		add_filter( 'kses_allowed_protocols' , array( $this, 'allowed_protocols' ) );
 	}
 
 	/**
-	 * Return an instance of this class.
-	 * @return object A single instance of this class.
+	 * Define SI Constants.
 	 */
-	public static function get_instance() {
-		// If the single instance hasn't been set, set it now.
-		if ( is_null( self::$instance ) ) {
-			self::$instance = new self();
+	private function define_constants() {
+		$this->define( 'SI_PLUGIN_FILE', __FILE__ );
+		$this->define( 'SI_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
+		$this->define( 'SI_VERSION', $this->version );
+	}
+
+	/**
+	 * Define constant if not already set.
+	 *
+	 * @param string $name
+	 * @param string|bool $value
+	 */
+	private function define( $name, $value ) {
+		if ( ! defined( $name ) ) {
+			define( $name, $value );
 		}
-		return self::$instance;
+	}
+
+	/**
+	 * What type of request is this?
+	 *
+	 * @param  string $type admin or frontend.
+	 * @return bool
+	 */
+	private function is_request( $type ) {
+		switch ( $type ) {
+			case 'admin' :
+				return is_admin();
+			case 'frontend' :
+				return ( ! is_admin() || defined( 'DOING_AJAX' ) ) && ! defined( 'DOING_CRON' );
+		}
+	}
+
+	/**
+	 * Includes.
+	 */
+	private function includes() {
+		include_once( 'includes/functions-si-core.php' );
+		include_once( 'includes/functions-si-widget.php' );
+		include_once( 'includes/class-si-autoloader.php' );
+		include_once( 'includes/class-si-post-types.php' );
+		include_once( 'includes/class-si-ajax.php' );
+
+		if ( $this->is_request( 'admin' ) ) {
+			include_once( 'includes/admin/class-si-admin.php' );
+		}
 	}
 
 	/**
@@ -78,31 +156,6 @@ class Social_Icons {
 	}
 
 	/**
-	 * Includes.
-	 */
-	private function includes() {
-		include_once( 'includes/functions-si-widget.php' );
-		include_once( 'includes/class-si-post-types.php' );
-	}
-
-	/**
-	 * Enqueue admin styles and scripts.
-	 */
-	public function admin_scripts() {
-		$screen = get_current_screen();
-		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-
-		// Register styles and scripts.
-		wp_register_style( 'social-icons-widgets', plugins_url( '/assets/css/widgets.css', __FILE__ ), array(), self::VERSION );
-		wp_register_script( 'social-icons-widgets', plugins_url( '/assets/js/widgets' . $suffix . '.js', __FILE__ ), array( 'jquery' ), self::VERSION );
-
-		if ( $screen && in_array( $screen->id, array( 'widgets', 'customize' ) ) ) {
-			wp_enqueue_style( 'social-icons-widgets' );
-			wp_enqueue_script( 'social-icons-widgets' );
-		}
-	}
-
-	/**
 	 * List of allowed social protocols in HTML attributes.
 	 * @param  array $protocols Array of allowed protocols.
 	 * @return array
@@ -114,8 +167,45 @@ class Social_Icons {
 
 		return array_merge( $protocols, $social_protocols );
 	}
+
+	/**
+	 * Get the plugin url.
+	 * @return string
+	 */
+	public function plugin_url() {
+		return untrailingslashit( plugins_url( '/', __FILE__ ) );
+	}
+
+	/**
+	 * Get the plugin path.
+	 * @return string
+	 */
+	public function plugin_path() {
+		return untrailingslashit( plugin_dir_path( __FILE__ ) );
+	}
+
+	/**
+	 * Get Ajax URL.
+	 * @return string
+	 */
+	public function ajax_url() {
+		return admin_url( 'admin-ajax.php', 'relative' );
+	}
 }
 
-add_action( 'plugins_loaded', array( 'Social_Icons', 'get_instance' ), 0 );
-
 endif;
+
+/**
+ * Main instance of Social Icons.
+ *
+ * Returns the main instance of SI to prevent the need to use globals.
+ *
+ * @since  1.0.0
+ * @return Social_Icons
+ */
+function SI() {
+	return Social_Icons::get_instance();
+}
+
+// Global for backwards compatibility.
+$GLOBALS['social_icons'] = SI();

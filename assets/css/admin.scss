@@ -1,0 +1,349 @@
+/**
+ * admin.scss
+ * General Social Icons admin styles.
+ */
+
+/**
+ * Imports
+ */
+@import "bourbon";
+@import "mixins";
+@import "variables";
+@import "animation";
+@import "socicon";
+
+/**
+ * Styling begins
+ */
+#social-icons-group-data,
+.social-icons {
+	.panel-wrap {
+		overflow: hidden;
+	}
+
+	ul.si-tabs {
+		margin: 0;
+		width: 20%;
+		float: left;
+		line-height: 1em;
+		padding: 0 0 10px;
+		position: relative;
+		background-color: #fafafa;
+		border-right: 1px solid #eee;
+		box-sizing: border-box;
+
+		&:after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 9999em;
+			position: absolute;
+			bottom: -9999em;
+			left: 0;
+			background-color: #fafafa;
+			border-right: 1px solid #eee;
+		}
+
+		li {
+			margin: 0;
+			padding: 0;
+			display: block;
+			position: relative;
+
+			a {
+				margin: 0;
+				padding: 10px;
+				display: block;
+				box-shadow: none;
+				text-decoration: none;
+				line-height: 20px !important;
+				border-bottom: 1px solid #eee;
+
+				&:before {
+					@include iconbeforedashicons( "\f107" );
+				}
+			}
+
+			&.general_options {
+				a:before {
+					content: "\f107";
+				}
+			}
+
+			&.grouping_options {
+				a:before {
+					content: "\f103";
+				}
+			}
+
+			&.active {
+				a {
+					color: #555;
+					position: relative;
+					background-color: #eee;
+				}
+			}
+		}
+	}
+}
+
+#social-icons-group-data {
+	.inside {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+#social-icons-group-description {
+	padding: 3px 8px;
+	font-size: 1.7em;
+	line-height: 1.42em;
+	height: auto;
+	width: 100%;
+	outline: 0;
+	margin: 10px 0 10px;
+	display: block;
+
+	&::-webkit-input-placeholder {
+		line-height: 1.42em;
+		color: #bbb;
+	}
+
+	&::-moz-placeholder {
+		line-height:
+		1.42em;
+		color: #bbb;
+	}
+
+	&:-ms-input-placeholder {
+		line-height: 1.42em;
+		color: #bbb;
+	}
+
+	&:-moz-placeholder {
+		line-height: 1.42em;
+		color: #bbb;
+	}
+}
+
+img.help_tip {
+	margin: 0 0 0 9px;
+	vertical-align: middle;
+}
+
+.postbox img.help_tip {
+	margin-top: 0px;
+}
+
+.postbox .social-icons-help-tip {
+	margin: 0 0 0 9px;
+}
+
+/**
+ * Tooltips
+ */
+.tips {
+	cursor: help;
+	text-decoration: none;
+}
+
+img.tips {
+	padding: 5px 0 0 0;
+}
+
+#tiptip_holder {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999999;
+}
+
+#tiptip_holder {
+	&.tip_top {
+		padding-bottom: 5px;
+
+		#tiptip_arrow_inner {
+			margin-top: -7px;
+			margin-left: -6px;
+			border-top-color: #333;
+		}
+	}
+
+	&.tip_bottom {
+		padding-top: 5px;
+
+		#tiptip_arrow_inner {
+			margin-top: -5px;
+			margin-left: -6px;
+			border-bottom-color: #333;
+		}
+	}
+
+	&.tip_right {
+		padding-left: 5px;
+
+		#tiptip_arrow_inner {
+			margin-top: -6px;
+			margin-left: -5px;
+			border-right-color: #333;
+		}
+	}
+
+	&.tip_left {
+		padding-right: 5px;
+
+		#tiptip_arrow_inner {
+			margin-top: -6px;
+			margin-left: -7px;
+			border-left-color: #333;
+		}
+	}
+}
+
+#tiptip_content,
+.si_error_tip {
+	color: #fff;
+	font-size: .8em;
+	max-width: 150px;
+	background: #333;
+	text-align: center;
+	border-radius: 3px;
+	padding: .618em 1em;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+
+	code {
+		padding: 1px;
+		background: #888;
+	}
+}
+
+#tiptip_arrow,
+#tiptip_arrow_inner {
+	position: absolute;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 6px;
+	height: 0;
+	width: 0;
+}
+
+.si_error_tip {
+	max-width: 20em;
+	line-height: 1.8em;
+	position: absolute;
+	white-space: normal;
+	background: #d82223;
+	margin: 1.5em 1px 0 -1em;
+	z-index: 9999999;
+
+	&:after {
+		content: "";
+		display: block;
+		border: 8px solid #d82223;
+		border-right-color: transparent;
+		border-left-color: transparent;
+		border-top-color: transparent;
+		position: absolute;
+		top: -3px;
+		left: 50%;
+		margin: -1em 0 0 -3px;
+	}
+}
+
+/**
+ * Help Tip
+ */
+.social-icons-help-tip {
+	color: #666;
+	display: inline-block;
+	font-size: 1.1em;
+	font-style: normal;
+	height: 16px;
+	line-height: 16px;
+	position: relative;
+	vertical-align: middle;
+	width: 16px;
+
+	&:after {
+		@include icon_dashicons( "\f223" );
+		cursor: help;
+	}
+}
+
+/**
+ * Small screen optimisation
+ */
+@media only screen and (max-width: 1280px) {
+	.social_icons_options_panel {
+		.description {
+			display: block;
+			clear: both;
+			margin-left: 0;
+		}
+
+		.short,
+		input[type=email].short,
+		input[type=number].short,
+		input[type=text].short,
+		.dimensions_field .wrap {
+			width: 80%;
+		}
+	}
+}
+
+/**
+ * Optimisation for screens 900px and smaller
+ */
+@media only screen and (max-width: 900px) {
+	#social-icons-group-data ul.group_data_tabs {
+		width: 10%;
+	}
+
+	#social-icons-group-data .social_icons_options_panel {
+		width: 90%;
+	}
+
+	#social-icons-group-data ul.group_data_tabs li a {
+		position: relative;
+		text-indent: -999px;
+		padding: 10px;
+
+		&:before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			text-indent: 0;
+			text-align: center;
+			line-height: 40px;
+			width: 100%;
+			height: 40px;
+		}
+	}
+}
+
+/**
+ * Optimisation for screens 782px and smaller
+ */
+@media only screen and (max-width: 782px) {
+	#social-icons-group-data .checkbox {
+		width: 25px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.social_icons_options_panel label,
+	.social_icons_options_panel legend {
+		float: none;
+		width: auto;
+		display: block;
+		margin: 0;
+	}
+
+	.social_icons_options_panel fieldset.form-field,
+	.social_icons_options_panel p.form-field {
+		padding: 5px 20px 5px 20px !important;
+	}
+}

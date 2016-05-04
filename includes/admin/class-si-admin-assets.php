@@ -1,0 +1,97 @@
+<?php
+/**
+ * RestaurantPress Admin Assets
+ *
+ * Load Admin Assets.
+ *
+ * @class    SI_Admin_Assets
+ * @version  1.0.0
+ * @package  RestaurantPress/Admin
+ * @category Admin
+ * @author   ThemeGrill
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+/**
+ * SI_Admin_Assets Class
+ */
+class SI_Admin_Assets {
+
+	/**
+	 * Hook in tabs.
+	 */
+	public function __construct() {
+		add_action( 'admin_enqueue_scripts', array( $this, 'admin_styles' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'admin_scripts' ) );
+	}
+
+	/**
+	 * Enqueue styles.
+	 */
+	public function admin_styles() {
+		global $wp_scripts;
+
+		$screen         = get_current_screen();
+		$screen_id      = $screen ? $screen->id : '';
+		$jquery_version = isset( $wp_scripts->registered['jquery-ui-core']->ver ) ? $wp_scripts->registered['jquery-ui-core']->ver : '1.9.2';
+
+		// Register admin styles
+		wp_register_style( 'social-icons-admin', SI()->plugin_url() . '/assets/css/admin.css', array(), SI_VERSION );
+		wp_register_style( 'social-icons-admin-widgets', SI()->plugin_url() . '/assets/css/widgets.css', array(), SI_VERSION );
+		wp_register_style( 'jquery-ui-style', '//code.jquery.com/ui/' . $jquery_version . '/themes/smoothness/jquery-ui.css', array(), $jquery_version );
+
+		// Admin styles for SI pages only
+		if ( in_array( $screen_id, si_get_screen_ids() ) ) {
+			wp_enqueue_style( 'social-icons-admin' );
+			wp_enqueue_style( 'jquery-ui-style' );
+		}
+
+		if ( in_array( $screen_id, array( 'widgets', 'customize' ) ) ) {
+			wp_enqueue_style( 'social-icons-admin-widgets' );
+		}
+	}
+
+	/**
+	 * Enqueue scripts.
+	 */
+	public function admin_scripts() {
+		$screen    = get_current_screen();
+		$screen_id = $screen ? $screen->id : '';
+		$suffix    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+
+		// Register Scripts
+		wp_register_script( 'social-icons-admin', SI()->plugin_url() . '/assets/js/admin/admin' . $suffix . '.js', array( 'jquery', 'jquery-ui-sortable', 'jquery-ui-widget', 'jquery-ui-core', 'jquery-tiptip' ), SI_VERSION );
+		wp_register_script( 'si-admin-meta-boxes', SI()->plugin_url() . '/assets/js/admin/meta-boxes' . $suffix . '.js', array( 'jquery', 'jquery-ui-datepicker', 'jquery-ui-sortable', 'jquery-tiptip' ), SI_VERSION );
+		wp_register_script( 'jquery-tiptip', SI()->plugin_url() . '/assets/js/jquery-tiptip/jquery.tipTip' . $suffix . '.js', array( 'jquery' ), SI_VERSION, true );
+
+		// Social Icons admin pages
+		if ( in_array( $screen_id, si_get_screen_ids() ) ) {
+			wp_enqueue_script( 'social-icons-admin' );
+			wp_enqueue_script( 'jquery-ui-sortable' );
+			wp_enqueue_script( 'jquery-ui-autocomplete' );
+
+			$params = array(
+				'ajax_url' => admin_url( 'admin-ajax.php' )
+			);
+
+			wp_localize_script( 'social-icons-admin', 'social_icons_admin', $params );
+		}
+
+		// Meta boxes
+		if ( in_array( $screen_id, array( 'social_icon', 'edit-social_icon' ) ) ) {
+			wp_register_script( 'si-admin-icon-meta-boxes', SI()->plugin_url() . '/assets/js/admin/meta-boxes-icon' . $suffix . '.js', array( 'si-admin-meta-boxes' ), SI_VERSION );
+			wp_enqueue_script( 'rp-admin-icon-meta-boxes' );
+		}
+
+		// Widgets Specific
+		if ( in_array( $screen_id, array( 'widgets', 'customize' ) ) ) {
+			wp_register_script( 'si-admin-widgets', SI()->plugin_url() . '/assets/js/admin/widgets' . $suffix . '.js', array( 'jquery' ), SI_VERSION );
+			wp_enqueue_script( 'si-admin-widgets' );
+		}
+	}
+}
+
+new SI_Admin_Assets();

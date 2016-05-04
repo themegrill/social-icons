@@ -19,8 +19,8 @@ module.exports = function( grunt ){
 			},
 			all: [
 				'Gruntfile.js',
-				'<%= dirs.js %>/*.js',
-				'!<%= dirs.js %>/*.min.js'
+				'<%= dirs.js %>/admin/*.js',
+				'!<%= dirs.js %>/admin/*.min.js'
 			]
 		},
 
@@ -30,17 +30,22 @@ module.exports = function( grunt ){
 				// Preserve comments that start with a bang.
 				preserveComments: /^!/
 			},
-			dist: {
+			admin: {
 				files: [{
 					expand: true,
-					cwd: '<%= dirs.js %>/',
+					cwd: '<%= dirs.js %>/admin/',
 					src: [
 						'*.js',
 						'!*.min.js'
 					],
-					dest: '<%= dirs.js %>/',
+					dest: '<%= dirs.js %>/admin/',
 					ext: '.min.js'
 				}]
+			},
+			vendor: {
+				files: {
+					'<%= dirs.js %>/jquery-tiptip/jquery.tipTip.min.js': ['<%= dirs.js %>/jquery-tiptip/jquery.tipTip.js']
+				}
 			}
 		},
 
@@ -82,8 +87,8 @@ module.exports = function( grunt ){
 			},
 			js: {
 				files: [
-					'<%= dirs.js %>/*.js',
-					'!<%= dirs.js %>/*.min.js'
+					'<%= dirs.js %>/admin/*.js',
+					'!<%= dirs.js %>/admin/*.min.js'
 				],
 				tasks: ['jshint', 'uglify']
 			}
@@ -149,6 +154,11 @@ module.exports = function( grunt ){
 		'jshint',
 		'uglify',
 		'css'
+	]);
+
+	grunt.registerTask( 'js', [
+		'jshint',
+		'uglify:admin'
 	]);
 
 	grunt.registerTask( 'css', [

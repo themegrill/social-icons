@@ -5,7 +5,7 @@
  * Registers post types and taxonomies.
  *
  * @class    SI_Post_Types
- * @version  1.0.0
+ * @version  1.4.0
  * @package  Social_Icons/Classes/Social Icons
  * @category Class
  * @author   ThemeGrill
@@ -33,13 +33,13 @@ class SI_Post_Types {
 	 * Register core post types.
 	 */
 	public static function register_post_types() {
-		if ( post_type_exists( 'social_icons' ) ) {
+		if ( post_type_exists( 'social_icon' ) ) {
 			return;
 		}
 
 		do_action( 'social_icons_register_post_type' );
 
-		register_post_type( 'social_icons',
+		register_post_type( 'social_icon',
 			apply_filters( 'social_icons_register_post_type_args',
 				array(
 					'labels'              => array(
@@ -81,7 +81,7 @@ class SI_Post_Types {
 	 */
 	public static function support_jetpack_omnisearch() {
 		if ( class_exists( 'Jetpack_Omnisearch_Posts' ) ) {
-			new Jetpack_Omnisearch_Posts( 'social_icons' );
+			new Jetpack_Omnisearch_Posts( 'social_icon' );
 		}
 	}
 
@@ -91,7 +91,7 @@ class SI_Post_Types {
 	 * @return array
 	 */
 	public static function rest_api_allowed_post_types( $post_types ) {
-		$post_types[] = 'social_icons';
+		$post_types[] = 'social_icon';
 
 		return $post_types;
 	}
