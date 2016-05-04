@@ -40,7 +40,7 @@ class SI_Post_Types {
 		do_action( 'social_icons_register_post_type' );
 
 		register_post_type( 'social_icons',
-			apply_filters( 'register_post_type_social_icons_args',
+			apply_filters( 'social_icons_register_post_type_args',
 				array(
 					'labels'              => array(
 							'name'               => __( 'Social Icons', 'social-icons' ),
