@@ -42,10 +42,10 @@ class SI_Meta_Box_Group_Data {
 							'target' => 'general_group_data',
 							'class'  => 'general_group_data',
 						),
-						'grouping' => array(
-							'label'  => __( 'Grouping', 'social-icons' ),
-							'target' => 'grouping_group_data',
-							'class'  => 'grouping_group_data',
+						'linked_icons' => array(
+							'label'  => __( 'Linked Icons', 'social-icons' ),
+							'target' => 'linked_group_data',
+							'class'  => 'linked_group_data',
 						)
 					) );
 
@@ -102,8 +102,52 @@ class SI_Meta_Box_Group_Data {
 				do_action( 'social_icons_group_options_general' );
 
 			?></div>
-			<div id="grouping_group_data" class="panel social_icons_options_panel hidden"><?php
+			<div id="linked_group_data" class="panel social_icons_options_panel hidden"><?php
 
+				echo '<div class="options_group">';
+
+				?>
+				<div class="form-field sortable_icons">
+					<label><?php _e( 'Sortable Icons', 'social-icons' ); ?></label>
+					<table class="widefat">
+						<thead>
+							<tr>
+								<th class="sort">&nbsp;</th>
+								<th><?php _e( 'Label', 'social-icons' ); ?> <?php echo si_help_tip( __( 'This is the label of the social icon shown to the user.', 'social-icons' ) ); ?></th>
+								<th colspan="2"><?php _e( 'Social URL', 'social-icons' ); ?> <?php echo si_help_tip( __( 'This is the URL or absolute path to the file which customers will get access to. URLs entered here should already be encoded.', 'social-icons' ) ); ?></th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php
+							$sortable_icons = get_post_meta( $post->ID, '_sortable_icons', true );
+
+							if ( $sortable_icons ) {
+								foreach ( $sortable_icons as $key => $icon ) {
+									include( 'views/html-group-social-icon.php' );
+								}
+							}
+							?>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th colspan="5">
+									<a href="#" class="button insert" data-row="<?php
+										$icon = array(
+											'label' => '',
+											'url'   => ''
+										);
+										ob_start();
+										include( 'views/html-group-social-icon.php' );
+										echo esc_attr( ob_get_clean() );
+									?>"><?php _e( 'Add Icon', 'social-icons' ); ?></a>
+								</th>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<?php
+
+				echo '</div>';
 
 			?></div>
 			<?php do_action( 'social_icons_group_data_panels' ); ?>

@@ -82,8 +82,8 @@ class SI_Admin_Assets {
 
 		// Meta boxes
 		if ( in_array( $screen_id, array( 'social_icon', 'edit-social_icon' ) ) ) {
-			wp_register_script( 'si-admin-icon-meta-boxes', SI()->plugin_url() . '/assets/js/admin/meta-boxes-icon' . $suffix . '.js', array( 'si-admin-meta-boxes' ), SI_VERSION );
-			wp_enqueue_script( 'si-admin-icon-meta-boxes' );
+			wp_register_script( 'si-admin-group-meta-boxes', SI()->plugin_url() . '/assets/js/admin/meta-boxes-group' . $suffix . '.js', array( 'si-admin-meta-boxes' ), SI_VERSION );
+			wp_enqueue_script( 'si-admin-group-meta-boxes' );
 		}
 
 		// Widgets Specific

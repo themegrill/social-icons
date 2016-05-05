@@ -70,7 +70,7 @@
 				}
 			}
 
-			&.grouping_options {
+			&.linked_icons_options {
 				a:before {
 					content: "\f103";
 				}
@@ -126,6 +126,89 @@
 	width: auto;
 	margin: 3px 0;
 	vertical-align: middle;
+}
+
+.social_icons_options_panel {
+	.sortable_icons {
+		table {
+			width: 100%;
+			padding: 0 !important;
+
+			th {
+				padding: 7px 0 7px 7px !important;
+			}
+
+			td {
+				vertical-align: middle !important;
+				padding: 4px 0 4px 7px !important;
+				position: relative;
+
+				&:last-child {
+					padding-right: 7px !important;
+				}
+
+				input.input_text {
+					width: 100%;
+					float: none;
+					margin: 1px 0;
+					min-width: 0;
+				}
+
+				.upload_file_button {
+					float: right;
+					width: auto;
+					cursor: pointer;
+				}
+
+				.delete {
+					@include ir();
+
+					&:before {
+						@include icon_dashicons( "\f153" );
+						font-size: 1.1em;
+						color: #999;
+					}
+
+					&:hover {
+						&:before {
+							color: $red;
+						}
+					}
+				}
+			}
+
+			th.sort {
+				width: 17px;
+				padding: 0;
+			}
+
+			td.sort {
+				padding: 0 8px;
+				cursor: move;
+				background: #f9f9f9;
+				text-align: center;
+				vertical-align: middle;
+
+				&:before {
+					content: "\f333";
+					font-family: 'Dashicons';
+					text-align: center;
+					line-height: 1;
+					color: #999;
+					display: block;
+					width: 17px;
+					float: left;
+					height: 100%;
+				}
+
+				&:hover {
+					&:before {
+						color: #333;
+					}
+				}
+			}
+		}
+	}
 }
 
 .social_icons_options_panel {
