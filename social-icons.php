@@ -21,7 +21,7 @@ if ( ! class_exists( 'Social_Icons' ) ) :
  * Main Social Icons Class.
  *
  * @class Social_Icons
- * @version	1.4.0
+ * @version 1.4.0
  */
 final class Social_Icons {
 

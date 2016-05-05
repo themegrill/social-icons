@@ -80,7 +80,7 @@ class SI_Admin_Post_Types {
 	 */
 	public function bulk_post_updated_messages( $bulk_messages, $bulk_counts ) {
 
-		$bulk_messages['food_group'] = array(
+		$bulk_messages['social_icon'] = array(
 			'updated'   => _n( '%s social icon updated.', '%s social icons updated.', $bulk_counts['updated'], 'social-icons' ),
 			'locked'    => _n( '%s social icon not updated, somebody is editing it.', '%s social icons not updated, somebody is editing them.', $bulk_counts['locked'], 'social-icons' ),
 			'deleted'   => _n( '%s social icon permanently deleted.', '%s social icons permanently deleted.', $bulk_counts['deleted'], 'social-icons' ),
@@ -137,7 +137,7 @@ class SI_Admin_Post_Types {
 	}
 
 	/**
-	 * Render food_group row actions for old version of WordPress.
+	 * Render social_icon row actions for old version of WordPress.
 	 * Since WordPress 4.3 we don't have to build the row actions.
 	 *
 	 * @param WP_Post $post
