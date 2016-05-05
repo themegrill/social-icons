@@ -88,14 +88,15 @@ class SI_Meta_Box_Group_Data {
 
 				echo '<div class="options_group">';
 
-					// New tab
-					social_icons_wp_checkbox( array( 'id' => '_open_tab', 'label' => __( 'New Tab', 'social-icons' ), 'description' => __( 'Enable this to open links in new tab.', 'social-icons' ) ) );
 
 					// Manage Label
-					social_icons_wp_checkbox( array( 'id' => '_manage_stock', 'label' => __( 'Manage Label', 'social-icons' ), 'description' => __( 'Enable this to display social icons label.', 'social-icons' ) ) );
+					social_icons_wp_checkbox( array( 'id' => '_manage_label', 'label' => __( 'Manage Label', 'social-icons' ), 'description' => __( 'Enable this to display social icons label.', 'social-icons' ) ) );
 
-					// Greyscale Icons
-					social_icons_wp_checkbox( array( 'id' => '_greyscale_icons', 'label' => __( 'Greyscale Icons', 'social-icons' ), 'description' => __( 'Enable this to allow greyscale social icons.', 'social-icons' ) ) );
+					// Greyscale Icon
+					social_icons_wp_checkbox( array( 'id' => '_greyscale_icons', 'label' => __( 'Greyscale Icon', 'social-icons' ), 'description' => __( 'Enable this to allow greyscale social icons.', 'social-icons' ) ) );
+
+					// Open New tab
+					social_icons_wp_checkbox( array( 'id' => '_open_new_tab', 'label' => __( 'Open New Tab', 'social-icons' ), 'description' => __( 'Enable this to allow links to open in new tab.', 'social-icons' ) ) );
 
 				echo '</div>';
 
