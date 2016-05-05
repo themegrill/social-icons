@@ -168,12 +168,35 @@ class SI_Meta_Box_Group_Data {
 		$greyscale_icons  = isset( $_POST['_greyscale_icons'] ) ? 'yes' : 'no';
 		$open_new_tab     = isset( $_POST['_open_new_tab'] ) ? 'yes' : 'no';
 
+		// Sortable Icons.
+		$sortable_icons = array();
+
+		if ( isset( $_POST['_si_icon_urls'] ) ) {
+			$icon_labels    = isset( $_POST['_si_icon_labels'] ) ? $_POST['_si_icon_labels'] : array();
+			$icon_urls     = isset( $_POST['_si_icon_urls'] )  ? wp_unslash( array_map( 'trim', $_POST['_si_icon_urls'] ) ) : array();
+			$icon_url_size = sizeof( $icon_urls );
+
+			for ( $i = 0; $i < $icon_url_size; $i ++ ) {
+				if ( ! empty( $icon_urls[ $i ] ) ) {
+					$icon_label = si_clean( $icon_labels[ $i ] );
+					$icon_url   = si_clean( $icon_urls[ $i ] );
+
+					$sortable_icons[ $i ] = array(
+						'label' => $icon_label,
+						'url'   => $icon_url
+					);
+				}
+			}
+		}
+
+
 		// Save
 		update_post_meta( $post_id, 'background_style', $background_style );
 		update_post_meta( $post_id, 'icon_font_size', $icon_font_size );
 		update_post_meta( $post_id, '_manage_label', $manage_label );
 		update_post_meta( $post_id, '_greyscale_icons', $greyscale_icons );
 		update_post_meta( $post_id, '_open_new_tab', $open_new_tab );
+		update_post_meta( $post_id, '_sortable_icons', $sortable_icons );
 
 		do_action( 'social_icons_group_options_save', $post_id );
 	}
