@@ -77,10 +77,25 @@ class SI_Meta_Box_Group_Data {
 						'description' => __( 'Define whether or not the entire background should be style based, or just with the default style.', 'social-icons' )
 					) );
 
+					// Choose Icon size
+					social_icons_wp_text_input( array( 'id' => 'icon_font_size', 'label' => __( 'Choose Icon Size', 'social-icons' ), 'placeholder' => __( 'Default', 'social-icons' ), 'desc_tip' => true, 'description' => __( 'Leave blank for default icon font size.', 'social-icons' ), 'type' => 'number', 'custom_attributes' => array(
+						'step' => '1',
+						'min'  => '14',
+						'max'  => '40'
+					) ) );
+
 				echo '</div>';
 
 				echo '<div class="options_group">';
 
+					// New tab
+					social_icons_wp_checkbox( array( 'id' => '_open_tab', 'label' => __( 'New Tab', 'social-icons' ), 'description' => __( 'Enable this to open links in new tab.', 'social-icons' ) ) );
+
+					// Manage Label
+					social_icons_wp_checkbox( array( 'id' => '_manage_stock', 'label' => __( 'Manage Label', 'social-icons' ), 'description' => __( 'Enable this to display social icons label.', 'social-icons' ) ) );
+
+					// Greyscale Icons
+					social_icons_wp_checkbox( array( 'id' => '_greyscale_icons', 'label' => __( 'Greyscale Icons', 'social-icons' ), 'description' => __( 'Enable this to allow greyscale social icons.', 'social-icons' ) ) );
 
 				echo '</div>';
 
