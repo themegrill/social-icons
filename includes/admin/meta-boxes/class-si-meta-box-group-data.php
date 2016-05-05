@@ -189,7 +189,6 @@ class SI_Meta_Box_Group_Data {
 			}
 		}
 
-
 		// Save
 		update_post_meta( $post_id, 'background_style', $background_style );
 		update_post_meta( $post_id, 'icon_font_size', $icon_font_size );
