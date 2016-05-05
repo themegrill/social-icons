@@ -36,7 +36,7 @@ class SI_Admin_Meta_Boxes {
 		add_action( 'save_post', array( $this, 'save_meta_boxes' ), 1, 2 );
 
 		// Save Icon Meta Boxes
-		add_action( 'social_icons_process_social_icon_meta', 'SI_Meta_Box_Icon_Data::save', 10, 2 );
+		add_action( 'social_icons_process_social_icon_meta', 'SI_Meta_Box_Group_Data::save', 10, 2 );
 	}
 
 	/**

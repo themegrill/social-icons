@@ -78,7 +78,7 @@ class SI_Meta_Box_Group_Data {
 					) );
 
 					// Choose Icon size
-					social_icons_wp_text_input( array( 'id' => 'icon_font_size', 'label' => __( 'Choose Icon Size', 'social-icons' ), 'placeholder' => __( 'Default', 'social-icons' ), 'desc_tip' => true, 'description' => __( 'Leave blank for default icon font size.', 'social-icons' ), 'type' => 'number', 'custom_attributes' => array(
+					social_icons_wp_text_input( array( 'id' => 'icon_font_size',  'label' => __( 'Choose Icon Size', 'social-icons' ), 'placeholder' => __( 'Default', 'social-icons' ), 'desc_tip' => true, 'description' => __( 'Leave blank for default icon font size.', 'social-icons' ), 'type' => 'number', 'custom_attributes' => array(
 						'step' => '1',
 						'min'  => '14',
 						'max'  => '40'
@@ -118,6 +118,15 @@ class SI_Meta_Box_Group_Data {
 	 * @param int $post_id
 	 */
 	public static function save( $post_id ) {
+		// Add/replace data to array
+		$background_style = si_clean( $_POST['background_style'] );
+		$icon_font_size   = si_clean( $_POST['icon_font_size'] );
+
+		echo '<pre>' . print_r( $icon_font_size, true ) . '</pre>';
+
+		// Save
+		update_post_meta( $post_id, 'background_style', $background_style );
+		update_post_meta( $post_id, 'icon_font_size', $icon_font_size );
 
 		do_action( 'social_icons_group_options_save', $post_id );
 	}
