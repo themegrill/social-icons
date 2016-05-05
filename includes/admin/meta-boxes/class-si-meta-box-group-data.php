@@ -88,14 +88,13 @@ class SI_Meta_Box_Group_Data {
 
 				echo '<div class="options_group">';
 
-
 					// Manage Label
 					social_icons_wp_checkbox( array( 'id' => '_manage_label', 'label' => __( 'Manage Label', 'social-icons' ), 'description' => __( 'Enable this to display social icons label.', 'social-icons' ) ) );
 
 					// Greyscale Icon
 					social_icons_wp_checkbox( array( 'id' => '_greyscale_icons', 'label' => __( 'Greyscale Icon', 'social-icons' ), 'description' => __( 'Enable this to allow greyscale social icons.', 'social-icons' ) ) );
 
-					// Open New tab
+					// Open in New tab
 					social_icons_wp_checkbox( array( 'id' => '_open_new_tab', 'label' => __( 'Open New Tab', 'social-icons' ), 'description' => __( 'Enable this to allow links to open in new tab.', 'social-icons' ) ) );
 
 				echo '</div>';
