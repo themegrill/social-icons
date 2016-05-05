@@ -94,6 +94,188 @@
 	}
 }
 
+.social_icons_options_panel,
+.panel {
+	padding: 0;
+	color: #555;
+
+	.form-field {
+		.social-icons-help-tip {
+			font-size: 1.4em;
+		}
+	}
+}
+
+.social_icons_options_panel p,
+.social_icons_options_panel fieldset.form-field {
+	margin: 0 0 9px;
+	font-size: 12px;
+	padding: 5px 9px;
+	line-height: 24px;
+
+	&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}
+
+.social_icons_options_panel .checkbox {
+	width: auto;
+	margin: 3px 0;
+	vertical-align: middle;
+}
+
+.social_icons_options_panel {
+	min-height: 175px;
+	box-sizing: border-box;
+
+	.sortable_icons {
+		padding: 0 9px 0 162px;
+		position: relative;
+		margin: 9px 0 9px;
+
+		label {
+			position: absolute;
+			left: 0;
+			margin: 0 0 0 12px;
+			line-height: 24px;
+		}
+	}
+
+	p {
+		margin: 9px 0;
+	}
+
+	p.form-field,
+	fieldset.form-field {
+		padding: 5px 20px 5px 162px !important; /** Padding for aligning labels left - 12px + 150 label width **/
+	}
+
+	label,
+	legend {
+		float: left;
+		width: 150px;
+		padding: 0;
+		margin: 0 0 0 -150px;
+
+		.req {
+			font-weight: 700;
+			font-style: normal;
+			color: $red;
+		}
+	}
+
+	.description {
+		padding: 0;
+		margin: 0 0 0 7px;
+		clear: none;
+		display: inline;
+	}
+
+	.description-block {
+		margin-left: 0;
+		display: block;
+	}
+
+	textarea,
+	input,
+	select {
+		margin: 0;
+	}
+
+	textarea {
+		height: 3.5em;
+		line-height: 1.5em;
+		vertical-align: top;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="number"],
+	input[type="password"] {
+		width: 50%;
+		float: left;
+	}
+
+	input.button {
+		width: auto;
+		margin-left: 8px;
+	}
+
+	select {
+		float: left;
+	}
+
+	input[type="text"].short,
+	input[type="email"].short,
+	input[type="number"].short,
+	input[type="password"].short,
+	.short {
+		width: 50%;
+	}
+
+	.sized {
+		width: auto !important;
+		margin-right: 6px;
+	}
+
+	.options_group {
+		border-top: 1px solid white;
+		border-bottom: 1px solid #eee;
+
+		&:first-child {
+			border-top: 0;
+		}
+
+		&:last-child {
+			border-bottom: 0;
+		}
+
+		fieldset {
+			margin: 9px 0;
+			font-size: 12px;
+			padding: 5px 9px;
+			line-height: 24px;
+
+			label {
+				width: auto;
+				float: none;
+			}
+
+			ul {
+				float: left;
+				width: 50%;
+				margin: 0;
+				padding: 0;
+
+				li {
+					margin: 0;
+					width: auto;
+
+					input {
+						width: auto;
+						float: none;
+						margin-right: 4px;
+					}
+				}
+			}
+
+			ul.si-radios {
+				label {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+	&.padded {
+		padding: 1em;
+	}
+}
+
 #social-icons-group-description {
 	padding: 3px 8px;
 	font-size: 1.7em;
@@ -123,6 +305,32 @@
 	&:-moz-placeholder {
 		line-height: 1.42em;
 		color: #bbb;
+	}
+}
+
+#social-icons-group-data {
+	.panel-wrap {
+		background: #fff;
+	}
+
+	.social_icons_options_panel {
+		float: left;
+		width: 80%;
+
+		.rp-radios {
+			display: block;
+			float: left;
+			margin: 0;
+
+			li {
+				display: block;
+				padding: 0 0 10px 0;
+
+				input {
+					width: auto;
+				}
+			}
+		}
 	}
 }
 
@@ -283,9 +491,10 @@ img.tips {
 		}
 
 		.short,
+		input[type=text].short,
 		input[type=email].short,
 		input[type=number].short,
-		input[type=text].short,
+		input[type="password"].short,
 		.dimensions_field .wrap {
 			width: 80%;
 		}

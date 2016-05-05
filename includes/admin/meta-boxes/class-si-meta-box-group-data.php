@@ -62,6 +62,20 @@ class SI_Meta_Box_Group_Data {
 
 				echo '<div class="options_group">';
 
+					// Background Style
+					social_icons_wp_select( array(
+						'id'    => 'background_style',
+						'label' => __( 'Background Style', 'social-icons' ),
+						'options' => array(
+							'none'           => __( 'None', 'social-icons' ),
+							'square'         => __( 'Square', 'social-icons' ),
+							'rounded'        => __( 'Rounded', 'social-icons' ),
+							'square centre'  => __( 'Square Centre', 'social-icons' ),
+							'rounded centre' => __( 'Rounded Centre', 'social-icons' ),
+						),
+						'desc_tip'    => 'true',
+						'description' => __( 'Define whether or not the entire background should be style based, or just with the default style.', 'social-icons' )
+					) );
 
 				echo '</div>';
 
