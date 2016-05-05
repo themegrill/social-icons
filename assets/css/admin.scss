@@ -98,12 +98,6 @@
 .panel {
 	padding: 0;
 	color: #555;
-
-	.form-field {
-		.social-icons-help-tip {
-			font-size: 1.4em;
-		}
-	}
 }
 
 .social_icons_options_panel p,
@@ -216,15 +210,12 @@
 	box-sizing: border-box;
 
 	.sortable_icons {
-		padding: 0 9px 0 162px;
+		padding: 0 9px;
 		position: relative;
 		margin: 9px 0 9px;
 
 		label {
-			position: absolute;
-			left: 0;
-			margin: 0 0 0 12px;
-			line-height: 24px;
+			display: none;
 		}
 	}
 
