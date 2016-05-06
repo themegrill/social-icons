@@ -50,8 +50,8 @@ class SI_Admin_Meta_Boxes {
 	 * Remove bloat.
 	 */
 	public function remove_meta_boxes() {
-		remove_meta_box( 'commentstatusdiv', 'social_icons', 'normal' );
-		remove_meta_box( 'slugdiv', 'social_icons', 'normal' );
+		remove_meta_box( 'commentstatusdiv', 'social_icon', 'normal' );
+		remove_meta_box( 'slugdiv', 'social_icon', 'normal' );
 	}
 
 	/**
