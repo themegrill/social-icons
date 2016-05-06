@@ -156,10 +156,10 @@
 
 				.delete {
 					@include ir();
+					font-size: 1.2em;
 
 					&:before {
 						@include icon_dashicons( "\f153" );
-						font-size: 1.1em;
 						color: #999;
 					}
 
