@@ -2,14 +2,14 @@
 /**
  * Abstract Widget Class
  *
- * @class    TG_Widget
+ * @class    SI_Widget
  * @extends  WP_Widget
  * @version  1.0.0
  * @package  Social_Icons/Abstracts
  * @category Widgets
  * @author   ThemeGrill
  */
-abstract class TG_Widget extends WP_Widget {
+abstract class SI_Widget extends WP_Widget {
 
 	/**
 	 * CSS class.

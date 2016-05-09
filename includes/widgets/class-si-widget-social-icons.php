@@ -4,7 +4,7 @@
  *
  * Displays Social Icons widget.
  *
- * @extends  TG_Widget
+ * @extends  SI_Widget
  * @version  1.0.0
  * @package  Social_Icons/Widgets
  * @category Widgets
@@ -16,9 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * TG_Widget_Social_Icons Class
+ * SI_Widget_Social_Icons Class
  */
-class TG_Widget_Social_Icons extends TG_Widget {
+class SI_Widget_Social_Icons extends SI_Widget {
 
 	/**
 	 * List of supported icons.

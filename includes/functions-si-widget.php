@@ -23,6 +23,6 @@ include_once( 'widgets/class-si-widget-social-icons.php' );
  * @since 1.4.0
  */
 function si_register_widgets() {
-	register_widget( 'TG_Widget_Social_Icons' );
+	register_widget( 'SI_Widget_Social_Icons' );
 }
 add_action( 'widgets_init', 'si_register_widgets' );
