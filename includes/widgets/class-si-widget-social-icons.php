@@ -117,7 +117,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 	 */
 	public function enqueue_scripts() {
 		if ( is_active_widget( false, false, $this->id_base ) || is_customize_preview() ) {
-			wp_enqueue_style( 'social-icons', plugins_url( 'assets/css/social-icons.css', dirname( __FILE__ ) ), array(), Social_Icons::VERSION );
+			wp_enqueue_style( 'social-icons', plugins_url( 'assets/css/social-icons.css', dirname( __FILE__ ) ), array(), SI_VERSION );
 		}
 	}
 
