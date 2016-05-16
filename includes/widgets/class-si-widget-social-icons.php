@@ -21,14 +21,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 class SI_Widget_Social_Icons extends SI_Widget {
 
 	/**
-	 * List of supported icons.
-	 * @var array
-	 */
-	protected $icons = array(
-		'modelmayhem', 'mixcloud', 'drupal', 'swarm', 'istock', 'yammer', 'ello', 'stackoverflow', 'persona', 'triplej', 'houzz', 'rss', 'paypal', 'odnoklassniki', 'airbnb', 'periscope', 'outlook', 'coderwall', 'tripadvisor', 'appnet', 'goodreads', 'tripit', 'lanyrd', 'slideshare', 'buffer', 'disqus', 'vkontakte', 'whatsapp', 'patreon', 'storehouse', 'pocket', 'mail', 'blogger', 'technorati', 'reddit', 'dribbble', 'stumbleupon', 'digg', 'envato', 'behance', 'delicious', 'deviantart', 'forrst', 'play', 'zerply', 'wikipedia', 'apple', 'flattr', 'github', 'renren', 'friendfeed', 'newsvine', 'identica', 'bebo', 'zynga', 'steam', 'xbox', 'windows', 'qq', 'douban', 'meetup', 'playstation', 'android', 'snapchat', 'twitter', 'facebook', 'googleplus', 'pinterest', 'foursquare', 'yahoo', 'skype', 'yelp', 'feedburner', 'linkedin', 'viadeo', 'xing', 'myspace', 'soundcloud', 'spotify', 'grooveshark', 'lastfm', 'youtube', 'vimeo', 'dailymotion', 'vine', 'flickr', '500px', 'instagram', 'wordpress', 'tumblr', 'twitch', '8tracks', 'amazon', 'icq', 'smugmug', 'ravelry', 'weibo', 'baidu', 'angellist', 'ebay', 'imdb', 'stayfriends', 'residentadvisor', 'google', 'yandex', 'sharethis', 'bandcamp', 'itunes', 'deezer', 'medium', 'telegram', 'openid', 'amplement', 'viber', 'zomato', 'quora', 'draugiem', 'endomodo', 'filmweb', 'stackexchange', 'wykop', 'teamspeak', 'teamviewer', 'ventrilo', 'younow', 'raidcall', 'mumble', 'bebee', 'hitbox', 'reverbnation', 'formulr'
-	);
-
-	/**
 	 * Constructor.
 	 */
 	public function __construct() {
@@ -189,7 +181,8 @@ class SI_Widget_Social_Icons extends SI_Widget {
 				$label = sanitize_text_field( $new_instance['label-fields'][ $i ] );
 
 				if ( $url ) {
-					$instance[ sanitize_key( $this->get_icon( $url ) ) ] = array(
+					$icon = si_get_social_icon_name( $url );
+					$instance[ sanitize_key( $icon ) ] = array(
 						'url'   => $url,
 						'label' => $label
 					);
@@ -217,7 +210,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 		$args = wp_parse_args( $args, $defaults );
 
 		$icon_class = 'dashicons dashicons-plus';
-		if ( $icon = $this->get_icon( $args['url-value'] ) ) {
+		if ( $icon = si_get_social_icon_name( $args['url-value'] ) ) {
 			$icon_class = 'socicon socicon-' . $icon;
 		}
 
@@ -233,44 +226,6 @@ class SI_Widget_Social_Icons extends SI_Widget {
 				<span class="dashicons dashicons-no-alt"></span>
 			</a>
 		</li><?php
-	}
-
-	/**
-	 * Returns an icon identifier for given website url.
-	 * @param  $url
-	 * @return string
-	 */
-	protected function get_icon( $url ) {
-		$icon = '';
-
-		if ( $url = strtolower( $url ) ) {
-			if ( strstr( $url, 'feed' ) ) {
-				$icon = 'rss';
-			} elseif( strstr( $url, 'vk.com' ) ) {
-				$icon = 'vkontakte';
-			} elseif ( strstr( $url, 'last.fm' ) ) {
-				$icon = 'lastfm';
-			} elseif ( strstr( $url, 'youtu.be' ) ) {
-				$icon = 'youtube';
-			} elseif ( strstr( $url, 'play.google.com' ) ) {
-				$icon = 'play';
-			} elseif ( strstr( $url, 'plus.google.com' ) ) {
-				$icon = 'googleplus';
-			} elseif ( strstr( $url, 'feedburner.google.com' ) ) {
-				$icon = 'mail';
-			}
-
-			if ( ! $icon ) {
-				foreach ( $this->icons as $icon_name ) {
-					if ( strstr( $url, $icon_name ) ) {
-						$icon = $icon_name;
-						break;
-					}
-				}
-			}
-		}
-
-		return apply_filters( 'social_icons_field_get_icon', $icon, $url );
 	}
 
 	/**
