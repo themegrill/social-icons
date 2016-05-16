@@ -1200,3 +1200,39 @@
 		content: "\e07e";
 	}
 }
+
+.socicon-bebee {
+	color: #f28f16;
+	background-color: #f28f16;
+
+	&:before {
+		content: "\e07f";
+	}
+}
+
+.socicon-hitbox {
+	color: #99cc00;
+	background-color: #99cc00;
+
+	&:before {
+		content: "\e080";
+	}
+}
+
+.socicon-reverbnation {
+	color: #000000;
+	background-color: #000000;
+
+	&:before {
+		content: "\e081";
+	}
+}
+
+.socicon-formulr {
+	color: #ff5a60;
+	background-color: #ff5a60;
+
+	&:before {
+		content: "\e082";
+	}
+}
