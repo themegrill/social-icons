@@ -4,7 +4,7 @@
  *
  * @author   ThemeGrill
  * @category Core
- * @package  AxisComposer/Admin/Functions
+ * @package  Social_Icons/Admin/Functions
  * @version  1.4.0
  */
 
