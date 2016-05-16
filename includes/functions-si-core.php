@@ -65,15 +65,18 @@ function si_print_js() {
 	global $si_queued_js;
 
 	if ( ! empty( $si_queued_js ) ) {
-
-		echo "<!-- Social Icons JavaScript -->\n<script type=\"text/javascript\">\njQuery(function($) {";
-
-		// Sanitize
+		// Sanitize.
 		$si_queued_js = wp_check_invalid_utf8( $si_queued_js );
 		$si_queued_js = preg_replace( '/&#(x)?0*(?(1)27|39);?/i', "'", $si_queued_js );
 		$si_queued_js = str_replace( "\r", '', $si_queued_js );
 
-		echo $si_queued_js . "});\n</script>\n";
+		$js = "<!-- Social Icons JavaScript -->\n<script type=\"text/javascript\">\njQuery(function($) { $si_queued_js });\n</script>\n";
+
+		/**
+		 * social_icons_queued_js filter.
+		 * @param string $js JavaScript code.
+		 */
+		echo apply_filters( 'social_icons_queued_js', $js );
 
 		unset( $si_queued_js );
 	}
