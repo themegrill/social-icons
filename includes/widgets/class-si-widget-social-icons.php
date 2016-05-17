@@ -176,15 +176,33 @@ class SI_Widget_Social_Icons extends SI_Widget {
 		if ( 'social_icons' === $setting['type'] ) {
 			$instance = array();
 
-			for ( $i = 0; $i < count( $new_instance['url-fields'] ); $i++ ) {
-				$url   = esc_url_raw( $new_instance['url-fields'][ $i ] );
-				$label = sanitize_text_field( $new_instance['label-fields'][ $i ] );
+			$icon_urls     = $new_instance['url-fields'];
+			$icon_labels   = $new_instance['label-fields'];
+			$icon_url_size = sizeof( $icon_urls );
+			$allowed_icons = si_get_allowed_socicons();
 
-				if ( $url ) {
-					$icon = si_get_social_icon_name( $url );
-					$instance[ sanitize_key( $icon ) ] = array(
-						'url'   => $url,
-						'label' => $label
+			for ( $i = 0; $i < $icon_url_size; $i ++ ) {
+				if ( ! empty( $icon_urls[ $i ] ) ) {
+					// Find type and icon URL.
+					if ( 0 === strpos( $icon_urls[ $i ], 'http' ) ) {
+						$icon_is  = 'absolute';
+						$icon_url = esc_url_raw( $icon_urls[ $i ] );
+					} else {
+						$icon_is = 'relative';
+						$icon_url = si_clean( $icon_urls[ $i ] );
+					}
+
+					$icon_name  = si_get_social_icon_name( $icon_url );
+					$icon_label = si_clean( $icon_labels[ $i ] );
+
+					// Validate the icon supported.
+					if ( ! in_array( $icon_name, $allowed_icons ) ) {
+						continue;
+					}
+
+					$instance[ $icon_name ] = array(
+						'url'   => $icon_url,
+						'label' => $icon_label
 					);
 				}
 			}
@@ -217,7 +235,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 		?><li class="social-icons-field">
 			<div class="social-icons-wrap">
 				<div class="social-icons-inputs"><?php
-					printf( '<input class="widefat social-icons-field-url" id="%1$s" name="%2$s[]" type="text" placeholder="%3$s" value="%4$s">', $args['url-field-id'], $args['url-field-name'], esc_attr( __( 'http://', 'social-icons' ) ), esc_url( $args['url-value'] ) );
+					printf( '<input class="widefat social-icons-field-url" id="%1$s" name="%2$s[]" type="text" placeholder="%3$s" value="%4$s">', $args['url-field-id'], $args['url-field-name'], esc_attr( __( 'http://', 'social-icons' ) ), esc_attr( $args['url-value'] ) );
 					printf( '<input class="widefat social-icons-field-label" id="%1$s" name="%2$s[]" type="text" placeholder="%3$s" value="%4$s">', $args['label-field-id'], $args['label-field-name'], esc_attr( __( 'Label', 'social-icons' ) ), esc_attr( $args['label-value'] ) );
 				?></div>
 			</div>
