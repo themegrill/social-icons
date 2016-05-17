@@ -183,25 +183,13 @@ class SI_Widget_Social_Icons extends SI_Widget {
 
 			for ( $i = 0; $i < $icon_url_size; $i ++ ) {
 				if ( ! empty( $icon_urls[ $i ] ) ) {
-					// Find type and icon URL.
-					if ( 0 === strpos( $icon_urls[ $i ], 'http' ) ) {
-						$icon_is  = 'absolute';
-						$icon_url = esc_url_raw( $icon_urls[ $i ] );
-					} else {
-						$icon_is = 'relative';
-						$icon_url = si_clean( $icon_urls[ $i ] );
-					}
-
+					$icon_url   = esc_url_raw( $icon_urls[ $i ] );
 					$icon_name  = si_get_social_icon_name( $icon_url );
 					$icon_label = si_clean( $icon_labels[ $i ] );
 
 					// Validate the icon supported.
-					if ( in_array( $icon_is, array( 'absolute', 'relative' ) ) ) {
-						$_icon_name = strtolower( $icon_name );
-
-						if ( ! in_array( $_icon_name, $allowed_icons ) ) {
-							continue;
-						}
+					if ( ! in_array( $icon_name, $allowed_icons ) ) {
+						continue;
 					}
 
 					$instance[ $icon_name ] = array(
@@ -239,7 +227,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 		?><li class="social-icons-field">
 			<div class="social-icons-wrap">
 				<div class="social-icons-inputs"><?php
-					printf( '<input class="widefat social-icons-field-url" id="%1$s" name="%2$s[]" type="text" placeholder="%3$s" value="%4$s">', $args['url-field-id'], $args['url-field-name'], esc_attr( __( 'http://', 'social-icons' ) ), esc_attr( $args['url-value'] ) );
+					printf( '<input class="widefat social-icons-field-url" id="%1$s" name="%2$s[]" type="text" placeholder="%3$s" value="%4$s">', $args['url-field-id'], $args['url-field-name'], esc_url( __( 'http://', 'social-icons' ) ), esc_attr( $args['url-value'] ) );
 					printf( '<input class="widefat social-icons-field-label" id="%1$s" name="%2$s[]" type="text" placeholder="%3$s" value="%4$s">', $args['label-field-id'], $args['label-field-name'], esc_attr( __( 'Label', 'social-icons' ) ), esc_attr( $args['label-value'] ) );
 				?></div>
 			</div>
