@@ -185,7 +185,7 @@ class SI_Meta_Box_Group_Data {
 
 					// Validate the icon supported.
 					if ( ! in_array( $icon_name, $allowed_icons ) ) {
-						SI_Admin_Meta_Boxes::add_error( sprintf( __( 'The social url %s cannot be used as it does not have an allowed icon.', 'social-icons' ), '<code>' . basename( $icon_url ) . '</code>' ) );
+						SI_Admin_Meta_Boxes::add_error( sprintf( __( 'The social url %s cannot be used as it does not have an allowed icon.', 'social-icons' ), '<code>' . esc_url( $icon_url ) . '</code>' ) );
 						continue;
 					}
 
