@@ -88,7 +88,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 						'label' => __( 'Follow Me', 'social-icons' )
 					),
 					'facebook' => array(
-						'url'   => 'http://facebook.com/',
+						'url'   => 'https://facebook.com/',
 						'label' => __( 'Friend me on Facebook', 'social-icons' )
 					)
 				)
