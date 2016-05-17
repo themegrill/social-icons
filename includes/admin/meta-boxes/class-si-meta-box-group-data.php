@@ -192,9 +192,13 @@ class SI_Meta_Box_Group_Data {
 					$icon_label = si_clean( $icon_labels[ $i ] );
 
 					// Validate the icon supported.
-					if ( ! in_array( $icon_name, $allowed_icons ) ) {
-						SI_Admin_Meta_Boxes::add_error( sprintf( __( 'The social url %s cannot be used as it does not have an allowed icon.', 'social-icons' ), '<code>' . basename( $icon_url ) . '</code>' ) );
-						continue;
+					if ( in_array( $icon_is, array( 'absolute', 'relative' ) ) ) {
+						$_icon_name = strtolower( $icon_name );
+
+						if ( ! empty( $icon_url ) && ! in_array( $_icon_name, $allowed_icons ) ) {
+							SI_Admin_Meta_Boxes::add_error( sprintf( __( 'The social url %s cannot be used as it does not have an allowed icon.', 'social-icons' ), '<code>' . basename( $icon_url ) . '</code>' ) );
+							continue;
+						}
 					}
 
 					$sortable_icons[ $icon_name ] = array(
