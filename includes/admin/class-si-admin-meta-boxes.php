@@ -28,6 +28,13 @@ class SI_Admin_Meta_Boxes {
 	private static $saved_meta_boxes = false;
 
 	/**
+	 * Meta box error messages.
+	 *
+	 * @var array
+	 */
+	public static $meta_box_errors  = array();
+
+	/**
 	 * Hook in tabs.
 	 */
 	public function __construct() {
@@ -37,6 +44,46 @@ class SI_Admin_Meta_Boxes {
 
 		// Save Icon Meta Boxes
 		add_action( 'social_icons_process_social_icon_meta', 'SI_Meta_Box_Group_Data::save', 10, 2 );
+
+		// Error handling (for showing errors from meta boxes on next page load)
+		add_action( 'admin_notices', array( $this, 'output_errors' ) );
+		add_action( 'shutdown', array( $this, 'save_errors' ) );
+	}
+
+	/**
+	 * Add an error message.
+	 * @param string $text
+	 */
+	public static function add_error( $text ) {
+		self::$meta_box_errors[] = $text;
+	}
+
+	/**
+	 * Save errors to an option.
+	 */
+	public function save_errors() {
+		update_option( 'social_icons_meta_box_errors', self::$meta_box_errors );
+	}
+
+	/**
+	 * Show any stored error messages.
+	 */
+	public function output_errors() {
+		$errors = maybe_unserialize( get_option( 'social_icons_meta_box_errors' ) );
+
+		if ( ! empty( $errors ) ) {
+
+			echo '<div id="social_icons_errors" class="error notice is-dismissible">';
+
+			foreach ( $errors as $error ) {
+				echo '<p>' . wp_kses_post( $error ) . '</p>';
+			}
+
+			echo '</div>';
+
+			// Clear
+			delete_option( 'social_icons_meta_box_errors' );
+		}
 	}
 
 	/**
