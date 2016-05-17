@@ -47,7 +47,7 @@ function si_get_social_icon_name( $url ) {
 		}
 
 		if ( ! $icon ) {
-			foreach ( si_get_supported_socicons() as $icon_name ) {
+			foreach ( si_get_allowed_socicons() as $icon_name ) {
 				if ( strstr( $url, $icon_name ) ) {
 					$icon = $icon_name;
 					break;

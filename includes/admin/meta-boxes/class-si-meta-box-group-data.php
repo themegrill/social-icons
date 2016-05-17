@@ -172,16 +172,39 @@ class SI_Meta_Box_Group_Data {
 		$sortable_icons = array();
 
 		if ( isset( $_POST['_si_icon_urls'] ) ) {
-			$icon_labels    = isset( $_POST['_si_icon_labels'] ) ? $_POST['_si_icon_labels'] : array();
+			$icon_labels   = isset( $_POST['_si_icon_labels'] ) ? $_POST['_si_icon_labels'] : array();
 			$icon_urls     = isset( $_POST['_si_icon_urls'] )  ? wp_unslash( array_map( 'trim', $_POST['_si_icon_urls'] ) ) : array();
 			$icon_url_size = sizeof( $icon_urls );
+			$allowed_icons = si_get_allowed_socicons();
 
 			for ( $i = 0; $i < $icon_url_size; $i ++ ) {
 				if ( ! empty( $icon_urls[ $i ] ) ) {
-					$icon_label = si_clean( $icon_labels[ $i ] );
-					$icon_url   = si_clean( $icon_urls[ $i ] );
+					// Find type and icon URL.
+					if ( 0 === strpos( $icon_urls[ $i ], 'http' ) ) {
+						$icon_is  = 'absolute';
+						$icon_url = esc_url_raw( $icon_urls[ $i ] );
+					} elseif ( '[' === substr( $icon_urls[ $i ], 0, 1 ) && ']' === substr( $icon_urls[ $i ], -1 ) ) {
+						$icon_is  = 'shortcode';
+						$icon_url = si_clean( $icon_urls[ $i ] );
+					} else {
+						$icon_is = 'relative';
+						$icon_url = si_clean( $icon_urls[ $i ] );
+					}
 
-					$sortable_icons[ $i ] = array(
+					$icon_name  = si_get_social_icon_name( $icon_url );
+					$icon_label = si_clean( $icon_labels[ $i ] );
+
+					// Validate the icon supported.
+					if ( in_array( $icon_is, array( 'absolute', 'relative' ) ) ) {
+						$_icon_name = strtolower( $icon_name );
+
+						if ( ! empty( $icon_url ) && ! in_array( $_icon_name, $allowed_icons ) ) {
+							SI_Admin_Meta_Boxes::add_error( sprintf( __( 'The social url %s cannot be used as it does not have an allowed icon.', 'social-icons' ), '<code>' . basename( $icon_url ) . '</code>' ) );
+							continue;
+						}
+					}
+
+					$sortable_icons[ $icon_name ] = array(
 						'label' => $icon_label,
 						'url'   => $icon_url
 					);
