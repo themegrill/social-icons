@@ -33,8 +33,9 @@ class SI_Admin {
 	public function includes() {
 		include_once( 'functions-si-admin.php' );
 		include_once( 'functions-si-meta-box.php' );
-		include_once( 'class-si-admin-assets.php' );
 		include_once( 'class-si-admin-post-types.php' );
+		include_once( 'class-si-admin-assets.php' );
+		include_once( 'class-si-admin-tinymce.php' );
 	}
 
 	/**
