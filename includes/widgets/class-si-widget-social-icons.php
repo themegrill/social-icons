@@ -33,7 +33,7 @@ class TG_Widget_Social_Icons extends TG_Widget {
 	 */
 	public function __construct() {
 		$this->widget_cssclass    = 'social-icons widget_social_icons';
-		$this->widget_description = __( 'Displays Social Icons Slots.', 'social-icons' );
+		$this->widget_description = __( 'Displays Social Network Icons.', 'social-icons' );
 		$this->widget_id          = 'themegrill_social_icons';
 		$this->widget_name        = __( 'Social Icons', 'social-icons' );
 		$this->settings           = array(
