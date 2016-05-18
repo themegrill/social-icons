@@ -39,9 +39,13 @@ class SI_Admin_Assets {
 		$jquery_version = isset( $wp_scripts->registered['jquery-ui-core']->ver ) ? $wp_scripts->registered['jquery-ui-core']->ver : '1.9.2';
 
 		// Register admin styles
+		wp_register_style( 'social-icons-menu', SI()->plugin_url() . '/assets/css/menu.css', array(), SI_VERSION );
 		wp_register_style( 'social-icons-admin', SI()->plugin_url() . '/assets/css/admin.css', array(), SI_VERSION );
 		wp_register_style( 'social-icons-admin-widgets', SI()->plugin_url() . '/assets/css/widgets.css', array(), SI_VERSION );
 		wp_register_style( 'jquery-ui-style', '//code.jquery.com/ui/' . $jquery_version . '/themes/smoothness/jquery-ui.css', array(), $jquery_version );
+
+		// Sitewide menu CSS
+		wp_enqueue_style( 'social-icons-menu' );
 
 		// Admin styles for SI pages only
 		if ( in_array( $screen_id, si_get_screen_ids() ) ) {
