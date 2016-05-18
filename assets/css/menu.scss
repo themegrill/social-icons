@@ -14,6 +14,10 @@
 /**
  * Styling begins
  */
+#available-widgets [class*="social_icons"] .widget-title:before {
+	content: "\f325";
+}
+
 span.mce_social_icons_shortcodes_button {
 	background-image: none !important;
 	@include ir();

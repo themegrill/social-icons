@@ -24,7 +24,7 @@
 		var ed = tinymce.activeEditor;
 
 		editor.addButton( 'social_icons_shortcodes', {
-			title : ed.getLang( 'social_icons_shortcodes.shortcode_title' ),
+			title: ed.getLang( 'social_icons_shortcodes.shortcode_title' ),
 			icon: 'social-icons-shortcodes',
 			onclick: function() {
 				editor.windowManager.open({
