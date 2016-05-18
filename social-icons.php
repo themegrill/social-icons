@@ -149,6 +149,7 @@ final class Social_Icons {
 	 * Include required frontend files.
 	 */
 	public function frontend_includes() {
+		include_once( 'includes/class-si-frontend-scripts.php' );   // Frontend Scripts
 		include_once( 'includes/class-si-shortcodes.php' );         // Shortcodes Class
 	}
 
