@@ -213,7 +213,7 @@ endif;
  *
  * Returns the main instance of SI to prevent the need to use globals.
  *
- * @since  1.0.0
+ * @since  1.4.0
  * @return Social_Icons
  */
 function SI() {

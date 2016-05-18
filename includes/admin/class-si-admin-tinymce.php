@@ -3,7 +3,7 @@
  * Social Icons Admin TinyMCE Class.
  *
  * @class    SI_Admin_TinyMCE
- * @version  1.0.0
+ * @version  1.4.0
  * @package  Social_Icons/Admin
  * @category Admin
  * @author   ThemeGrill

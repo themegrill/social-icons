@@ -3,7 +3,7 @@
  * Post Types Admin
  *
  * @class    SI_Admin_Post_Types
- * @version  1.0.0
+ * @version  1.4.0
  * @package  Social_Icons/Admin
  * @category Admin
  * @author   ThemeGrill

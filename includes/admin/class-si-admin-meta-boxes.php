@@ -5,7 +5,7 @@
  * Sets up the write panels used by custom post types.
  *
  * @class    SI_Admin_Meta_Boxes
- * @version  1.0.0
+ * @version  1.4.0
  * @package  Social_Icons/Admin/Meta Boxes
  * @category Admin
  * @author   ThemeGrill

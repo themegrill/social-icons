@@ -4,7 +4,7 @@
  *
  * @class    SI_Widget
  * @extends  WP_Widget
- * @version  1.0.0
+ * @version  1.4.0
  * @package  Social_Icons/Abstracts
  * @category Widgets
  * @author   ThemeGrill

@@ -34,7 +34,7 @@ function social_icons_tinymce_plugin_translation() {
 	/**
 	 * Filter translated strings prepared for TinyMCE.
 	 * @param array $mce_translation Key/value pairs of strings.
-	 * @since 1.0.0
+	 * @since 1.4.0
 	 */
 	$mce_translation = apply_filters( 'social_icons_mce_translations', $mce_translation );
 

@@ -5,7 +5,7 @@
  * Displays Social Icons widget.
  *
  * @extends  SI_Widget
- * @version  1.0.0
+ * @version  1.4.0
  * @package  Social_Icons/Widgets
  * @category Widgets
  * @author   ThemeGrill
