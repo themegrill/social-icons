@@ -40,7 +40,7 @@
 						var id = siShortcodesIsEmpty( e.data.id ) ? '' : ' id="' + e.data.id + '"';
 
 						if ( ! siShortcodesIsEmpty( e.data.id ) ) {
-							editor.insertContent( '[social_icons' + id + ']' );
+							editor.insertContent( '[social_icons_group' + id + ']' );
 						} else {
 							editor.windowManager.alert( ed.getLang( 'social_icons_shortcodes.require_group_id' ) );
 						}

@@ -84,8 +84,9 @@ final class Social_Icons {
 	 * Hook into actions and filters.
 	 */
 	private function init_hooks() {
-		add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
 		add_filter( 'kses_allowed_protocols' , array( $this, 'allowed_protocols' ) );
+		add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
+		add_action( 'init', array( 'SI_Shortcodes', 'init' ) );
 	}
 
 	/**
@@ -131,12 +132,24 @@ final class Social_Icons {
 		include_once( 'includes/functions-si-core.php' );
 		include_once( 'includes/functions-si-widget.php' );
 		include_once( 'includes/class-si-autoloader.php' );
-		include_once( 'includes/class-si-post-types.php' );
 		include_once( 'includes/class-si-ajax.php' );
 
 		if ( $this->is_request( 'admin' ) ) {
 			include_once( 'includes/admin/class-si-admin.php' );
 		}
+
+		if ( $this->is_request( 'frontend' ) ) {
+			$this->frontend_includes();
+		}
+
+		include_once( 'includes/class-si-post-types.php' );         // Registers post types
+	}
+
+	/**
+	 * Include required frontend files.
+	 */
+	public function frontend_includes() {
+		include_once( 'includes/class-si-shortcodes.php' );         // Shortcodes Class
 	}
 
 	/**
