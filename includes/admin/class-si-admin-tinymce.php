@@ -34,7 +34,7 @@ class SI_Admin_TinyMCE {
 	private function is_shortcode_enabled() {
 		global $post, $post_type;
 
-		return apply_filters( 'restaurantpress_is_shortcodes_enabled', is_a( $post, 'WP_Post' ) && 'food_menu' !== $post_type );
+		return apply_filters( 'social_icons_is_shortcodes_enabled', is_a( $post, 'WP_Post' ) && 'social_icon' !== $post_type );
 	}
 
 	/**
@@ -67,7 +67,7 @@ class SI_Admin_TinyMCE {
 	/**
 	 * Add the shortcode button to TinyMCE.
 	 * @param  array $plugins TinyMCE plugins.
-	 * @return array $plugins RestaurantPress TinyMCE plugin.
+	 * @return array $plugins Social Icons TinyMCE plugin.
 	 */
 	public function add_shortcode_tinymce_plugin( $plugins ) {
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
