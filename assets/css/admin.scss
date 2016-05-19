@@ -639,14 +639,24 @@ img.tips {
 	}
 }
 
+// Sortable panel
+.social_icons_options_panel .sortable_icons .widefat {
 
-.social_icons_options_panel .sortable_icons .widefat .si-socicons {
-  color: #fff;
-  padding: 5px !important;
-  text-align: center;
-  width: 30px;
+	tr:nth-child(odd){
+		background: #f9f9f9;
+	}
+
+	.si-socicons {
+		color: #fff;
+		padding: 5px !important;
+		text-align: center;
+		width: 30px;
+
+		&.dashicons {
+			color: #ccc;
+			font-size: 20px;
+		}
+	}
 }
 
-.social_icons_options_panel .sortable_icons .widefat tr:nth-child(even){
-	background: #f9f9f9;
-}
+

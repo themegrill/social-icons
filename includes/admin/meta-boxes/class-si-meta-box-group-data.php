@@ -123,7 +123,7 @@ class SI_Meta_Box_Group_Data {
 							$sortable_icons = get_post_meta( $post->ID, '_sortable_icons', true );
 
 							if ( $sortable_icons ) {
-								foreach ( $sortable_icons as $key => $icon ) {
+								foreach ( $sortable_icons as $name => $icon ) {
 									include( 'views/html-group-social-icon.php' );
 								}
 							}
@@ -133,6 +133,7 @@ class SI_Meta_Box_Group_Data {
 							<tr>
 								<th colspan="5">
 									<a href="#" class="button insert" data-row="<?php
+										$name = '';
 										$icon = array(
 											'label' => '',
 											'url'   => ''
