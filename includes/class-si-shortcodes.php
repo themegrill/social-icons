@@ -35,6 +35,24 @@ class SI_Shortcodes {
 	 * Social Icons group shortcode.
 	 */
 	public static function group( $atts ) {
+		if ( empty( $atts ) ) {
+			return '';
+		}
 
+		if ( ! isset( $atts['id'] ) ) {
+			return '';
+		}
+
+		$atts = shortcode_atts( array(
+			'id'         => '',
+			'class'      => ''
+		), $atts );
+
+		$group_id   = absint( $atts['id'] );
+
+		// Check for Group ID
+		if ( $group_id && 'social_icon' == get_post_type( $group_id ) ) {
+
+		}
 	}
 }
