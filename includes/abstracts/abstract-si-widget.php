@@ -50,6 +50,7 @@ abstract class SI_Widget extends WP_Widget {
 	 * Constructor.
 	 */
 	public function __construct() {
+
 		$widget_ops = array(
 			'classname'   => $this->widget_cssclass,
 			'description' => $this->widget_description,
