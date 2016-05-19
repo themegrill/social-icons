@@ -43,10 +43,6 @@
 
 	&.show-icons-label {
 		list-style: outside;
-
-		li.social-icons-list-item {
-			display: block;
-		}
 	}
 
 	&.social-icons-greyscale .socicon {
@@ -79,6 +75,15 @@
 
 		&.social-icons-greyscale .socicon {
 			color: #555;
+		}
+	}
+}
+
+.widget .social-icons-lists {
+
+	&.show-icons-label {
+		li.social-icons-list-item {
+			display: block;
 		}
 	}
 }

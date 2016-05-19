@@ -76,6 +76,16 @@ class SI_Shortcodes {
 	private static function social_icons_output( $group_data, $atts ) {
 		$class_list = array();
 
+		// Label class.
+		if ( 'yes' == $group_data['manage_label'] ) {
+			$class_list[] = 'show-icons-label';
+		}
+
+		// Greyscale class.
+		if ( 'yes' == $group_data['greyscale_icons'] ) {
+			$class_list[] = 'social-icons-greyscale';
+		}
+
 		// Background class.
 		if ( $group_data['background_style'] ) {
 			$class_list[] = 'icons-background-' . $group_data['background_style'];
@@ -88,10 +98,10 @@ class SI_Shortcodes {
 			<?php foreach ( $group_data['sortable_icons'] as $title => $field ) : ?>
 
 				<li class="social-icons-list-item">
-					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( $group_data['open_new_tab'] ? 'target="_blank"' : '' ); ?> class="social-icon">
+					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( 'yes' == $group_data['open_new_tab'] ? 'target="_blank"' : '' ); ?> class="social-icon">
 						<span class="socicon socicon-<?php echo esc_attr( $title ); ?>" style="font-size: <?php echo esc_attr( $group_data['icon_font_size'] ); ?>px"></span>
 
-						<?php if ( $group_data['manage_label'] ) : ?>
+						<?php if ( 'yes' == $group_data['manage_label'] ) : ?>
 							<span class="social-icons-list-label"><?php echo esc_html( $field['label'] ); ?></span>
 						<?php endif; ?>
 					</a>
