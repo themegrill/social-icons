@@ -98,9 +98,19 @@ class SI_Widget_Social_Icons extends SI_Widget {
 		parent::__construct();
 
 		// Hooks.
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 		add_action( 'admin_print_footer_scripts', array( $this, 'admin_js_templates' ) );
 		add_action( 'social_icons_widget_field_social_icons', array( $this, 'widget_field_social_icons' ), 10, 4 );
 		add_action( 'social_icons_widget_settings_sanitize_option', array( $this, 'widget_sanitize_social_icons' ), 10, 4 );
+	}
+
+	/**
+	 * Enqueue styles and scripts.
+	 */
+	public function enqueue_scripts() {
+		if ( is_active_widget( false, false, $this->id_base ) || is_customize_preview() ) {
+			wp_enqueue_style( 'social-icons-general' );
+		}
 	}
 
 	/**

@@ -85,7 +85,12 @@ class SI_Frontend_Scripts {
 	 * Register/enqueue frontend scripts.
 	 */
 	public static function load_scripts() {
-		if ( is_active_widget( false, false, 'themegrill_social_icons', true ) || is_customize_preview() || si_post_content_has_shortcode( 'social_icons_group' ) ) {
+		$assets_path = str_replace( array( 'http:', 'https:' ), '', SI()->plugin_url() ) . '/assets/';
+
+		// Register any scripts for later use, or used as dependencies
+		self::register_style( 'social-icons-general', $assets_path . '/css/social-icons.css', array() );
+
+		if ( si_post_content_has_shortcode( 'social_icons_group' ) ) {
 
 			// CSS Styles
 			if ( $enqueue_styles = self::get_styles() ) {
