@@ -638,3 +638,15 @@ img.tips {
 		padding: 5px 20px 5px 20px !important;
 	}
 }
+
+
+.social_icons_options_panel .sortable_icons .widefat .si-socicons {
+  color: #fff;
+  padding: 5px !important;
+  text-align: center;
+  width: 30px;
+}
+
+.social_icons_options_panel .sortable_icons .widefat tr:nth-child(even){
+	background: #f9f9f9;
+}
