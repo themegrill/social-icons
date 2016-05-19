@@ -59,8 +59,8 @@
 }
 
 .socicon-modelmayhem {
-	color: #000;
-	background-color: #000;
+	color: $icon-modelmayhem;
+	background-color: $icon-modelmayhem;
 
 	&:before {
 		content: "\e000";
@@ -68,8 +68,8 @@
 }
 
 .socicon-mixcloud {
-	color: #000;
-	background-color: #000;
+	color: $icon-mixcloud;
+	background-color: $icon-mixcloud;
 
 	&:before {
 		content: "\e001";
@@ -77,8 +77,8 @@
 }
 
 .socicon-drupal {
-	color: #00598e;
-	background-color: #00598e;
+	color: $icon-drupal;
+	background-color: $icon-drupal;
 
 	&:before {
 		content: "\e002";
@@ -86,8 +86,8 @@
 }
 
 .socicon-swarm {
-	color: #FC9D3C;
-	background-color: #FC9D3C;
+	color: $icon-swarm;
+	background-color: $icon-swarm;
 
 	&:before {
 		content: "\e003";
@@ -95,8 +95,8 @@
 }
 
 .socicon-istock {
-	color: #000;
-	background-color: #000;
+	color: $icon-istock;
+	background-color: $icon-istock;
 
 	&:before {
 		content: "\e004";
@@ -104,8 +104,8 @@
 }
 
 .socicon-yammer {
-	color: #1175C4;
-	background-color: #1175C4;
+	color: $icon-yammer;
+	background-color: $icon-yammer;
 
 	&:before {
 		content: "\e005";
@@ -113,8 +113,8 @@
 }
 
 .socicon-ello {
-	color: #000;
-	background-color: #000;
+	color: $icon-ello;
+	background-color: $icon-ello;
 
 	&:before {
 		content: "\e006";
@@ -122,8 +122,8 @@
 }
 
 .socicon-stackoverflow {
-	color: #FD9827;
-	background-color: #FD9827;
+	color: $icon-stackoverflow;
+	background-color: $icon-stackoverflow;
 
 	&:before {
 		content: "\e007";
@@ -131,8 +131,8 @@
 }
 
 .socicon-persona {
-	color: #e6753d;
-	background-color: #e6753d;
+	color: $icon-persona;
+	background-color: $icon-persona;
 
 	&:before {
 		content: "\e008";
@@ -140,8 +140,8 @@
 }
 
 .socicon-triplej {
-	color: #E53531;
-	background-color: #E53531;
+	color: $icon-triplej;
+	background-color: $icon-triplej;
 
 	&:before {
 		content: "\e009";
@@ -149,8 +149,8 @@
 }
 
 .socicon-houzz {
-	color: #7CC04B;
-	background-color: #7CC04B;
+	color: $icon-houzz;
+	background-color: $icon-houzz;
 
 	&:before {
 		content: "\e00a";
@@ -158,8 +158,8 @@
 }
 
 .socicon-rss {
-	color: #f26109;
-	background-color: #f26109;
+	color: $icon-rss;
+	background-color: $icon-rss;
 
 	&:before {
 		content: "\e00b";
@@ -167,8 +167,8 @@
 }
 
 .socicon-paypal {
-	color: #009cde;
-	background-color: #009cde;
+	color: $icon-paypal;
+	background-color: $icon-paypal;
 
 	&:before {
 		content: "\e00c";
@@ -176,8 +176,8 @@
 }
 
 .socicon-odnoklassniki {
-	color: #f48420;
-	background-color: #f48420;
+	color: $icon-odnoklassniki;
+	background-color: $icon-odnoklassniki;
 
 	&:before {
 		content: "\e00d";
@@ -185,8 +185,8 @@
 }
 
 .socicon-airbnb {
-	color: #ff5a5f;
-	background-color: #ff5a5f;
+	color: $icon-airbnb;
+	background-color: $icon-airbnb;
 
 	&:before {
 		content: "\e00e";
@@ -194,8 +194,8 @@
 }
 
 .socicon-periscope {
-	color: #3AA4C6;
-	background-color: #3AA4C6;
+	color: $icon-periscope;
+	background-color: $icon-periscope;
 
 	&:before {
 		content: "\e00f";
@@ -203,8 +203,8 @@
 }
 
 .socicon-outlook {
-	color: #0072C6;
-	background-color: #0072C6;
+	color: $icon-outlook;
+	background-color: $icon-outlook;
 
 	&:before {
 		content: "\e010";
@@ -212,8 +212,8 @@
 }
 
 .socicon-coderwall {
-	color: #3E8DCC;
-	background-color: #3E8DCC;
+	color: $icon-coderwall;
+	background-color: $icon-coderwall;
 
 	&:before {
 		content: "\e011";
@@ -221,8 +221,8 @@
 }
 
 .socicon-tripadvisor {
-	color: #4B7E37;
-	background-color: #4B7E37;
+	color: $icon-tripadvisor;
+	background-color: $icon-tripadvisor;
 
 	&:before {
 		content: "\e012";
@@ -230,8 +230,8 @@
 }
 
 .socicon-appnet {
-	color: #494949;
-	background-color: #494949;
+	color: $icon-appnet;
+	background-color: $icon-appnet;
 
 	&:before {
 		content: "\e013";
@@ -239,8 +239,8 @@
 }
 
 .socicon-goodreads {
-	color: #463020;
-	background-color: #463020;
+	color: $icon-goodreads;
+	background-color: $icon-goodreads;
 
 	&:before {
 		content: "\e014";
@@ -248,8 +248,8 @@
 }
 
 .socicon-tripit {
-	color: #1982C3;
-	background-color: #1982C3;
+	color: $icon-tripit;
+	background-color: $icon-tripit;
 
 	&:before {
 		content: "\e015";
@@ -257,8 +257,8 @@
 }
 
 .socicon-lanyrd {
-	color: #3c80c9;
-	background-color: #3c80c9;
+	color: $icon-lanyrd;
+	background-color: $icon-lanyrd;
 
 	&:before {
 		content: "\e016";
@@ -266,8 +266,8 @@
 }
 
 .socicon-slideshare {
-	color: #4ba3a6;
-	background-color: #4ba3a6;
+	color: $icon-slideshare;
+	background-color: $icon-slideshare;
 
 	&:before {
 		content: "\e017";
@@ -275,8 +275,8 @@
 }
 
 .socicon-buffer {
-	color: #000;
-	background-color: #000;
+	color: $icon-buffer;
+	background-color: $icon-buffer;
 
 	&:before {
 		content: "\e018";
@@ -284,8 +284,8 @@
 }
 
 .socicon-disqus {
-	color: #2e9fff;
-	background-color: #2e9fff;
+	color: $icon-disqus;
+	background-color: $icon-disqus;
 
 	&:before {
 		content: "\e019";
@@ -293,8 +293,8 @@
 }
 
 .socicon-vkontakte {
-	color: #5a7fa6;
-	background-color: #5a7fa6;
+	color: $icon-vkontakte;
+	background-color: $icon-vkontakte;
 
 	&:before {
 		content: "\e01a";
@@ -302,8 +302,8 @@
 }
 
 .socicon-whatsapp {
-	color: #20B038;
-	background-color: #20B038;
+	color: $icon-whatsapp;
+	background-color: $icon-whatsapp;
 
 	&:before {
 		content: "\e01b";
@@ -311,8 +311,8 @@
 }
 
 .socicon-patreon {
-	color: #E44727;
-	background-color: #E44727;
+	color: $icon-patreon;
+	background-color: $icon-patreon;
 
 	&:before {
 		content: "\e01c";
@@ -320,8 +320,8 @@
 }
 
 .socicon-storehouse {
-	color: #25B0E6;
-	background-color: #25B0E6;
+	color: $icon-storehouse;
+	background-color: $icon-storehouse;
 
 	&:before {
 		content: "\e01d";
@@ -329,8 +329,8 @@
 }
 
 .socicon-pocket {
-	color: #ED4055;
-	background-color: #ED4055;
+	color: $icon-pocket;
+	background-color: $icon-pocket;
 
 	&:before {
 		content: "\e01e";
@@ -338,8 +338,8 @@
 }
 
 .socicon-mail {
-	color: #000;
-	background-color: #000;
+	color: $icon-mail;
+	background-color: $icon-mail;
 
 	&:before {
 		content: "\e01f";
@@ -347,8 +347,8 @@
 }
 
 .socicon-blogger {
-	color: #ec661c;
-	background-color: #ec661c;
+	color: $icon-blogger;
+	background-color: $icon-blogger;
 
 	&:before {
 		content: "\e020";
@@ -356,8 +356,8 @@
 }
 
 .socicon-technorati {
-	color: #5cb030;
-	background-color: #5cb030;
+	color: $icon-technorati;
+	background-color: $icon-technorati;
 
 	&:before {
 		content: "\e021";
@@ -365,8 +365,8 @@
 }
 
 .socicon-reddit {
-	color: #e74a1e;
-	background-color: #e74a1e;
+	color: $icon-reddit;
+	background-color: $icon-reddit;
 
 	&:before {
 		content: "\e022";
@@ -374,8 +374,8 @@
 }
 
 .socicon-dribbble {
-	color: #e84d88;
-	background-color: #e84d88;
+	color: $icon-dribbble;
+	background-color: $icon-dribbble;
 
 	&:before {
 		content: "\e023";
@@ -383,8 +383,8 @@
 }
 
 .socicon-stumbleupon {
-	color: #e64011;
-	background-color: #e64011;
+	color: $icon-stumbleupon;
+	background-color: $icon-stumbleupon;
 
 	&:before {
 		content: "\e024";
@@ -392,8 +392,8 @@
 }
 
 .socicon-digg {
-	color: #1d1d1b;
-	background-color: #1d1d1b;
+	color: $icon-digg;
+	background-color: $icon-digg;
 
 	&:before {
 		content: "\e025";
@@ -401,8 +401,8 @@
 }
 
 .socicon-envato {
-	color: #597c3a;
-	background-color: #597c3a;
+	color: $icon-envato;
+	background-color: $icon-envato;
 
 	&:before {
 		content: "\e026";
@@ -410,8 +410,8 @@
 }
 
 .socicon-behance {
-	color: #000;
-	background-color: #000;
+	color: $icon-behance;
+	background-color: $icon-behance;
 
 	&:before {
 		content: "\e027";
@@ -419,8 +419,8 @@
 }
 
 .socicon-delicious {
-	color: #020202;
-	background-color: #020202;
+	color: $icon-delicious;
+	background-color: $icon-delicious;
 
 	&:before {
 		content: "\e028";
@@ -428,8 +428,8 @@
 }
 
 .socicon-deviantart {
-	color: #c5d200;
-	background-color: #c5d200;
+	color: $icon-deviantart;
+	background-color: $icon-deviantart;
 
 	&:before {
 		content: "\e029";
@@ -437,8 +437,8 @@
 }
 
 .socicon-forrst {
-	color: #5B9A68;
-	background-color: #5B9A68;
+	color: $icon-forrst;
+	background-color: $icon-forrst;
 
 	&:before {
 		content: "\e02a";
@@ -446,8 +446,8 @@
 }
 
 .socicon-play {
-	color: #000;
-	background-color: #000;
+	color: $icon-play;
+	background-color: $icon-play;
 
 	&:before {
 		content: "\e02b";
@@ -455,8 +455,8 @@
 }
 
 .socicon-zerply {
-	color: #9DBC7A;
-	background-color: #9DBC7A;
+	color: $icon-zerply;
+	background-color: $icon-zerply;
 
 	&:before {
 		content: "\e02c";
@@ -464,8 +464,8 @@
 }
 
 .socicon-wikipedia {
-	color: #000;
-	background-color: #000;
+	color: $icon-wikipedia;
+	background-color: $icon-wikipedia;
 
 	&:before {
 		content: "\e02d";
@@ -473,8 +473,8 @@
 }
 
 .socicon-apple {
-	color: #B9BFC1;
-	background-color: #B9BFC1;
+	color: $icon-apple;
+	background-color: $icon-apple;
 
 	&:before {
 		content: "\e02e";
@@ -482,8 +482,8 @@
 }
 
 .socicon-flattr {
-	color: #F67C1A;
-	background-color: #F67C1A;
+	color: $icon-flattr;
+	background-color: $icon-flattr;
 
 	&:before {
 		content: "\e02f";
@@ -491,8 +491,8 @@
 }
 
 .socicon-github {
-	color: #221e1b;
-	background-color: #221e1b;
+	color: $icon-github;
+	background-color: $icon-github;
 
 	&:before {
 		content: "\e030";
@@ -500,8 +500,8 @@
 }
 
 .socicon-renren {
-	color: #2266b0;
-	background-color: #2266b0;
+	color: $icon-renren;
+	background-color: $icon-renren;
 
 	&:before {
 		content: "\e031";
@@ -509,8 +509,8 @@
 }
 
 .socicon-friendfeed {
-	color: #2F72C4;
-	background-color: #2F72C4;
+	color: $icon-friendfeed;
+	background-color: $icon-friendfeed;
 
 	&:before {
 		content: "\e032";
@@ -518,8 +518,8 @@
 }
 
 .socicon-newsvine {
-	color: #075B2F;
-	background-color: #075B2F;
+	color: $icon-newsvine;
+	background-color: $icon-newsvine;
 
 	&:before {
 		content: "\e033";
@@ -527,8 +527,8 @@
 }
 
 .socicon-identica {
-	color: #000;
-	background-color: #000;
+	color: $icon-identica;
+	background-color: $icon-identica;
 
 	&:before {
 		content: "\e034";
@@ -536,8 +536,8 @@
 }
 
 .socicon-bebo {
-	color: #EF1011;
-	background-color: #EF1011;
+	color: $icon-bebo;
+	background-color: $icon-bebo;
 
 	&:before {
 		content: "\e035";
@@ -545,8 +545,8 @@
 }
 
 .socicon-zynga {
-	color: #DC0606;
-	background-color: #DC0606;
+	color: $icon-zynga;
+	background-color: $icon-zynga;
 
 	&:before {
 		content: "\e036";
@@ -554,8 +554,8 @@
 }
 
 .socicon-steam {
-	color: #171a21;
-	background-color: #171a21;
+	color: $icon-steam;
+	background-color: $icon-steam;
 
 	&:before {
 		content: "\e037";
@@ -563,8 +563,8 @@
 }
 
 .socicon-xbox {
-	color: #92C83E;
-	background-color: #92C83E;
+	color: $icon-xbox;
+	background-color: $icon-xbox;
 
 	&:before {
 		content: "\e038";
@@ -572,8 +572,8 @@
 }
 
 .socicon-windows {
-	color: #00BDF6;
-	background-color: #00BDF6;
+	color: $icon-windows;
+	background-color: $icon-windows;
 
 	&:before {
 		content: "\e039";
@@ -581,8 +581,8 @@
 }
 
 .socicon-qq {
-	color: #4297d3;
-	background-color: #4297d3;
+	color: $icon-qq;
+	background-color: $icon-qq;
 
 	&:before {
 		content: "\e03a";
@@ -590,8 +590,8 @@
 }
 
 .socicon-douban {
-	color: #3ca353;
-	background-color: #3ca353;
+	color: $icon-douban;
+	background-color: $icon-douban;
 
 	&:before {
 		content: "\e03b";
@@ -599,8 +599,8 @@
 }
 
 .socicon-meetup {
-	color: #e2373c;
-	background-color: #e2373c;
+	color: $icon-meetup;
+	background-color: $icon-meetup;
 
 	&:before {
 		content: "\e03c";
@@ -608,8 +608,8 @@
 }
 
 .socicon-playstation {
-	color: #000;
-	background-color: #000;
+	color: $icon-playstation;
+	background-color: $icon-playstation;
 
 	&:before {
 		content: "\e03d";
@@ -617,8 +617,8 @@
 }
 
 .socicon-android {
-	color: #8ec047;
-	background-color: #8ec047;
+	color: $icon-android;
+	background-color: $icon-android;
 
 	&:before {
 		content: "\e03e";
@@ -626,8 +626,8 @@
 }
 
 .socicon-snapchat {
-	color: #fffa37;
-	background-color: #fffa37;
+	color: $icon-snapchat;
+	background-color: $icon-snapchat;
 
 	&:before {
 		content: "\e03f";
@@ -635,8 +635,8 @@
 }
 
 .socicon-twitter {
-	color: #4da7de;
-	background-color: #4da7de;
+	color: $icon-twitter;
+	background-color: $icon-twitter;
 
 	&:before {
 		content: "\e040";
@@ -644,8 +644,8 @@
 }
 
 .socicon-facebook {
-	color: #3e5b98;
-	background-color: #3e5b98;
+	color: $icon-facebook;
+	background-color: $icon-facebook;
 
 	&:before {
 		content: "\e041";
@@ -653,8 +653,8 @@
 }
 
 .socicon-googleplus {
-	color: #dd4b39;
-	background-color: #dd4b39;
+	color: $icon-googleplus;
+	background-color: $icon-googleplus;
 
 	&:before {
 		content: "\e042";
@@ -662,8 +662,8 @@
 }
 
 .socicon-pinterest {
-	color: #c92619;
-	background-color: #c92619;
+	color: $icon-pinterest;
+	background-color: $icon-pinterest;
 
 	&:before {
 		content: "\e043";
@@ -671,8 +671,8 @@
 }
 
 .socicon-foursquare {
-	color: #f94877;
-	background-color: #f94877;
+	color: $icon-foursquare;
+	background-color: $icon-foursquare;
 
 	&:before {
 		content: "\e044";
@@ -680,8 +680,8 @@
 }
 
 .socicon-yahoo {
-	color: #6e2a85;
-	background-color: #6e2a85;
+	color: $icon-yahoo;
+	background-color: $icon-yahoo;
 
 	&:before {
 		content: "\e045";
@@ -689,8 +689,8 @@
 }
 
 .socicon-skype {
-	color: #28abe3;
-	background-color: #28abe3;
+	color: $icon-skype;
+	background-color: $icon-skype;
 
 	&:before {
 		content: "\e046";
@@ -698,8 +698,8 @@
 }
 
 .socicon-yelp {
-	color: #c83218;
-	background-color: #c83218;
+	color: $icon-yelp;
+	background-color: $icon-yelp;
 
 	&:before {
 		content: "\e047";
@@ -707,8 +707,8 @@
 }
 
 .socicon-feedburner {
-	color: #ffcc00;
-	background-color: #ffcc00;
+	color: $icon-feedburner;
+	background-color: $icon-feedburner;
 
 	&:before {
 		content: "\e048";
@@ -716,8 +716,8 @@
 }
 
 .socicon-linkedin {
-	color: #3371b7;
-	background-color: #3371b7;
+	color: $icon-linkedin;
+	background-color: $icon-linkedin;
 
 	&:before {
 		content: "\e049";
@@ -725,8 +725,8 @@
 }
 
 .socicon-viadeo {
-	color: #e4a000;
-	background-color: #e4a000;
+	color: $icon-viadeo;
+	background-color: $icon-viadeo;
 
 	&:before {
 		content: "\e04a";
@@ -734,8 +734,8 @@
 }
 
 .socicon-xing {
-	color: #005a60;
-	background-color: #005a60;
+	color: $icon-xing;
+	background-color: $icon-xing;
 
 	&:before {
 		content: "\e04b";
@@ -743,8 +743,8 @@
 }
 
 .socicon-myspace {
-	color: #323232;
-	background-color: #323232;
+	color: $icon-myspace;
+	background-color: $icon-myspace;
 
 	&:before {
 		content: "\e04c";
@@ -752,8 +752,8 @@
 }
 
 .socicon-soundcloud {
-	color: #fe3801;
-	background-color: #fe3801;
+	color: $icon-soundcloud;
+	background-color: $icon-soundcloud;
 
 	&:before {
 		content: "\e04d";
@@ -761,8 +761,8 @@
 }
 
 .socicon-spotify {
-	color: #7bb342;
-	background-color: #7bb342;
+	color: $icon-spotify;
+	background-color: $icon-spotify;
 
 	&:before {
 		content: "\e04e";
@@ -770,8 +770,8 @@
 }
 
 .socicon-grooveshark {
-	color: #000;
-	background-color: #000;
+	color: $icon-grooveshark;
+	background-color: $icon-grooveshark;
 
 	&:before {
 		content: "\e04f";
@@ -779,8 +779,8 @@
 }
 
 .socicon-lastfm {
-	color: #d41316;
-	background-color: #d41316;
+	color: $icon-lastfm;
+	background-color: $icon-lastfm;
 
 	&:before {
 		content: "\e050";
@@ -788,8 +788,8 @@
 }
 
 .socicon-youtube {
-	color: #e02a20;
-	background-color: #e02a20;
+	color: $icon-youtube;
+	background-color: $icon-youtube;
 
 	&:before {
 		content: "\e051";
@@ -797,8 +797,8 @@
 }
 
 .socicon-vimeo {
-	color: #51b5e7;
-	background-color: #51b5e7;
+	color: $icon-vimeo;
+	background-color: $icon-vimeo;
 
 	&:before {
 		content: "\e052";
@@ -806,8 +806,8 @@
 }
 
 .socicon-dailymotion {
-	color: #004e72;
-	background-color: #004e72;
+	color: $icon-dailymotion;
+	background-color: $icon-dailymotion;
 
 	&:before {
 		content: "\e053";
@@ -815,8 +815,8 @@
 }
 
 .socicon-vine {
-	color: #00b389;
-	background-color: #00b389;
+	color: $icon-vine;
+	background-color: $icon-vine;
 
 	&:before {
 		content: "\e054";
@@ -824,8 +824,8 @@
 }
 
 .socicon-flickr {
-	color: #1e1e1b;
-	background-color: #1e1e1b;
+	color: $icon-flickr;
+	background-color: $icon-flickr;
 
 	&:before {
 		content: "\e055";
@@ -833,8 +833,8 @@
 }
 
 .socicon-500px {
-	color: #58a9de;
-	background-color: #58a9de;
+	color: $icon-500px;
+	background-color: $icon-500px;
 
 	&:before {
 		content: "\e056";
@@ -842,8 +842,8 @@
 }
 
 .socicon-instagram {
-	color: #000;
-	background-color: #000;
+	color: $icon-instagram;
+	background-color: $icon-instagram;
 
 	&:before {
 		content: "\e057";
@@ -851,8 +851,8 @@
 }
 
 .socicon-wordpress {
-	color: #464646;
-	background-color: #464646;
+	color: $icon-wordpress;
+	background-color: $icon-wordpress;
 
 	&:before {
 		content: "\e058";
@@ -860,8 +860,8 @@
 }
 
 .socicon-tumblr {
-	color: #45556c;
-	background-color: #45556c;
+	color: $icon-tumblr;
+	background-color: $icon-tumblr;
 
 	&:before {
 		content: "\e059";
@@ -869,8 +869,8 @@
 }
 
 .socicon-twitch {
-	color: #6441a5;
-	background-color: #6441a5;
+	color: $icon-twitch;
+	background-color: $icon-twitch;
 
 	&:before {
 		content: "\e05a";
@@ -878,8 +878,8 @@
 }
 
 .socicon-8tracks {
-	color: #122c4b;
-	background-color: #122c4b;
+	color: $icon-8tracks;
+	background-color: $icon-8tracks;
 
 	&:before {
 		content: "\e05b";
@@ -887,8 +887,8 @@
 }
 
 .socicon-amazon {
-	color: #ff9900;
-	background-color: #ff9900;
+	color: $icon-amazon;
+	background-color: $icon-amazon;
 
 	&:before {
 		content: "\e05c";
@@ -896,8 +896,8 @@
 }
 
 .socicon-icq {
-	color: #7EBD00;
-	background-color: #7EBD00;
+	color: $icon-icq;
+	background-color: $icon-icq;
 
 	&:before {
 		content: "\e05d";
@@ -905,8 +905,8 @@
 }
 
 .socicon-smugmug {
-	color: #ACFD32;
-	background-color: #ACFD32;
+	color: $icon-smugmug;
+	background-color: $icon-smugmug;
 
 	&:before {
 		content: "\e05e";
@@ -914,8 +914,8 @@
 }
 
 .socicon-ravelry {
-	color: #B6014C;
-	background-color: #B6014C;
+	color: $icon-ravelry;
+	background-color: $icon-ravelry;
 
 	&:before {
 		content: "\e05f";
@@ -923,8 +923,8 @@
 }
 
 .socicon-weibo {
-	color: #e31c34;
-	background-color: #e31c34;
+	color: $icon-weibo;
+	background-color: $icon-weibo;
 
 	&:before {
 		content: "\e060";
@@ -932,8 +932,8 @@
 }
 
 .socicon-baidu {
-	color: #2629d9;
-	background-color: #2629d9;
+	color: $icon-baidu;
+	background-color: $icon-baidu;
 
 	&:before {
 		content: "\e061";
@@ -941,8 +941,8 @@
 }
 
 .socicon-angellist {
-	color: #000;
-	background-color: #000;
+	color: $icon-angellist;
+	background-color: $icon-angellist;
 
 	&:before {
 		content: "\e062";
@@ -950,8 +950,8 @@
 }
 
 .socicon-ebay {
-	color: #333333;
-	background-color: #333333;
+	color: $icon-ebay;
+	background-color: $icon-ebay;
 
 	&:before {
 		content: "\e063";
@@ -959,8 +959,8 @@
 }
 
 .socicon-imdb {
-	color: #E8BA00;
-	background-color: #E8BA00;
+	color: $icon-imdb;
+	background-color: $icon-imdb;
 
 	&:before {
 		content: "\e064";
@@ -968,8 +968,8 @@
 }
 
 .socicon-stayfriends {
-	color: #F08A1C;
-	background-color: #F08A1C;
+	color: $icon-stayfriends;
+	background-color: $icon-stayfriends;
 
 	&:before {
 		content: "\e065";
@@ -977,8 +977,8 @@
 }
 
 .socicon-residentadvisor {
-	color: #B3BE1B;
-	background-color: #B3BE1B;
+	color: $icon-residentadvisor;
+	background-color: $icon-residentadvisor;
 
 	&:before {
 		content: "\e066";
@@ -986,8 +986,8 @@
 }
 
 .socicon-google {
-	color: #4285f4;
-	background-color: #4285f4;
+	color: $icon-google;
+	background-color: $icon-google;
 
 	&:before {
 		content: "\e067";
@@ -995,8 +995,8 @@
 }
 
 .socicon-yandex {
-	color: #FF0000;
-	background-color: #FF0000;
+	color: $icon-yandex;
+	background-color: $icon-yandex;
 
 	&:before {
 		content: "\e068";
@@ -1004,8 +1004,8 @@
 }
 
 .socicon-sharethis {
-	color: #01bf01;
-	background-color: #01bf01;
+	color: $icon-sharethis;
+	background-color: $icon-sharethis;
 
 	&:before {
 		content: "\e069";
@@ -1013,8 +1013,8 @@
 }
 
 .socicon-bandcamp {
-	color: #619aa9;
-	background-color: #619aa9;
+	color: $icon-bandcamp;
+	background-color: $icon-bandcamp;
 
 	&:before {
 		content: "\e06a";
@@ -1022,8 +1022,8 @@
 }
 
 .socicon-itunes {
-	color: #ff5e51;
-	background-color: #ff5e51;
+	color: $icon-itunes;
+	background-color: $icon-itunes;
 
 	&:before {
 		content: "\e06b";
@@ -1031,8 +1031,8 @@
 }
 
 .socicon-deezer {
-	color: #32323d;
-	background-color: #32323d;
+	color: $icon-deezer;
+	background-color: $icon-deezer;
 
 	&:before {
 		content: "\e06c";
@@ -1040,8 +1040,8 @@
 }
 
 .socicon-medium {
-	color: #000;
-	background-color: #000;
+	color: $icon-medium;
+	background-color: $icon-medium;
 
 	&:before {
 		content: "\e06d";
@@ -1049,8 +1049,8 @@
 }
 
 .socicon-telegram {
-	color: #0088cc;
-	background-color: #0088cc;
+	color: $icon-telegram;
+	background-color: $icon-telegram;
 
 	&:before {
 		content: "\e06e";
@@ -1058,8 +1058,8 @@
 }
 
 .socicon-openid {
-	color: #f78c40;
-	background-color: #f78c40;
+	color: $icon-openid;
+	background-color: $icon-openid;
 
 	&:before {
 		content: "\e06f";
@@ -1067,8 +1067,8 @@
 }
 
 .socicon-amplement {
-	color: #0996c3;
-	background-color: #0996c3;
+	color: $icon-amplement;
+	background-color: $icon-amplement;
 
 	&:before {
 		content: "\e070";
@@ -1076,8 +1076,8 @@
 }
 
 .socicon-viber {
-	color: #7b519d;
-	background-color: #7b519d;
+	color: $icon-viber;
+	background-color: $icon-viber;
 
 	&:before {
 		content: "\e071";
@@ -1085,8 +1085,8 @@
 }
 
 .socicon-zomato {
-	color: #cb202d;
-	background-color: #cb202d;
+	color: $icon-zomato;
+	background-color: $icon-zomato;
 
 	&:before {
 		content: "\e072";
@@ -1094,8 +1094,8 @@
 }
 
 .socicon-quora {
-	color: #cb202d;
-	background-color: #cb202d;
+	color: $icon-quora;
+	background-color: $icon-quora;
 
 	&:before {
 		content: "\e073";
@@ -1103,8 +1103,8 @@
 }
 
 .socicon-draugiem {
-	color: #ffa32b;
-	background-color: #ffa32b;
+	color: $icon-draugiem;
+	background-color: $icon-draugiem;
 
 	&:before {
 		content: "\e074";
@@ -1112,8 +1112,8 @@
 }
 
 .socicon-endomodo {
-	color: #86ad00;
-	background-color: #86ad00;
+	color: $icon-endomodo;
+	background-color: $icon-endomodo;
 
 	&:before {
 		content: "\e075";
@@ -1121,8 +1121,8 @@
 }
 
 .socicon-filmweb {
-	color: #ffc404;
-	background-color: #ffc404;
+	color: $icon-filmweb;
+	background-color: $icon-filmweb;
 
 	&:before {
 		content: "\e076";
@@ -1130,8 +1130,8 @@
 }
 
 .socicon-stackexchange {
-	color: #2f2f2f;
-	background-color: #2f2f2f;
+	color: $icon-stackexchange;
+	background-color: $icon-stackexchange;
 
 	&:before {
 		content: "\e077";
@@ -1139,8 +1139,8 @@
 }
 
 .socicon-wykop {
-	color: #328efe;
-	background-color: #328efe;
+	color: $icon-wykop;
+	background-color: $icon-wykop;
 
 	&:before {
 		content: "\e078";
@@ -1148,8 +1148,8 @@
 }
 
 .socicon-teamspeak {
-	color: #465674;
-	background-color: #465674;
+	color: $icon-teamspeak;
+	background-color: $icon-teamspeak;
 
 	&:before {
 		content: "\e079";
@@ -1157,8 +1157,8 @@
 }
 
 .socicon-teamviewer {
-	color: #168EF4;
-	background-color: #168EF4;
+	color: $icon-teamviewer;
+	background-color: $icon-teamviewer;
 
 	&:before {
 		content: "\e07a";
@@ -1166,8 +1166,8 @@
 }
 
 .socicon-ventrilo {
-	color: #77808A;
-	background-color: #77808A;
+	color: $icon-ventrilo;
+	background-color: $icon-ventrilo;
 
 	&:before {
 		content: "\e07b";
@@ -1175,8 +1175,8 @@
 }
 
 .socicon-younow {
-	color: #61C03E;
-	background-color: #61C03E;
+	color: $icon-younow;
+	background-color: $icon-younow;
 
 	&:before {
 		content: "\e07c";
@@ -1184,8 +1184,8 @@
 }
 
 .socicon-raidcall {
-	color: #073558;
-	background-color: #073558;
+	color: $icon-raidcall;
+	background-color: $icon-raidcall;
 
 	&:before {
 		content: "\e07d";
@@ -1193,8 +1193,8 @@
 }
 
 .socicon-mumble {
-	color: #5AB5D1;
-	background-color: #5AB5D1;
+	color: $icon-mumble;
+	background-color: $icon-mumble;
 
 	&:before {
 		content: "\e07e";
@@ -1202,8 +1202,8 @@
 }
 
 .socicon-bebee {
-	color: #f28f16;
-	background-color: #f28f16;
+	color: $icon-bebee;
+	background-color: $icon-bebee;
 
 	&:before {
 		content: "\e07f";
@@ -1211,8 +1211,8 @@
 }
 
 .socicon-hitbox {
-	color: #99cc00;
-	background-color: #99cc00;
+	color: $icon-hitbox;
+	background-color: $icon-hitbox;
 
 	&:before {
 		content: "\e080";
@@ -1220,8 +1220,8 @@
 }
 
 .socicon-reverbnation {
-	color: #000;
-	background-color: #000;
+	color: $icon-reverbnation;
+	background-color: $icon-reverbnation;
 
 	&:before {
 		content: "\e081";
@@ -1229,8 +1229,8 @@
 }
 
 .socicon-formulr {
-	color: #ff5a60;
-	background-color: #ff5a60;
+	color: $icon-formulr;
+	background-color: $icon-formulr;
 
 	&:before {
 		content: "\e082";
