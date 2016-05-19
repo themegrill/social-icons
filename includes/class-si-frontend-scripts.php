@@ -85,7 +85,7 @@ class SI_Frontend_Scripts {
 	 * Register/enqueue frontend scripts.
 	 */
 	public static function load_scripts() {
-		if ( is_active_widget( false, false, 'themegrill_social_icons', true ) || si_post_content_has_shortcode( 'social_icons_group' ) ) {
+		if ( is_active_widget( false, false, 'themegrill_social_icons', true ) || is_customize_preview() || si_post_content_has_shortcode( 'social_icons_group' ) ) {
 
 			// CSS Styles
 			if ( $enqueue_styles = self::get_styles() ) {
