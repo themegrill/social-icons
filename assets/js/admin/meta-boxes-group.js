@@ -29,8 +29,6 @@ jQuery( function( $ ) {
 	$( document.body ).on( 'keyup', 'td.social_url input[type=text]', function() {
 		var $this = $( this ), url = $this.val().toLowerCase(), found = false;
 
-		console.log( url );
-
 		if ( url.indexOf( 'feed' ) !== -1 ) {
 			$this.parents( 'tr' ).find( '.si-socicons' ).attr( 'class', 'si-socicons socicon-rss' );
 			found = true;
