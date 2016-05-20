@@ -1,16 +1,16 @@
 === Social Icons ===
 Contributors: ThemeGrill, shivapoudel
-Tags: social, media, icons, brands, widget, social networking, social media, social icon, social icons, social profile, social icon widget
+Tags: social, media, icons, brands, widget, social networking, social media, social icon, social icons, social profile, social icon widget, shortcode
 Requires at least: 4.0
 Tested up to: 4.5
 Stable tag: 1.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Social Icons provides you with an easy way to display various popular social icons via widgets.
+Social Icons provides you with an easy way to display various popular social icons via widgets and shortcode
 
 == Description ==
-Social Icons provides you with an easy way to display various popular social icons via widgets. You can drag the widget in your sidebars and change the settings from the widget form itself.
+Social Icons provides you with an easy way to display various popular social icons via widgets and shortcodes. You can drag the widget in your sidebars and change the settings from the widget form itself. Also you can use the shortcode and paste it on your page, post or wherever you like
 
 Get free support at http://themegrill.com/support-forum/
 
@@ -25,6 +25,8 @@ Check the docs at http://themegrill.com/docs/social-icons/
 * Drag and drop for icon sorting.
 * Option to easily change icon size.
 * Supports square, rounded and greyscale background.
+* Shortcode to render the icons on page, post.
+* Different icon grouping for different location on your site.
 * More features coming on updates.
 
 == Installation ==
