@@ -100,7 +100,7 @@ class SI_Admin_Post_Types {
 		$columns              = array();
 		$columns['cb']        = $existing_columns['cb'];
 		$columns['name']      = __( 'Name', 'social-icons' );
-		$columns['shortcode'] = __( 'Shortcode', 'social-icons' );
+		$columns['shortcode'] = __( 'Shortcode', 'social-icons' ).si_help_tip( __( 'Copy and paste the shortcode on your post,page to render social icons', 'social-icons') );
 		$columns['author']    = __( 'Author', 'social-icons' );
 		$columns['date']      = __( 'Date', 'social-icons' );
 
