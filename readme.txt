@@ -53,8 +53,17 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 == Changelog ==
 
 = 1.4 - 20/05/2016 =
-* Feature - Rounded Center and Square Center Background Style added.
-* Tweak - Updated socicon to v3.0.3
+* Feature - Pretty Support for shortcode option.
+* Fix - Undefinded index for key on widget save.
+* Fix - Bug with links containing the word play.
+* Tweak - Selective Refresh Support for Widgets.
+* Tweak - Introduced a filter for the queued JS.
+* Tweak - Introduced `si_get_supported_socicons()`.
+* Tweak - Preserve comments that start with a bang.
+* Tweak - Enqueue frontend styles and scripts correctly.
+* Tweak - Updated socicon to `v3.0.3` including instagram glyph change.
+* Tweak - Introduced `si_get_social_icon_name()` to get social icon from url.
+* Refactor - Better to use SI prefixing for overall classes.
 
 = 1.3 - 08/03/2016 =
 * Feature - Rounded Center and Square Center Background Style added.
