@@ -44,8 +44,7 @@ class SI_Shortcodes {
 		}
 
 		$atts = shortcode_atts( array(
-			'id'         => '',
-			'class'      => ''
+			'id' => ''
 		), $atts );
 
 		$group_id = absint( $atts['id'] );
@@ -91,6 +90,9 @@ class SI_Shortcodes {
 			$class_list[] = 'icons-background-' . $group_data['background_style'];
 		}
 
+		// Custom Icon font size.
+		$icon_font_size = empty( $group_data['icon_font_size'] ) ? 16 : $group_data['icon_font_size'];
+
 		ob_start();
 
 		?><ul class="social-icons-lists <?php echo esc_attr( implode( ' ', $class_list ) ); ?>">
@@ -99,7 +101,7 @@ class SI_Shortcodes {
 
 				<li class="social-icons-list-item">
 					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( 'yes' == $group_data['open_new_tab'] ? 'target="_blank"' : '' ); ?> class="social-icon">
-						<span class="socicon socicon-<?php echo esc_attr( $title ); ?>" style="font-size: <?php echo esc_attr( $group_data['icon_font_size'] ); ?>px"></span>
+						<span class="socicon socicon-<?php echo esc_attr( $title ); ?>" style="font-size: <?php echo esc_attr( $icon_font_size ); ?>px"></span>
 
 						<?php if ( 'yes' == $group_data['manage_label'] ) : ?>
 							<span class="social-icons-list-label"><?php echo esc_html( $field['label'] ); ?></span>
