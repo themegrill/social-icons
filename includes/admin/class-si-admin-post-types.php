@@ -97,12 +97,12 @@ class SI_Admin_Post_Types {
 	 * @return array
 	 */
 	public function social_icons_columns( $existing_columns ) {
-		$columns                = array();
-		$columns['cb']          = $existing_columns['cb'];
-		$columns['name']        = __( 'Name', 'social-icons' );
-		$columns['group_id']    = __( 'Group ID', 'social-icons' );
-		$columns['description'] = __( 'Description', 'social-icons' );
-		$columns['date']        = __( 'Date', 'social-icons' );
+		$columns              = array();
+		$columns['cb']        = $existing_columns['cb'];
+		$columns['name']      = __( 'Name', 'social-icons' );
+		$columns['shortcode'] = __( 'Shortcode', 'social-icons' );
+		$columns['author']    = __( 'Author', 'social-icons' );
+		$columns['date']      = __( 'Date', 'social-icons' );
 
 		return $columns;
 	}
@@ -127,12 +127,12 @@ class SI_Admin_Post_Types {
 
 				$this->_render_social_icon_row_actions( $post, $title );
 			break;
-			case 'group_id' :
-				echo '<span>' . $post->ID . '</span>';
+			case 'shortcode' :
+				$shortcode = '[social_icons_group id="' . $post->ID . '"]';
+				echo '<span classs="shortcode"><input type="text" class="large-text-code" onfocus="this.select();" readonly="readonly" value="' . esc_attr( $shortcode ) . '" /></span>';
 			break;
-			case 'description' :
-				echo wp_kses_post( $post->post_excerpt );
-			break;
+			default:
+				break;
 		}
 	}
 
@@ -194,8 +194,8 @@ class SI_Admin_Post_Types {
 	 */
 	public function social_icon_sortable_columns( $columns ) {
 		$custom = array(
-			'name'     => 'title',
-			'group_id' => 'group_id'
+			'name'   => 'title',
+			'author' => 'author'
 		);
 		return wp_parse_args( $custom, $columns );
 	}
