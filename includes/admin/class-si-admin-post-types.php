@@ -129,7 +129,7 @@ class SI_Admin_Post_Types {
 			break;
 			case 'shortcode' :
 				$shortcode = '[social_icons_group id="' . $post->ID . '"]';
-				echo '<span classs="shortcode"><input type="text" class="large-text-code" onfocus="this.select();" readonly="readonly" value="' . esc_attr( $shortcode ) . '" /></span>';
+				echo '<span class="shortcode"><input type="text" class="regular-text code" onfocus="this.select();" readonly="readonly" value="' . esc_attr( $shortcode ) . '" /></span>';
 			break;
 			default:
 				break;

@@ -416,6 +416,28 @@
 	}
 }
 
+table.wp-list-table {
+	.row-actions {
+		color: #999;
+	}
+
+	span.shortcode {
+		margin: 2px 0;
+		display: block;
+
+		input[type="text"] {
+			margin: 0;
+			font-size: 12px;
+			padding: 4px 8px;
+			background: #fcfcfc;
+
+			&.regular-text {
+				width: 20em;
+			}
+		}
+	}
+}
+
 img.help_tip {
 	margin: 0 0 0 9px;
 	vertical-align: middle;
