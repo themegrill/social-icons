@@ -3,7 +3,7 @@ Contributors: ThemeGrill, shivapoudel
 Tags: social, media, icons, brands, widget, social networking, social media, social icon, social icons, social profile, social icon widget, shortcode
 Requires at least: 4.0
 Tested up to: 4.5
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,6 +51,10 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 2. Social Icons Slick Frontend.
 
 == Changelog ==
+
+= 1.4 - 20/05/2016 =
+* Feature - Rounded Center and Square Center Background Style added.
+* Tweak - Updated socicon to v3.0.3
 
 = 1.3 - 08/03/2016 =
 * Feature - Rounded Center and Square Center Background Style added.

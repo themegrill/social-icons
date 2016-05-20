@@ -3,7 +3,7 @@
  * Plugin Name: Social Icons
  * Plugin URI: http://themegrill.com/plugins/social-icons/
  * Description: Social Icons provides you with an easy way to display various popular social icons via widgets and shortcodes. You can drag the widget in your sidebars and change the settings from the widget form itself. Also you can use the shortcode and paste it on your page, post or wherever you like
- * Version: 1.3
+ * Version: 1.4
  * Author: ThemeGrill
  * Author URI: http://themegrill.com
  * License: GPLv3 or later
@@ -84,9 +84,9 @@ final class Social_Icons {
 	 * Hook into actions and filters.
 	 */
 	private function init_hooks() {
-		add_filter( 'kses_allowed_protocols' , array( $this, 'allowed_protocols' ) );
 		add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
 		add_action( 'init', array( 'SI_Shortcodes', 'init' ) );
+		add_filter( 'kses_allowed_protocols' , array( $this, 'allowed_protocols' ) );
 	}
 
 	/**
@@ -132,6 +132,7 @@ final class Social_Icons {
 		include_once( 'includes/functions-si-core.php' );
 		include_once( 'includes/functions-si-widget.php' );
 		include_once( 'includes/class-si-autoloader.php' );
+		include_once( 'includes/class-si-install.php' );
 		include_once( 'includes/class-si-ajax.php' );
 
 		if ( $this->is_request( 'admin' ) ) {
