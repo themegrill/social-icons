@@ -1,7 +1,5 @@
+/* global social_icons_admin_meta_boxes_group */
 jQuery( function( $ ) {
-	var social_icons = [
-		'modelmayhem', 'mixcloud', 'drupal', 'swarm', 'istock', 'yammer', 'ello', 'stackoverflow', 'persona', 'triplej', 'houzz', 'rss', 'paypal', 'odnoklassniki', 'airbnb', 'periscope', 'outlook', 'coderwall', 'tripadvisor', 'appnet', 'goodreads', 'tripit', 'lanyrd', 'slideshare', 'buffer', 'disqus', 'vkontakte', 'whatsapp', 'patreon', 'storehouse', 'pocket', 'mail', 'blogger', 'technorati', 'reddit', 'dribbble', 'stumbleupon', 'digg', 'envato', 'behance', 'delicious', 'deviantart', 'forrst', 'play', 'zerply', 'wikipedia', 'apple', 'flattr', 'github', 'renren', 'friendfeed', 'newsvine', 'identica', 'bebo', 'zynga', 'steam', 'xbox', 'windows', 'qq', 'douban', 'meetup', 'playstation', 'android', 'snapchat', 'twitter', 'facebook', 'googleplus', 'pinterest', 'foursquare', 'yahoo', 'skype', 'yelp', 'feedburner', 'linkedin', 'viadeo', 'xing', 'myspace', 'soundcloud', 'spotify', 'grooveshark', 'lastfm', 'youtube', 'vimeo', 'dailymotion', 'vine', 'flickr', '500px', 'instagram', 'wordpress', 'tumblr', 'twitch', '8tracks', 'amazon', 'icq', 'smugmug', 'ravelry', 'weibo', 'baidu', 'angellist', 'ebay', 'imdb', 'stayfriends', 'residentadvisor', 'google', 'yandex', 'sharethis', 'bandcamp', 'itunes', 'deezer', 'medium', 'telegram', 'openid', 'amplement', 'viber', 'zomato', 'quora', 'draugiem', 'endomodo', 'filmweb', 'stackexchange', 'wykop', 'teamspeak', 'teamviewer', 'ventrilo', 'younow', 'raidcall', 'mumble', 'bebee', 'hitbox', 'reverbnation', 'formulr'
-	];
 
 	// Icon inputs
 	$( '#social-icons-group-data' ).on( 'click','.sortable_icons a.insert', function() {
@@ -51,9 +49,9 @@ jQuery( function( $ ) {
 			$this.parents( 'tr' ).find( '.si-socicons' ).attr( 'class', 'si-socicons socicon-mail' );
 			found = true;
 		} else {
-			$( social_icons ).each( function( ix, icon ) {
+			$( social_icons_admin_meta_boxes_group.allowed_socicons ).each( function( ix, icon ) {
 				if ( url.indexOf( icon ) !== -1 ) {
-					$this.parents( 'tr' ).find( '.si-socicons' ).attr( 'class', ' si-socicons socicon-' + icon );
+					$this.parents( 'tr' ).find( '.si-socicons' ).attr( 'class', 'si-socicons socicon-' + icon );
 					found = true;
 					return;
 				}

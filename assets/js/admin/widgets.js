@@ -1,10 +1,5 @@
-/**
- * Widgets JS
- */
+/* global social_icons_admin_widgets */
 jQuery( function ( $ ) {
-	var social_icons = [
-		'modelmayhem', 'mixcloud', 'drupal', 'swarm', 'istock', 'yammer', 'ello', 'stackoverflow', 'persona', 'triplej', 'houzz', 'rss', 'paypal', 'odnoklassniki', 'airbnb', 'periscope', 'outlook', 'coderwall', 'tripadvisor', 'appnet', 'goodreads', 'tripit', 'lanyrd', 'slideshare', 'buffer', 'disqus', 'vkontakte', 'whatsapp', 'patreon', 'storehouse', 'pocket', 'mail', 'blogger', 'technorati', 'reddit', 'dribbble', 'stumbleupon', 'digg', 'envato', 'behance', 'delicious', 'deviantart', 'forrst', 'play', 'zerply', 'wikipedia', 'apple', 'flattr', 'github', 'renren', 'friendfeed', 'newsvine', 'identica', 'bebo', 'zynga', 'steam', 'xbox', 'windows', 'qq', 'douban', 'meetup', 'playstation', 'android', 'snapchat', 'twitter', 'facebook', 'googleplus', 'pinterest', 'foursquare', 'yahoo', 'skype', 'yelp', 'feedburner', 'linkedin', 'viadeo', 'xing', 'myspace', 'soundcloud', 'spotify', 'grooveshark', 'lastfm', 'youtube', 'vimeo', 'dailymotion', 'vine', 'flickr', '500px', 'instagram', 'wordpress', 'tumblr', 'twitch', '8tracks', 'amazon', 'icq', 'smugmug', 'ravelry', 'weibo', 'baidu', 'angellist', 'ebay', 'imdb', 'stayfriends', 'residentadvisor', 'google', 'yandex', 'sharethis', 'bandcamp', 'itunes', 'deezer', 'medium', 'telegram', 'openid', 'amplement', 'viber', 'zomato', 'quora', 'draugiem', 'endomodo', 'filmweb', 'stackexchange', 'wykop', 'teamspeak', 'teamviewer', 'ventrilo', 'younow', 'raidcall', 'mumble', 'bebee', 'hitbox', 'reverbnation', 'formulr'
-	];
 
 	// Hidden Options
 	$( document.body ).on( 'si-init-hidden-options', function() {
@@ -67,7 +62,7 @@ jQuery( function ( $ ) {
 			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-mail' );
 			found = true;
 		} else {
-			$( social_icons ).each( function( ix, icon ) {
+			$( social_icons_admin_widgets.allowed_socicons ).each( function( ix, icon ) {
 				if ( url.indexOf( icon ) !== -1 ) {
 					$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-' + icon );
 					found = true;

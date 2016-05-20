@@ -84,12 +84,24 @@ class SI_Admin_Assets {
 		if ( in_array( $screen_id, array( 'social_icon', 'edit-social_icon' ) ) ) {
 			wp_register_script( 'si-admin-group-meta-boxes', SI()->plugin_url() . '/assets/js/admin/meta-boxes-group' . $suffix . '.js', array( 'si-admin-meta-boxes' ), SI_VERSION );
 			wp_enqueue_script( 'si-admin-group-meta-boxes' );
+
+			$params = array(
+				'allowed_socicons' => si_get_allowed_socicons()
+			);
+
+			wp_localize_script( 'si-admin-group-meta-boxes', 'social_icons_admin_meta_boxes_group', $params );
 		}
 
 		// Widgets Specific
 		if ( in_array( $screen_id, array( 'widgets', 'customize' ) ) ) {
 			wp_register_script( 'si-admin-widgets', SI()->plugin_url() . '/assets/js/admin/widgets' . $suffix . '.js', array( 'jquery' ), SI_VERSION );
 			wp_enqueue_script( 'si-admin-widgets' );
+
+			$params = array(
+				'allowed_socicons' => si_get_allowed_socicons()
+			);
+
+			wp_localize_script( 'si-admin-widgets', 'social_icons_admin_widgets', $params );
 		}
 	}
 }
