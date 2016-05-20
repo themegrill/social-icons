@@ -58,7 +58,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 * Fix - Bug with links containing the word play.
 * Tweak - Selective Refresh Support for Widgets.
 * Tweak - Introduced a filter for the queued JS.
-* Tweak - Introduced `si_get_supported_socicons()`.
+* Tweak - Introduced `si_get_allowed_socicons()`.
 * Tweak - Preserve comments that start with a bang.
 * Tweak - Enqueue frontend styles and scripts correctly.
 * Tweak - Updated socicon to `v3.0.3` including instagram glyph change.
