@@ -134,6 +134,14 @@
 			width: 100%;
 			padding: 0 !important;
 
+			tr.no-items {
+				background: #f9f9f9;
+
+				td p {
+					margin: 0;
+				}
+			}
+
 			th {
 				padding: 7px 0 7px 7px !important;
 

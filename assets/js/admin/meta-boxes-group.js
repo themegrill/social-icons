@@ -3,6 +3,7 @@ jQuery( function( $ ) {
 
 	// Icon inputs
 	$( '#social-icons-group-data' ).on( 'click','.sortable_icons a.insert', function() {
+		$( this ).closest( '.sortable_icons' ).find( 'tr.no-items' ).remove();
 		$( this ).closest( '.sortable_icons' ).find( 'tbody' ).append( $( this ).data( 'row' ) );
 		return false;
 	});

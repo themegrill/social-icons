@@ -118,10 +118,9 @@ class SI_Meta_Box_Group_Data {
 							</tr>
 						</thead>
 						<tbody><?php
-							$sortable_icons = get_post_meta( $post->ID, '_sortable_icons', true );
-
-							// If new, then set the default sortable icons.
-							if ( empty( $sortable_icons ) && get_post_status( $post->ID ) ) {
+							if ( metadata_exists( 'post', $post->ID, '_sortable_icons' ) ) {
+								$sortable_icons = get_post_meta( $post->ID, '_sortable_icons', true );
+							} else {
 								$sortable_icons = array(
 									'twitter' => array(
 										'url'   => 'https://twitter.com/',
@@ -139,6 +138,8 @@ class SI_Meta_Box_Group_Data {
 									$name = esc_attr( 'socicon-' . $name );
 									include( 'views/html-group-social-icon.php' );
 								}
+							} else {
+								printf( '<tr class="no-items"><td colspan="5"><p>%s</p></td></tr>', esc_html( 'No sortable icons found.', 'social-icons' ) );
 							}
 						?></tbody>
 						<tfoot>
