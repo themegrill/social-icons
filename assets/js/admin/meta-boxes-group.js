@@ -28,30 +28,30 @@ jQuery( function( $ ) {
 		var $this = $( this ), url = $this.val().toLowerCase(), found = false;
 
 		if ( url.indexOf( 'feed' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.si-socicons' ).attr( 'class', 'si-socicons socicon-rss' );
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-rss' );
 			found = true;
 		} else if ( url.indexOf( 'vk.com' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.si-socicons' ).attr( 'class', 'si-socicons socicon-vkontakte' );
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-vkontakte' );
 			found = true;
 		} else if ( url.indexOf( 'last.fm' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.si-socicons' ).attr( 'class', 'si-socicons socicon-lastfm' );
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-lastfm' );
 			found = true;
 		} else if ( url.indexOf( 'youtu.be' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.si-socicons' ).attr( 'class', 'si-socicons socicon-youtube' );
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-youtube' );
 			found = true;
 		} else if ( url.indexOf( 'play.google.com' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.si-socicons' ).attr( 'class', 'si-socicons socicon-play' );
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-play' );
 			found = true;
 		} else if ( url.indexOf( 'plus.google.com' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.si-socicons' ).attr( 'class', 'si-socicons socicon-googleplus' );
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-googleplus' );
 			found = true;
 		} else if ( url.indexOf( 'feedburner.google.com' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.si-socicons' ).attr( 'class', 'si-socicons socicon-mail' );
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-mail' );
 			found = true;
 		} else {
 			$( social_icons_admin_meta_boxes_group.allowed_socicons ).each( function( ix, icon ) {
 				if ( url.indexOf( icon ) !== -1 ) {
-					$this.parents( 'tr' ).find( '.si-socicons' ).attr( 'class', 'si-socicons socicon-' + icon );
+					$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-' + icon );
 					found = true;
 					return;
 				}
@@ -59,7 +59,7 @@ jQuery( function( $ ) {
 		}
 
 		if ( ! found ) {
-			$this.parents( 'tr' ).find( '.si-socicons' ).attr( 'class', 'si-socicons dashicons dashicons-plus' );
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort dashicons-plus' );
 		}
 	});
 });
