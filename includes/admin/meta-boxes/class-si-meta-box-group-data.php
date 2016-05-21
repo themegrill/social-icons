@@ -117,9 +117,21 @@ class SI_Meta_Box_Group_Data {
 								<th colspan="2"><?php _e( 'Social URL', 'social-icons' ); ?> <?php echo si_help_tip( __( 'This is the URL to the social media which users will surf.', 'social-icons' ) ); ?></th>
 							</tr>
 						</thead>
-						<tbody>
-							<?php
-							$sortable_icons = get_post_meta( $post->ID, '_sortable_icons', true );
+						<tbody><?php
+							if ( get_post_status( $post->ID ) !== 'publish' ) {
+								$sortable_icons = array(
+									'twitter' => array(
+										'url'   => 'https://twitter.com/',
+										'label' => __( 'Follow Me', 'social-icons' )
+									),
+									'facebook' => array(
+										'url'   => 'https://facebook.com/',
+										'label' => __( 'Friend me on Facebook', 'social-icons' )
+									)
+								);
+							} else {
+								$sortable_icons = get_post_meta( $post->ID, '_sortable_icons', true );
+							}
 
 							if ( $sortable_icons ) {
 								foreach ( $sortable_icons as $name => $icon ) {
@@ -127,8 +139,7 @@ class SI_Meta_Box_Group_Data {
 									include( 'views/html-group-social-icon.php' );
 								}
 							}
-							?>
-						</tbody>
+						?></tbody>
 						<tfoot>
 							<tr>
 								<th colspan="5">

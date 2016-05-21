@@ -6,7 +6,7 @@ jQuery( function( $ ) {
 		$( this ).closest( '.sortable_icons' ).find( 'tbody' ).append( $( this ).data( 'row' ) );
 		return false;
 	});
-	$( '#social-icons-group-data' ).on( 'click','.sortable_icons a.delete',function() {
+	$( '#social-icons-group-data' ).on( 'click','.sortable_icons a.delete', function() {
 		$( this ).closest( 'tr' ).remove();
 		return false;
 	});
