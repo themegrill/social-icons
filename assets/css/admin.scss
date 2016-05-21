@@ -135,10 +135,11 @@
 			padding: 0 !important;
 
 			th {
-				padding: 7px !important;
+				padding: 7px 0 7px 7px !important;
 
 				&.sort {
 					width: 20px;
+					padding-right: 7px !important;
 				}
 
 				.social-icons-help-tip {
@@ -187,12 +188,14 @@
 			}
 
 			td.sort {
-				width: 20px;
+				padding: 0 8px;
 				cursor: move;
+				width: 20px;
 				font-size: 14px;
 				background: #f9f9f9;
 				text-align: center;
 				vertical-align: middle;
+				padding-right: 7px !important;
 
 				&.dashicons-plus {
 					font-family: 'Dashicons';
