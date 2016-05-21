@@ -11,6 +11,23 @@ jQuery( function ( $ ) {
 				icons_list.addClass( 'hide-icons-label' );
 			}
 		}).change();
+
+		// Show/hide fields by display type.
+		$( 'select.display_type' ).on( 'change', function() {
+			// Get value
+			var select_val = $( this ).val();
+
+			// Hide rules
+			if ( select_val === 'shortcode' ) {
+				$( '.show_if_widget' ).closest( 'p' ).show();
+				$( '.hide_if_shortcode' ).closest( 'p' ).hide();
+				$( '.hide_if_shortcode' ).parents( '.sortable-icons' ).hide();
+			} else {
+				$( '.show_if_widget' ).closest( 'p' ).hide();
+				$( '.hide_if_shortcode' ).closest( 'p' ).show();
+				$( '.hide_if_shortcode' ).parents( '.sortable-icons' ).show();
+			}
+		}).change();
 	}).trigger( 'si-init-hidden-options' );
 
 	// Add Social Icons

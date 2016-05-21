@@ -34,31 +34,56 @@ class SI_Widget_Social_Icons extends SI_Widget {
 				'std'   => __( 'Social Icons', 'social-icons' ),
 				'label' => __( 'Title', 'social-icons' )
 			),
+			'display_type' => array(
+				'type'  => 'select',
+				'std'   => 'widget',
+				'class' => 'display_type',
+				'label' => __( 'Display Type', 'social-icons' ),
+				'desc'  => __( 'Choose the widget or shortcode display type.', 'social-icons' ),
+				'options' => array(
+					'widget'    => __( 'Widget', 'social-icons' ),
+					'shortcode' => __( 'Shortcode', 'social-icons' )
+				)
+			),
+			'shortcode_group' => array(
+				'type'  => 'select',
+				'std'   => '1',
+				'class' => 'show_if_widget',
+				'label' => __( 'Display Type', 'social-icons' ),
+				'options' => array(
+					'none'      => __( 'Widget', 'social-icons' ),
+					'shortcode' => __( 'Shortcode', 'social-icons' )
+				)
+			),
 			'description'  => array(
 				'type'  => 'textarea',
 				'std'   => '',
+				'class' => 'hide_if_shortcode',
 				'label' => __( 'Description', 'social-icons' ),
 				'desc'  => __( 'Short description to be displayed above the icons.', 'social-icons' )
 			),
 			'show_label' => array(
 				'type'  => 'checkbox',
 				'std'   => 0,
-				'class' => 'show_label',
+				'class' => 'show_label hide_if_shortcode',
 				'label' => __( 'Show icon label', 'social-icons' )
 			),
 			'show_greyscale' => array(
 				'type'  => 'checkbox',
 				'std'   => 0,
+				'class' => 'hide_if_shortcode',
 				'label' => __( 'Show Greyscale icons', 'social-icons' )
 			),
 			'open_tab' => array(
 				'type'  => 'checkbox',
 				'std'   => 0,
+				'class' => 'hide_if_shortcode',
 				'label' => __( 'Open links in new tab', 'social-icons' )
 			),
 			'background_style' => array(
 				'type'  => 'select',
 				'std'   => 'square',
+				'class' => 'hide_if_shortcode',
 				'label' => __( 'Background Style', 'social-icons' ),
 				'options' => array(
 					'none'           => __( 'None', 'social-icons' ),
@@ -74,11 +99,12 @@ class SI_Widget_Social_Icons extends SI_Widget {
 				'min'   => 14,
 				'max'   => 40,
 				'std'   => 16,
+				'class' => 'hide_if_shortcode',
 				'label' => __( 'Choose Icon Size', 'social-icons' )
 			),
 			'socicon_sortable' => array(
 				'type'  => 'social_icons',
-				'class' => 'socicon-sortable',
+				'class' => 'socicon-sortable hide_if_shortcode',
 				'label' => __( 'Sortable Socicon', 'social-icons' ),
 				'desc'  => sprintf( __( 'Note that icons above are for reference and not how they will look on front-end. %sList of icons supported%s', 'social-icons' ), '<br><a target="_blank" href="' . esc_url( 'http://www.socicon.com/chart.php' ) . '">', '</a>' ),
 				'btn'   => __( 'Add Icon', 'social-icons' ),
@@ -131,12 +157,16 @@ class SI_Widget_Social_Icons extends SI_Widget {
 	 * @param  array  $instance
 	 */
 	public function widget_field_social_icons( $key, $value, $setting, $instance ) {
-		$show_label = isset( $instance['show_label'] ) ? 'show-icons-label' : 'hide-icons-label';
+		$class_list   = array();
+
+		// Settings and label classes.
+		$class_list[] = isset( $setting['class'] ) ? $setting['class'] : '';
+		$class_list[] = isset( $instance['show_label'] ) ? 'show-icons-label' : 'hide-icons-label';
 
 		?>
-		<p>
+		<div class="sortable-icons">
 			<label for="<?php echo $this->get_field_id( $key ); ?>"><?php echo $setting['label']; ?></label>
-			<ul class="social-icons-list <?php echo esc_attr( $show_label ); ?>"
+			<ul class="social-icons-list <?php echo esc_attr( implode( ' ', $class_list ) ); ?>"
 				data-url-field-id="<?php echo $this->get_field_id( 'url-fields' ); ?>"
 				data-url-field-name="<?php echo $this->get_field_name( 'url-fields' ); ?>"
 				data-label-field-id="<?php echo $this->get_field_id( 'label-fields' ); ?>"
@@ -157,9 +187,9 @@ class SI_Widget_Social_Icons extends SI_Widget {
 				<button class="button button-secondary"><?php echo $setting['btn'] ?></button>
 			</div>
 			<?php if ( isset( $setting['desc'] ) ) : ?>
-				<small><?php echo wp_kses_post( $setting['desc'] ); ?></small>
+				<p><small><?php echo wp_kses_post( $setting['desc'] ); ?></small></p>
 			<?php endif; ?>
-		</p>
+		</div>
 		<?php
 	}
 

@@ -233,6 +233,9 @@ abstract class SI_Widget extends WP_Widget {
 								<option value="<?php echo esc_attr( $option_key ); ?>" <?php selected( $option_key, $value ); ?>><?php echo esc_html( $option_value ); ?></option>
 							<?php endforeach; ?>
 						</select>
+						<?php if ( isset( $setting['desc'] ) ) : ?>
+							<small><?php echo esc_html( $setting['desc'] ); ?></small>
+						<?php endif; ?>
 					</p>
 					<?php
 				break;
