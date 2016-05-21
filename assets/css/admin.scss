@@ -139,7 +139,7 @@
 
 				&.sort {
 					width: 20px;
-					padding-right: 7px !important;
+					padding: 7px !important;
 				}
 
 				.social-icons-help-tip {
@@ -188,12 +188,11 @@
 			}
 
 			td.sort {
-				padding: 0 8px;
-				cursor: move;
 				width: 20px;
-				font-size: 14px;
-				background: #f9f9f9;
+				cursor: move;
+				font-size: 15px;
 				text-align: center;
+				background: #f9f9f9;
 				vertical-align: middle;
 				padding-right: 7px !important;
 
