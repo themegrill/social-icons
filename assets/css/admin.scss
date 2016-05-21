@@ -138,7 +138,7 @@
 				padding: 7px 0 7px 7px !important;
 
 				&.sort {
-					width: 20px;
+					width: 17px;
 					padding: 7px !important;
 				}
 
@@ -188,15 +188,14 @@
 			}
 
 			td.sort {
-				width: 20px;
+				width: 17px;
 				cursor: move;
-				font-size: 15px;
 				text-align: center;
 				background: #f9f9f9;
-				vertical-align: middle;
 				padding-right: 7px !important;
 
 				&.dashicons-plus {
+					font-size: 15px;
 					font-family: 'Dashicons';
 				}
 
@@ -205,7 +204,7 @@
 					line-height: 1;
 					color: #999;
 					display: block;
-					width: 20px;
+					width: 17px;
 					float: left;
 					height: 100%;
 				}
