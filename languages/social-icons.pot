@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Social Icons 1.4\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2016-05-21 12:54:51+00:00\n"
+"POT-Creation-Date: 2016-05-21 16:11:35+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -262,22 +262,22 @@ msgstr ""
 msgid "This is the URL to the social media which users will surf."
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:128
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:127
 #: includes/widgets/class-si-widget-social-icons.php:88
 msgid "Follow Me"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:132
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:131
 #: includes/widgets/class-si-widget-social-icons.php:92
 msgid "Friend me on Facebook"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:156
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:157
 #: includes/widgets/class-si-widget-social-icons.php:84
 msgid "Add Icon"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:202
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:203
 msgid "The social url %s cannot be used as it does not have an allowed icon."
 msgstr ""
 
