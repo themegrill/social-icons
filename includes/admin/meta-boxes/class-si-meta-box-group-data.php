@@ -113,7 +113,6 @@ class SI_Meta_Box_Group_Data {
 						<thead>
 							<tr>
 								<th class="sort">&nbsp;</th>
-								<th class="icon"><?php _e( 'Icon', 'social-icons' ); ?></th>
 								<th><?php _e( 'Label', 'social-icons' ); ?> <?php echo si_help_tip( __( 'This is the label of the social icon shown to the users.', 'social-icons' ) ); ?></th>
 								<th colspan="2"><?php _e( 'Social URL', 'social-icons' ); ?> <?php echo si_help_tip( __( 'This is the URL to the social media which users will surf.', 'social-icons' ) ); ?></th>
 							</tr>
@@ -124,6 +123,7 @@ class SI_Meta_Box_Group_Data {
 
 							if ( $sortable_icons ) {
 								foreach ( $sortable_icons as $name => $icon ) {
+									$name = esc_attr( 'socicon-' . $name );
 									include( 'views/html-group-social-icon.php' );
 								}
 							}
@@ -133,7 +133,7 @@ class SI_Meta_Box_Group_Data {
 							<tr>
 								<th colspan="5">
 									<a href="#" class="button insert" data-row="<?php
-										$name = '';
+										$name = 'dashicons-plus';
 										$icon = array(
 											'label' => '',
 											'url'   => ''

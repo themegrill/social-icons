@@ -191,9 +191,14 @@
 				vertical-align: middle;
 				padding-right: 7px !important;
 
-				&:before {
-					content: "\f333";
+				&.dashicons-plus {
+					font-size: 16px;
 					font-family: 'Dashicons';
+				}
+
+				&:before {
+					// content: "\f333";
+					// font-family: 'Dashicons';
 					text-align: center;
 					line-height: 1;
 					color: #999;
@@ -672,20 +677,3 @@ img.tips {
 		padding: 5px 20px 5px 20px !important;
 	}
 }
-
-// Sortable panel
-.social_icons_options_panel .sortable_icons .widefat {
-	.si-socicons {
-		color: #fff;
-		padding: 5px !important;
-		text-align: center;
-		width: 30px;
-
-		&.dashicons {
-			color: #ccc;
-			font-size: 20px;
-		}
-	}
-}
-
-
