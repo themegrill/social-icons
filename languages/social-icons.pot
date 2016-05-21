@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Social Icons 1.4\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2016-05-20 12:15:04+00:00\n"
+"POT-Creation-Date: 2016-05-21 04:01:09+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
-"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Generator: grunt-wp-i18n 0.5.3\n"
 
 #: includes/admin/class-si-admin-meta-boxes.php:93
 msgid "Social Data"
@@ -246,23 +246,19 @@ msgid "Sortable Icons"
 msgstr ""
 
 #: includes/admin/meta-boxes/class-si-meta-box-group-data.php:116
-msgid "Icon"
-msgstr ""
-
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:117
 #: includes/widgets/class-si-widget-social-icons.php:231
 msgid "Label"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:117
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:116
 msgid "This is the label of the social icon shown to the users."
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:118
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:117
 msgid "Social URL"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:118
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:117
 msgid "This is the URL to the social media which users will surf."
 msgstr ""
 
@@ -275,16 +271,16 @@ msgstr ""
 msgid "The social url %s cannot be used as it does not have an allowed icon."
 msgstr ""
 
-#: includes/admin/meta-boxes/views/html-group-social-icon.php:4
+#: includes/admin/meta-boxes/views/html-group-social-icon.php:3
 msgid "Social Label"
 msgstr ""
 
-#: includes/admin/meta-boxes/views/html-group-social-icon.php:5
+#: includes/admin/meta-boxes/views/html-group-social-icon.php:4
 #: includes/widgets/class-si-widget-social-icons.php:230
 msgid "http://"
 msgstr ""
 
-#: includes/admin/meta-boxes/views/html-group-social-icon.php:6
+#: includes/admin/meta-boxes/views/html-group-social-icon.php:5
 msgid "Delete"
 msgstr ""
 

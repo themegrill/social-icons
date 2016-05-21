@@ -135,7 +135,11 @@
 			padding: 0 !important;
 
 			th {
-				padding: 7px 0 7px 7px !important;
+				padding: 7px !important;
+
+				&.sort {
+					width: 20px;
+				}
 
 				.social-icons-help-tip {
 					font-size: 1.1em;
@@ -183,27 +187,23 @@
 			}
 
 			td.sort {
-				padding: 0 8px;
+				width: 20px;
 				cursor: move;
-				width: 17px;
+				font-size: 14px;
 				background: #f9f9f9;
 				text-align: center;
 				vertical-align: middle;
-				padding-right: 7px !important;
 
 				&.dashicons-plus {
-					font-size: 16px;
 					font-family: 'Dashicons';
 				}
 
 				&:before {
-					// content: "\f333";
-					// font-family: 'Dashicons';
 					text-align: center;
 					line-height: 1;
 					color: #999;
 					display: block;
-					width: 17px;
+					width: 20px;
 					float: left;
 					height: 100%;
 				}
@@ -595,11 +595,6 @@ img.tips {
 	}
 }
 
-
-.social_icons_options_panel table td.si-socicons {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: #454545 !important;
-}
 /**
  * Small screen optimisation
  */
