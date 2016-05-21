@@ -118,7 +118,10 @@ class SI_Meta_Box_Group_Data {
 							</tr>
 						</thead>
 						<tbody><?php
-							if ( get_post_status( $post->ID ) !== 'publish' ) {
+							$sortable_icons = get_post_meta( $post->ID, '_sortable_icons', true );
+
+							// If new, then set the default sortable icons.
+							if ( empty( $sortable_icons ) && get_post_status( $post->ID ) ) {
 								$sortable_icons = array(
 									'twitter' => array(
 										'url'   => 'https://twitter.com/',
@@ -129,8 +132,6 @@ class SI_Meta_Box_Group_Data {
 										'label' => __( 'Friend me on Facebook', 'social-icons' )
 									)
 								);
-							} else {
-								$sortable_icons = get_post_meta( $post->ID, '_sortable_icons', true );
 							}
 
 							if ( $sortable_icons ) {
