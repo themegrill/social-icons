@@ -90,7 +90,7 @@ class SI_Frontend_Scripts {
 		// Register any scripts for later use, or used as dependencies
 		self::register_style( 'social-icons-general', $assets_path . 'css/social-icons.css', array() );
 
-		if ( si_post_content_has_shortcode( 'social_icons_group' ) ) {
+		if ( apply_filters( 'social_icons_enable_stylesheets', si_post_content_has_shortcode( 'social_icons_group' ) ) ) {
 
 			// CSS Styles
 			if ( $enqueue_styles = self::get_styles() ) {
