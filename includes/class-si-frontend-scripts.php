@@ -88,7 +88,7 @@ class SI_Frontend_Scripts {
 		$assets_path = str_replace( array( 'http:', 'https:' ), '', SI()->plugin_url() ) . '/assets/';
 
 		// Register any scripts for later use, or used as dependencies
-		self::register_style( 'social-icons-general', $assets_path . '/css/social-icons.css', array() );
+		self::register_style( 'social-icons-general', $assets_path . 'css/social-icons.css', array() );
 
 		if ( si_post_content_has_shortcode( 'social_icons_group' ) ) {
 
