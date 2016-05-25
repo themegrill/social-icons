@@ -31,7 +31,7 @@ class SI_Install {
 	 * @param  array $actions
 	 * @return array
 	 */
-	public function plugin_action_links( $actions ) {
+	public static function plugin_action_links( $actions ) {
 		$new_actions = array(
 			'settings' => '<a href="' . admin_url( 'edit.php?post_type=social_icon' ) . '" title="' . esc_attr( __( 'View Social Icons Settings', 'social-icons' ) ) . '">' . __( 'Settings', 'social-icons' ) . '</a>',
 		);
@@ -45,7 +45,7 @@ class SI_Install {
 	 * @param  string $plugin_file
 	 * @return array
 	 */
-	public function plugin_row_meta( $plugin_meta, $plugin_file ) {
+	public static function plugin_row_meta( $plugin_meta, $plugin_file ) {
 		if ( $plugin_file == SI_PLUGIN_BASENAME ) {
 			$new_plugin_meta = array(
 				'docs'    => '<a href="' . esc_url( apply_filters( 'social_icons_docs_url', 'http://themegrill.com/docs/social-icons/' ) ) . '" title="' . esc_attr( __( 'View Social Icons Documentation', 'social-icons' ) ) . '">' . __( 'Docs', 'social-icons' ) . '</a>',
