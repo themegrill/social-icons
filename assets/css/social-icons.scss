@@ -62,6 +62,7 @@
 		}
 
 		&.centre {
+			padding: 0;
 			text-align: center;
 		}
 	}
@@ -84,6 +85,14 @@
 	&.show-icons-label {
 		li.social-icons-list-item {
 			display: block;
+		}
+
+		&.icons-background-square,
+		&.icons-background-rounded {
+
+			&.centre {
+				text-align: left;
+			}
 		}
 	}
 }
