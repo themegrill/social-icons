@@ -52,6 +52,9 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
+= 1.4.1 - TBD =
+* Fix - Center icons if used in Visual composer.
+
 = 1.4 - 20/05/2016 =
 * Feature - Pretty Support for shortcode option.
 * Fix - Undefinded index for key on widget save.
