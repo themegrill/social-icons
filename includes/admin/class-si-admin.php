@@ -53,7 +53,7 @@ class SI_Admin {
 		if ( isset( $current_screen->id ) && apply_filters( 'social_icons_display_admin_footer_text', in_array( $current_screen->id, $si_pages ) ) ) {
 			// Change the footer text
 			if ( ! get_option( 'social_icons_admin_footer_text_rated' ) ) {
-				$footer_text = sprintf( __( 'If you like <strong>Social Icons</strong> please leave us a %s&#9733;&#9733;&#9733;&#9733;&#9733;%s rating. A huge thank you from ThemeGrill in advance!', 'social-icons' ), '<a href="https://wordpress.org/support/view/plugin-reviews/social-icons?filter=5#postform" target="_blank" class="si-rating-link" data-rated="' . esc_attr__( 'Thanks :)', 'social-icons' ) . '">', '</a>' );
+				$footer_text = sprintf( __( 'If you like <strong>Social Icons</strong> please leave us a %s&#9733;&#9733;&#9733;&#9733;&#9733;%s rating. A huge thanks in advance!', 'social-icons' ), '<a href="https://wordpress.org/support/view/plugin-reviews/social-icons?filter=5#postform" target="_blank" class="si-rating-link" data-rated="' . esc_attr__( 'Thanks :)', 'social-icons' ) . '">', '</a>' );
 				si_enqueue_js( "
 					jQuery( 'a.si-rating-link' ).click( function() {
 						jQuery.post( '" . SI()->ajax_url() . "', { action: 'social_icons_rated' } );
