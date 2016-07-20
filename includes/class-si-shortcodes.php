@@ -45,7 +45,7 @@ class SI_Shortcodes {
 
 		$atts = shortcode_atts( array(
 			'id' => ''
-		), $atts );
+		), $atts, 'social_icons_group' );
 
 		$group_id = absint( $atts['id'] );
 
