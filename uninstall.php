@@ -14,7 +14,7 @@ if( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
 
-global $wpdb, $wp_version;
+global $wpdb;
 
 $uninstall_data = apply_filters( 'social_icons_uninstall_data', true );
 
