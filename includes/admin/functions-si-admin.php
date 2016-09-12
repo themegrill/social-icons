@@ -32,6 +32,8 @@ function si_get_social_icon_name( $url ) {
 	if ( $url = strtolower( $url ) ) {
 		if ( strstr( $url, 'feed' ) ) {
 			$icon = 'rss';
+		} elseif( strstr( $url, 'ok.ru' ) ) {
+			$icon = 'odnoklassniki';
 		} elseif( strstr( $url, 'vk.com' ) ) {
 			$icon = 'vkontakte';
 		} elseif ( strstr( $url, 'last.fm' ) ) {

@@ -13,7 +13,7 @@ jQuery( function( $ ) {
 	});
 
 	// Social Icons ordering
-	jQuery( '.sortable_icons tbody' ).sortable({
+	$( '.sortable_icons tbody' ).sortable({
 		items: 'tr',
 		cursor: 'move',
 		axis: 'y',
@@ -30,6 +30,9 @@ jQuery( function( $ ) {
 
 		if ( url.indexOf( 'feed' ) !== -1 ) {
 			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-rss' );
+			found = true;
+		} else if ( url.indexOf( 'ok.ru' ) !== -1 ) {
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-odnoklassniki' );
 			found = true;
 		} else if ( url.indexOf( 'vk.com' ) !== -1 ) {
 			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-vkontakte' );

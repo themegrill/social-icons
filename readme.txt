@@ -53,6 +53,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 == Changelog ==
 
 = 1.4.1 - TBD =
+* Fix - odnoklassniki icon for ok.ru profile.
 * Fix - Center icons if used in Visual composer.
 * Fix - Non-static method should not be called statically.
 

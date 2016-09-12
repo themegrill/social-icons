@@ -43,6 +43,9 @@ jQuery( function ( $ ) {
 		if ( url.indexOf( 'feed' ) !== -1 ) {
 			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-rss' );
 			found = true;
+		} else if ( url.indexOf( 'ok.ru' ) !== -1 ) {
+			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-odnoklassniki' );
+			found = true;
 		} else if ( url.indexOf( 'vk.com' ) !== -1 ) {
 			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-vkontakte' );
 			found = true;
