@@ -26,55 +26,27 @@ jQuery( function( $ ) {
 
 	// Detect Social Icons from domain
 	$( document.body ).on( 'keyup', 'td.social_url input[type=text]', function() {
-		var $this = $( this ), url = $this.val().toLowerCase(), found = false;
+		var $this = $( this ), url = $this.val().toLowerCase(), $_socicon = false;
 
-		if ( url.indexOf( 'feed' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-rss' );
-			found = true;
-		} else if ( url.indexOf( 'ok.ru' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-odnoklassniki' );
-			found = true;
-		} else if ( url.indexOf( 'vk.com' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-vkontakte' );
-			found = true;
-		} else if ( url.indexOf( 'last.fm' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-lastfm' );
-			found = true;
-		} else if ( url.indexOf( 'battle.net' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-battlenet' );
-			found = true;
-		} else if ( url.indexOf( 'youtu.be' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-youtube' );
-			found = true;
-		} else if ( url.indexOf( 'play.google.com' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-play' );
-			found = true;
-		} else if ( url.indexOf( 'plus.google.com' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-googleplus' );
-			found = true;
-		} else if ( url.indexOf( 'chrome.google.com' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-chrome' );
-			found = true;
-		} else if ( url.indexOf( 'photos.google.com' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-googlephotos' );
-			found = true;
-		} else if ( url.indexOf( 'scholar.google.com' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-google-scholar' );
-			found = true;
-		} else if ( url.indexOf( 'feedburner.google.com' ) !== -1 ) {
-			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-mail' );
-			found = true;
-		} else {
-			$( social_icons_admin_meta_boxes_group.allowed_socicons ).each( function( ix, icon ) {
+		// Detect from URL format.
+		$.each( social_icons_admin_meta_boxes_group.detected_socicons, function( index, icon ) {
+			if ( url.indexOf( index ) !== -1 ) {
+				$_socicon = icon;
+			}
+		});
+
+		// Detect from name.
+		if ( ! $_socicon ) {
+			$.each( social_icons_admin_meta_boxes_group.allowed_socicons, function( index, icon ) {
 				if ( url.indexOf( icon ) !== -1 ) {
-					$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-' + icon );
-					found = true;
-					return;
+					$_socicon = icon;
 				}
 			});
 		}
 
-		if ( ! found ) {
+		if ( $_socicon ) {
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-' + $_socicon );
+		} else {
 			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort dashicons-plus' );
 		}
 	});
