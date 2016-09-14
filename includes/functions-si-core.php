@@ -83,6 +83,27 @@ function si_print_js() {
 }
 
 /**
+ * Get the supported URL lists.
+ * @return array
+ */
+function si_get_supported_url() {
+	return apply_filters( 'social_icons_get_supported_url', array(
+		'feed'                  => 'rss',
+		'ok.ru'                 => 'odnoklassniki',
+		'vk.com'                => 'vkontakte',
+		'last.fm'               => 'lastfm',
+		'youtu.be'              => 'youtube',
+		'battle.net'            => 'battlenet',
+		'play.google.com'       => 'play',
+		'plus.google.com'       => 'googleplus',
+		'photos.google.com'     => 'googlephotos',
+		'chrome.google.com'     => 'chrome',
+		'scholar.google.com'    => 'google-scholar',
+		'feedburner.google.com' => 'mail',
+	) );
+}
+
+/**
  * Get the allowed socicon lists.
  * @return array
  */
