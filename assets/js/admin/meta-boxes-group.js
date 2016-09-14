@@ -24,7 +24,7 @@ jQuery( function( $ ) {
 		opacity: 0.65
 	});
 
-	// Detect Social Icons from domain.
+	// Detect Social Icons from supported URL and allowed lists.
 	$( document.body ).on( 'keyup', 'td.social_url input[type=text]', function() {
 		var $this = $( this ), $_socicon = false, url;
 
