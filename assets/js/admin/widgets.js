@@ -41,7 +41,7 @@ jQuery( function ( $ ) {
 		var $this = $( this ), $_socicon = false, url;
 
 		if ( url = $this.val().toLowerCase() ) {
-			$.each( social_icons_admin_widgets.supported_url, function( index, icon ) {
+			$.each( social_icons_admin_widgets.supported_url_icon, function( index, icon ) {
 				if ( url.indexOf( index ) !== -1 ) {
 					$_socicon = icon;
 					return true;
