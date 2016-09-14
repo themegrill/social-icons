@@ -38,12 +38,20 @@ function si_get_social_icon_name( $url ) {
 			$icon = 'vkontakte';
 		} elseif ( strstr( $url, 'last.fm' ) ) {
 			$icon = 'lastfm';
+		} elseif ( strstr( $url, 'battle.net' ) ) {
+			$icon = 'battlenet';
 		} elseif ( strstr( $url, 'youtu.be' ) ) {
 			$icon = 'youtube';
 		} elseif ( strstr( $url, 'play.google.com' ) ) {
 			$icon = 'play';
 		} elseif ( strstr( $url, 'plus.google.com' ) ) {
 			$icon = 'googleplus';
+		} elseif ( strstr( $url, 'chrome.google.com' ) ) {
+			$icon = 'chrome';
+		} elseif ( strstr( $url, 'photos.google.com' ) ) {
+			$icon = 'googlephotos';
+		} elseif ( strstr( $url, 'scholar.google.com' ) ) {
+			$icon = 'google-scholar';
 		} elseif ( strstr( $url, 'feedburner.google.com' ) ) {
 			$icon = 'mail';
 		}

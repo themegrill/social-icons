@@ -40,6 +40,9 @@ jQuery( function( $ ) {
 		} else if ( url.indexOf( 'last.fm' ) !== -1 ) {
 			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-lastfm' );
 			found = true;
+		} else if ( url.indexOf( 'battle.net' ) !== -1 ) {
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-battlenet' );
+			found = true;
 		} else if ( url.indexOf( 'youtu.be' ) !== -1 ) {
 			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-youtube' );
 			found = true;
@@ -48,6 +51,15 @@ jQuery( function( $ ) {
 			found = true;
 		} else if ( url.indexOf( 'plus.google.com' ) !== -1 ) {
 			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-googleplus' );
+			found = true;
+		} else if ( url.indexOf( 'chrome.google.com' ) !== -1 ) {
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-chrome' );
+			found = true;
+		} else if ( url.indexOf( 'photos.google.com' ) !== -1 ) {
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-googlephotos' );
+			found = true;
+		} else if ( url.indexOf( 'scholar.google.com' ) !== -1 ) {
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-google-scholar' );
 			found = true;
 		} else if ( url.indexOf( 'feedburner.google.com' ) !== -1 ) {
 			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-mail' );
