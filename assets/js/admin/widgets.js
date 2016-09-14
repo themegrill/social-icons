@@ -1,7 +1,7 @@
 /* global social_icons_admin_widgets */
 jQuery( function ( $ ) {
 
-	// Hidden Options
+	// Hidden Options.
 	$( document.body ).on( 'si-init-hidden-options', function() {
 		$( 'input.show_label' ).change( function() {
 			var icons_list = $( this ).parents( '.widget-content' ).find( '.social-icons-list' );
@@ -13,19 +13,19 @@ jQuery( function ( $ ) {
 		}).change();
 	}).trigger( 'si-init-hidden-options' );
 
-	// Add Social Icons
+	// Add Social Icons.
 	$( document.body ).on( 'click', '.social-icons-add-button button', function( e ) {
 		e.preventDefault();
 
 		var icons_list = $( this ).parents( '.widget-content' ).find( '.social-icons-list' );
 
-		// URL and Label fields
+		// URL and Label fields.
 		var url_field_id     = icons_list.data( 'url-field-id' );
 		var url_field_name   = icons_list.data( 'url-field-name' );
 		var label_field_id   = icons_list.data( 'label-field-id' );
 		var label_field_name = icons_list.data( 'label-field-name' );
 
-		// URL and Label Template
+		// URL and Label Template.
 		var $tmpl = $( $.trim( $( '#tmpl-social-icons-field' ).html() ) );
 		$tmpl.find( '.social-icons-field-url' ).attr( 'id', url_field_id ).attr( 'name', url_field_name + '[]' );
 		$tmpl.find( '.social-icons-field-label' ).attr( 'id', label_field_id ).attr( 'name', label_field_name + '[]' );
@@ -36,24 +36,26 @@ jQuery( function ( $ ) {
 		$( this ).parents( '.widget-content' ).find( '.social-icons-list:last input:first-child' ).trigger( 'focus' );
 	});
 
-	// Detect Social Icons from domain
+	// Detect Social Icons from supported URL and allowed lists.
 	$( document.body ).on( 'keyup', '.social-icons-field-url', function() {
-		var $this = $( this ), url = $this.val().toLowerCase(), $_socicon = false;
+		var $this = $( this ), $_socicon = false, url;
 
-		// Detect from supported URL.
-		$.each( social_icons_admin_widgets.supported_url, function( index, icon ) {
-			if ( url.indexOf( index ) !== -1 ) {
-				$_socicon = icon;
-			}
-		});
-
-		// Detect from name.
-		if ( ! $_socicon ) {
-			$.each( social_icons_admin_widgets.allowed_socicons, function( index, icon ) {
-				if ( url.indexOf( icon ) !== -1 ) {
+		if ( url = $this.val().toLowerCase() ) {
+			$.each( social_icons_admin_widgets.supported_url, function( index, icon ) {
+				if ( url.indexOf( index ) !== -1 ) {
 					$_socicon = icon;
+					return true;
 				}
 			});
+
+			if ( ! $_socicon ) {
+				$.each( social_icons_admin_widgets.allowed_socicons, function( index, icon ) {
+					if ( url.indexOf( icon ) !== -1 ) {
+						$_socicon = icon;
+						return true;
+					}
+				});
+			}
 		}
 
 		if ( $_socicon ) {
@@ -65,13 +67,13 @@ jQuery( function ( $ ) {
 		}
 	});
 
-	// Remove Social Icons
+	// Remove Social Icons.
 	$( document.body ).on( 'click', '.social-icons-field-remove', function( e ) {
 		e.preventDefault();
 		$( this ).parents( '.social-icons-field' ).remove();
 	});
 
-	// Event handler for widget open button
+	// Event handler for widget open button.
 	$( document.body ).on( 'click', 'div.widget[id*=themegrill_social_icons] .widget-title, div.widget[id*=themegrill_social_icons] .widget-title-action', function() {
 		if ( $( this ).parents( '#available-widgets' ).length ) {
 			return;
@@ -80,14 +82,14 @@ jQuery( function ( $ ) {
 		widgetSortable( $( this ).parents( '.widget[id*=themegrill_social_icons]' ) );
 	});
 
-	// Event handler for widget added and updated
+	// Event handler for widget added and updated.
 	$( document ).on( 'widget-added widget-updated', function( e, widget ) {
 		if ( widget.is( '[id*=themegrill_social_icons]' ) ) {
 			e.preventDefault();
 			widgetSortable( widget );
 		}
 
-		// Trigger hidden options
+		// Trigger hidden options.
 		$( document.body ).trigger( 'si-init-hidden-options' );
 	});
 
