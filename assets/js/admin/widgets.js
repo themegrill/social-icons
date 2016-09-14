@@ -40,8 +40,8 @@ jQuery( function ( $ ) {
 	$( document.body ).on( 'keyup', '.social-icons-field-url', function() {
 		var $this = $( this ), url = $this.val().toLowerCase(), $_socicon = false;
 
-		// Detect from URL format.
-		$.each( social_icons_admin_widgets.detected_socicons, function( index, icon ) {
+		// Detect from supported URL.
+		$.each( social_icons_admin_widgets.supported_url, function( index, icon ) {
 			if ( url.indexOf( index ) !== -1 ) {
 				$_socicon = icon;
 			}

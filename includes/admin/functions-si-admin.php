@@ -30,7 +30,7 @@ function si_get_social_icon_name( $url ) {
 	$icon = '';
 
 	if ( $url = strtolower( $url ) ) {
-		foreach ( si_get_detected_socicons() as $link => $icon_name ) {
+		foreach ( si_get_supported_url() as $link => $icon_name ) {
 			if ( strstr( $url, $link ) ) {
 				$icon = $icon_name;
 				break;
