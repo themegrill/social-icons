@@ -101,8 +101,12 @@ function si_get_detected_socicons() {
 		'vk.com'                => 'vkontakte',
 		'last.fm'               => 'lastfm',
 		'youtu.be'              => 'youtube',
+		'battle.net'            => 'battlenet',
 		'play.google.com'       => 'play',
 		'plus.google.com'       => 'googleplus',
+		'photos.google.com'     => 'googlephotos',
+		'chrome.google.com'     => 'chrome',
+		'scholar.google.com'    => 'google-scholar',
 		'feedburner.google.com' => 'mail',
 	) );
 }
