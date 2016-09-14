@@ -91,6 +91,23 @@ function si_get_allowed_socicons() {
 }
 
 /**
+ * Get the detected socicon lists.
+ * @return array
+ */
+function si_get_detected_socicons() {
+	return apply_filters( 'social_icons_detected_socicon', array(
+		'feed'                  => 'rss',
+		'ok.ru'                 => 'odnoklassniki',
+		'vk.com'                => 'vkontakte',
+		'last.fm'               => 'lastfm',
+		'youtu.be'              => 'youtube',
+		'play.google.com'       => 'play',
+		'plus.google.com'       => 'googleplus',
+		'feedburner.google.com' => 'mail',
+	) );
+}
+
+/**
  * Checks whether the content passed contains a specific short code.
  *
  * @param  string $tag Shortcode tag to check.

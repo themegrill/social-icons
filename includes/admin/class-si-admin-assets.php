@@ -70,6 +70,7 @@ class SI_Admin_Assets {
 		// Localize socicons
 		$socicons_params = array(
 			'allowed_socicons'  => si_get_allowed_socicons(),
+			'detected_socicons' => si_get_detected_socicons(),
 		);
 
 		// Social Icons admin pages
