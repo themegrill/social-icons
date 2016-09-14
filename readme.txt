@@ -57,6 +57,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 * Fix - Center icons if used in Visual composer.
 * Fix - Non-static method should not be called statically.
 * Tweak - Updated socicon to `v3.0.4` for new icon sets support.
+* Refactor - Detect socicon from supported URL and allowed lists.
 
 = 1.4 - 20/05/2016 =
 * Feature - Pretty Support for shortcode option.
