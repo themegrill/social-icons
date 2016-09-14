@@ -36,7 +36,7 @@ jQuery( function ( $ ) {
 		$( this ).parents( '.widget-content' ).find( '.social-icons-list:last input:first-child' ).trigger( 'focus' );
 	});
 
-	// Detect Social Icons from supported URL and allowed lists.
+	// Detect socicon from supported URL and allowed lists.
 	$( document.body ).on( 'keyup', '.social-icons-field-url', function() {
 		var $this = $( this ), $_socicon = false, url;
 
