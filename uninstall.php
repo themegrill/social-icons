@@ -10,7 +10,7 @@
  * @version  1.4.0
  */
 
-if( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
+if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
 
