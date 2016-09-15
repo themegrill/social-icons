@@ -30,20 +30,11 @@ function si_get_social_icon_name( $url ) {
 	$icon = '';
 
 	if ( $url = strtolower( $url ) ) {
-		if ( strstr( $url, 'feed' ) ) {
-			$icon = 'rss';
-		} elseif( strstr( $url, 'vk.com' ) ) {
-			$icon = 'vkontakte';
-		} elseif ( strstr( $url, 'last.fm' ) ) {
-			$icon = 'lastfm';
-		} elseif ( strstr( $url, 'youtu.be' ) ) {
-			$icon = 'youtube';
-		} elseif ( strstr( $url, 'play.google.com' ) ) {
-			$icon = 'play';
-		} elseif ( strstr( $url, 'plus.google.com' ) ) {
-			$icon = 'googleplus';
-		} elseif ( strstr( $url, 'feedburner.google.com' ) ) {
-			$icon = 'mail';
+		foreach ( si_get_supported_url() as $link => $icon_name ) {
+			if ( strstr( $url, $link ) ) {
+				$icon = $icon_name;
+				break;
+			}
 		}
 
 		if ( ! $icon ) {

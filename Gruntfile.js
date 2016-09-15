@@ -52,8 +52,8 @@ module.exports = function( grunt ){
 		// Compile all .scss files.
 		sass: {
 			options: {
-				sourcemap: 'none',
-				loadPath: require( 'node-bourbon' ).includePaths
+				sourceMap: false,
+				includePaths: require( 'node-bourbon' ).includePaths
 			},
 			compile: {
 				files: [{
@@ -141,11 +141,11 @@ module.exports = function( grunt ){
 	});
 
 	// Load NPM tasks to be used here
+	grunt.loadNpmTasks( 'grunt-sass' );
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-checktextdomain' );
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
-	grunt.loadNpmTasks( 'grunt-contrib-sass' );
 	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 
