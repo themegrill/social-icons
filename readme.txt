@@ -3,7 +3,7 @@ Contributors: ThemeGrill, shivapoudel
 Tags: social, media, icons, brands, widget, social networking, social media, social icon, social icons, social profile, social icon widget, shortcode
 Requires at least: 4.0
 Tested up to: 4.6
-Stable tag: 1.4
+Stable tag: 1.4.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -52,7 +52,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
-= 1.4.1 - TBD =
+= 1.4.1 - 22/09/2016 =
 * Fix - odnoklassniki icon for ok.ru profile.
 * Fix - Center icons if used in Visual composer.
 * Fix - Non-static method should not be called statically.
