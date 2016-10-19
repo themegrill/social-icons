@@ -52,6 +52,9 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
+= 1.4.2 - TBD =
+* Fix - Blogspot icon to blog on Blogger.com
+
 = 1.4.1 - 22/09/2016 =
 * Fix - odnoklassniki icon for ok.ru profile.
 * Fix - Center icons if used in Visual composer.

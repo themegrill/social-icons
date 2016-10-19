@@ -102,6 +102,7 @@ function si_get_supported_url_icon() {
 		'last.fm'               => 'lastfm',
 		'youtu.be'              => 'youtube',
 		'battle.net'            => 'battlenet',
+		'blogspot.com'          => 'blogger',
 		'play.google.com'       => 'play',
 		'plus.google.com'       => 'googleplus',
 		'photos.google.com'     => 'googlephotos',
