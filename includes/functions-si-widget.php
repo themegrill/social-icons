@@ -15,8 +15,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Include Widget classes.
-include_once( 'abstracts/abstract-si-widget.php' );
-include_once( 'widgets/class-si-widget-social-icons.php' );
+include_once( dirname( __FILE__ ) . '/abstracts/abstract-si-widget.php' );
+include_once( dirname( __FILE__ ) . '/widgets/class-si-widget-social-icons.php' );
 
 /**
  * Register Widgets.

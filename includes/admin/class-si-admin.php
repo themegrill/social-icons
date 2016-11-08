@@ -31,10 +31,10 @@ class SI_Admin {
 	 * Include any classes we need within admin.
 	 */
 	public function includes() {
-		include_once( 'functions-si-admin.php' );
-		include_once( 'functions-si-meta-box.php' );
-		include_once( 'class-si-admin-assets.php' );
-		include_once( 'class-si-admin-post-types.php' );
+		include_once( dirname( __FILE__ ) . '/functions-si-admin.php' );
+		include_once( dirname( __FILE__ ) . '/functions-si-meta-box.php' );
+		include_once( dirname( __FILE__ ) . '/class-si-admin-assets.php' );
+		include_once( dirname( __FILE__ ) . '/class-si-admin-post-types.php' );
 	}
 
 	/**
