@@ -40,7 +40,7 @@ class SI_Admin_Post_Types {
 		add_action( 'edit_form_after_title', array( $this, 'edit_form_after_title' ) );
 
 		// Meta-Box Class
-		include_once( 'class-si-admin-meta-boxes.php' );
+		include_once( dirname( __FILE__ ) . '/class-si-admin-meta-boxes.php' );
 
 		// Disable post type view mode options
 		add_filter( 'view_mode_post_types', array( $this, 'disable_view_mode_options' ) );
