@@ -54,6 +54,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 = 1.5.0 - TBD =
 * Fix - Blogspot icon to blog on Blogger.com
+* Fix - Breakage of first social icon name found within a loop.
 
 = 1.4.1 - 22/09/2016 =
 * Fix - odnoklassniki icon for ok.ru profile.
