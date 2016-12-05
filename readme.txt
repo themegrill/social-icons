@@ -55,6 +55,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 = 1.5.0 - TBD =
 * Fix - Blogspot icon to blog on Blogger.com
 * Fix - Breakage of first social icon name found within a loop.
+* Fix - Fontawesome pseudo class selectors applied in sidebar area.
 * Tweak - Include dirname before including files.
 * Tweak - Social icons repeater field for siteorigin panel compat.
 
