@@ -46,7 +46,7 @@ class SI_Install {
 	 * @return array
 	 */
 	public static function plugin_row_meta( $plugin_meta, $plugin_file ) {
-		if ( $plugin_file == SI_PLUGIN_BASENAME ) {
+		if ( SI_PLUGIN_BASENAME == $plugin_file ) {
 			$new_plugin_meta = array(
 				'docs'    => '<a href="' . esc_url( apply_filters( 'social_icons_docs_url', 'http://themegrill.com/docs/social-icons/' ) ) . '" title="' . esc_attr( __( 'View Social Icons Documentation', 'social-icons' ) ) . '">' . __( 'Docs', 'social-icons' ) . '</a>',
 				'support' => '<a href="' . esc_url( apply_filters( 'social_icons_support_url', 'http://themegrill.com/support-forum/' ) ) . '" title="' . esc_attr( __( 'Visit Free Customer Support Forum', 'social-icons' ) ) . '">' . __( 'Free Support', 'social-icons' ) . '</a>',

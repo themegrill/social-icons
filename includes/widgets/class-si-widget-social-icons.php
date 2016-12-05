@@ -32,29 +32,29 @@ class SI_Widget_Social_Icons extends SI_Widget {
 			'title'  => array(
 				'type'  => 'text',
 				'std'   => __( 'Social Icons', 'social-icons' ),
-				'label' => __( 'Title', 'social-icons' )
+				'label' => __( 'Title', 'social-icons' ),
 			),
 			'description'  => array(
 				'type'  => 'textarea',
 				'std'   => '',
 				'label' => __( 'Description', 'social-icons' ),
-				'desc'  => __( 'Short description to be displayed above the icons.', 'social-icons' )
+				'desc'  => __( 'Short description to be displayed above the icons.', 'social-icons' ),
 			),
 			'show_label' => array(
 				'type'  => 'checkbox',
 				'std'   => 0,
 				'class' => 'show_label',
-				'label' => __( 'Show icon label', 'social-icons' )
+				'label' => __( 'Show icon label', 'social-icons' ),
 			),
 			'show_greyscale' => array(
 				'type'  => 'checkbox',
 				'std'   => 0,
-				'label' => __( 'Show Greyscale icons', 'social-icons' )
+				'label' => __( 'Show Greyscale icons', 'social-icons' ),
 			),
 			'open_tab' => array(
 				'type'  => 'checkbox',
 				'std'   => 0,
-				'label' => __( 'Open links in new tab', 'social-icons' )
+				'label' => __( 'Open links in new tab', 'social-icons' ),
 			),
 			'background_style' => array(
 				'type'  => 'select',
@@ -66,7 +66,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 					'rounded'        => __( 'Rounded', 'social-icons' ),
 					'square centre'  => __( 'Square Centre', 'social-icons' ),
 					'rounded centre' => __( 'Rounded Centre', 'social-icons' ),
-				)
+				),
 			),
 			'socicon_size' => array(
 				'type'  => 'number',
@@ -74,25 +74,25 @@ class SI_Widget_Social_Icons extends SI_Widget {
 				'min'   => 14,
 				'max'   => 40,
 				'std'   => 16,
-				'label' => __( 'Choose Icon Size', 'social-icons' )
+				'label' => __( 'Choose Icon Size', 'social-icons' ),
 			),
 			'socicon_sortable' => array(
 				'type'  => 'social_icons',
 				'class' => 'socicon-sortable',
 				'label' => __( 'Sortable Socicon', 'social-icons' ),
-				'desc'  => sprintf( __( 'Note that icons above are for reference and not how they will look on front-end. %sList of icons supported%s', 'social-icons' ), '<br><a target="_blank" href="' . esc_url( 'http://www.socicon.com/chart.php' ) . '">', '</a>' ),
+				'desc'  => sprintf( __( 'Note that icons above are for reference and not how they will look on front-end. %1$sList of icons supported%2$s', 'social-icons' ), '<br><a target="_blank" href="' . esc_url( 'http://www.socicon.com/chart.php' ) . '">', '</a>' ),
 				'btn'   => __( 'Add Icon', 'social-icons' ),
 				'std'   => array(
 					'twitter' => array(
 						'url'   => 'https://twitter.com/',
-						'label' => __( 'Follow Me', 'social-icons' )
+						'label' => __( 'Follow Me', 'social-icons' ),
 					),
 					'facebook' => array(
 						'url'   => 'https://facebook.com/',
-						'label' => __( 'Friend me on Facebook', 'social-icons' )
-					)
-				)
-			)
+						'label' => __( 'Friend me on Facebook', 'social-icons' ),
+					),
+				),
+			),
 		);
 
 		parent::__construct();
@@ -149,7 +149,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 						'url-field-name'   => $this->get_field_name( 'url-fields' ),
 						'label-value'      => $field['label'],
 						'label-field-id'   => $this->get_field_id( 'label-fields' ),
-						'label-field-name' => $this->get_field_name( 'label-fields' )
+						'label-field-name' => $this->get_field_name( 'label-fields' ),
 					) );
 				}
 			?></ul>
@@ -194,7 +194,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 
 					$instance[ $icon_name ] = array(
 						'url'   => $icon_url,
-						'label' => $icon_label
+						'label' => $icon_label,
 					);
 				}
 			}

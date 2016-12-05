@@ -66,7 +66,7 @@ class SI_Admin_Post_Types {
 			8 => __( 'Social Icon submitted.', 'social-icons' ),
 			9 => sprintf( __( 'Social Icon scheduled for: <strong>%1$s</strong>.', 'social-icons' ),
 			  date_i18n( __( 'M j, Y @ G:i', 'social-icons' ), strtotime( $post->post_date ) ) ),
-			10 => __( 'Social Icon draft updated.', 'social-icons' )
+			10 => __( 'Social Icon draft updated.', 'social-icons' ),
 		);
 
 		return $messages;
@@ -100,7 +100,7 @@ class SI_Admin_Post_Types {
 		$columns              = array();
 		$columns['cb']        = $existing_columns['cb'];
 		$columns['name']      = __( 'Name', 'social-icons' );
-		$columns['shortcode'] = __( 'Shortcode', 'social-icons' ) . si_help_tip( __( 'Copy and paste the shortcode on your post, page to render social icons.', 'social-icons') );
+		$columns['shortcode'] = __( 'Shortcode', 'social-icons' ) . si_help_tip( __( 'Copy and paste the shortcode on your post, page to render social icons.', 'social-icons' ) );
 		$columns['author']    = __( 'Author', 'social-icons' );
 		$columns['date']      = __( 'Date', 'social-icons' );
 
@@ -195,7 +195,7 @@ class SI_Admin_Post_Types {
 	public function social_icon_sortable_columns( $columns ) {
 		$custom = array(
 			'name'   => 'title',
-			'author' => 'author'
+			'author' => 'author',
 		);
 		return wp_parse_args( $custom, $columns );
 	}

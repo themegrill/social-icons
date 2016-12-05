@@ -1,0 +1,23 @@
+{
+  "name": "themegrill/social-icons",
+  "description": "Social Icons provides you with an easy way to display various popular social icons via widgets and shortcodes. You can drag the widget in your sidebars and change the settings from the widget form itself. Also you can use the shortcode and paste it on your page, post or wherever you like.",
+  "homepage": "http://themegrill.com/plugins/social-icons/",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0+",
+  "require": {
+    "composer/installers": "~1.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "*",
+    "wp-coding-standards/wpcs": "*",
+    "simplyadmire/composer-plugins" : "@dev"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+    ],
+    "post-update-cmd": [
+      "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+    ]
+  }
+}

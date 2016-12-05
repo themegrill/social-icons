@@ -42,8 +42,8 @@ class SI_Frontend_Scripts {
 				'src'     => str_replace( array( 'http:', 'https:' ), '', SI()->plugin_url() ) . '/assets/css/social-icons.css',
 				'deps'    => '',
 				'version' => SI_VERSION,
-				'media'   => 'all'
-			)
+				'media'   => 'all',
+			),
 		) );
 	}
 

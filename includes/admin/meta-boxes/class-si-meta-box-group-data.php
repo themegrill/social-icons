@@ -46,7 +46,7 @@ class SI_Meta_Box_Group_Data {
 							'label'  => __( 'Linked Icons', 'social-icons' ),
 							'target' => 'linked_group_data',
 							'class'  => 'linked_group_data',
-						)
+						),
 					) );
 
 					foreach ( $group_data_tabs as $key => $tab ) {
@@ -74,15 +74,23 @@ class SI_Meta_Box_Group_Data {
 							'rounded centre' => __( 'Rounded Centre', 'social-icons' ),
 						),
 						'desc_tip'    => 'true',
-						'description' => __( 'Define whether or not the entire background should be style based, or just with the default style.', 'social-icons' )
+						'description' => __( 'Define whether or not the entire background should be style based, or just with the default style.', 'social-icons' ),
 					) );
 
 					// Choose Icon size
-					social_icons_wp_text_input( array( 'id' => 'icon_font_size',  'label' => __( 'Choose Icon Size', 'social-icons' ), 'placeholder' => __( 'Default', 'social-icons' ), 'desc_tip' => true, 'description' => __( 'Leave blank for default icon font size.', 'social-icons' ), 'type' => 'number', 'custom_attributes' => array(
-						'step' => '1',
-						'min'  => '14',
-						'max'  => '40'
-					) ) );
+					social_icons_wp_text_input( array(
+						'id'          => 'icon_font_size',
+						'label'       => __( 'Choose Icon Size', 'social-icons' ),
+						'placeholder' => __( 'Default', 'social-icons' ),
+						'desc_tip'    => true,
+						'description' => __( 'Leave blank for default icon font size.', 'social-icons' ),
+						'type'        => 'number',
+						'custom_attributes' => array(
+							'step' => '1',
+							'min'  => '14',
+							'max'  => '40',
+						),
+					) );
 
 				echo '</div>';
 
@@ -124,12 +132,12 @@ class SI_Meta_Box_Group_Data {
 								$sortable_icons = array(
 									'twitter' => array(
 										'url'   => 'https://twitter.com/',
-										'label' => __( 'Follow Me', 'social-icons' )
+										'label' => __( 'Follow Me', 'social-icons' ),
 									),
 									'facebook' => array(
 										'url'   => 'https://facebook.com/',
-										'label' => __( 'Friend me on Facebook', 'social-icons' )
-									)
+										'label' => __( 'Friend me on Facebook', 'social-icons' ),
+									),
 								);
 							}
 
@@ -149,7 +157,7 @@ class SI_Meta_Box_Group_Data {
 										$name = 'dashicons-plus';
 										$icon = array(
 											'label' => '',
-											'url'   => ''
+											'url'   => '',
 										);
 										ob_start();
 										include( 'views/html-group-social-icon.php' );
@@ -206,7 +214,7 @@ class SI_Meta_Box_Group_Data {
 
 					$sortable_icons[ $icon_name ] = array(
 						'label' => $icon_label,
-						'url'   => $icon_url
+						'url'   => $icon_url,
 					);
 				}
 			}

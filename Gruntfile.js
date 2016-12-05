@@ -96,15 +96,20 @@ module.exports = function( grunt ){
 
 		// Generate POT files.
 		makepot: {
+			options: {
+				type: 'wp-plugin',
+				domainPath: 'languages',
+				potHeaders: {
+					'report-msgid-bugs-to': 'themegrill@gmail.com',
+					'language-team': 'LANGUAGE <EMAIL@ADDRESS>'
+				}
+			},
 			dist: {
 				options: {
-					type: 'wp-plugin',
-					domainPath: 'languages',
 					potFilename: 'social-icons.pot',
-					potHeaders: {
-						'report-msgid-bugs-to': 'themegrill@gmail.com',
-						'language-team': 'LANGUAGE <EMAIL@ADDRESS>'
-					}
+					exclude: [
+						'vendor/.*'
+					]
 				}
 			}
 		},
@@ -132,16 +137,33 @@ module.exports = function( grunt ){
 			},
 			files: {
 				src: [
-					'**/*.php',
-					'!node_modules/**'
+					'**/*.php',         // Include all files
+					'!node_modules/**', // Exclude node_modules/
+					'!vendor/**'        // Exclude vendor/
 				],
 				expand: true
+			}
+		},
+
+		// PHP Code Sniffer.
+		phpcs: {
+			options: {
+				bin: 'vendor/bin/phpcs',
+				standard: './phpcs.ruleset.xml'
+			},
+			dist: {
+				src:  [
+					'**/*.php',         // Include all files
+					'!node_modules/**', // Exclude node_modules/
+					'!vendor/**'        // Exclude vendor/
+				]
 			}
 		}
 	});
 
 	// Load NPM tasks to be used here
 	grunt.loadNpmTasks( 'grunt-sass' );
+	grunt.loadNpmTasks( 'grunt-phpcs' );
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-checktextdomain' );
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );

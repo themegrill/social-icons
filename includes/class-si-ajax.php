@@ -33,7 +33,7 @@ class SI_AJAX {
 	public static function add_ajax_events() {
 		// social_icons_EVENT => nopriv
 		$ajax_events = array(
-			'rated' => false
+			'rated' => false,
 		);
 
 		foreach ( $ajax_events as $ajax_event => $nopriv ) {
@@ -50,7 +50,7 @@ class SI_AJAX {
 	 */
 	public static function rated() {
 		if ( ! current_user_can( 'manage_options' ) ) {
-			die(-1);
+			die( -1 );
 		}
 
 		update_option( 'social_icons_admin_footer_text_rated', 1 );

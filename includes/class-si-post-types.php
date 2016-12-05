@@ -56,7 +56,7 @@ class SI_Post_Types {
 							'search_items'       => __( 'Search Social Icons', 'social-icons' ),
 							'not_found'          => __( 'No Social Icons found', 'social-icons' ),
 							'not_found_in_trash' => __( 'No Social Icons found in trash', 'social-icons' ),
-							'parent'             => __( 'Parent Social Icon', 'social-icons' )
+							'parent'             => __( 'Parent Social Icon', 'social-icons' ),
 						),
 					'description'         => __( 'This is where you can add new icons set to your social icons.', 'social-icons' ),
 					'public'              => false,
@@ -70,7 +70,7 @@ class SI_Post_Types {
 					'supports'            => array( 'title' ),
 					'show_in_menu'        => 'options-general.php',
 					'show_in_nav_menus'   => false,
-					'show_in_admin_bar'   => true
+					'show_in_admin_bar'   => true,
 				)
 			)
 		);
