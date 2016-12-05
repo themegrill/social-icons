@@ -20,6 +20,7 @@
 
 	li.social-icons-list-item {
 		margin: 4px;
+		padding: 0 !important;
 		display: inline-block;
 		border: none !important;
 		list-style: none !important;
@@ -39,6 +40,11 @@
 			span.social-icons-list-label {
 				margin-left: 4px;
 			}
+		}
+
+		&:before,
+		&:after {
+			visibility: hidden;
 		}
 	}
 
