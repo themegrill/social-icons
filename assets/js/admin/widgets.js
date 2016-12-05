@@ -67,6 +67,23 @@ jQuery( function ( $ ) {
 		}
 	});
 
+	// Make repeater field siteorigin compat.
+	$( document.body ).on( 'panelsopen', function( e ) {
+		var target = $( e.target );
+
+		// Check that this is for our widget class.
+		if ( ! target.has( 'social-icons-list' ) ) {
+			return false;
+		}
+
+		target.addClass( 'widget-content' );
+
+		widgetSortable( target );
+
+		// Trigger hidden options.
+		$( document.body ).trigger( 'si-init-hidden-options' );
+	});
+
 	// Remove Social Icons.
 	$( document.body ).on( 'click', '.social-icons-field-remove', function( e ) {
 		e.preventDefault();
