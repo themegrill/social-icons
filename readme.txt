@@ -54,6 +54,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 = 1.4.2 - TBD =
 * Fix - Blogspot icon to blog on Blogger.com
+* Tweak - Social icons repeater field for siteorigin compat.
 
 = 1.4.1 - 22/09/2016 =
 * Fix - odnoklassniki icon for ok.ru profile.
