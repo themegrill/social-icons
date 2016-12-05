@@ -3,7 +3,7 @@ Contributors: ThemeGrill, shivapoudel
 Tags: social, media, icons, brands, widget, social networking, social media, social icon, social icons, social profile, social icon widget, shortcode
 Requires at least: 4.0
 Tested up to: 4.6
-Stable tag: 1.4.1
+Stable tag: 1.5.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -52,9 +52,11 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
-= 1.4.2 - TBD =
+= 1.5.0 - TBD =
 * Fix - Blogspot icon to blog on Blogger.com
-* Tweak - Social icons repeater field for siteorigin compat.
+* Fix - Breakage of first social icon name found within a loop.
+* Tweak - Include dirname before including files.
+* Tweak - Social icons repeater field for siteorigin panel compat.
 
 = 1.4.1 - 22/09/2016 =
 * Fix - odnoklassniki icon for ok.ru profile.

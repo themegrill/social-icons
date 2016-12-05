@@ -3,7 +3,7 @@
  * Plugin Name: Social Icons
  * Plugin URI: http://themegrill.com/plugins/social-icons/
  * Description: Social Icons provides you with an easy way to display various popular social icons via widgets and shortcodes. You can drag the widget in your sidebars and change the settings from the widget form itself. Also you can use the shortcode and paste it on your page, post or wherever you like
- * Version: 1.4.1
+ * Version: 1.5.0
  * Author: ThemeGrill
  * Author URI: http://themegrill.com
  * License: GPLv3 or later
@@ -29,7 +29,7 @@ final class Social_Icons {
 	 * Plugin version.
 	 * @var string
 	 */
-	public $version = '1.4.1';
+	public $version = '1.5.0';
 
 	/**
 	 * Instance of this class.
@@ -94,6 +94,7 @@ final class Social_Icons {
 	 */
 	private function define_constants() {
 		$this->define( 'SI_PLUGIN_FILE', __FILE__ );
+		$this->define( 'SI_ABSPATH', dirname( __FILE__ ) . '/' );
 		$this->define( 'SI_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 		$this->define( 'SI_VERSION', $this->version );
 	}
@@ -129,29 +130,29 @@ final class Social_Icons {
 	 * Includes.
 	 */
 	private function includes() {
-		include_once( 'includes/functions-si-core.php' );
-		include_once( 'includes/functions-si-widget.php' );
-		include_once( 'includes/class-si-autoloader.php' );
-		include_once( 'includes/class-si-install.php' );
-		include_once( 'includes/class-si-ajax.php' );
+		include_once( SI_ABSPATH . 'includes/functions-si-core.php' );
+		include_once( SI_ABSPATH . 'includes/functions-si-widget.php' );
+		include_once( SI_ABSPATH . 'includes/class-si-autoloader.php' );
+		include_once( SI_ABSPATH . 'includes/class-si-install.php' );
+		include_once( SI_ABSPATH . 'includes/class-si-ajax.php' );
 
 		if ( $this->is_request( 'admin' ) ) {
-			include_once( 'includes/admin/class-si-admin.php' );
+			include_once( SI_ABSPATH . 'includes/admin/class-si-admin.php' );
 		}
 
 		if ( $this->is_request( 'frontend' ) ) {
 			$this->frontend_includes();
 		}
 
-		include_once( 'includes/class-si-post-types.php' );         // Registers post types
+		include_once( SI_ABSPATH . 'includes/class-si-post-types.php' );         // Registers post types
 	}
 
 	/**
 	 * Include required frontend files.
 	 */
 	public function frontend_includes() {
-		include_once( 'includes/class-si-frontend-scripts.php' );   // Frontend Scripts
-		include_once( 'includes/class-si-shortcodes.php' );         // Shortcodes Class
+		include_once( SI_ABSPATH . 'includes/class-si-frontend-scripts.php' );   // Frontend Scripts
+		include_once( SI_ABSPATH . 'includes/class-si-shortcodes.php' );         // Shortcodes Class
 	}
 
 	/**
