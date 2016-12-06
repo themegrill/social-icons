@@ -39,12 +39,20 @@ class SI_Frontend_Scripts {
 	public static function get_styles() {
 		return apply_filters( 'social_icons_enqueue_styles', array(
 			'social-icons-general' => array(
-				'src'     => str_replace( array( 'http:', 'https:' ), '', SI()->plugin_url() ) . '/assets/css/social-icons.css',
+				'src'     => self::get_asset_url( 'assets/css/social-icons.css' ),
 				'deps'    => '',
 				'version' => SI_VERSION,
 				'media'   => 'all',
 			),
 		) );
+	}
+
+	/**
+	 * Return protocol relative asset URL.
+	 * @param string $path
+	 */
+	private static function get_asset_url( $path ) {
+		return str_replace( array( 'http:', 'https:' ), '', plugins_url( $path, SI_PLUGIN_FILE ) );
 	}
 
 	/**
