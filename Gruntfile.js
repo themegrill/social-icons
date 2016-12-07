@@ -24,6 +24,16 @@ module.exports = function( grunt ){
 			]
 		},
 
+		// Sass linting with Stylelint.
+		stylelint: {
+			options: {
+				stylelintrc: '.stylelintrc'
+			},
+			all: [
+				'<%= dirs.css %>/*.scss'
+			]
+		},
+
 		// Minify all .js files.
 		uglify: {
 			options: {
@@ -164,6 +174,7 @@ module.exports = function( grunt ){
 	// Load NPM tasks to be used here
 	grunt.loadNpmTasks( 'grunt-sass' );
 	grunt.loadNpmTasks( 'grunt-phpcs' );
+	grunt.loadNpmTasks( 'grunt-stylelint' );
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-checktextdomain' );
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
@@ -184,6 +195,7 @@ module.exports = function( grunt ){
 	]);
 
 	grunt.registerTask( 'css', [
+		'stylelint',
 		'sass',
 		'cssmin'
 	]);
