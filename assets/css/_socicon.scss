@@ -6,7 +6,7 @@
 /**
  * Imports
  */
-@import "variables";
+@import 'variables';
 
 /**
  * Socicon fonts
@@ -25,8 +25,8 @@
 /**
  * Styling begins
  */
-[data-icon]:before {
-	font-family: "socicon" !important;
+[data-icon]::before {
+	font-family: 'socicon' !important;
 	content: attr(data-icon);
 	font-style: normal !important;
 	font-weight: normal !important;
@@ -38,9 +38,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-[class^="socicon-"]:before,
-[class*=" socicon-"]:before {
-	font-family: "socicon" !important;
+[class^='socicon-']::before,
+[class*='socicon-']::before {
+	font-family: 'socicon' !important;
 	font-style: normal !important;
 	font-weight: normal !important;
 	font-variant: normal !important;
@@ -67,8 +67,8 @@
 	color: $icon-modelmayhem;
 	background-color: $icon-modelmayhem;
 
-	&:before {
-		content: "\e000";
+	&::before {
+		content: '\e000';
 	}
 }
 
@@ -76,8 +76,8 @@
 	color: $icon-mixcloud;
 	background-color: $icon-mixcloud;
 
-	&:before {
-		content: "\e001";
+	&::before {
+		content: '\e001';
 	}
 }
 
@@ -85,8 +85,8 @@
 	color: $icon-drupal;
 	background-color: $icon-drupal;
 
-	&:before {
-		content: "\e002";
+	&::before {
+		content: '\e002';
 	}
 }
 
@@ -94,8 +94,8 @@
 	color: $icon-swarm;
 	background-color: $icon-swarm;
 
-	&:before {
-		content: "\e003";
+	&::before {
+		content: '\e003';
 	}
 }
 
@@ -103,8 +103,8 @@
 	color: $icon-istock;
 	background-color: $icon-istock;
 
-	&:before {
-		content: "\e004";
+	&::before {
+		content: '\e004';
 	}
 }
 
@@ -112,8 +112,8 @@
 	color: $icon-yammer;
 	background-color: $icon-yammer;
 
-	&:before {
-		content: "\e005";
+	&::before {
+		content: '\e005';
 	}
 }
 
@@ -121,8 +121,8 @@
 	color: $icon-ello;
 	background-color: $icon-ello;
 
-	&:before {
-		content: "\e006";
+	&::before {
+		content: '\e006';
 	}
 }
 
@@ -130,8 +130,8 @@
 	color: $icon-stackoverflow;
 	background-color: $icon-stackoverflow;
 
-	&:before {
-		content: "\e007";
+	&::before {
+		content: '\e007';
 	}
 }
 
@@ -139,8 +139,8 @@
 	color: $icon-persona;
 	background-color: $icon-persona;
 
-	&:before {
-		content: "\e008";
+	&::before {
+		content: '\e008';
 	}
 }
 
@@ -148,8 +148,8 @@
 	color: $icon-triplej;
 	background-color: $icon-triplej;
 
-	&:before {
-		content: "\e009";
+	&::before {
+		content: '\e009';
 	}
 }
 
@@ -157,8 +157,8 @@
 	color: $icon-houzz;
 	background-color: $icon-houzz;
 
-	&:before {
-		content: "\e00a";
+	&::before {
+		content: '\e00a';
 	}
 }
 
@@ -166,8 +166,8 @@
 	color: $icon-rss;
 	background-color: $icon-rss;
 
-	&:before {
-		content: "\e00b";
+	&::before {
+		content: '\e00b';
 	}
 }
 
@@ -175,8 +175,8 @@
 	color: $icon-paypal;
 	background-color: $icon-paypal;
 
-	&:before {
-		content: "\e00c";
+	&::before {
+		content: '\e00c';
 	}
 }
 
@@ -184,8 +184,8 @@
 	color: $icon-odnoklassniki;
 	background-color: $icon-odnoklassniki;
 
-	&:before {
-		content: "\e00d";
+	&::before {
+		content: '\e00d';
 	}
 }
 
@@ -193,8 +193,8 @@
 	color: $icon-airbnb;
 	background-color: $icon-airbnb;
 
-	&:before {
-		content: "\e00e";
+	&::before {
+		content: '\e00e';
 	}
 }
 
@@ -202,8 +202,8 @@
 	color: $icon-periscope;
 	background-color: $icon-periscope;
 
-	&:before {
-		content: "\e00f";
+	&::before {
+		content: '\e00f';
 	}
 }
 
@@ -211,8 +211,8 @@
 	color: $icon-outlook;
 	background-color: $icon-outlook;
 
-	&:before {
-		content: "\e010";
+	&::before {
+		content: '\e010';
 	}
 }
 
@@ -220,8 +220,8 @@
 	color: $icon-coderwall;
 	background-color: $icon-coderwall;
 
-	&:before {
-		content: "\e011";
+	&::before {
+		content: '\e011';
 	}
 }
 
@@ -229,8 +229,8 @@
 	color: $icon-tripadvisor;
 	background-color: $icon-tripadvisor;
 
-	&:before {
-		content: "\e012";
+	&::before {
+		content: '\e012';
 	}
 }
 
@@ -238,8 +238,8 @@
 	color: $icon-appnet;
 	background-color: $icon-appnet;
 
-	&:before {
-		content: "\e013";
+	&::before {
+		content: '\e013';
 	}
 }
 
@@ -247,8 +247,8 @@
 	color: $icon-goodreads;
 	background-color: $icon-goodreads;
 
-	&:before {
-		content: "\e014";
+	&::before {
+		content: '\e014';
 	}
 }
 
@@ -256,8 +256,8 @@
 	color: $icon-tripit;
 	background-color: $icon-tripit;
 
-	&:before {
-		content: "\e015";
+	&::before {
+		content: '\e015';
 	}
 }
 
@@ -265,8 +265,8 @@
 	color: $icon-lanyrd;
 	background-color: $icon-lanyrd;
 
-	&:before {
-		content: "\e016";
+	&::before {
+		content: '\e016';
 	}
 }
 
@@ -274,8 +274,8 @@
 	color: $icon-slideshare;
 	background-color: $icon-slideshare;
 
-	&:before {
-		content: "\e017";
+	&::before {
+		content: '\e017';
 	}
 }
 
@@ -283,8 +283,8 @@
 	color: $icon-buffer;
 	background-color: $icon-buffer;
 
-	&:before {
-		content: "\e018";
+	&::before {
+		content: '\e018';
 	}
 }
 
@@ -292,8 +292,8 @@
 	color: $icon-disqus;
 	background-color: $icon-disqus;
 
-	&:before {
-		content: "\e019";
+	&::before {
+		content: '\e019';
 	}
 }
 
@@ -301,8 +301,8 @@
 	color: $icon-vkontakte;
 	background-color: $icon-vkontakte;
 
-	&:before {
-		content: "\e01a";
+	&::before {
+		content: '\e01a';
 	}
 }
 
@@ -310,8 +310,8 @@
 	color: $icon-whatsapp;
 	background-color: $icon-whatsapp;
 
-	&:before {
-		content: "\e01b";
+	&::before {
+		content: '\e01b';
 	}
 }
 
@@ -319,8 +319,8 @@
 	color: $icon-patreon;
 	background-color: $icon-patreon;
 
-	&:before {
-		content: "\e01c";
+	&::before {
+		content: '\e01c';
 	}
 }
 
@@ -328,8 +328,8 @@
 	color: $icon-storehouse;
 	background-color: $icon-storehouse;
 
-	&:before {
-		content: "\e01d";
+	&::before {
+		content: '\e01d';
 	}
 }
 
@@ -337,8 +337,8 @@
 	color: $icon-pocket;
 	background-color: $icon-pocket;
 
-	&:before {
-		content: "\e01e";
+	&::before {
+		content: '\e01e';
 	}
 }
 
@@ -346,8 +346,8 @@
 	color: $icon-mail;
 	background-color: $icon-mail;
 
-	&:before {
-		content: "\e01f";
+	&::before {
+		content: '\e01f';
 	}
 }
 
@@ -355,8 +355,8 @@
 	color: $icon-blogger;
 	background-color: $icon-blogger;
 
-	&:before {
-		content: "\e020";
+	&::before {
+		content: '\e020';
 	}
 }
 
@@ -364,8 +364,8 @@
 	color: $icon-technorati;
 	background-color: $icon-technorati;
 
-	&:before {
-		content: "\e021";
+	&::before {
+		content: '\e021';
 	}
 }
 
@@ -373,8 +373,8 @@
 	color: $icon-reddit;
 	background-color: $icon-reddit;
 
-	&:before {
-		content: "\e022";
+	&::before {
+		content: '\e022';
 	}
 }
 
@@ -382,8 +382,8 @@
 	color: $icon-dribbble;
 	background-color: $icon-dribbble;
 
-	&:before {
-		content: "\e023";
+	&::before {
+		content: '\e023';
 	}
 }
 
@@ -391,8 +391,8 @@
 	color: $icon-stumbleupon;
 	background-color: $icon-stumbleupon;
 
-	&:before {
-		content: "\e024";
+	&::before {
+		content: '\e024';
 	}
 }
 
@@ -400,8 +400,8 @@
 	color: $icon-digg;
 	background-color: $icon-digg;
 
-	&:before {
-		content: "\e025";
+	&::before {
+		content: '\e025';
 	}
 }
 
@@ -409,8 +409,8 @@
 	color: $icon-envato;
 	background-color: $icon-envato;
 
-	&:before {
-		content: "\e026";
+	&::before {
+		content: '\e026';
 	}
 }
 
@@ -418,8 +418,8 @@
 	color: $icon-behance;
 	background-color: $icon-behance;
 
-	&:before {
-		content: "\e027";
+	&::before {
+		content: '\e027';
 	}
 }
 
@@ -427,8 +427,8 @@
 	color: $icon-delicious;
 	background-color: $icon-delicious;
 
-	&:before {
-		content: "\e028";
+	&::before {
+		content: '\e028';
 	}
 }
 
@@ -436,8 +436,8 @@
 	color: $icon-deviantart;
 	background-color: $icon-deviantart;
 
-	&:before {
-		content: "\e029";
+	&::before {
+		content: '\e029';
 	}
 }
 
@@ -445,8 +445,8 @@
 	color: $icon-forrst;
 	background-color: $icon-forrst;
 
-	&:before {
-		content: "\e02a";
+	&::before {
+		content: '\e02a';
 	}
 }
 
@@ -454,8 +454,8 @@
 	color: $icon-play;
 	background-color: $icon-play;
 
-	&:before {
-		content: "\e02b";
+	&::before {
+		content: '\e02b';
 	}
 }
 
@@ -463,8 +463,8 @@
 	color: $icon-zerply;
 	background-color: $icon-zerply;
 
-	&:before {
-		content: "\e02c";
+	&::before {
+		content: '\e02c';
 	}
 }
 
@@ -472,8 +472,8 @@
 	color: $icon-wikipedia;
 	background-color: $icon-wikipedia;
 
-	&:before {
-		content: "\e02d";
+	&::before {
+		content: '\e02d';
 	}
 }
 
@@ -481,8 +481,8 @@
 	color: $icon-apple;
 	background-color: $icon-apple;
 
-	&:before {
-		content: "\e02e";
+	&::before {
+		content: '\e02e';
 	}
 }
 
@@ -490,8 +490,8 @@
 	color: $icon-flattr;
 	background-color: $icon-flattr;
 
-	&:before {
-		content: "\e02f";
+	&::before {
+		content: '\e02f';
 	}
 }
 
@@ -499,8 +499,8 @@
 	color: $icon-github;
 	background-color: $icon-github;
 
-	&:before {
-		content: "\e030";
+	&::before {
+		content: '\e030';
 	}
 }
 
@@ -508,8 +508,8 @@
 	color: $icon-renren;
 	background-color: $icon-renren;
 
-	&:before {
-		content: "\e031";
+	&::before {
+		content: '\e031';
 	}
 }
 
@@ -517,8 +517,8 @@
 	color: $icon-friendfeed;
 	background-color: $icon-friendfeed;
 
-	&:before {
-		content: "\e032";
+	&::before {
+		content: '\e032';
 	}
 }
 
@@ -526,8 +526,8 @@
 	color: $icon-newsvine;
 	background-color: $icon-newsvine;
 
-	&:before {
-		content: "\e033";
+	&::before {
+		content: '\e033';
 	}
 }
 
@@ -535,8 +535,8 @@
 	color: $icon-identica;
 	background-color: $icon-identica;
 
-	&:before {
-		content: "\e034";
+	&::before {
+		content: '\e034';
 	}
 }
 
@@ -544,8 +544,8 @@
 	color: $icon-bebo;
 	background-color: $icon-bebo;
 
-	&:before {
-		content: "\e035";
+	&::before {
+		content: '\e035';
 	}
 }
 
@@ -553,8 +553,8 @@
 	color: $icon-zynga;
 	background-color: $icon-zynga;
 
-	&:before {
-		content: "\e036";
+	&::before {
+		content: '\e036';
 	}
 }
 
@@ -562,8 +562,8 @@
 	color: $icon-steam;
 	background-color: $icon-steam;
 
-	&:before {
-		content: "\e037";
+	&::before {
+		content: '\e037';
 	}
 }
 
@@ -571,8 +571,8 @@
 	color: $icon-xbox;
 	background-color: $icon-xbox;
 
-	&:before {
-		content: "\e038";
+	&::before {
+		content: '\e038';
 	}
 }
 
@@ -580,8 +580,8 @@
 	color: $icon-windows;
 	background-color: $icon-windows;
 
-	&:before {
-		content: "\e039";
+	&::before {
+		content: '\e039';
 	}
 }
 
@@ -589,8 +589,8 @@
 	color: $icon-qq;
 	background-color: $icon-qq;
 
-	&:before {
-		content: "\e03a";
+	&::before {
+		content: '\e03a';
 	}
 }
 
@@ -598,8 +598,8 @@
 	color: $icon-douban;
 	background-color: $icon-douban;
 
-	&:before {
-		content: "\e03b";
+	&::before {
+		content: '\e03b';
 	}
 }
 
@@ -607,8 +607,8 @@
 	color: $icon-meetup;
 	background-color: $icon-meetup;
 
-	&:before {
-		content: "\e03c";
+	&::before {
+		content: '\e03c';
 	}
 }
 
@@ -616,8 +616,8 @@
 	color: $icon-playstation;
 	background-color: $icon-playstation;
 
-	&:before {
-		content: "\e03d";
+	&::before {
+		content: '\e03d';
 	}
 }
 
@@ -625,8 +625,8 @@
 	color: $icon-android;
 	background-color: $icon-android;
 
-	&:before {
-		content: "\e03e";
+	&::before {
+		content: '\e03e';
 	}
 }
 
@@ -634,8 +634,8 @@
 	color: $icon-snapchat;
 	background-color: $icon-snapchat;
 
-	&:before {
-		content: "\e03f";
+	&::before {
+		content: '\e03f';
 	}
 }
 
@@ -643,8 +643,8 @@
 	color: $icon-twitter;
 	background-color: $icon-twitter;
 
-	&:before {
-		content: "\e040";
+	&::before {
+		content: '\e040';
 	}
 }
 
@@ -652,8 +652,8 @@
 	color: $icon-facebook;
 	background-color: $icon-facebook;
 
-	&:before {
-		content: "\e041";
+	&::before {
+		content: '\e041';
 	}
 }
 
@@ -661,8 +661,8 @@
 	color: $icon-googleplus;
 	background-color: $icon-googleplus;
 
-	&:before {
-		content: "\e042";
+	&::before {
+		content: '\e042';
 	}
 }
 
@@ -670,8 +670,8 @@
 	color: $icon-pinterest;
 	background-color: $icon-pinterest;
 
-	&:before {
-		content: "\e043";
+	&::before {
+		content: '\e043';
 	}
 }
 
@@ -679,8 +679,8 @@
 	color: $icon-foursquare;
 	background-color: $icon-foursquare;
 
-	&:before {
-		content: "\e044";
+	&::before {
+		content: '\e044';
 	}
 }
 
@@ -688,8 +688,8 @@
 	color: $icon-yahoo;
 	background-color: $icon-yahoo;
 
-	&:before {
-		content: "\e045";
+	&::before {
+		content: '\e045';
 	}
 }
 
@@ -697,8 +697,8 @@
 	color: $icon-skype;
 	background-color: $icon-skype;
 
-	&:before {
-		content: "\e046";
+	&::before {
+		content: '\e046';
 	}
 }
 
@@ -706,8 +706,8 @@
 	color: $icon-yelp;
 	background-color: $icon-yelp;
 
-	&:before {
-		content: "\e047";
+	&::before {
+		content: '\e047';
 	}
 }
 
@@ -715,8 +715,8 @@
 	color: $icon-feedburner;
 	background-color: $icon-feedburner;
 
-	&:before {
-		content: "\e048";
+	&::before {
+		content: '\e048';
 	}
 }
 
@@ -724,8 +724,8 @@
 	color: $icon-linkedin;
 	background-color: $icon-linkedin;
 
-	&:before {
-		content: "\e049";
+	&::before {
+		content: '\e049';
 	}
 }
 
@@ -733,8 +733,8 @@
 	color: $icon-viadeo;
 	background-color: $icon-viadeo;
 
-	&:before {
-		content: "\e04a";
+	&::before {
+		content: '\e04a';
 	}
 }
 
@@ -742,8 +742,8 @@
 	color: $icon-xing;
 	background-color: $icon-xing;
 
-	&:before {
-		content: "\e04b";
+	&::before {
+		content: '\e04b';
 	}
 }
 
@@ -751,8 +751,8 @@
 	color: $icon-myspace;
 	background-color: $icon-myspace;
 
-	&:before {
-		content: "\e04c";
+	&::before {
+		content: '\e04c';
 	}
 }
 
@@ -760,8 +760,8 @@
 	color: $icon-soundcloud;
 	background-color: $icon-soundcloud;
 
-	&:before {
-		content: "\e04d";
+	&::before {
+		content: '\e04d';
 	}
 }
 
@@ -769,8 +769,8 @@
 	color: $icon-spotify;
 	background-color: $icon-spotify;
 
-	&:before {
-		content: "\e04e";
+	&::before {
+		content: '\e04e';
 	}
 }
 
@@ -778,8 +778,8 @@
 	color: $icon-grooveshark;
 	background-color: $icon-grooveshark;
 
-	&:before {
-		content: "\e04f";
+	&::before {
+		content: '\e04f';
 	}
 }
 
@@ -787,8 +787,8 @@
 	color: $icon-lastfm;
 	background-color: $icon-lastfm;
 
-	&:before {
-		content: "\e050";
+	&::before {
+		content: '\e050';
 	}
 }
 
@@ -796,8 +796,8 @@
 	color: $icon-youtube;
 	background-color: $icon-youtube;
 
-	&:before {
-		content: "\e051";
+	&::before {
+		content: '\e051';
 	}
 }
 
@@ -805,8 +805,8 @@
 	color: $icon-vimeo;
 	background-color: $icon-vimeo;
 
-	&:before {
-		content: "\e052";
+	&::before {
+		content: '\e052';
 	}
 }
 
@@ -814,8 +814,8 @@
 	color: $icon-dailymotion;
 	background-color: $icon-dailymotion;
 
-	&:before {
-		content: "\e053";
+	&::before {
+		content: '\e053';
 	}
 }
 
@@ -823,8 +823,8 @@
 	color: $icon-vine;
 	background-color: $icon-vine;
 
-	&:before {
-		content: "\e054";
+	&::before {
+		content: '\e054';
 	}
 }
 
@@ -832,8 +832,8 @@
 	color: $icon-flickr;
 	background-color: $icon-flickr;
 
-	&:before {
-		content: "\e055";
+	&::before {
+		content: '\e055';
 	}
 }
 
@@ -841,8 +841,8 @@
 	color: $icon-500px;
 	background-color: $icon-500px;
 
-	&:before {
-		content: "\e056";
+	&::before {
+		content: '\e056';
 	}
 }
 
@@ -850,8 +850,8 @@
 	color: $icon-instagram;
 	background-color: $icon-instagram;
 
-	&:before {
-		content: "\e057";
+	&::before {
+		content: '\e057';
 	}
 }
 
@@ -859,8 +859,8 @@
 	color: $icon-wordpress;
 	background-color: $icon-wordpress;
 
-	&:before {
-		content: "\e058";
+	&::before {
+		content: '\e058';
 	}
 }
 
@@ -868,8 +868,8 @@
 	color: $icon-tumblr;
 	background-color: $icon-tumblr;
 
-	&:before {
-		content: "\e059";
+	&::before {
+		content: '\e059';
 	}
 }
 
@@ -877,8 +877,8 @@
 	color: $icon-twitch;
 	background-color: $icon-twitch;
 
-	&:before {
-		content: "\e05a";
+	&::before {
+		content: '\e05a';
 	}
 }
 
@@ -886,8 +886,8 @@
 	color: $icon-8tracks;
 	background-color: $icon-8tracks;
 
-	&:before {
-		content: "\e05b";
+	&::before {
+		content: '\e05b';
 	}
 }
 
@@ -895,8 +895,8 @@
 	color: $icon-amazon;
 	background-color: $icon-amazon;
 
-	&:before {
-		content: "\e05c";
+	&::before {
+		content: '\e05c';
 	}
 }
 
@@ -904,8 +904,8 @@
 	color: $icon-icq;
 	background-color: $icon-icq;
 
-	&:before {
-		content: "\e05d";
+	&::before {
+		content: '\e05d';
 	}
 }
 
@@ -913,8 +913,8 @@
 	color: $icon-smugmug;
 	background-color: $icon-smugmug;
 
-	&:before {
-		content: "\e05e";
+	&::before {
+		content: '\e05e';
 	}
 }
 
@@ -922,8 +922,8 @@
 	color: $icon-ravelry;
 	background-color: $icon-ravelry;
 
-	&:before {
-		content: "\e05f";
+	&::before {
+		content: '\e05f';
 	}
 }
 
@@ -931,8 +931,8 @@
 	color: $icon-weibo;
 	background-color: $icon-weibo;
 
-	&:before {
-		content: "\e060";
+	&::before {
+		content: '\e060';
 	}
 }
 
@@ -940,8 +940,8 @@
 	color: $icon-baidu;
 	background-color: $icon-baidu;
 
-	&:before {
-		content: "\e061";
+	&::before {
+		content: '\e061';
 	}
 }
 
@@ -949,8 +949,8 @@
 	color: $icon-angellist;
 	background-color: $icon-angellist;
 
-	&:before {
-		content: "\e062";
+	&::before {
+		content: '\e062';
 	}
 }
 
@@ -958,8 +958,8 @@
 	color: $icon-ebay;
 	background-color: $icon-ebay;
 
-	&:before {
-		content: "\e063";
+	&::before {
+		content: '\e063';
 	}
 }
 
@@ -967,8 +967,8 @@
 	color: $icon-imdb;
 	background-color: $icon-imdb;
 
-	&:before {
-		content: "\e064";
+	&::before {
+		content: '\e064';
 	}
 }
 
@@ -976,8 +976,8 @@
 	color: $icon-stayfriends;
 	background-color: $icon-stayfriends;
 
-	&:before {
-		content: "\e065";
+	&::before {
+		content: '\e065';
 	}
 }
 
@@ -985,8 +985,8 @@
 	color: $icon-residentadvisor;
 	background-color: $icon-residentadvisor;
 
-	&:before {
-		content: "\e066";
+	&::before {
+		content: '\e066';
 	}
 }
 
@@ -994,8 +994,8 @@
 	color: $icon-google;
 	background-color: $icon-google;
 
-	&:before {
-		content: "\e067";
+	&::before {
+		content: '\e067';
 	}
 }
 
@@ -1003,8 +1003,8 @@
 	color: $icon-yandex;
 	background-color: $icon-yandex;
 
-	&:before {
-		content: "\e068";
+	&::before {
+		content: '\e068';
 	}
 }
 
@@ -1012,8 +1012,8 @@
 	color: $icon-sharethis;
 	background-color: $icon-sharethis;
 
-	&:before {
-		content: "\e069";
+	&::before {
+		content: '\e069';
 	}
 }
 
@@ -1021,8 +1021,8 @@
 	color: $icon-bandcamp;
 	background-color: $icon-bandcamp;
 
-	&:before {
-		content: "\e06a";
+	&::before {
+		content: '\e06a';
 	}
 }
 
@@ -1030,8 +1030,8 @@
 	color: $icon-itunes;
 	background-color: $icon-itunes;
 
-	&:before {
-		content: "\e06b";
+	&::before {
+		content: '\e06b';
 	}
 }
 
@@ -1039,8 +1039,8 @@
 	color: $icon-deezer;
 	background-color: $icon-deezer;
 
-	&:before {
-		content: "\e06c";
+	&::before {
+		content: '\e06c';
 	}
 }
 
@@ -1048,8 +1048,8 @@
 	color: $icon-medium;
 	background-color: $icon-medium;
 
-	&:before {
-		content: "\e06d";
+	&::before {
+		content: '\e06d';
 	}
 }
 
@@ -1057,8 +1057,8 @@
 	color: $icon-telegram;
 	background-color: $icon-telegram;
 
-	&:before {
-		content: "\e06e";
+	&::before {
+		content: '\e06e';
 	}
 }
 
@@ -1066,8 +1066,8 @@
 	color: $icon-openid;
 	background-color: $icon-openid;
 
-	&:before {
-		content: "\e06f";
+	&::before {
+		content: '\e06f';
 	}
 }
 
@@ -1075,8 +1075,8 @@
 	color: $icon-amplement;
 	background-color: $icon-amplement;
 
-	&:before {
-		content: "\e070";
+	&::before {
+		content: '\e070';
 	}
 }
 
@@ -1084,8 +1084,8 @@
 	color: $icon-viber;
 	background-color: $icon-viber;
 
-	&:before {
-		content: "\e071";
+	&::before {
+		content: '\e071';
 	}
 }
 
@@ -1093,8 +1093,8 @@
 	color: $icon-zomato;
 	background-color: $icon-zomato;
 
-	&:before {
-		content: "\e072";
+	&::before {
+		content: '\e072';
 	}
 }
 
@@ -1102,8 +1102,8 @@
 	color: $icon-quora;
 	background-color: $icon-quora;
 
-	&:before {
-		content: "\e073";
+	&::before {
+		content: '\e073';
 	}
 }
 
@@ -1111,8 +1111,8 @@
 	color: $icon-draugiem;
 	background-color: $icon-draugiem;
 
-	&:before {
-		content: "\e074";
+	&::before {
+		content: '\e074';
 	}
 }
 
@@ -1120,8 +1120,8 @@
 	color: $icon-endomodo;
 	background-color: $icon-endomodo;
 
-	&:before {
-		content: "\e075";
+	&::before {
+		content: '\e075';
 	}
 }
 
@@ -1129,8 +1129,8 @@
 	color: $icon-filmweb;
 	background-color: $icon-filmweb;
 
-	&:before {
-		content: "\e076";
+	&::before {
+		content: '\e076';
 	}
 }
 
@@ -1138,8 +1138,8 @@
 	color: $icon-stackexchange;
 	background-color: $icon-stackexchange;
 
-	&:before {
-		content: "\e077";
+	&::before {
+		content: '\e077';
 	}
 }
 
@@ -1147,8 +1147,8 @@
 	color: $icon-wykop;
 	background-color: $icon-wykop;
 
-	&:before {
-		content: "\e078";
+	&::before {
+		content: '\e078';
 	}
 }
 
@@ -1156,8 +1156,8 @@
 	color: $icon-teamspeak;
 	background-color: $icon-teamspeak;
 
-	&:before {
-		content: "\e079";
+	&::before {
+		content: '\e079';
 	}
 }
 
@@ -1165,8 +1165,8 @@
 	color: $icon-teamviewer;
 	background-color: $icon-teamviewer;
 
-	&:before {
-		content: "\e07a";
+	&::before {
+		content: '\e07a';
 	}
 }
 
@@ -1174,8 +1174,8 @@
 	color: $icon-ventrilo;
 	background-color: $icon-ventrilo;
 
-	&:before {
-		content: "\e07b";
+	&::before {
+		content: '\e07b';
 	}
 }
 
@@ -1183,8 +1183,8 @@
 	color: $icon-younow;
 	background-color: $icon-younow;
 
-	&:before {
-		content: "\e07c";
+	&::before {
+		content: '\e07c';
 	}
 }
 
@@ -1192,8 +1192,8 @@
 	color: $icon-raidcall;
 	background-color: $icon-raidcall;
 
-	&:before {
-		content: "\e07d";
+	&::before {
+		content: '\e07d';
 	}
 }
 
@@ -1201,8 +1201,8 @@
 	color: $icon-mumble;
 	background-color: $icon-mumble;
 
-	&:before {
-		content: "\e07e";
+	&::before {
+		content: '\e07e';
 	}
 }
 
@@ -1210,8 +1210,8 @@
 	color: $icon-bebee;
 	background-color: $icon-bebee;
 
-	&:before {
-		content: "\e07f";
+	&::before {
+		content: '\e07f';
 	}
 }
 
@@ -1219,8 +1219,8 @@
 	color: $icon-hitbox;
 	background-color: $icon-hitbox;
 
-	&:before {
-		content: "\e080";
+	&::before {
+		content: '\e080';
 	}
 }
 
@@ -1228,8 +1228,8 @@
 	color: $icon-reverbnation;
 	background-color: $icon-reverbnation;
 
-	&:before {
-		content: "\e081";
+	&::before {
+		content: '\e081';
 	}
 }
 
@@ -1237,8 +1237,8 @@
 	color: $icon-formulr;
 	background-color: $icon-formulr;
 
-	&:before {
-		content: "\e082";
+	&::before {
+		content: '\e082';
 	}
 }
 
@@ -1246,8 +1246,8 @@
 	color: $icon-battlenet;
 	background-color: $icon-battlenet;
 
-	&:before {
-		content: "\e083";
+	&::before {
+		content: '\e083';
 	}
 }
 
@@ -1255,8 +1255,8 @@
 	color: $icon-chrome;
 	background-color: $icon-chrome;
 
-	&:before {
-		content: "\e084";
+	&::before {
+		content: '\e084';
 	}
 }
 
@@ -1264,8 +1264,8 @@
 	color: $icon-diablo;
 	background-color: $icon-diablo;
 
-	&:before {
-		content: "\e085";
+	&::before {
+		content: '\e085';
 	}
 }
 
@@ -1273,8 +1273,8 @@
 	color: $icon-discord;
 	background-color: $icon-discord;
 
-	&:before {
-		content: "\e086";
+	&::before {
+		content: '\e086';
 	}
 }
 
@@ -1282,8 +1282,8 @@
 	color: $icon-issuu;
 	background-color: $icon-issuu;
 
-	&:before {
-		content: "\e087";
+	&::before {
+		content: '\e087';
 	}
 }
 
@@ -1291,8 +1291,8 @@
 	color: $icon-macos;
 	background-color: $icon-macos;
 
-	&:before {
-		content: "\e088";
+	&::before {
+		content: '\e088';
 	}
 }
 
@@ -1300,8 +1300,8 @@
 	color: $icon-firefox;
 	background-color: $icon-firefox;
 
-	&:before {
-		content: "\e089";
+	&::before {
+		content: '\e089';
 	}
 }
 
@@ -1309,8 +1309,8 @@
 	color: $icon-heroes;
 	background-color: $icon-heroes;
 
-	&:before {
-		content: "\e08a";
+	&::before {
+		content: '\e08a';
 	}
 }
 
@@ -1318,8 +1318,8 @@
 	color: $icon-hearthstone;
 	background-color: $icon-hearthstone;
 
-	&:before {
-		content: "\e08b";
+	&::before {
+		content: '\e08b';
 	}
 }
 
@@ -1327,8 +1327,8 @@
 	color: $icon-overwatch;
 	background-color: $icon-overwatch;
 
-	&:before {
-		content: "\e08c";
+	&::before {
+		content: '\e08c';
 	}
 }
 
@@ -1336,8 +1336,8 @@
 	color: $icon-opera;
 	background-color: $icon-opera;
 
-	&:before {
-		content: "\e08d";
+	&::before {
+		content: '\e08d';
 	}
 }
 
@@ -1345,8 +1345,8 @@
 	color: $icon-warcraft;
 	background-color: $icon-warcraft;
 
-	&:before {
-		content: "\e08e";
+	&::before {
+		content: '\e08e';
 	}
 }
 
@@ -1354,8 +1354,8 @@
 	color: $icon-starcraft;
 	background-color: $icon-starcraft;
 
-	&:before {
-		content: "\e08f";
+	&::before {
+		content: '\e08f';
 	}
 }
 
@@ -1363,8 +1363,8 @@
 	color: $icon-keybase;
 	background-color: $icon-keybase;
 
-	&:before {
-		content: "\e090";
+	&::before {
+		content: '\e090';
 	}
 }
 
@@ -1372,8 +1372,8 @@
 	color: $icon-alliance;
 	background-color: $icon-alliance;
 
-	&:before {
-		content: "\e091";
+	&::before {
+		content: '\e091';
 	}
 }
 
@@ -1381,8 +1381,8 @@
 	color: $icon-livejournal;
 	background-color: $icon-livejournal;
 
-	&:before {
-		content: "\e092";
+	&::before {
+		content: '\e092';
 	}
 }
 
@@ -1390,8 +1390,8 @@
 	color: $icon-googlephotos;
 	background-color: $icon-googlephotos;
 
-	&:before {
-		content: "\e093";
+	&::before {
+		content: '\e093';
 	}
 }
 
@@ -1399,8 +1399,8 @@
 	color: $icon-horde;
 	background-color: $icon-horde;
 
-	&:before {
-		content: "\e094";
+	&::before {
+		content: '\e094';
 	}
 }
 
@@ -1408,8 +1408,8 @@
 	color: $icon-etsy;
 	background-color: $icon-etsy;
 
-	&:before {
-		content: "\e095";
+	&::before {
+		content: '\e095';
 	}
 }
 
@@ -1417,8 +1417,8 @@
 	color: $icon-zapier;
 	background-color: $icon-zapier;
 
-	&:before {
-		content: "\e096";
+	&::before {
+		content: '\e096';
 	}
 }
 
@@ -1426,8 +1426,8 @@
 	color: $icon-google-scholar;
 	background-color: $icon-google-scholar;
 
-	&:before {
-		content: "\e097";
+	&::before {
+		content: '\e097';
 	}
 }
 
@@ -1435,7 +1435,7 @@
 	color: $icon-researchgate;
 	background-color: $icon-researchgate;
 
-	&:before {
-		content: "\e098";
+	&::before {
+		content: '\e098';
 	}
 }

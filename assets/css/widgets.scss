@@ -6,8 +6,8 @@
 /**
  * Imports
  */
-@import "bourbon";
-@import "socicon";
+@import 'bourbon';
+@import 'socicon';
 
 /**
  * Styling begins
@@ -85,7 +85,7 @@ ul.social-icons-list {
 				margin-left: 40px;
 				margin-right: 30px;
 
-				input.social-icons-field-label[type="text"] {
+				input.social-icons-field-label[type='text'] {
 					margin-top: 2px;
 				}
 			}
