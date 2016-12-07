@@ -6,7 +6,7 @@
 /**
  * Imports
  */
-@import "socicon";
+@import 'socicon';
 
 /**
  * Styling begins
@@ -42,8 +42,8 @@
 			}
 		}
 
-		&:before,
-		&:after {
+		&::before,
+		&::after {
 			visibility: hidden;
 		}
 	}
