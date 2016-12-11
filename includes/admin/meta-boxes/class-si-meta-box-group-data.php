@@ -92,6 +92,21 @@ class SI_Meta_Box_Group_Data {
 						),
 					) );
 
+					// Choose Icon Padding
+					social_icons_wp_text_input( array(
+						'id'          => 'icon_padding',
+						'label'       => __( 'Choose Icon Padding', 'social-icons' ),
+						'placeholder' => __( 'Default', 'social-icons' ),
+						'desc_tip'    => true,
+						'description' => __( 'Leave blank for default icon font size.', 'social-icons' ),
+						'type'        => 'number',
+						'custom_attributes' => array(
+							'step' => '1',
+							'min'  => '10',
+							'max'  => '80',
+						),
+					) );
+
 				echo '</div>';
 
 				echo '<div class="options_group">';

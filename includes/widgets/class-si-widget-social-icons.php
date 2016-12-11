@@ -76,6 +76,14 @@ class SI_Widget_Social_Icons extends SI_Widget {
 				'std'   => 16,
 				'label' => __( 'Choose Icon Size', 'social-icons' ),
 			),
+			'socicon_padding' => array(
+				'type'  => 'number',
+				'step'  => 1,
+				'min'   => 10,
+				'max'   => 80,
+				'std'   => 10,
+				'label' => __( 'Choose Icon Padding', 'social-icons' ),
+			),
 			'socicon_sortable' => array(
 				'type'  => 'social_icons',
 				'class' => 'socicon-sortable',
@@ -257,6 +265,10 @@ class SI_Widget_Social_Icons extends SI_Widget {
 			$class_list[] = 'icons-background-' . $instance['background_style'];
 		}
 
+		// Custom icon padding and font size.
+		$socicon_size    = empty( $instance['socicon_size'] ) ? 16 : $instance['socicon_size'];
+		$socicon_padding = empty( $instance['socicon_padding'] ) ? 10 : $instance['socicon_padding'];
+
 		?>
 		<?php if ( ! empty( $instance['description'] ) ) : ?>
 			<p><?php echo $instance['description']; ?></p>
@@ -268,7 +280,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 
 				<li class="social-icons-list-item">
 					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( $instance['open_tab'] ? 'target="_blank"' : '' ); ?> class="social-icon">
-						<span class="socicon socicon-<?php echo esc_attr( $title ); ?>" style="font-size: <?php echo esc_attr( $instance['socicon_size'] ); ?>px"></span>
+						<span class="socicon socicon-<?php echo esc_attr( $title ); ?>" style="font-size: <?php echo esc_attr( $socicon_size ); ?>px; padding: <?php echo esc_attr( $socicon_padding ); ?>px"></span>
 
 						<?php if ( $instance['show_label'] ) : ?>
 							<span class="social-icons-list-label"><?php echo esc_html( $field['label'] ); ?></span>

@@ -53,6 +53,7 @@ class SI_Shortcodes {
 		if ( $group_id && 'social_icon' == get_post_type( $group_id ) ) {
 			$group_data['background_style'] = get_post_meta( $group_id, 'background_style', true );
 			$group_data['icon_font_size']   = get_post_meta( $group_id, 'icon_font_size', true );
+			$group_data['icon_padding']     = get_post_meta( $group_id, 'icon_padding', true );
 			$group_data['manage_label']     = get_post_meta( $group_id, '_manage_label', true );
 			$group_data['greyscale_icons']  = get_post_meta( $group_id, '_greyscale_icons', true );
 			$group_data['open_new_tab']     = get_post_meta( $group_id, '_open_new_tab', true );
@@ -90,7 +91,8 @@ class SI_Shortcodes {
 			$class_list[] = 'icons-background-' . $group_data['background_style'];
 		}
 
-		// Custom Icon font size.
+		// Custom icon padding and font size.
+		$icon_padding   = empty( $group_data['icon_padding'] ) ? 10 : $group_data['icon_padding'];
 		$icon_font_size = empty( $group_data['icon_font_size'] ) ? 16 : $group_data['icon_font_size'];
 
 		ob_start();
@@ -101,7 +103,7 @@ class SI_Shortcodes {
 
 				<li class="social-icons-list-item">
 					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( 'yes' == $group_data['open_new_tab'] ? 'target="_blank"' : '' ); ?> class="social-icon">
-						<span class="socicon socicon-<?php echo esc_attr( $title ); ?>" style="font-size: <?php echo esc_attr( $icon_font_size ); ?>px"></span>
+						<span class="socicon socicon-<?php echo esc_attr( $title ); ?>" style="font-size: <?php echo esc_attr( $icon_font_size ); ?>px; padding: <?php echo esc_attr( $icon_padding ); ?>px"></span>
 
 						<?php if ( 'yes' == $group_data['manage_label'] ) : ?>
 							<span class="social-icons-list-label"><?php echo esc_html( $field['label'] ); ?></span>
