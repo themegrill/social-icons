@@ -103,7 +103,7 @@ class SI_Shortcodes {
 
 				<li class="social-icons-list-item">
 					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( 'yes' == $group_data['open_new_tab'] ? 'target="_blank"' : '' ); ?> class="social-icon">
-						<span class="socicon socicon-<?php echo esc_attr( $title ); ?>" style="font-size: <?php echo esc_attr( $icon_font_size ); ?>px; padding: <?php echo esc_attr( $icon_padding ); ?>px"></span>
+						<span class="socicon socicon-<?php echo esc_attr( $title ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px"></span>
 
 						<?php if ( 'yes' == $group_data['manage_label'] ) : ?>
 							<span class="social-icons-list-label"><?php echo esc_html( $field['label'] ); ?></span>
