@@ -54,6 +54,10 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
+= 1.x.x - TBD =
+* Tweak - Introduced `si_get_default_sortable_socicons()`.
+* Feature - Support padding options to gain user defined icon.
+
 = 1.5.0 - 08/12/2016 =
 * Fix - Blogspot icon to blog on Blogger.com
 * Fix - Breakage of first social icon name found within a loop.
