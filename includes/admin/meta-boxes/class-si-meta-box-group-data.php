@@ -129,16 +129,7 @@ class SI_Meta_Box_Group_Data {
 							if ( metadata_exists( 'post', $post->ID, '_sortable_icons' ) ) {
 								$sortable_icons = get_post_meta( $post->ID, '_sortable_icons', true );
 							} else {
-								$sortable_icons = array(
-									'twitter' => array(
-										'url'   => 'https://twitter.com/',
-										'label' => __( 'Follow Me', 'social-icons' ),
-									),
-									'facebook' => array(
-										'url'   => 'https://facebook.com/',
-										'label' => __( 'Friend me on Facebook', 'social-icons' ),
-									),
-								);
+								$sortable_icons = si_get_default_sortable_socicons();
 							}
 
 							if ( $sortable_icons ) {

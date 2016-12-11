@@ -113,6 +113,23 @@ function si_get_supported_url_icon() {
 }
 
 /**
+ * Get the default sortable socicon lists.
+ * @return array
+ */
+function si_get_default_sortable_socicons() {
+	return apply_filters( 'social_icons_get_default_sortable_socicons', array(
+		'twitter' => array(
+			'url'   => 'https://twitter.com/themegrill',
+			'label' => __( 'Follow Me', 'social-icons' ),
+		),
+		'facebook' => array(
+			'url'   => 'https://facebook.com/themegrill',
+			'label' => __( 'Friend me on Facebook', 'social-icons' ),
+		),
+	) );
+}
+
+/**
  * Checks whether the content passed contains a specific short code.
  *
  * @param  string $tag Shortcode tag to check.

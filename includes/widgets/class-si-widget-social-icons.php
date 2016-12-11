@@ -82,16 +82,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 				'label' => __( 'Sortable Socicon', 'social-icons' ),
 				'desc'  => sprintf( __( 'Note that icons above are for reference and not how they will look on front-end. %1$sList of icons supported%2$s', 'social-icons' ), '<br><a target="_blank" href="' . esc_url( 'http://www.socicon.com/chart.php' ) . '">', '</a>' ),
 				'btn'   => __( 'Add Icon', 'social-icons' ),
-				'std'   => array(
-					'twitter' => array(
-						'url'   => 'https://twitter.com/',
-						'label' => __( 'Follow Me', 'social-icons' ),
-					),
-					'facebook' => array(
-						'url'   => 'https://facebook.com/',
-						'label' => __( 'Friend me on Facebook', 'social-icons' ),
-					),
-				),
+				'std'   => si_get_default_sortable_socicons(),
 			),
 		);
 
