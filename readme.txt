@@ -55,6 +55,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 == Changelog ==
 
 = 1.x.x - TBD =
+* Fix - CSS conflict with width used in `.socicon:empty`.
 * Tweak - Introduced `si_get_default_sortable_socicons()`.
 * Feature - Support padding options to gain user defined icon.
 
