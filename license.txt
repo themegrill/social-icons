@@ -16,6 +16,21 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
+This program incorporates work covered by the following copyright and
+permission notices:
+
+  Socicon is Copyright (c) 2016 - http://socicon.com
+
+  Socicon is released under SIL Open Font License 1.1 (http://scripts.sil.org/OFL).
+
+and
+
+  Social Icons - Social profile for WordPress
+
+  WooCommerce is Copyright (c) 2016 ThemeGrill
+
+  Social Icons is released under the GPL
+
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
                     GNU GENERAL PUBLIC LICENSE
