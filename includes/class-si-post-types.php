@@ -33,6 +33,11 @@ class SI_Post_Types {
 	 * Register core post types.
 	 */
 	public static function register_post_types() {
+
+		if ( ! is_blog_installed() ) {
+			return;
+		}
+
 		if ( post_type_exists( 'social_icon' ) ) {
 			return;
 		}
