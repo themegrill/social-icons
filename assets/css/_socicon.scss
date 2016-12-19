@@ -1439,3 +1439,138 @@
 		content: '\e098';
 	}
 }
+
+.socicon-wechat {
+	color: $icon-wechat;
+	background-color: $icon-wechat;
+
+	&::before {
+		content: '\e099';
+	}
+}
+
+.socicon-strava {
+	color: $icon-strava;
+	background-color: $icon-strava;
+
+	&::before {
+		content: '\e09a';
+	}
+}
+
+.socicon-line {
+	color: $icon-line;
+	background-color: $icon-line;
+
+	&::before {
+		content: '\e09b';
+	}
+}
+
+.socicon-lyft {
+	color: $icon-lyft;
+	background-color: $icon-lyft;
+
+	&::before {
+		content: '\e09c';
+	}
+}
+
+.socicon-uber {
+	color: $icon-uber;
+	background-color: $icon-uber;
+
+	&::before {
+		content: '\e09d';
+	}
+}
+
+.socicon-songkick {
+	color: $icon-songkick;
+	background-color: $icon-songkick;
+
+	&::before {
+		content: '\e09e';
+	}
+}
+
+.socicon-viewbug {
+	color: $icon-viewbug;
+	background-color: $icon-viewbug;
+
+	&::before {
+		content: '\e09f';
+	}
+}
+
+.socicon-googlegroups {
+	color: $icon-googlegroups;
+	background-color: $icon-googlegroups;
+
+	&::before {
+		content: '\e0a0';
+	}
+}
+
+.socicon-blizzard {
+	color: $icon-blizzard;
+	background-color: $icon-blizzard;
+
+	&::before {
+		content: '\e0a1';
+	}
+}
+
+.socicon-beam {
+	color: $icon-beam;
+	background-color: $icon-beam;
+
+	&::before {
+		content: '\e0a2';
+	}
+}
+
+.socicon-curse {
+	color: $icon-curse;
+	background-color: $icon-curse;
+
+	&::before {
+		content: '\e0a3';
+	}
+}
+
+.socicon-player {
+	color: $icon-player;
+	background-color: $icon-player;
+
+	&::before {
+		content: '\e0a4';
+	}
+}
+
+.socicon-streamjar {
+	color: $icon-streamjar;
+	background-color: $icon-streamjar;
+
+	&::before {
+		content: '\e0a5';
+	}
+}
+
+.socicon-nintendo {
+	color: $icon-nintendo;
+	background-color: $icon-nintendo;
+
+	&::before {
+		content: '\e0a6';
+	}
+}
+
+.socicon-hellocoton {
+	color: $icon-hellocoton;
+	background-color: $icon-hellocoton;
+
+	&::before {
+		content: '\e0a7';
+	}
+}
