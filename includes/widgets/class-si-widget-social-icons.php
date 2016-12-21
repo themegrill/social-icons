@@ -68,7 +68,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 					'rounded centre' => __( 'Rounded Centre', 'social-icons' ),
 				),
 			),
-			'socicon_size' => array(
+			'icon_font_size' => array(
 				'type'  => 'number',
 				'step'  => 1,
 				'min'   => 14,
@@ -267,7 +267,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 
 		// Custom icon padding and font size.
 		$icon_padding   = empty( $instance['icon_padding'] ) ? 10 : $instance['icon_padding'];
-		$icon_font_size = empty( $instance['socicon_size'] ) ? 16 : $instance['socicon_size'];
+		$icon_font_size = empty( $instance['icon_font_size'] ) ? 16 : $instance['icon_font_size'];
 
 		?>
 		<?php if ( ! empty( $instance['description'] ) ) : ?>
