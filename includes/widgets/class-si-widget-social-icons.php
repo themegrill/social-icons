@@ -191,7 +191,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 						continue;
 					}
 
-					$instance[ $icon_name ] = array(
+					$instance[ $icon_name . '_' . $i ] = array(
 						'url'   => $icon_url,
 						'label' => $icon_label,
 					);
@@ -276,7 +276,11 @@ class SI_Widget_Social_Icons extends SI_Widget {
 
 		<ul class="social-icons-lists <?php echo esc_attr( implode( ' ', $class_list ) ); ?>">
 
-			<?php foreach ( $instance['socicon_sortable'] as $title => $field ) : ?>
+			<?php
+			$count=0;
+			foreach ( $instance['socicon_sortable'] as $title => $field ) :
+
+				$class= str_replace( '_' . $count, '', $title ); ?>
 
 				<li class="social-icons-list-item">
 					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( $instance['open_tab'] ? 'target="_blank"' : '' ); ?> class="social-icon">
@@ -288,7 +292,9 @@ class SI_Widget_Social_Icons extends SI_Widget {
 					</a>
 				</li>
 
-			<?php endforeach; ?>
+			<?php
+			$count++;
+			endforeach; ?>
 
 		</ul>
 
