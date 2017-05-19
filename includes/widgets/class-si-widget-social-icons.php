@@ -280,11 +280,11 @@ class SI_Widget_Social_Icons extends SI_Widget {
 			$count=0;
 			foreach ( $instance['socicon_sortable'] as $title => $field ) :
 
-				$class= str_replace( '_' . $count, '', $title ); ?>
+				$class = str_replace( '_' . $count, '', $title ); ?>
 
 				<li class="social-icons-list-item">
 					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( $instance['open_tab'] ? 'target="_blank"' : '' ); ?> class="social-icon">
-						<span class="socicon socicon-<?php echo esc_attr( $title ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px"></span>
+						<span class="socicon socicon-<?php echo esc_attr( $class ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px"></span>
 
 						<?php if ( $instance['show_label'] ) : ?>
 							<span class="social-icons-list-label"><?php echo esc_html( $field['label'] ); ?></span>
