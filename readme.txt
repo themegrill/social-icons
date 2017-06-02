@@ -54,6 +54,9 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
+= 1.6.1 - xx/xx/2017 =
+* Fix - Support multiple social profile links.
+
 = 1.6.0 - 25/05/2017 =
 * Fix - CSS conflict with width used in `.socicon:empty`.
 * Tweak - Introduced `si_get_default_sortable_socicons()`.
