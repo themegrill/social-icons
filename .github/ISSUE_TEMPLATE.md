@@ -4,7 +4,7 @@ PLEASE NOTE:
 - Try to add as much detail as possible. Be specific!
 - GitHub issues ARE NOT FOR SUPPORT! If you have questions, use the either:
   - https://wordpress.org/support/plugin/social-icons for general support
-  - http://themegrill.com/support for free plugin support
+  - http://themegrill.com/support-forum for free plugin support
 - If you're requesting a new feature, explain why you'd like it to be added.
 - Search this repository (top of the page) for the issue and it has not been fixed or reported already.
 
