@@ -218,7 +218,7 @@ class SI_Meta_Box_Group_Data {
 						continue;
 					}
 
-					$sortable_icons[ $icon_name ] = array(
+					$sortable_icons[ $icon_name . '_' . $i ] = array(
 						'label' => $icon_label,
 						'url'   => $icon_url,
 					);

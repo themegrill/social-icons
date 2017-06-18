@@ -277,7 +277,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 		<ul class="social-icons-lists <?php echo esc_attr( implode( ' ', $class_list ) ); ?>">
 
 			<?php
-			$count=0;
+			$count = 0;
 			foreach ( $instance['socicon_sortable'] as $title => $field ) :
 
 				$class = str_replace( '_' . $count, '', $title ); ?>

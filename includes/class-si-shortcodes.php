@@ -99,11 +99,15 @@ class SI_Shortcodes {
 
 		?><ul class="social-icons-lists <?php echo esc_attr( implode( ' ', $class_list ) ); ?>">
 
-			<?php foreach ( $group_data['sortable_icons'] as $title => $field ) : ?>
+			<?php
+			$count = 0;
+			foreach ( $group_data['sortable_icons'] as $title => $field ) :
+
+				$class = str_replace( '_' . $count, '', $title ); ?>
 
 				<li class="social-icons-list-item">
 					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( 'yes' == $group_data['open_new_tab'] ? 'target="_blank"' : '' ); ?> class="social-icon">
-						<span class="socicon socicon-<?php echo esc_attr( $title ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px"></span>
+						<span class="socicon socicon-<?php echo esc_attr( $class ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px"></span>
 
 						<?php if ( 'yes' == $group_data['manage_label'] ) : ?>
 							<span class="social-icons-list-label"><?php echo esc_html( $field['label'] ); ?></span>
@@ -111,7 +115,9 @@ class SI_Shortcodes {
 					</a>
 				</li>
 
-			<?php endforeach; ?>
+			<?php
+			$count++;
+			endforeach; ?>
 
 		</ul><?php
 
