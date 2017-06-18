@@ -44,6 +44,10 @@ class SI_Admin_Assets {
 		wp_register_style( 'social-icons-admin-widgets', SI()->plugin_url() . '/assets/css/widgets.css', array(), SI_VERSION );
 		wp_register_style( 'jquery-ui-style', '//code.jquery.com/ui/' . $jquery_version . '/themes/smoothness/jquery-ui.css', array(), $jquery_version );
 
+		// Add RTL support for admin styles.
+		wp_style_add_data( 'social-icons-admin', 'rtl', 'replace' );
+		wp_style_add_data( 'social-icons-admin-widgets', 'rtl', 'replace' );
+
 		// Admin styles for SI pages only.
 		if ( in_array( $screen_id, si_get_screen_ids() ) ) {
 			wp_enqueue_style( 'social-icons-admin' );

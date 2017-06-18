@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Social Icons
- * Plugin URI: http://themegrill.com/plugins/social-icons/
+ * Plugin URI: https://themegrill.com/plugins/social-icons/
  * Description: Social Icons provides you with an easy way to display various popular social icons via widgets and shortcodes. You can drag the widget in your sidebars and change the settings from the widget form itself. Also you can use the shortcode and paste it on your page, post or wherever you like.
  * Version: 1.6.0
  * Author: ThemeGrill

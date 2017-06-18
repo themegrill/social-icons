@@ -43,6 +43,7 @@ class SI_Frontend_Scripts {
 				'deps'    => '',
 				'version' => SI_VERSION,
 				'media'   => 'all',
+				'has_rtl' => true,
 			),
 		) );
 	}
@@ -66,9 +67,13 @@ class SI_Frontend_Scripts {
 	 * @param  string   $version
 	 * @param  string   $media
 	 */
-	private static function register_style( $handle, $path, $deps = array(), $version = SI_VERSION, $media = 'all' ) {
+	private static function register_style( $handle, $path, $deps = array(), $version = SI_VERSION, $media = 'all', $has_rtl = false ) {
 		self::$styles[] = $handle;
 		wp_register_style( $handle, $path, $deps, $version, $media );
+
+		if ( $has_rtl ) {
+			wp_style_add_data( $handle, 'rtl', 'replace' );
+		}
 	}
 
 	/**
@@ -82,9 +87,9 @@ class SI_Frontend_Scripts {
 	 * @param  string   $version
 	 * @param  string   $media
 	 */
-	private static function enqueue_style( $handle, $path = '', $deps = array(), $version = SI_VERSION, $media = 'all' ) {
+	private static function enqueue_style( $handle, $path = '', $deps = array(), $version = SI_VERSION, $media = 'all', $has_rtl = false ) {
 		if ( ! in_array( $handle, self::$styles ) && $path ) {
-			self::register_style( $handle, $path, $deps, $version, $media );
+			self::register_style( $handle, $path, $deps, $version, $media, $has_rtl );
 		}
 		wp_enqueue_style( $handle );
 	}
@@ -98,7 +103,11 @@ class SI_Frontend_Scripts {
 			// CSS Styles
 			if ( $enqueue_styles = self::get_styles() ) {
 				foreach ( $enqueue_styles as $handle => $args ) {
-					self::enqueue_style( $handle, $args['src'], $args['deps'], $args['version'], $args['media'] );
+					if ( ! isset( $args['has_rtl'] ) ) {
+						$args['has_rtl'] = false;
+					}
+
+					self::enqueue_style( $handle, $args['src'], $args['deps'], $args['version'], $args['media'], $args['has_rtl'] );
 				}
 			}
 		}

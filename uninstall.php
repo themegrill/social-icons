@@ -16,9 +16,12 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 
 global $wpdb;
 
-$uninstall_data = apply_filters( 'social_icons_uninstall_data', true );
-
-if ( $uninstall_data ) {
+/*
+ * Only remove ALL demo importer data if SI_REMOVE_ALL_DATA constant is set to true in user's
+ * wp-config.php. This is to prevent data loss when deleting the plugin from the backend
+ * and to ensure only the site owner can perform this action.
+ */
+if ( defined( 'SI_REMOVE_ALL_DATA' ) && true === SI_REMOVE_ALL_DATA ) {
 	// Delete options.
 	$wpdb->query( "DELETE FROM $wpdb->options WHERE option_name LIKE 'social_icons\_%';" );
 

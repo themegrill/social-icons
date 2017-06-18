@@ -32,14 +32,31 @@ Check the docs at https://themegrill.com/docs/social-icons/
 == Installation ==
 
 1. Install the plugin either via the WordPress.org plugin directory, or by uploading the files to your server (in the /wp-content/plugins/ directory).
-2. Activate the Social Icons plugin through the 'Plugins' menu in WordPress.
-3. Go to Appearance->Widgets->Social Icons widget and start adding icons.
+2. Activate the ThemeGrill Demo Importer plugin through the 'Plugins' menu in WordPress.
+
+= Automatic installation =
+
+Automatic installation is the easiest option as WordPress handles the file transfers itself and you don’t need to leave your web browser. To do an automatic install of Social Icons, log in to your WordPress dashboard, navigate to the Plugins menu and click Add New.
+
+In the search field type “Social Icons” and click Search Plugins. Once you’ve found our demo importer plugin you can view details about it such as the the point release, rating and description. Most importantly of course, you can install it by simply clicking “Install Now”.
+
+= Manual installation =
+
+The manual installation method involves downloading our social icon plugin and uploading it to your webserver via your favourite FTP application. The WordPress codex contains [instructions on how to do this here](https://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
+
+= Updating =
+
+Automatic updates should work like a charm; as always though, ensure you backup your site just in case.
 
 == Frequently Asked Questions ==
 
 = What is the plugin license? =
 
 * This plugin is released under a GPL license.
+
+= Where can I report bugs or contribute to the project? =
+
+Bugs can be reported either in our support forum or preferably on the [GitHub repository](https://github.com/themegrill/social-icons/issues).
 
 = Social Icons is awesome! Can I contribute? =
 
@@ -57,52 +74,9 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 = 1.6.1 - xx/xx/2017 =
 * Fix - Support multiple social profile links.
 
-= 1.6.0 - 25/05/2017 =
-* Fix - CSS conflict with width used in `.socicon:empty`.
-* Tweak - Introduced `si_get_default_sortable_socicons()`.
-* Feature - Support padding options to gain user defined icon.
+[See changelog for all versions](https://raw.githubusercontent.com/themegrill/social-icons/master/CHANGELOG.txt).
 
-= 1.5.0 - 08/12/2016 =
-* Fix - Blogspot icon to blog on Blogger.com
-* Fix - Breakage of first social icon name found within a loop.
-* Fix - Fontawesome pseudo class selectors applied in sidebar area.
-* Tweak - Include dirname before including files.
-* Tweak - Social icons repeater field for siteorigin panel compat.
+== Upgrade Notice ==
 
-= 1.4.1 - 22/09/2016 =
-* Fix - odnoklassniki icon for ok.ru profile.
-* Fix - Center icons if used in Visual composer.
-* Fix - Non-static method should not be called statically.
-* Tweak - Updated socicon to `v3.0.4` for new icon sets support.
-* Refactor - Detect socicon from supported URL and allowed lists.
-
-= 1.4 - 20/05/2016 =
-* Feature - Pretty Support for shortcode option.
-* Fix - Undefinded index for key on widget save.
-* Fix - Bug with links containing the word play.
-* Tweak - Selective Refresh Support for Widgets.
-* Tweak - Introduced a filter for the queued JS.
-* Tweak - Introduced `si_get_allowed_socicons()`.
-* Tweak - Preserve comments that start with a bang.
-* Tweak - Enqueue frontend styles and scripts correctly.
-* Tweak - Updated socicon to `v3.0.3` including instagram glyph change.
-* Tweak - Introduced `si_get_social_icon_name()` to get social icon from url.
-* Refactor - Better to use SI prefixing for overall classes.
-
-= 1.3 - 08/03/2016 =
-* Feature - Rounded Center and Square Center Background Style added.
-* Fix - RSS link auto-detect for feed URL like: http://mysite.com/feed
-* Fix - Error handling for screen ids
-
-= 1.2 - 28/01/2016 =
-* Fix - Load admin scripts in customize screen.
-* Tweak - Imroved styles for customizer preview.
-* Tweak - Allow skype protocols in HTML attributes.
-
-= 1.1 - 25/12/2015 =
-* Fix - vkontakte icon for vk.com profile.
-* Tweak - Typo in different readme section.
-* Refactor - Only one sanitize hook is needed.
-
-= 1.0.0 - 12/12/2015 =
-* Initial Public Release
+= 1.6.0 =
+1.6.0 is a major update. Make a full site backup, update your theme and extensions before upgrading.

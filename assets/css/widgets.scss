@@ -6,7 +6,7 @@
 /**
  * Imports
  */
-@import 'bourbon';
+@import 'mixins';
 @import 'socicon';
 
 /**
@@ -71,7 +71,7 @@ ul.social-icons-list {
 		padding: 10px;
 		display: block;
 		border: 1px solid #ddd;
-		@include clearfix;
+		@include clearfix();
 
 		&:last-child {
 			border-bottom: none;

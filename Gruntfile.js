@@ -6,10 +6,8 @@ module.exports = function( grunt ){
 
 		// Setting folder templates.
 		dirs: {
-			css: 'assets/css',
-			fonts: 'assets/fonts',
-			images: 'assets/images',
-			js: 'assets/js'
+			js: 'assets/js',
+			css: 'assets/css'
 		},
 
 		// JavaScript linting with JSHint.
@@ -62,8 +60,7 @@ module.exports = function( grunt ){
 		// Compile all .scss files.
 		sass: {
 			options: {
-				sourceMap: false,
-				includePaths: require( 'node-bourbon' ).includePaths
+				sourceMap: false
 			},
 			compile: {
 				files: [{
@@ -73,6 +70,20 @@ module.exports = function( grunt ){
 					dest: '<%= dirs.css %>/',
 					ext: '.css'
 				}]
+			}
+		},
+
+		// Generate all RTL .css files
+		rtlcss: {
+			generate: {
+				expand: true,
+				cwd: '<%= dirs.css %>',
+				src: [
+					'*.css',
+					'!*-rtl.css'
+				],
+				dest: '<%= dirs.css %>/',
+				ext: '-rtl.css'
 			}
 		},
 
@@ -93,7 +104,7 @@ module.exports = function( grunt ){
 				files: [
 					'<%= dirs.css %>/*.scss'
 				],
-				tasks: ['sass', 'cssmin']
+				tasks: ['sass', 'rtlcss', 'cssmin']
 			},
 			js: {
 				files: [
@@ -168,12 +179,34 @@ module.exports = function( grunt ){
 					'!vendor/**'        // Exclude vendor/
 				]
 			}
+		},
+
+		// Autoprefixer.
+		postcss: {
+			options: {
+				processors: [
+					require( 'autoprefixer' )({
+						browsers: [
+							'> 0.1%',
+							'ie 8',
+							'ie 9'
+						]
+					})
+				]
+			},
+			dist: {
+				src: [
+					'<%= dirs.css %>/*.css'
+				]
+			}
 		}
 	});
 
 	// Load NPM tasks to be used here
 	grunt.loadNpmTasks( 'grunt-sass' );
 	grunt.loadNpmTasks( 'grunt-phpcs' );
+	grunt.loadNpmTasks( 'grunt-rtlcss' );
+	grunt.loadNpmTasks( 'grunt-postcss' );
 	grunt.loadNpmTasks( 'grunt-stylelint' );
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-checktextdomain' );
@@ -197,6 +230,8 @@ module.exports = function( grunt ){
 	grunt.registerTask( 'css', [
 		'stylelint',
 		'sass',
+		'rtlcss',
+		'postcss',
 		'cssmin'
 	]);
 
