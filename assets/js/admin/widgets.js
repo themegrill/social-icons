@@ -47,7 +47,6 @@ jQuery( function ( $ ) {
 
 	function render_icon ( $icon_obj ) {
 		var $this = $icon_obj, $_socicon = false, url;
-
 		var url_index = 9999999;
 		if ( url = $this.val().toLowerCase() ) {
 			$.each(social_icons_admin_widgets.supported_url_icon, function ( index, icon ) {
@@ -83,7 +82,6 @@ jQuery( function ( $ ) {
 			$('.social-icons-add-button').find('button').attr('disabled', 'disabled');
 			$this.parents('.social-icons-field').find('.social-icons-field-handle').attr('class', 'social-icons-field-handle dashicons dashicons-plus');
 		}
-
 		$_socicon = false;
 	}
 
