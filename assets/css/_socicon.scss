@@ -12,12 +12,13 @@
  * Socicon fonts
  */
 @font-face {
-	font-family: 'socicon';
-	src: url('../fonts/socicon.eot');
-	src: url('../fonts/socicon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/socicon.woff') format('woff'),
-		url('../fonts/socicon.ttf') format('truetype'),
-		url('../fonts/socicon.svg#socicon') format('svg');
+	font-family: 'Socicon';
+	src:  url('../fonts/Socicon.eot');
+	src:  url('../fonts/Socicon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Socicon.woff2') format('woff2'),
+		url('../fonts/Socicon.woff') format('woff'),
+		url('../fonts/Socicon.ttf') format('truetype'),
+		url('../fonts/Socicon.svg#Socicon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -26,7 +27,7 @@
  * Styling begins
  */
 [data-icon]::before {
-	font-family: 'socicon' !important;
+	font-family: 'Socicon' !important;
 	content: attr(data-icon);
 	font-style: normal !important;
 	font-weight: normal !important;
@@ -40,7 +41,7 @@
 
 [class^='socicon-']::before,
 [class*='socicon-']::before {
-	font-family: 'socicon' !important;
+	font-family: 'Socicon' !important;
 	font-style: normal !important;
 	font-weight: normal !important;
 	font-variant: normal !important;
@@ -55,12 +56,20 @@
 	position: relative;
 	top: 3px;
 	display: inline-block;
-	font-family: 'socicon';
+	font-family: 'Socicon';
 	font-style: normal;
 	font-weight: normal;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	font-size: 1.2em;
+}
+
+$colors-list: #111 #222 #333 #444 #555;
+@each $current-color in $colors-list {
+    $i: index($colors-list, $current-color);
+    .stuff-#{$i} {
+        color: $current-color;
+    }
 }
 
 .socicon-modelmayhem {
