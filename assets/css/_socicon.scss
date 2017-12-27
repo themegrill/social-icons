@@ -64,1522 +64,2207 @@
 	font-size: 1.2em;
 }
 
-$colors-list: #111 #222 #333 #444 #555;
-@each $current-color in $colors-list {
-    $i: index($colors-list, $current-color);
-    .stuff-#{$i} {
-        color: $current-color;
-    }
-}
-
-.socicon-modelmayhem {
-	color: $icon-modelmayhem;
-	background-color: $icon-modelmayhem;
-
-	&::before {
-		content: '\e000';
-	}
-}
-
-.socicon-mixcloud {
-	color: $icon-mixcloud;
-	background-color: $icon-mixcloud;
-
-	&::before {
-		content: '\e001';
-	}
-}
-
-.socicon-drupal {
-	color: $icon-drupal;
-	background-color: $icon-drupal;
-
-	&::before {
-		content: '\e002';
-	}
-}
-
-.socicon-swarm {
-	color: $icon-swarm;
-	background-color: $icon-swarm;
-
-	&::before {
-		content: '\e003';
-	}
-}
-
-.socicon-istock {
-	color: $icon-istock;
-	background-color: $icon-istock;
-
-	&::before {
-		content: '\e004';
-	}
-}
-
-.socicon-yammer {
-	color: $icon-yammer;
-	background-color: $icon-yammer;
-
-	&::before {
-		content: '\e005';
-	}
-}
-
-.socicon-ello {
-	color: $icon-ello;
-	background-color: $icon-ello;
-
-	&::before {
-		content: '\e006';
-	}
-}
-
-.socicon-stackoverflow {
-	color: $icon-stackoverflow;
-	background-color: $icon-stackoverflow;
-
-	&::before {
-		content: '\e007';
-	}
-}
-
-.socicon-persona {
-	color: $icon-persona;
-	background-color: $icon-persona;
-
-	&::before {
-		content: '\e008';
-	}
-}
-
-.socicon-triplej {
-	color: $icon-triplej;
-	background-color: $icon-triplej;
-
-	&::before {
-		content: '\e009';
-	}
-}
-
-.socicon-houzz {
-	color: $icon-houzz;
-	background-color: $icon-houzz;
-
-	&::before {
-		content: '\e00a';
-	}
-}
-
-.socicon-rss {
-	color: $icon-rss;
-	background-color: $icon-rss;
+.socicon-hackernews {
+	color: $socicon-color-hackernews;
+	background-color: $socicon-color-hackernews;
 
 	&::before {
-		content: '\e00b';
+		content: $socicon-hackernews;
 	}
 }
 
-.socicon-paypal {
-	color: $icon-paypal;
-	background-color: $icon-paypal;
+.socicon-smashwords {
+	color: $socicon-color-hackernews;
+	background-color: $socicon-color-hackernews;
 
 	&::before {
-		content: '\e00c';
+		content: $socicon-smashwords;
 	}
 }
 
-.socicon-odnoklassniki {
-	color: $icon-odnoklassniki;
-	background-color: $icon-odnoklassniki;
+.socicon-kobo {
+	color: $socicon-color-kobo;
+	background-color: $socicon-color-kobo;
 
 	&::before {
-		content: '\e00d';
+		content: $socicon-kobo;
 	}
 }
 
-.socicon-airbnb {
-	color: $icon-airbnb;
-	background-color: $icon-airbnb;
+.socicon-bookbub {
+	color: $socicon-color-bookbub;
+	background-color: $socicon-color-bookbub;
 
 	&::before {
-		content: '\e00e';
+		content: $socicon-bookbub;
 	}
 }
 
-.socicon-periscope {
-	color: $icon-periscope;
-	background-color: $icon-periscope;
+.socicon-mailru {
+	color: $socicon-color-mailru;
+	background-color: $socicon-color-mailru;
 
 	&::before {
-		content: '\e00f';
+		content: $socicon-mailru;
 	}
 }
 
-.socicon-outlook {
-	color: $icon-outlook;
-	background-color: $icon-outlook;
+.socicon-gitlab {
+	color: $socicon-color-gitlab;
+	background-color: $socicon-color-gitlab;
 
 	&::before {
-		content: '\e010';
+		content: $socicon-gitlab;
 	}
 }
 
-.socicon-coderwall {
-	color: $icon-coderwall;
-	background-color: $icon-coderwall;
+.socicon-instructables {
+	color: $socicon-color-instructables;
+	background-color: $socicon-color-instructables;
 
 	&::before {
-		content: '\e011';
+		content: $socicon-instructables;
 	}
 }
 
-.socicon-tripadvisor {
-	color: $icon-tripadvisor;
-	background-color: $icon-tripadvisor;
+.socicon-portfolio {
+	color: $socicon-color-portfolio;
+	background-color: $socicon-color-portfolio;
 
 	&::before {
-		content: '\e012';
+		content: $socicon-portfolio;
 	}
 }
 
-.socicon-appnet {
-	color: $icon-appnet;
-	background-color: $icon-appnet;
+.socicon-codered {
+	color: $socicon-color-codered;
+	background-color: $socicon-color-codered;
 
 	&::before {
-		content: '\e013';
+		content: $socicon-codered;
 	}
 }
 
-.socicon-goodreads {
-	color: $icon-goodreads;
-	background-color: $icon-goodreads;
+.socicon-origin {
+	color: $socicon-color-origin;
+	background-color: $socicon-color-origin;
 
 	&::before {
-		content: '\e014';
+		content: $socicon-origin;
 	}
 }
 
-.socicon-tripit {
-	color: $icon-tripit;
-	background-color: $icon-tripit;
+.socicon-nextdoor {
+	color: $socicon-color-nextdoor;
+	background-color: $socicon-color-nextdoor;
 
 	&::before {
-		content: '\e015';
+		content: $socicon-nextdoor;
 	}
 }
 
-.socicon-lanyrd {
-	color: $icon-lanyrd;
-	background-color: $icon-lanyrd;
+.socicon-udemy {
+	color: $socicon-color-udemy;
+	background-color: $socicon-color-udemy;
 
 	&::before {
-		content: '\e016';
+		content: $socicon-udemy;
 	}
 }
 
-.socicon-slideshare {
-	color: $icon-slideshare;
-	background-color: $icon-slideshare;
+.socicon-livemaster {
+	color: $socicon-color-udemy;
+	background-color: $socicon-color-udemy;
 
 	&::before {
-		content: '\e017';
+		content: $socicon-livemaster;
 	}
 }
 
-.socicon-buffer {
-	color: $icon-buffer;
-	background-color: $icon-buffer;
+.socicon-crunchbase {
+	color: $socicon-color-crunchbase;
+	background-color: $socicon-color-crunchbase;
 
 	&::before {
-		content: '\e018';
+		content: $socicon-crunchbase;
 	}
 }
 
-.socicon-disqus {
-	color: $icon-disqus;
-	background-color: $icon-disqus;
+.socicon-homefy {
+	color: $socicon-color-homefy;
+	background-color: $socicon-color-homefy;
 
 	&::before {
-		content: '\e019';
+		content: $socicon-homefy;
 	}
 }
 
-.socicon-vkontakte {
-	color: $icon-vkontakte;
-	background-color: $icon-vkontakte;
+.socicon-calendly {
+	color: $socicon-color-calendly;
+	background-color: $socicon-color-calendly;
 
 	&::before {
-		content: '\e01a';
+		content: $socicon-calendly;
 	}
 }
 
-.socicon-whatsapp {
-	color: $icon-whatsapp;
-	background-color: $icon-whatsapp;
+.socicon-realtor {
+	color: $socicon-color-realtor;
+	background-color: $socicon-color-realtor;
 
 	&::before {
-		content: '\e01b';
+		content: $socicon-realtor;
 	}
 }
 
-.socicon-patreon {
-	color: $icon-patreon;
-	background-color: $icon-patreon;
+.socicon-tidal {
+	color: $socicon-color-tidal;
+	background-color: $socicon-color-tidal;
 
 	&::before {
-		content: '\e01c';
+		content: $socicon-tidal;
 	}
 }
 
-.socicon-storehouse {
-	color: $icon-storehouse;
-	background-color: $icon-storehouse;
+.socicon-qobuz {
+	color: $socicon-color-qobuz;
+	background-color: $socicon-color-qobuz;
 
 	&::before {
-		content: '\e01d';
+		content: $socicon-qobuz;
 	}
 }
 
-.socicon-pocket {
-	color: $icon-pocket;
-	background-color: $icon-pocket;
+.socicon-natgeo {
+	color: $socicon-color-natgeo;
+	background-color: $socicon-color-natgeo;
 
 	&::before {
-		content: '\e01e';
+		content: $socicon-natgeo;
 	}
 }
 
-.socicon-mail {
-	color: $icon-mail;
-	background-color: $icon-mail;
+.socicon-mastodon {
+	color: $socicon-color-mastodon;
+	background-color: $socicon-color-mastodon;
 
 	&::before {
-		content: '\e01f';
+		content: $socicon-mastodon;
 	}
 }
 
-.socicon-blogger {
-	color: $icon-blogger;
-	background-color: $icon-blogger;
+.socicon-unsplash {
+	color: $socicon-color-unsplash;
+	background-color: $socicon-color-unsplash;
 
 	&::before {
-		content: '\e020';
+		content: $socicon-unsplash;
 	}
 }
 
-.socicon-technorati {
-	color: $icon-technorati;
-	background-color: $icon-technorati;
+.socicon-homeadvisor {
+	color: $socicon-color-homeadvisor;
+	background-color: $socicon-color-homeadvisor;
 
 	&::before {
-		content: '\e021';
+		content: $socicon-homeadvisor;
 	}
 }
 
-.socicon-reddit {
-	color: $icon-reddit;
-	background-color: $icon-reddit;
+.socicon-angieslist {
+	color: $socicon-color-angieslist;
+	background-color: $socicon-color-angieslist;
 
 	&::before {
-		content: '\e022';
+		content: $socicon-angieslist;
 	}
 }
 
-.socicon-dribbble {
-	color: $icon-dribbble;
-	background-color: $icon-dribbble;
+.socicon-codepen {
+	color: $socicon-color-codepen;
+	background-color: $socicon-color-codepen;
 
 	&::before {
-		content: '\e023';
+		content: $socicon-codepen;
 	}
 }
 
-.socicon-stumbleupon {
-	color: $icon-stumbleupon;
-	background-color: $icon-stumbleupon;
+.socicon-slack {
+	color: $socicon-color-slack;
+	background-color: $socicon-color-slack;
 
 	&::before {
-		content: '\e024';
+		content: $socicon-slack;
 	}
 }
 
-.socicon-digg {
-	color: $icon-digg;
-	background-color: $icon-digg;
+.socicon-openaigym {
+	color: $socicon-color-openaigym;
+	background-color: $socicon-color-openaigym;
 
 	&::before {
-		content: '\e025';
+		content: $socicon-openaigym;
 	}
 }
 
-.socicon-envato {
-	color: $icon-envato;
-	background-color: $icon-envato;
+.socicon-logmein {
+	color: $socicon-color-logmein;
+	background-color: $socicon-color-logmein;
 
 	&::before {
-		content: '\e026';
+		content: $socicon-logmein;
 	}
 }
 
-.socicon-behance {
-	color: $icon-behance;
-	background-color: $icon-behance;
+.socicon-fiverr {
+	color: $socicon-color-fiverr;
+	background-color: $socicon-color-fiverr;
 
 	&::before {
-		content: '\e027';
+		content: $socicon-fiverr;
 	}
 }
 
-.socicon-delicious {
-	color: $icon-delicious;
-	background-color: $icon-delicious;
+.socicon-gotomeeting {
+	color: $socicon-color-gotomeeting;
+	background-color: $socicon-color-gotomeeting;
 
 	&::before {
-		content: '\e028';
+		content: $socicon-gotomeeting;
 	}
 }
 
-.socicon-deviantart {
-	color: $icon-deviantart;
-	background-color: $icon-deviantart;
+.socicon-aliexpress {
+	color: $socicon-color-aliexpress;
+	background-color: $socicon-color-aliexpress;
 
 	&::before {
-		content: '\e029';
+		content: $socicon-aliexpress;
 	}
 }
 
-.socicon-forrst {
-	color: $icon-forrst;
-	background-color: $icon-forrst;
+.socicon-guru {
+	color: $socicon-color-guru;
+	background-color: $socicon-color-guru;
 
 	&::before {
-		content: '\e02a';
+		content: $socicon-guru;
 	}
 }
 
-.socicon-play {
-	color: $icon-play;
-	background-color: $icon-play;
+.socicon-appstore {
+	color: $socicon-color-appstore;
+	background-color: $socicon-color-appstore;
 
 	&::before {
-		content: '\e02b';
+		content: $socicon-appstore;
 	}
 }
 
-.socicon-zerply {
-	color: $icon-zerply;
-	background-color: $icon-zerply;
+.socicon-homes {
+	color: $socicon-color-homes;
+	background-color: $socicon-color-homes;
 
 	&::before {
-		content: '\e02c';
+		content: $socicon-homes;
 	}
 }
 
-.socicon-wikipedia {
-	color: $icon-wikipedia;
-	background-color: $icon-wikipedia;
+.socicon-zoom {
+	color: $socicon-color-zoom;
+	background-color: $socicon-color-zoom;
 
 	&::before {
-		content: '\e02d';
+		content: $socicon-zoom;
 	}
 }
 
-.socicon-apple {
-	color: $icon-apple;
-	background-color: $icon-apple;
+.socicon-alibaba {
+	color: $socicon-color-alibaba;
+	background-color: $socicon-color-alibaba;
 
 	&::before {
-		content: '\e02e';
+		content: $socicon-alibaba;
 	}
 }
 
-.socicon-flattr {
-	color: $icon-flattr;
-	background-color: $icon-flattr;
+.socicon-craigslist {
+	color: $socicon-color-craigslist;
+	background-color: $socicon-color-craigslist;
 
 	&::before {
-		content: '\e02f';
+		content: $socicon-craigslist;
 	}
 }
 
-.socicon-github {
-	color: $icon-github;
-	background-color: $icon-github;
+.socicon-wix {
+	color: $socicon-color-wix;
+	background-color: $socicon-color-wix;
 
 	&::before {
-		content: '\e030';
+		content: $socicon-wix;
 	}
 }
 
-.socicon-renren {
-	color: $icon-renren;
-	background-color: $icon-renren;
+.socicon-redfin {
+	color: $socicon-color-redfin;
+	background-color: $socicon-color-redfin;
 
 	&::before {
-		content: '\e031';
+		content: $socicon-redfin;
 	}
 }
 
-.socicon-friendfeed {
-	color: $icon-friendfeed;
-	background-color: $icon-friendfeed;
+.socicon-googlecalendar {
+	color: $socicon-color-googlecalendar;
+	background-color: $socicon-color-googlecalendar;
 
 	&::before {
-		content: '\e032';
+		content: $socicon-googlecalendar;
 	}
 }
 
-.socicon-newsvine {
-	color: $icon-newsvine;
-	background-color: $icon-newsvine;
+.socicon-shopify {
+	color: $socicon-color-shopify;
+	background-color: $socicon-color-shopify;
 
 	&::before {
-		content: '\e033';
+		content: $socicon-shopify;
 	}
 }
 
-.socicon-identica {
-	color: $icon-identica;
-	background-color: $icon-identica;
+.socicon-freelancer {
+	color: $socicon-color-freelancer;
+	background-color: $socicon-color-freelancer;
 
 	&::before {
-		content: '\e034';
+		content: $socicon-freelancer;
 	}
 }
 
-.socicon-bebo {
-	color: $icon-bebo;
-	background-color: $icon-bebo;
+.socicon-seedrs {
+	color: $socicon-color-seedrs;
+	background-color: $socicon-color-seedrs;
 
 	&::before {
-		content: '\e035';
+		content: $socicon-seedrs;
 	}
 }
 
-.socicon-zynga {
-	color: $icon-zynga;
-	background-color: $icon-zynga;
+.socicon-bing {
+	color: $socicon-color-bing;
+	background-color: $socicon-color-bing;
 
 	&::before {
-		content: '\e036';
+		content: $socicon-bing;
 	}
 }
 
-.socicon-steam {
-	color: $icon-steam;
-	background-color: $icon-steam;
+.socicon-doodle {
+	color: $socicon-color-doodle;
+	background-color: $socicon-color-doodle;
 
 	&::before {
-		content: '\e037';
+		content: $socicon-doodle;
 	}
 }
 
-.socicon-xbox {
-	color: $icon-xbox;
-	background-color: $icon-xbox;
+.socicon-bonanza {
+	color: $socicon-color-bonanza;
+	background-color: $socicon-color-bonanza;
 
 	&::before {
-		content: '\e038';
+		content: $socicon-bonanza;
 	}
 }
 
-.socicon-windows {
-	color: $icon-windows;
-	background-color: $icon-windows;
+.socicon-squarespace {
+	color: $socicon-color-squarespace;
+	background-color: $socicon-color-squarespace;
 
 	&::before {
-		content: '\e039';
+		content: $socicon-squarespace;
 	}
 }
 
-.socicon-qq {
-	color: $icon-qq;
-	background-color: $icon-qq;
+.socicon-toptal {
+	color: $socicon-color-toptal;
+	background-color: $socicon-color-toptal;
 
 	&::before {
-		content: '\e03a';
+		content: $socicon-toptal;
 	}
 }
 
-.socicon-douban {
-	color: $icon-douban;
-	background-color: $icon-douban;
+.socicon-gust {
+	color: $socicon-color-gust;
+	background-color: $socicon-color-gust;
 
 	&::before {
-		content: '\e03b';
+		content: $socicon-gust;
 	}
 }
 
-.socicon-meetup {
-	color: $icon-meetup;
-	background-color: $icon-meetup;
+.socicon-ask {
+	color: $socicon-color-ask;
+	background-color: $socicon-color-ask;
 
 	&::before {
-		content: '\e03c';
+		content: $socicon-ask;
 	}
 }
 
-.socicon-playstation {
-	color: $icon-playstation;
-	background-color: $icon-playstation;
+.socicon-trulia {
+	color: $socicon-color-trulia;
+	background-color: $socicon-color-trulia;
 
 	&::before {
-		content: '\e03d';
+		content: $socicon-trulia;
 	}
 }
 
-.socicon-android {
-	color: $icon-android;
-	background-color: $icon-android;
+.socicon-loomly {
+	color: $socicon-color-loomly;
+	background-color: $socicon-color-loomly;
 
 	&::before {
-		content: '\e03e';
+		content: $socicon-loomly;
 	}
 }
 
-.socicon-snapchat {
-	color: $icon-snapchat;
-	background-color: $icon-snapchat;
+.socicon-ghost {
+	color: $socicon-color-ghost;
+	background-color: $socicon-color-ghost;
 
 	&::before {
-		content: '\e03f';
+		content: $socicon-ghost;
 	}
 }
 
-.socicon-twitter {
-	color: $icon-twitter;
-	background-color: $icon-twitter;
+.socicon-upwork {
+	color: $socicon-color-upwork;
+	background-color: $socicon-color-upwork;
 
 	&::before {
-		content: '\e040';
+		content: $socicon-upwork;
 	}
 }
 
-.socicon-facebook {
-	color: $icon-facebook;
-	background-color: $icon-facebook;
+.socicon-fundable {
+	color: $socicon-color-fundable;
+	background-color: $socicon-color-fundable;
 
 	&::before {
-		content: '\e041';
+		content: $socicon-fundable;
 	}
 }
 
-.socicon-googleplus {
-	color: $icon-googleplus;
-	background-color: $icon-googleplus;
+.socicon-booking {
+	color: $socicon-color-booking;
+	background-color: $socicon-color-booking;
 
 	&::before {
-		content: '\e042';
+		content: $socicon-booking;
 	}
 }
 
-.socicon-pinterest {
-	color: $icon-pinterest;
-	background-color: $icon-pinterest;
+.socicon-googlemaps {
+	color: $socicon-color-googlemaps;
+	background-color: $socicon-color-googlemaps;
 
 	&::before {
-		content: '\e043';
+		content: $socicon-googlemaps;
 	}
 }
 
-.socicon-foursquare {
-	color: $icon-foursquare;
-	background-color: $icon-foursquare;
+.socicon-zillow {
+	color: $socicon-color-zillow;
+	background-color: $socicon-color-zillow;
 
 	&::before {
-		content: '\e044';
+		content: $socicon-zillow;
 	}
 }
 
-.socicon-yahoo {
-	color: $icon-yahoo;
-	background-color: $icon-yahoo;
+.socicon-niconico {
+	color: $socicon-color-niconico;
+	background-color: $socicon-color-niconico;
 
 	&::before {
-		content: '\e045';
+		content: $socicon-niconico;
 	}
 }
 
-.socicon-skype {
-	color: $icon-skype;
-	background-color: $icon-skype;
+.socicon-toneden {
+	color: $socicon-color-toneden;
+	background-color: $socicon-color-toneden;
 
 	&::before {
-		content: '\e046';
+		content: $socicon-toneden;
 	}
 }
 
-.socicon-yelp {
-	color: $icon-yelp;
-	background-color: $icon-yelp;
+.socicon-augment {
+	color: $socicon-color-augment;
+	background-color: $socicon-color-augment;
 
 	&::before {
-		content: '\e047';
+		content: $socicon-augment;
 	}
 }
 
-.socicon-feedburner {
-	color: $icon-feedburner;
-	background-color: $icon-feedburner;
+.socicon-bitbucket {
+	color: $socicon-color-bitbucket;
+	background-color: $socicon-color-bitbucket;
 
 	&::before {
-		content: '\e048';
+		content: $socicon-bitbucket;
 	}
 }
 
-.socicon-linkedin {
-	color: $icon-linkedin;
-	background-color: $icon-linkedin;
+.socicon-fyuse {
+	color: $socicon-color-fyuse;
+	background-color: $socicon-color-fyuse;
 
 	&::before {
-		content: '\e049';
+		content: $socicon-fyuse;
 	}
 }
 
-.socicon-viadeo {
-	color: $icon-viadeo;
-	background-color: $icon-viadeo;
+.socicon-yt-gaming {
+	color: $socicon-color-yt-gaming;
+	background-color: $socicon-color-yt-gaming;
 
 	&::before {
-		content: '\e04a';
+		content: $socicon-yt-gaming;
 	}
 }
 
-.socicon-xing {
-	color: $icon-xing;
-	background-color: $icon-xing;
+.socicon-sketchfab {
+	color: $socicon-color-sketchfab;
+	background-color: $socicon-color-sketchfab;
 
 	&::before {
-		content: '\e04b';
+		content: $socicon-sketchfab;
 	}
 }
 
-.socicon-myspace {
-	color: $icon-myspace;
-	background-color: $icon-myspace;
+.socicon-mobcrush {
+	color: $socicon-color-mobcrush;
+	background-color: $socicon-color-mobcrush;
 
 	&::before {
-		content: '\e04c';
+		content: $socicon-mobcrush;
 	}
 }
 
-.socicon-soundcloud {
-	color: $icon-soundcloud;
-	background-color: $icon-soundcloud;
+.socicon-microsoft {
+	color: $socicon-color-microsoft;
+	background-color: $socicon-color-microsoft;
 
 	&::before {
-		content: '\e04d';
+		content: $socicon-microsoft;
 	}
 }
 
-.socicon-spotify {
-	color: $icon-spotify;
-	background-color: $icon-spotify;
+.socicon-pandora {
+	color: $socicon-color-pandora;
+	background-color: $socicon-color-pandora;
 
 	&::before {
-		content: '\e04e';
+		content: $socicon-pandora;
 	}
 }
 
-.socicon-grooveshark {
-	color: $icon-grooveshark;
-	background-color: $icon-grooveshark;
+.socicon-messenger {
+	color: $socicon-color-messenger;
+	background-color: $socicon-color-messenger;
 
 	&::before {
-		content: '\e04f';
+		content: $socicon-messenger;
 	}
 }
 
-.socicon-lastfm {
-	color: $icon-lastfm;
-	background-color: $icon-lastfm;
+.socicon-gamewisp {
+	color: $socicon-color-gamewisp;
+	background-color: $socicon-color-gamewisp;
 
 	&::before {
-		content: '\e050';
+		content: $socicon-gamewisp;
 	}
 }
 
-.socicon-youtube {
-	color: $icon-youtube;
-	background-color: $icon-youtube;
+.socicon-bloglovin {
+	color: $socicon-color-bloglovin;
+	background-color: $socicon-color-bloglovin;
 
 	&::before {
-		content: '\e051';
+		content: $socicon-bloglovin;
 	}
 }
 
-.socicon-vimeo {
-	color: $icon-vimeo;
-	background-color: $icon-vimeo;
+.socicon-tunein {
+	color: $socicon-color-tunein;
+	background-color: $socicon-color-tunein;
 
 	&::before {
-		content: '\e052';
+		content: $socicon-tunein;
 	}
 }
 
-.socicon-dailymotion {
-	color: $icon-dailymotion;
-	background-color: $icon-dailymotion;
+.socicon-gamejolt {
+	color: $socicon-color-gamejolt;
+	background-color: $socicon-color-gamejolt;
 
 	&::before {
-		content: '\e053';
+		content: $socicon-gamejolt;
 	}
 }
 
-.socicon-vine {
-	color: $icon-vine;
-	background-color: $icon-vine;
+.socicon-trello {
+	color: $socicon-color-trello;
+	background-color: $socicon-color-trello;
 
 	&::before {
-		content: '\e054';
+		content: $socicon-trello;
 	}
 }
 
-.socicon-flickr {
-	color: $icon-flickr;
-	background-color: $icon-flickr;
+.socicon-spreadshirt {
+	color: $socicon-color-spreadshirt;
+	background-color: $socicon-color-spreadshirt;
 
 	&::before {
-		content: '\e055';
+		content: $socicon-spreadshirt;
 	}
 }
 
 .socicon-500px {
-	color: $icon-500px;
-	background-color: $icon-500px;
+	color: $socicon-color-500px;
+	background-color: $socicon-color-500px;
 
 	&::before {
-		content: '\e056';
-	}
-}
-
-.socicon-instagram {
-	color: $icon-instagram;
-	background-color: $icon-instagram;
-
-	&::before {
-		content: '\e057';
-	}
-}
-
-.socicon-wordpress {
-	color: $icon-wordpress;
-	background-color: $icon-wordpress;
-
-	&::before {
-		content: '\e058';
-	}
-}
-
-.socicon-tumblr {
-	color: $icon-tumblr;
-	background-color: $icon-tumblr;
-
-	&::before {
-		content: '\e059';
-	}
-}
-
-.socicon-twitch {
-	color: $icon-twitch;
-	background-color: $icon-twitch;
-
-	&::before {
-		content: '\e05a';
+		content: $socicon-500px;
 	}
 }
 
 .socicon-8tracks {
-	color: $icon-8tracks;
-	background-color: $icon-8tracks;
+	color: $socicon-color-8tracks;
+	background-color: $socicon-color-8tracks;
 
 	&::before {
-		content: '\e05b';
+		content: $socicon-8tracks;
 	}
 }
 
-.socicon-amazon {
-	color: $icon-amazon;
-	background-color: $icon-amazon;
+.socicon-airbnb {
+	color: $socicon-color-airbnb;
+	background-color: $socicon-color-airbnb;
 
 	&::before {
-		content: '\e05c';
-	}
-}
-
-.socicon-icq {
-	color: $icon-icq;
-	background-color: $icon-icq;
-
-	&::before {
-		content: '\e05d';
-	}
-}
-
-.socicon-smugmug {
-	color: $icon-smugmug;
-	background-color: $icon-smugmug;
-
-	&::before {
-		content: '\e05e';
-	}
-}
-
-.socicon-ravelry {
-	color: $icon-ravelry;
-	background-color: $icon-ravelry;
-
-	&::before {
-		content: '\e05f';
-	}
-}
-
-.socicon-weibo {
-	color: $icon-weibo;
-	background-color: $icon-weibo;
-
-	&::before {
-		content: '\e060';
-	}
-}
-
-.socicon-baidu {
-	color: $icon-baidu;
-	background-color: $icon-baidu;
-
-	&::before {
-		content: '\e061';
-	}
-}
-
-.socicon-angellist {
-	color: $icon-angellist;
-	background-color: $icon-angellist;
-
-	&::before {
-		content: '\e062';
-	}
-}
-
-.socicon-ebay {
-	color: $icon-ebay;
-	background-color: $icon-ebay;
-
-	&::before {
-		content: '\e063';
-	}
-}
-
-.socicon-imdb {
-	color: $icon-imdb;
-	background-color: $icon-imdb;
-
-	&::before {
-		content: '\e064';
-	}
-}
-
-.socicon-stayfriends {
-	color: $icon-stayfriends;
-	background-color: $icon-stayfriends;
-
-	&::before {
-		content: '\e065';
-	}
-}
-
-.socicon-residentadvisor {
-	color: $icon-residentadvisor;
-	background-color: $icon-residentadvisor;
-
-	&::before {
-		content: '\e066';
-	}
-}
-
-.socicon-google {
-	color: $icon-google;
-	background-color: $icon-google;
-
-	&::before {
-		content: '\e067';
-	}
-}
-
-.socicon-yandex {
-	color: $icon-yandex;
-	background-color: $icon-yandex;
-
-	&::before {
-		content: '\e068';
-	}
-}
-
-.socicon-sharethis {
-	color: $icon-sharethis;
-	background-color: $icon-sharethis;
-
-	&::before {
-		content: '\e069';
-	}
-}
-
-.socicon-bandcamp {
-	color: $icon-bandcamp;
-	background-color: $icon-bandcamp;
-
-	&::before {
-		content: '\e06a';
-	}
-}
-
-.socicon-itunes {
-	color: $icon-itunes;
-	background-color: $icon-itunes;
-
-	&::before {
-		content: '\e06b';
-	}
-}
-
-.socicon-deezer {
-	color: $icon-deezer;
-	background-color: $icon-deezer;
-
-	&::before {
-		content: '\e06c';
-	}
-}
-
-.socicon-medium {
-	color: $icon-medium;
-	background-color: $icon-medium;
-
-	&::before {
-		content: '\e06d';
-	}
-}
-
-.socicon-telegram {
-	color: $icon-telegram;
-	background-color: $icon-telegram;
-
-	&::before {
-		content: '\e06e';
-	}
-}
-
-.socicon-openid {
-	color: $icon-openid;
-	background-color: $icon-openid;
-
-	&::before {
-		content: '\e06f';
-	}
-}
-
-.socicon-amplement {
-	color: $icon-amplement;
-	background-color: $icon-amplement;
-
-	&::before {
-		content: '\e070';
-	}
-}
-
-.socicon-viber {
-	color: $icon-viber;
-	background-color: $icon-viber;
-
-	&::before {
-		content: '\e071';
-	}
-}
-
-.socicon-zomato {
-	color: $icon-zomato;
-	background-color: $icon-zomato;
-
-	&::before {
-		content: '\e072';
-	}
-}
-
-.socicon-quora {
-	color: $icon-quora;
-	background-color: $icon-quora;
-
-	&::before {
-		content: '\e073';
-	}
-}
-
-.socicon-draugiem {
-	color: $icon-draugiem;
-	background-color: $icon-draugiem;
-
-	&::before {
-		content: '\e074';
-	}
-}
-
-.socicon-endomodo {
-	color: $icon-endomodo;
-	background-color: $icon-endomodo;
-
-	&::before {
-		content: '\e075';
-	}
-}
-
-.socicon-filmweb {
-	color: $icon-filmweb;
-	background-color: $icon-filmweb;
-
-	&::before {
-		content: '\e076';
-	}
-}
-
-.socicon-stackexchange {
-	color: $icon-stackexchange;
-	background-color: $icon-stackexchange;
-
-	&::before {
-		content: '\e077';
-	}
-}
-
-.socicon-wykop {
-	color: $icon-wykop;
-	background-color: $icon-wykop;
-
-	&::before {
-		content: '\e078';
-	}
-}
-
-.socicon-teamspeak {
-	color: $icon-teamspeak;
-	background-color: $icon-teamspeak;
-
-	&::before {
-		content: '\e079';
-	}
-}
-
-.socicon-teamviewer {
-	color: $icon-teamviewer;
-	background-color: $icon-teamviewer;
-
-	&::before {
-		content: '\e07a';
-	}
-}
-
-.socicon-ventrilo {
-	color: $icon-ventrilo;
-	background-color: $icon-ventrilo;
-
-	&::before {
-		content: '\e07b';
-	}
-}
-
-.socicon-younow {
-	color: $icon-younow;
-	background-color: $icon-younow;
-
-	&::before {
-		content: '\e07c';
-	}
-}
-
-.socicon-raidcall {
-	color: $icon-raidcall;
-	background-color: $icon-raidcall;
-
-	&::before {
-		content: '\e07d';
-	}
-}
-
-.socicon-mumble {
-	color: $icon-mumble;
-	background-color: $icon-mumble;
-
-	&::before {
-		content: '\e07e';
-	}
-}
-
-.socicon-bebee {
-	color: $icon-bebee;
-	background-color: $icon-bebee;
-
-	&::before {
-		content: '\e07f';
-	}
-}
-
-.socicon-hitbox {
-	color: $icon-hitbox;
-	background-color: $icon-hitbox;
-
-	&::before {
-		content: '\e080';
-	}
-}
-
-.socicon-reverbnation {
-	color: $icon-reverbnation;
-	background-color: $icon-reverbnation;
-
-	&::before {
-		content: '\e081';
-	}
-}
-
-.socicon-formulr {
-	color: $icon-formulr;
-	background-color: $icon-formulr;
-
-	&::before {
-		content: '\e082';
-	}
-}
-
-.socicon-battlenet {
-	color: $icon-battlenet;
-	background-color: $icon-battlenet;
-
-	&::before {
-		content: '\e083';
-	}
-}
-
-.socicon-chrome {
-	color: $icon-chrome;
-	background-color: $icon-chrome;
-
-	&::before {
-		content: '\e084';
-	}
-}
-
-.socicon-diablo {
-	color: $icon-diablo;
-	background-color: $icon-diablo;
-
-	&::before {
-		content: '\e085';
-	}
-}
-
-.socicon-discord {
-	color: $icon-discord;
-	background-color: $icon-discord;
-
-	&::before {
-		content: '\e086';
-	}
-}
-
-.socicon-issuu {
-	color: $icon-issuu;
-	background-color: $icon-issuu;
-
-	&::before {
-		content: '\e087';
-	}
-}
-
-.socicon-macos {
-	color: $icon-macos;
-	background-color: $icon-macos;
-
-	&::before {
-		content: '\e088';
-	}
-}
-
-.socicon-firefox {
-	color: $icon-firefox;
-	background-color: $icon-firefox;
-
-	&::before {
-		content: '\e089';
-	}
-}
-
-.socicon-heroes {
-	color: $icon-heroes;
-	background-color: $icon-heroes;
-
-	&::before {
-		content: '\e08a';
-	}
-}
-
-.socicon-hearthstone {
-	color: $icon-hearthstone;
-	background-color: $icon-hearthstone;
-
-	&::before {
-		content: '\e08b';
-	}
-}
-
-.socicon-overwatch {
-	color: $icon-overwatch;
-	background-color: $icon-overwatch;
-
-	&::before {
-		content: '\e08c';
-	}
-}
-
-.socicon-opera {
-	color: $icon-opera;
-	background-color: $icon-opera;
-
-	&::before {
-		content: '\e08d';
-	}
-}
-
-.socicon-warcraft {
-	color: $icon-warcraft;
-	background-color: $icon-warcraft;
-
-	&::before {
-		content: '\e08e';
-	}
-}
-
-.socicon-starcraft {
-	color: $icon-starcraft;
-	background-color: $icon-starcraft;
-
-	&::before {
-		content: '\e08f';
-	}
-}
-
-.socicon-keybase {
-	color: $icon-keybase;
-	background-color: $icon-keybase;
-
-	&::before {
-		content: '\e090';
+		content: $socicon-airbnb;
 	}
 }
 
 .socicon-alliance {
-	color: $icon-alliance;
-	background-color: $icon-alliance;
+	color: $socicon-color-alliance;
+	background-color: $socicon-color-alliance;
 
 	&::before {
-		content: '\e091';
+		content: $socicon-alliance;
 	}
 }
 
-.socicon-livejournal {
-	color: $icon-livejournal;
-	background-color: $icon-livejournal;
+.socicon-amazon {
+	color: $socicon-color-amazon;
+	background-color: $socicon-color-amazon;
 
 	&::before {
-		content: '\e092';
+		content: $socicon-amazon;
 	}
 }
 
-.socicon-googlephotos {
-	color: $icon-googlephotos;
-	background-color: $icon-googlephotos;
+.socicon-amplement {
+	color: $socicon-color-amplement;
+	background-color: $socicon-color-amplement;
 
 	&::before {
-		content: '\e093';
+		content: $socicon-amplement;
 	}
 }
 
-.socicon-horde {
-	color: $icon-horde;
-	background-color: $icon-horde;
+.socicon-android {
+	color: $socicon-color-android;
+	background-color: $socicon-color-android;
 
 	&::before {
-		content: '\e094';
+		content: $socicon-android;
 	}
 }
 
-.socicon-etsy {
-	color: $icon-etsy;
-	background-color: $icon-etsy;
+.socicon-angellist {
+	color: $socicon-color-angellist;
+	background-color: $socicon-color-angellist;
 
 	&::before {
-		content: '\e095';
+		content: $socicon-angellist;
 	}
 }
 
-.socicon-zapier {
-	color: $icon-zapier;
-	background-color: $icon-zapier;
+.socicon-apple {
+	color: $socicon-color-apple;
+	background-color: $socicon-color-apple;
 
 	&::before {
-		content: '\e096';
+		content: $socicon-apple;
 	}
 }
 
-.socicon-google-scholar {
-	color: $icon-google-scholar;
-	background-color: $icon-google-scholar;
+.socicon-appnet {
+	color: $socicon-color-appnet;
+	background-color: $socicon-color-appnet;
 
 	&::before {
-		content: '\e097';
+		content: $socicon-appnet;
 	}
 }
 
-.socicon-researchgate {
-	color: $icon-researchgate;
-	background-color: $icon-researchgate;
+.socicon-baidu {
+	color: $socicon-color-baidu;
+	background-color: $socicon-color-baidu;
 
 	&::before {
-		content: '\e098';
+		content: $socicon-baidu;
 	}
 }
 
-.socicon-wechat {
-	color: $icon-wechat;
-	background-color: $icon-wechat;
+.socicon-bandcamp {
+	color: $socicon-color-bandcamp;
+	background-color: $socicon-color-bandcamp;
 
 	&::before {
-		content: '\e099';
+		content: $socicon-bandcamp;
 	}
 }
 
-.socicon-strava {
-	color: $icon-strava;
-	background-color: $icon-strava;
+.socicon-battlenet {
+	color: $socicon-color-battlenet;
+	background-color: $socicon-color-battlenet;
 
 	&::before {
-		content: '\e09a';
+		content: $socicon-battlenet;
 	}
 }
 
-.socicon-line {
-	color: $icon-line;
-	background-color: $icon-line;
+.socicon-mixer {
+	color: $socicon-color-mixer;
+	background-color: $socicon-color-mixer;
 
 	&::before {
-		content: '\e09b';
+		content: $socicon-mixer;
 	}
 }
 
-.socicon-lyft {
-	color: $icon-lyft;
-	background-color: $icon-lyft;
+.socicon-bebee {
+	color: $socicon-color-bebee;
+	background-color: $socicon-color-bebee;
 
 	&::before {
-		content: '\e09c';
+		content: $socicon-bebee;
 	}
 }
 
-.socicon-uber {
-	color: $icon-uber;
-	background-color: $icon-uber;
+.socicon-bebo {
+	color: $socicon-color-bebo;
+	background-color: $socicon-color-bebo;
 
 	&::before {
-		content: '\e09d';
+		content: $socicon-bebo;
 	}
 }
 
-.socicon-songkick {
-	color: $icon-songkick;
-	background-color: $icon-songkick;
+.socicon-behance {
+	color: $socicon-color-behance;
+	background-color: $socicon-color-behance;
 
 	&::before {
-		content: '\e09e';
-	}
-}
-
-.socicon-viewbug {
-	color: $icon-viewbug;
-	background-color: $icon-viewbug;
-
-	&::before {
-		content: '\e09f';
-	}
-}
-
-.socicon-googlegroups {
-	color: $icon-googlegroups;
-	background-color: $icon-googlegroups;
-
-	&::before {
-		content: '\e0a0';
+		content: $socicon-behance;
 	}
 }
 
 .socicon-blizzard {
-	color: $icon-blizzard;
-	background-color: $icon-blizzard;
+	color: $socicon-color-blizzard;
+	background-color: $socicon-color-blizzard;
 
 	&::before {
-		content: '\e0a1';
+		content: $socicon-blizzard;
 	}
 }
 
-.socicon-beam {
-	color: $icon-beam;
-	background-color: $icon-beam;
+.socicon-blogger {
+	color: $socicon-color-blogger;
+	background-color: $socicon-color-blogger;
 
 	&::before {
-		content: '\e0a2';
+		content: $socicon-blogger;
+	}
+}
+
+.socicon-buffer {
+	color: $socicon-color-buffer;
+	background-color: $socicon-color-buffer;
+
+	&::before {
+		content: $socicon-buffer;
+	}
+}
+
+.socicon-chrome {
+	color: $socicon-color-chrome;
+	background-color: $socicon-color-chrome;
+
+	&::before {
+		content: $socicon-chrome;
+	}
+}
+
+.socicon-coderwall {
+	color: $socicon-color-coderwall;
+	background-color: $socicon-color-coderwall;
+
+	&::before {
+		content: $socicon-coderwall;
 	}
 }
 
 .socicon-curse {
-	color: $icon-curse;
-	background-color: $icon-curse;
+	color: $socicon-color-curse;
+	background-color: $socicon-color-curse;
 
 	&::before {
-		content: '\e0a3';
+		content: $socicon-curse;
 	}
 }
 
-.socicon-player {
-	color: $icon-player;
-	background-color: $icon-player;
+.socicon-dailymotion {
+	color: $socicon-color-dailymotion;
+	background-color: $socicon-color-dailymotion;
 
 	&::before {
-		content: '\e0a4';
+		content: $socicon-dailymotion;
 	}
 }
 
-.socicon-streamjar {
-	color: $icon-streamjar;
-	background-color: $icon-streamjar;
+.socicon-deezer {
+	color: $socicon-color-deezer;
+	background-color: $socicon-color-deezer;
 
 	&::before {
-		content: '\e0a5';
+		content: $socicon-deezer;
 	}
 }
 
-.socicon-nintendo {
-	color: $icon-nintendo;
-	background-color: $icon-nintendo;
+.socicon-delicious {
+	color: $socicon-color-delicious;
+	background-color: $socicon-color-delicious;
 
 	&::before {
-		content: '\e0a6';
+		content: $socicon-delicious;
+	}
+}
+
+.socicon-deviantart {
+	color: $socicon-color-deviantart;
+	background-color: $socicon-color-deviantart;
+
+	&::before {
+		content: $socicon-deviantart;
+	}
+}
+
+.socicon-diablo {
+	color: $socicon-color-diablo;
+	background-color: $socicon-color-diablo;
+
+	&::before {
+		content: $socicon-diablo;
+	}
+}
+
+.socicon-digg {
+	color: $socicon-color-digg;
+	background-color: $socicon-color-digg;
+
+	&::before {
+		content: $socicon-digg;
+	}
+}
+
+.socicon-discord {
+	color: $socicon-color-discord;
+	background-color: $socicon-color-discord;
+
+	&::before {
+		content: $socicon-discord;
+	}
+}
+
+.socicon-disqus {
+	color: $socicon-color-disqus;
+	background-color: $socicon-color-disqus;
+
+	&::before {
+		content: $socicon-disqus;
+	}
+}
+
+.socicon-douban {
+	color: $socicon-color-douban;
+	background-color: $socicon-color-douban;
+
+	&::before {
+		content: $socicon-douban;
+	}
+}
+
+.socicon-draugiem {
+	color: $socicon-color-draugiem;
+	background-color: $socicon-color-draugiem;
+
+	&::before {
+		content: $socicon-draugiem;
+	}
+}
+
+.socicon-dribbble {
+	color: $socicon-color-dribbble;
+	background-color: $socicon-color-dribbble;
+
+	&::before {
+		content: $socicon-dribbble;
+	}
+}
+
+.socicon-drupal {
+	color: $socicon-color-drupal;
+	background-color: $socicon-color-drupal;
+
+	&::before {
+		content: $socicon-drupal;
+	}
+}
+
+.socicon-ebay {
+	color: $socicon-color-ebay;
+	background-color: $socicon-color-ebay;
+
+	&::before {
+		content: $socicon-ebay;
+	}
+}
+
+.socicon-ello {
+	color: $socicon-color-ello;
+	background-color: $socicon-color-ello;
+
+	&::before {
+		content: $socicon-ello;
+	}
+}
+
+.socicon-endomodo {
+	color: $socicon-color-endomodo;
+	background-color: $socicon-color-endomodo;
+
+	&::before {
+		content: $socicon-endomodo;
+	}
+}
+
+.socicon-envato {
+	color: $socicon-color-envato;
+	background-color: $socicon-color-envato;
+
+	&::before {
+		content: $socicon-envato;
+	}
+}
+
+.socicon-etsy {
+	color: $socicon-color-etsy;
+	background-color: $socicon-color-etsy;
+
+	&::before {
+		content: $socicon-etsy;
+	}
+}
+
+.socicon-facebook {
+	color: $socicon-color-facebook;
+	background-color: $socicon-color-facebook;
+
+	&::before {
+		content: $socicon-facebook;
+	}
+}
+
+.socicon-feedburner {
+	color: $socicon-color-feedburner;
+	background-color: $socicon-color-feedburner;
+
+	&::before {
+		content: $socicon-feedburner;
+	}
+}
+
+.socicon-filmweb {
+	color: $socicon-color-filmweb;
+	background-color: $socicon-color-filmweb;
+
+	&::before {
+		content: $socicon-filmweb;
+	}
+}
+
+.socicon-firefox {
+	color: $socicon-color-firefox;
+	background-color: $socicon-color-firefox;
+
+	&::before {
+		content: $socicon-firefox;
+	}
+}
+
+.socicon-flattr {
+	color: $socicon-color-flattr;
+	background-color: $socicon-color-flattr;
+
+	&::before {
+		content: $socicon-flattr;
+	}
+}
+
+.socicon-flickr {
+	color: $socicon-color-flickr;
+	background-color: $socicon-color-flickr;
+
+	&::before {
+		content: $socicon-flickr;
+	}
+}
+
+.socicon-formulr {
+	color: $socicon-color-formulr;
+	background-color: $socicon-color-formulr;
+
+	&::before {
+		content: $socicon-formulr;
+	}
+}
+
+.socicon-forrst {
+	color: $socicon-color-forrst;
+	background-color: $socicon-color-forrst;
+
+	&::before {
+		content: $socicon-forrst;
+	}
+}
+
+.socicon-foursquare {
+	color: $socicon-color-foursquare;
+	background-color: $socicon-color-foursquare;
+
+	&::before {
+		content: $socicon-foursquare;
+	}
+}
+
+.socicon-friendfeed {
+	color: $socicon-color-friendfeed;
+	background-color: $socicon-color-friendfeed;
+
+	&::before {
+		content: $socicon-friendfeed;
+	}
+}
+
+.socicon-github {
+	color: $socicon-color-github;
+	background-color: $socicon-color-github;
+
+	&::before {
+		content: $socicon-github;
+	}
+}
+
+.socicon-goodreads {
+	color: $socicon-color-goodreads;
+	background-color: $socicon-color-goodreads;
+
+	&::before {
+		content: $socicon-goodreads;
+	}
+}
+
+.socicon-google {
+	color: $socicon-color-google;
+	background-color: $socicon-color-google;
+
+	&::before {
+		content: $socicon-google;
+	}
+}
+
+.socicon-googlescholar {
+	color: $socicon-color-googlescholar;
+	background-color: $socicon-color-googlescholar;
+
+	&::before {
+		content: $socicon-googlescholar;
+	}
+}
+
+.socicon-googlegroups {
+	color: $socicon-color-googlegroups;
+	background-color: $socicon-color-googlegroups;
+
+	&::before {
+		content: $socicon-googlegroups;
+	}
+}
+
+.socicon-googlephotos {
+	color: $socicon-color-googlephotos;
+	background-color: $socicon-color-googlephotos;
+
+	&::before {
+		content: $socicon-googlephotos;
+	}
+}
+
+.socicon-googleplus {
+	color: $socicon-color-googleplus;
+	background-color: $socicon-color-googleplus;
+
+	&::before {
+		content: $socicon-googleplus;
+	}
+}
+
+.socicon-grooveshark {
+	color: $socicon-color-grooveshark;
+	background-color: $socicon-color-grooveshark;
+
+	&::before {
+		content: $socicon-grooveshark;
+	}
+}
+
+.socicon-hackerrank {
+	color: $socicon-color-hackerrank;
+	background-color: $socicon-color-hackerrank;
+
+	&::before {
+		content: $socicon-hackerrank;
+	}
+}
+
+.socicon-hearthstone {
+	color: $socicon-color-hearthstone;
+	background-color: $socicon-color-hearthstone;
+
+	&::before {
+		content: $socicon-hearthstone;
 	}
 }
 
 .socicon-hellocoton {
-	color: $icon-hellocoton;
-	background-color: $icon-hellocoton;
+	color: $socicon-color-hellocoton;
+	background-color: $socicon-color-hellocoton;
 
 	&::before {
-		content: '\e0a7';
+		content: $socicon-hellocoton;
+	}
+}
+
+.socicon-heroes {
+	color: $socicon-color-heroes;
+	background-color: $socicon-color-heroes;
+
+	&::before {
+		content: $socicon-heroes;
+	}
+}
+
+.socicon-smashcast {
+	color: $socicon-color-smashcast;
+	background-color: $socicon-color-smashcast;
+
+	&::before {
+		content: $socicon-smashcast;
+	}
+}
+
+.socicon-horde {
+	color: $socicon-color-horde;
+	background-color: $socicon-color-horde;
+
+	&::before {
+		content: $socicon-horde;
+	}
+}
+
+.socicon-houzz {
+	color: $socicon-color-houzz;
+	background-color: $socicon-color-houzz;
+
+	&::before {
+		content: $socicon-houzz;
+	}
+}
+
+.socicon-icq {
+	color: $socicon-color-icq;
+	background-color: $socicon-color-icq;
+
+	&::before {
+		content: $socicon-icq;
+	}
+}
+
+.socicon-identica {
+	color: $socicon-color-identica;
+	background-color: $socicon-color-identica;
+
+	&::before {
+		content: $socicon-identica;
+	}
+}
+
+.socicon-imdb {
+	color: $socicon-color-imdb;
+	background-color: $socicon-color-imdb;
+
+	&::before {
+		content: $socicon-imdb;
+	}
+}
+
+.socicon-instagram {
+	color: $socicon-color-instagram;
+	background-color: $socicon-color-instagram;
+
+	&::before {
+		content: $socicon-instagram;
+	}
+}
+
+.socicon-issuu {
+	color: $socicon-color-issuu;
+	background-color: $socicon-color-issuu;
+
+	&::before {
+		content: $socicon-issuu;
+	}
+}
+
+.socicon-istock {
+	color: $socicon-color-istock;
+	background-color: $socicon-color-istock;
+
+	&::before {
+		content: $socicon-istock;
+	}
+}
+
+.socicon-itunes {
+	color: $socicon-color-itunes;
+	background-color: $socicon-color-itunes;
+
+	&::before {
+		content: $socicon-itunes;
+	}
+}
+
+.socicon-keybase {
+	color: $socicon-color-keybase;
+	background-color: $socicon-color-keybase;
+
+	&::before {
+		content: $socicon-keybase;
+	}
+}
+
+.socicon-lanyrd {
+	color: $socicon-color-lanyrd;
+	background-color: $socicon-color-lanyrd;
+
+	&::before {
+		content: $socicon-lanyrd;
+	}
+}
+
+.socicon-lastfm {
+	color: $socicon-color-lastfm;
+	background-color: $socicon-color-lastfm;
+
+	&::before {
+		content: $socicon-lastfm;
+	}
+}
+
+.socicon-line {
+	color: $socicon-color-line;
+	background-color: $socicon-color-line;
+
+	&::before {
+		content: $socicon-line;
+	}
+}
+
+.socicon-linkedin {
+	color: $socicon-color-linkedin;
+	background-color: $socicon-color-linkedin;
+
+	&::before {
+		content: $socicon-linkedin;
+	}
+}
+
+.socicon-livejournal {
+	color: $socicon-color-livejournal;
+	background-color: $socicon-color-livejournal;
+
+	&::before {
+		content: $socicon-livejournal;
+	}
+}
+
+.socicon-lyft {
+	color: $socicon-color-lyft;
+	background-color: $socicon-color-lyft;
+
+	&::before {
+		content: $socicon-lyft;
+	}
+}
+
+.socicon-macos {
+	color: $socicon-color-macos;
+	background-color: $socicon-color-macos;
+
+	&::before {
+		content: $socicon-macos;
+	}
+}
+
+.socicon-mail {
+	color: $socicon-color-mail;
+	background-color: $socicon-color-mail;
+
+	&::before {
+		content: $socicon-mail;
+	}
+}
+
+.socicon-medium {
+	color: $socicon-color-medium;
+	background-color: $socicon-color-medium;
+
+	&::before {
+		content: $socicon-medium;
+	}
+}
+
+.socicon-meetup {
+	color: $socicon-color-meetup;
+	background-color: $socicon-color-meetup;
+
+	&::before {
+		content: $socicon-meetup;
+	}
+}
+
+.socicon-mixcloud {
+	color: $socicon-color-mixcloud;
+	background-color: $socicon-color-mixcloud;
+
+	&::before {
+		content: $socicon-mixcloud;
+	}
+}
+
+.socicon-modelmayhem {
+	color: $socicon-color-modelmayhem;
+	background-color: $socicon-color-modelmayhem;
+
+	&::before {
+		content: $socicon-modelmayhem;
+	}
+}
+
+.socicon-mumble {
+	color: $socicon-color-mumble;
+	background-color: $socicon-color-mumble;
+
+	&::before {
+		content: $socicon-mumble;
+	}
+}
+
+.socicon-myspace {
+	color: $socicon-color-myspace;
+	background-color: $socicon-color-myspace;
+
+	&::before {
+		content: $socicon-myspace;
+	}
+}
+
+.socicon-newsvine {
+	color: $socicon-color-newsvine;
+	background-color: $socicon-color-newsvine;
+
+	&::before {
+		content: $socicon-newsvine;
+	}
+}
+
+.socicon-nintendo {
+	color: $socicon-color-nintendo;
+	background-color: $socicon-color-nintendo;
+
+	&::before {
+		content: $socicon-nintendo;
+	}
+}
+
+.socicon-npm {
+	color: $socicon-color-npm;
+	background-color: $socicon-color-npm;
+
+	&::before {
+		content: $socicon-npm;
+	}
+}
+
+.socicon-odnoklassniki {
+	color: $socicon-color-odnoklassniki;
+	background-color: $socicon-color-odnoklassniki;
+
+	&::before {
+		content: $socicon-odnoklassniki;
+	}
+}
+
+.socicon-openid {
+	color: $socicon-color-openid;
+	background-color: $socicon-color-openid;
+
+	&::before {
+		content: $socicon-openid;
+	}
+}
+
+.socicon-opera {
+	color: $socicon-color-opera;
+	background-color: $socicon-color-opera;
+
+	&::before {
+		content: $socicon-opera;
+	}
+}
+
+.socicon-outlook {
+	color: $socicon-color-outlook;
+	background-color: $socicon-color-outlook;
+
+	&::before {
+		content: $socicon-outlook;
+	}
+}
+
+.socicon-overwatch {
+	color: $socicon-color-overwatch;
+	background-color: $socicon-color-overwatch;
+
+	&::before {
+		content: $socicon-overwatch;
+	}
+}
+
+.socicon-patreon {
+	color: $socicon-color-patreon;
+	background-color: $socicon-color-patreon;
+
+	&::before {
+		content: $socicon-patreon;
+	}
+}
+
+.socicon-paypal {
+	color: $socicon-color-paypal;
+	background-color: $socicon-color-paypal;
+
+	&::before {
+		content: $socicon-paypal;
+	}
+}
+
+.socicon-periscope {
+	color: $socicon-color-periscope;
+	background-color: $socicon-color-periscope;
+
+	&::before {
+		content: $socicon-periscope;
+	}
+}
+
+.socicon-persona {
+	color: $socicon-color-persona;
+	background-color: $socicon-color-persona;
+
+	&::before {
+		content: $socicon-persona;
+	}
+}
+
+.socicon-pinterest {
+	color: $socicon-color-pinterest;
+	background-color: $socicon-color-pinterest;
+
+	&::before {
+		content: $socicon-pinterest;
+	}
+}
+
+.socicon-play {
+	color: $socicon-color-play;
+	background-color: $socicon-color-play;
+
+	&::before {
+		content: $socicon-play;
+	}
+}
+
+.socicon-player {
+	color: $socicon-color-player;
+	background-color: $socicon-color-player;
+
+	&::before {
+		content: $socicon-player;
+	}
+}
+
+.socicon-playstation {
+	color: $socicon-color-playstation;
+	background-color: $socicon-color-playstation;
+
+	&::before {
+		content: $socicon-playstation;
+	}
+}
+
+.socicon-pocket {
+	color: $socicon-color-pocket;
+	background-color: $socicon-color-pocket;
+
+	&::before {
+		content: $socicon-pocket;
+	}
+}
+
+.socicon-qq {
+	color: $socicon-color-qq;
+	background-color: $socicon-color-qq;
+
+	&::before {
+		content: $socicon-qq;
+	}
+}
+
+.socicon-quora {
+	color: $socicon-color-quora;
+	background-color: $socicon-color-quora;
+
+	&::before {
+		content: $socicon-quora;
+	}
+}
+
+.socicon-raidcall {
+	color: $socicon-color-raidcall;
+	background-color: $socicon-color-raidcall;
+
+	&::before {
+		content: $socicon-raidcall;
+	}
+}
+
+.socicon-ravelry {
+	color: $socicon-color-ravelry;
+	background-color: $socicon-color-ravelry;
+
+	&::before {
+		content: $socicon-ravelry;
+	}
+}
+
+.socicon-reddit {
+	color: $socicon-color-reddit;
+	background-color: $socicon-color-reddit;
+
+	&::before {
+		content: $socicon-reddit;
+	}
+}
+
+.socicon-renren {
+	color: $socicon-color-renren;
+	background-color: $socicon-color-renren;
+
+	&::before {
+		content: $socicon-renren;
+	}
+}
+
+.socicon-researchgate {
+	color: $socicon-color-researchgate;
+	background-color: $socicon-color-researchgate;
+
+	&::before {
+		content: $socicon-researchgate;
+	}
+}
+
+.socicon-residentadvisor {
+	color: $socicon-color-residentadvisor;
+	background-color: $socicon-color-residentadvisor;
+
+	&::before {
+		content: $socicon-residentadvisor;
+	}
+}
+
+.socicon-reverbnation {
+	color: $socicon-color-reverbnation;
+	background-color: $socicon-color-reverbnation;
+
+	&::before {
+		content: $socicon-reverbnation;
+	}
+}
+
+.socicon-rss {
+	color: $socicon-color-rss;
+	background-color: $socicon-color-rss;
+
+	&::before {
+		content: $socicon-rss;
+	}
+}
+
+.socicon-sharethis {
+	color: $socicon-color-sharethis;
+	background-color: $socicon-color-sharethis;
+
+	&::before {
+		content: $socicon-sharethis;
+	}
+}
+
+.socicon-skype {
+	color: $socicon-color-skype;
+	background-color: $socicon-color-skype;
+
+	&::before {
+		content: $socicon-skype;
+	}
+}
+
+.socicon-slideshare {
+	color: $socicon-color-slideshare;
+	background-color: $socicon-color-slideshare;
+
+	&::before {
+		content: $socicon-slideshare;
+	}
+}
+
+.socicon-smugmug {
+	color: $socicon-color-smugmug;
+	background-color: $socicon-color-smugmug;
+
+	&::before {
+		content: $socicon-smugmug;
+	}
+}
+
+.socicon-snapchat {
+	color: $socicon-color-snapchat;
+	background-color: $socicon-color-snapchat;
+
+	&::before {
+		content: $socicon-snapchat;
+	}
+}
+
+.socicon-songkick {
+	color: $socicon-color-songkick;
+	background-color: $socicon-color-songkick;
+
+	&::before {
+		content: $socicon-songkick;
+	}
+}
+
+.socicon-soundcloud {
+	color: $socicon-color-soundcloud;
+	background-color: $socicon-color-soundcloud;
+
+	&::before {
+		content: $socicon-soundcloud;
+	}
+}
+
+.socicon-spotify {
+	color: $socicon-color-spotify;
+	background-color: $socicon-color-spotify;
+
+	&::before {
+		content: $socicon-spotify;
+	}
+}
+
+.socicon-stackexchange {
+	color: $socicon-color-stackexchange;
+	background-color: $socicon-color-stackexchange;
+
+	&::before {
+		content: $socicon-stackexchange;
+	}
+}
+
+.socicon-stackoverflow {
+	color: $socicon-color-stackoverflow;
+	background-color: $socicon-color-stackoverflow;
+
+	&::before {
+		content: $socicon-stackoverflow;
+	}
+}
+
+.socicon-starcraft {
+	color: $socicon-color-starcraft;
+	background-color: $socicon-color-starcraft;
+
+	&::before {
+		content: $socicon-starcraft;
+	}
+}
+
+.socicon-stayfriends {
+	color: $socicon-color-stayfriends;
+	background-color: $socicon-color-stayfriends;
+
+	&::before {
+		content: $socicon-stayfriends;
+	}
+}
+
+.socicon-steam {
+	color: $socicon-color-steam;
+	background-color: $socicon-color-steam;
+
+	&::before {
+		content: $socicon-steam;
+	}
+}
+
+.socicon-storehouse {
+	color: $socicon-color-storehouse;
+	background-color: $socicon-color-storehouse;
+
+	&::before {
+		content: $socicon-storehouse;
+	}
+}
+
+.socicon-strava {
+	color: $socicon-color-strava;
+	background-color: $socicon-color-strava;
+
+	&::before {
+		content: $socicon-strava;
+	}
+}
+
+.socicon-streamjar {
+	color: $socicon-color-streamjar;
+	background-color: $socicon-color-streamjar;
+
+	&::before {
+		content: $socicon-streamjar;
+	}
+}
+
+.socicon-stumbleupon {
+	color: $socicon-color-stumbleupon;
+	background-color: $socicon-color-stumbleupon;
+
+	&::before {
+		content: $socicon-stumbleupon;
+	}
+}
+
+.socicon-swarm {
+	color: $socicon-color-swarm;
+	background-color: $socicon-color-swarm;
+
+	&::before {
+		content: $socicon-swarm;
+	}
+}
+
+.socicon-teamspeak {
+	color: $socicon-color-teamspeak;
+	background-color: $socicon-color-teamspeak;
+
+	&::before {
+		content: $socicon-teamspeak;
+	}
+}
+
+.socicon-teamviewer {
+	color: $socicon-color-teamviewer;
+	background-color: $socicon-color-teamviewer;
+
+	&::before {
+		content: $socicon-teamviewer;
+	}
+}
+
+.socicon-technorati {
+	color: $socicon-color-technorati;
+	background-color: $socicon-color-technorati;
+
+	&::before {
+		content: $socicon-technorati;
+	}
+}
+
+.socicon-telegram {
+	color: $socicon-color-telegram;
+	background-color: $socicon-color-telegram;
+
+	&::before {
+		content: $socicon-telegram;
+	}
+}
+
+.socicon-tripadvisor {
+	color: $socicon-color-tripadvisor;
+	background-color: $socicon-color-tripadvisor;
+
+	&::before {
+		content: $socicon-tripadvisor;
+	}
+}
+
+.socicon-tripit {
+	color: $socicon-color-tripit;
+	background-color: $socicon-color-tripit;
+
+	&::before {
+		content: $socicon-tripit;
+	}
+}
+
+.socicon-triplej {
+	color: $socicon-color-triplej;
+	background-color: $socicon-color-triplej;
+
+	&::before {
+		content: $socicon-triplej;
+	}
+}
+
+.socicon-tumblr {
+	color: $socicon-color-tumblr;
+	background-color: $socicon-color-tumblr;
+
+	&::before {
+		content: $socicon-tumblr;
+	}
+}
+
+.socicon-twitch {
+	color: $socicon-color-twitch;
+	background-color: $socicon-color-twitch;
+
+	&::before {
+		content: $socicon-twitch;
+	}
+}
+
+.socicon-twitter {
+	color: $socicon-color-twitter;
+	background-color: $socicon-color-twitter;
+
+	&::before {
+		content: $socicon-twitter;
+	}
+}
+
+.socicon-uber {
+	color: $socicon-color-uber;
+	background-color: $socicon-color-uber;
+
+	&::before {
+		content: $socicon-uber;
+	}
+}
+
+.socicon-ventrilo {
+	color: $socicon-color-ventrilo;
+	background-color: $socicon-color-ventrilo;
+
+	&::before {
+		content: $socicon-ventrilo;
+	}
+}
+
+.socicon-viadeo {
+	color: $socicon-color-viadeo;
+	background-color: $socicon-color-viadeo;
+
+	&::before {
+		content: $socicon-viadeo;
+	}
+}
+
+.socicon-viber {
+	color: $socicon-color-viber;
+	background-color: $socicon-color-viber;
+
+	&::before {
+		content: $socicon-viber;
+	}
+}
+
+.socicon-viewbug {
+	color: $socicon-color-viewbug;
+	background-color: $socicon-color-viewbug;
+
+	&::before {
+		content: $socicon-viewbug;
+	}
+}
+
+.socicon-vimeo {
+	color: $socicon-color-vimeo;
+	background-color: $socicon-color-vimeo;
+
+	&::before {
+		content: $socicon-vimeo;
+	}
+}
+
+.socicon-vine {
+	color: $socicon-color-vine;
+	background-color: $socicon-color-vine;
+
+	&::before {
+		content: $socicon-vine;
+	}
+}
+
+.socicon-vkontakte {
+	color: $socicon-color-vkontakte;
+	background-color: $socicon-color-vkontakte;
+
+	&::before {
+		content: $socicon-vkontakte;
+	}
+}
+
+.socicon-warcraft {
+	color: $socicon-color-warcraft;
+	background-color: $socicon-color-warcraft;
+
+	&::before {
+		content: $socicon-warcraft;
+	}
+}
+
+.socicon-wechat {
+	color: $socicon-color-wechat;
+	background-color: $socicon-color-wechat;
+
+	&::before {
+		content: $socicon-wechat;
+	}
+}
+
+.socicon-weibo {
+	color: $socicon-color-weibo;
+	background-color: $socicon-color-weibo;
+
+	&::before {
+		content: $socicon-weibo;
+	}
+}
+
+.socicon-whatsapp {
+	color: $socicon-color-whatsapp;
+	background-color: $socicon-color-whatsapp;
+
+	&::before {
+		content: $socicon-whatsapp;
+	}
+}
+
+.socicon-wikipedia {
+	color: $socicon-color-wikipedia;
+	background-color: $socicon-color-wikipedia;
+
+	&::before {
+		content: $socicon-wikipedia;
+	}
+}
+
+.socicon-windows {
+	color: $socicon-color-windows;
+	background-color: $socicon-color-windows;
+
+	&::before {
+		content: $socicon-windows;
+	}
+}
+
+.socicon-wordpress {
+	color: $socicon-color-wordpress;
+	background-color: $socicon-color-wordpress;
+
+	&::before {
+		content: $socicon-wordpress;
+	}
+}
+
+.socicon-wykop {
+	color: $socicon-color-wykop;
+	background-color: $socicon-color-wykop;
+
+	&::before {
+		content: $socicon-wykop;
+	}
+}
+
+.socicon-xbox {
+	color: $socicon-color-xbox;
+	background-color: $socicon-color-xbox;
+
+	&::before {
+		content: $socicon-xbox;
+	}
+}
+
+.socicon-xing {
+	color: $socicon-color-xing;
+	background-color: $socicon-color-xing;
+
+	&::before {
+		content: $socicon-xing;
+	}
+}
+
+.socicon-yahoo {
+	color: $socicon-color-yahoo;
+	background-color: $socicon-color-yahoo;
+
+	&::before {
+		content: $socicon-yahoo;
+	}
+}
+
+.socicon-yammer {
+	color: $socicon-color-yammer;
+	background-color: $socicon-color-yammer;
+
+	&::before {
+		content: $socicon-yammer;
+	}
+}
+
+.socicon-yandex {
+	color: $socicon-color-yandex;
+	background-color: $socicon-color-yandex;
+
+	&::before {
+		content: $socicon-yandex;
+	}
+}
+
+.socicon-yelp {
+	color: $socicon-color-yelp;
+	background-color: $socicon-color-yelp;
+
+	&::before {
+		content: $socicon-yelp;
+	}
+}
+
+.socicon-younow {
+	color: $socicon-color-younow;
+	background-color: $socicon-color-younow;
+
+	&::before {
+		content: $socicon-younow;
+	}
+}
+
+.socicon-youtube {
+	color: $socicon-color-youtube;
+	background-color: $socicon-color-youtube;
+
+	&::before {
+		content: $socicon-youtube;
+	}
+}
+
+.socicon-zapier {
+	color: $socicon-color-zapier;
+	background-color: $socicon-color-zapier;
+
+	&::before {
+		content: $socicon-zapier;
+	}
+}
+
+.socicon-zerply {
+	color: $socicon-color-zerply;
+	background-color: $socicon-color-zerply;
+
+	&::before {
+		content: $socicon-zerply;
+	}
+}
+
+.socicon-zomato {
+	color: $socicon-color-zomato;
+	background-color: $socicon-color-zomato;
+
+	&::before {
+		content: $socicon-zomato;
+	}
+}
+
+.socicon-zynga {
+	color: $socicon-color-zynga;
+	background-color: $socicon-color-zynga;
+
+	&::before {
+		content: $socicon-zynga;
 	}
 }
