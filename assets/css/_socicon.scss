@@ -74,8 +74,8 @@
 }
 
 .socicon-smashwords {
-	color: $socicon-color-hackernews;
-	background-color: $socicon-color-hackernews;
+	color: $socicon-color-smashwords;
+	background-color: $socicon-color-smashwords;
 
 	&::before {
 		content: $socicon-smashwords;
@@ -173,8 +173,8 @@
 }
 
 .socicon-livemaster {
-	color: $socicon-color-udemy;
-	background-color: $socicon-color-udemy;
+	color: $socicon-color-livemaster;
+	background-color: $socicon-color-livemaster;
 
 	&::before {
 		content: $socicon-livemaster;
@@ -1072,12 +1072,12 @@
 	}
 }
 
-.socicon-endomodo {
-	color: $socicon-color-endomodo;
-	background-color: $socicon-color-endomodo;
+.socicon-endomondo {
+	color: $socicon-color-endomondo;
+	background-color: $socicon-color-endomondo;
 
 	&::before {
-		content: $socicon-endomodo;
+		content: $socicon-endomondo;
 	}
 }
 
@@ -1177,15 +1177,6 @@
 
 	&::before {
 		content: $socicon-foursquare;
-	}
-}
-
-.socicon-friendfeed {
-	color: $socicon-color-friendfeed;
-	background-color: $socicon-color-friendfeed;
-
-	&::before {
-		content: $socicon-friendfeed;
 	}
 }
 
@@ -1519,15 +1510,6 @@
 
 	&::before {
 		content: $socicon-myspace;
-	}
-}
-
-.socicon-newsvine {
-	color: $socicon-color-newsvine;
-	background-color: $socicon-color-newsvine;
-
-	&::before {
-		content: $socicon-newsvine;
 	}
 }
 
