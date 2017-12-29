@@ -149,7 +149,7 @@ class SI_Meta_Box_Group_Data {
 
 							if ( $sortable_icons ) {
 								foreach ( $sortable_icons as $name => $icon ) {
-									$name = esc_attr( 'socicon-' . $name );
+									$name = 'socicon-' . strstr( $name, '_', true );
 									include( 'views/html-group-social-icon.php' );
 								}
 							} else {
