@@ -9,8 +9,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Get socicon lists.
+ * Get socicon.
  *
+ * @param  string $icon Icon name.
+ * @param  string $type Icon type.
  * @return array
  */
 function get_socicon( $icon = '', $type = 'color' ) {
