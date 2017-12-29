@@ -140,6 +140,9 @@ final class Social_Icons {
 			include_once( SI_ABSPATH . 'includes/admin/class-si-admin.php' );
 		}
 
+		// Socicons.
+		include_once( SI_ABSPATH . '/includes/libraries/socicons.php' );
+
 		if ( $this->is_request( 'frontend' ) ) {
 			$this->frontend_includes();
 		}
