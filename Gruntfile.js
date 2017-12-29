@@ -65,7 +65,7 @@ module.exports = function( grunt ){
 		// Compile all .scss files.
 		sass: {
 			options: {
-				sourceMap: false
+				sourcemap: 'none'
 			},
 			compile: {
 				files: [{
@@ -174,14 +174,14 @@ module.exports = function( grunt ){
 		// PHP Code Sniffer.
 		phpcs: {
 			options: {
-				bin: 'vendor/bin/phpcs',
-				standard: './phpcs.ruleset.xml'
+				bin: 'vendor/bin/phpcs'
 			},
 			dist: {
 				src:  [
-					'**/*.php',         // Include all files
-					'!node_modules/**', // Exclude node_modules/
-					'!vendor/**'        // Exclude vendor/
+					'**/*.php',               // Include all files
+					'!includes/libraries/**', // Exclude libraries/
+					'!node_modules/**',       // Exclude node_modules/
+					'!vendor/**'              // Exclude vendor/
 				]
 			}
 		},
@@ -222,9 +222,9 @@ module.exports = function( grunt ){
 
 	// Register tasks
 	grunt.registerTask( 'default', [
-		'jshint',
-		'uglify',
-		'css'
+		'js',
+		'css',
+		'i18n'
 	]);
 
 	grunt.registerTask( 'js', [
@@ -239,8 +239,13 @@ module.exports = function( grunt ){
 		'cssmin'
 	]);
 
+	// Only an alias to 'default' task.
 	grunt.registerTask( 'dev', [
-		'default',
+		'default'
+	]);
+
+	grunt.registerTask( 'i18n', [
+		'checktextdomain',
 		'makepot'
 	]);
 };

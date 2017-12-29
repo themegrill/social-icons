@@ -1,6 +1,6 @@
 Social Icons - Social profile for WordPress
 
-Copyright 2015-2016 by the contributors
+Copyright 2015-2018 by the contributors
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 This program incorporates work covered by the following copyright and
 permission notices:
 
-  Socicon is Copyright (c) 2016 - http://socicon.com
+  Socicon is Copyright (c) 2018 - http://socicon.com
 
   Socicon is released under the SIL Open Font License, http://scripts.sil.org/OFL
 
@@ -26,7 +26,7 @@ and
 
   Social Icons - Social profile for WordPress
 
-  Social Icons is Copyright (c) 2016 ThemeGrill
+  Social Icons is Copyright (c) 2018 ThemeGrill
 
   Social Icons is released under the GPL
 

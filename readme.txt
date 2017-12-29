@@ -1,9 +1,9 @@
 === Social Icons ===
 Contributors: ThemeGrill, shivapoudel
 Tags: social, media, icons, brands, widget, social networking, social media, social icon, social icons, social profile, social icon widget, shortcode
-Requires at least: 4.0
+Requires at least: 4.7
 Tested up to: 4.9
-Stable tag: 1.6.0
+Stable tag: 1.7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -71,12 +71,12 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
-= 1.6.1 - xx/xx/2017 =
+= 1.7.0 - xx/xx/2017 =
 * Fix - Support multiple social profile links.
 
 [See changelog for all versions](https://raw.githubusercontent.com/themegrill/social-icons/master/CHANGELOG.txt).
 
 == Upgrade Notice ==
 
-= 1.6.0 =
-1.6.0 is a major update. Make a full site backup, update your theme and extensions before upgrading.
+= 1.7.0 =
+1.7.0 is a minor update. Make a full site backup, update your theme and extensions, and ensure they are compatible before upgrading.
