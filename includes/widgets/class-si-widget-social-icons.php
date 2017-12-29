@@ -248,6 +248,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 	function widget( $args, $instance ) {
 		$this->widget_start( $args, $instance );
 
+		$color_type = 'text';
 		$class_list = array();
 
 		// Label class.
@@ -263,6 +264,10 @@ class SI_Widget_Social_Icons extends SI_Widget {
 		// Background class.
 		if ( $instance['background_style'] ) {
 			$class_list[] = 'icons-background-' . $instance['background_style'];
+
+			if ( 'none' !== $instance['background_style'] ) {
+				$color_type = 'background';
+			}
 		}
 
 		// Custom icon padding and font size.
@@ -280,12 +285,14 @@ class SI_Widget_Social_Icons extends SI_Widget {
 			$count = 0;
 			foreach ( $instance['socicon_sortable'] as $title => $field ) :
 
-				$class   = str_replace( '_' . $count, '', $title );
-				$icon_bg = empty( $instance['show_greyscale'] ) ? get_socicon( $class ) : '#555'; ?>
+				$class    = str_replace( '_' . $count, '', $title );
+				$icon_bg  = empty( $instance['show_greyscale'] ) ? get_socicon( $class ) : '#555';
+				$bg_color = 'text' !== $color_type ? 'background-color: ' . $icon_bg : 'color: ' . $icon_bg;
+				?>
 
 				<li class="social-icons-list-item">
 					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( $instance['open_tab'] ? 'target="_blank"' : '' ); ?> class="social-icon">
-						<span class="socicon socicon-<?php echo esc_attr( $class ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px; background-color: <?php echo esc_attr( $icon_bg ); ?>"></span>
+						<span class="socicon socicon-<?php echo esc_attr( $class ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px; <?php echo esc_attr( $bg_color ); ?>"></span>
 
 						<?php if ( $instance['show_label'] ) : ?>
 							<span class="social-icons-list-label"><?php echo esc_html( $field['label'] ); ?></span>
