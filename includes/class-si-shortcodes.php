@@ -74,6 +74,8 @@ class SI_Shortcodes {
 	 * @access private
 	 */
 	private static function social_icons_output( $group_data, $atts ) {
+		$icon_class = false;
+		$color_type = 'text';
 		$class_list = array();
 
 		// Label class.
@@ -83,12 +85,17 @@ class SI_Shortcodes {
 
 		// Greyscale class.
 		if ( 'yes' == $group_data['greyscale_icons'] ) {
+			$icon_class   = '#555';
 			$class_list[] = 'social-icons-greyscale';
 		}
 
 		// Background class.
 		if ( $group_data['background_style'] ) {
 			$class_list[] = 'icons-background-' . $group_data['background_style'];
+
+			if ( 'none' !== $group_data['background_style'] ) {
+				$color_type = 'background';
+			}
 		}
 
 		// Custom icon padding and font size.
@@ -103,11 +110,13 @@ class SI_Shortcodes {
 			$count = 0;
 			foreach ( $group_data['sortable_icons'] as $title => $field ) :
 
-				$class = str_replace( '_' . $count, '', $title ); ?>
+				$class      = str_replace( '_' . $count, '', $title );
+				$icon_color = false !== $icon_class ? $icon_class : get_socicon( $class );
+				$background = 'text' !== $color_type ? 'background-color: ' . $icon_color : 'color: ' . $icon_color; ?>
 
 				<li class="social-icons-list-item">
 					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( 'yes' == $group_data['open_new_tab'] ? 'target="_blank"' : '' ); ?> class="social-icon">
-						<span class="socicon socicon-<?php echo esc_attr( $class ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px"></span>
+						<span class="socicon socicon-<?php echo esc_attr( $class ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px; <?php echo esc_attr( $background ); ?>"></span>
 
 						<?php if ( 'yes' == $group_data['manage_label'] ) : ?>
 							<span class="social-icons-list-label"><?php echo esc_html( $field['label'] ); ?></span>
