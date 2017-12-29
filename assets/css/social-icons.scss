@@ -53,11 +53,6 @@
 		list-style: outside;
 	}
 
-	&.social-icons-greyscale .socicon {
-		color: #fff;
-		background-color: #555;
-	}
-
 	&.icons-background-rounded .socicon {
 		border-radius: 100%;
 	}
@@ -80,10 +75,6 @@
 		.socicon {
 			padding: 0;
 			background: transparent;
-		}
-
-		&.social-icons-greyscale .socicon {
-			color: #555;
 		}
 	}
 }
