@@ -180,6 +180,7 @@ final class Social_Icons {
 		$social_protocols = array(
 			'skype',
 			'viber',
+			'whatsapp',
 		);
 
 		return array_merge( $protocols, $social_protocols );
