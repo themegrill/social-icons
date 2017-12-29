@@ -26,42 +26,20 @@
 /**
  * Styling begins
  */
-[data-icon]::before {
+[class^='socicon-'],
+[class*='socicon-'] {
+	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: 'Socicon' !important;
-	content: attr(data-icon);
-	font-style: normal !important;
-	font-weight: normal !important;
-	font-variant: normal !important;
-	text-transform: none !important;
 	speak: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-[class^='socicon-']::before,
-[class*='socicon-']::before {
-	font-family: 'Socicon' !important;
-	font-style: normal !important;
-	font-weight: normal !important;
-	font-variant: normal !important;
-	text-transform: none !important;
-	speak: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.socicon {
-	position: relative;
-	top: 3px;
-	display: inline-block;
-	font-family: 'Socicon';
 	font-style: normal;
 	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
 	line-height: 1;
+
+	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
-	font-size: 1.2em;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .socicon-hackernews {

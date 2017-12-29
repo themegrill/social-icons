@@ -24,8 +24,12 @@
 	}
 
 	&.socicon {
+		position: relative;
+		top: 3px;
 		color: #fff;
 		padding: 6px;
+		display: inline-block;
+		font-size: 1.2em;
 	}
 }
 

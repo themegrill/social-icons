@@ -14,8 +14,11 @@
 .social-icons-lists {
 
 	.socicon {
+		position: relative;
+		top: 3px;
 		padding: 10px;
 		font-size: 16px;
+		display: inline-block;
 		box-sizing: content-box;
 	}
 
