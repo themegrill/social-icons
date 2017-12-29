@@ -218,8 +218,10 @@ class SI_Widget_Social_Icons extends SI_Widget {
 
 		$args = wp_parse_args( $args, $defaults );
 
+		$icon_color = '';
 		$icon_class = 'dashicons dashicons-plus';
 		if ( $icon = si_get_social_icon_name( $args['url-value'] ) ) {
+			$icon_color = get_socicon( $icon );
 			$icon_class = 'socicon socicon-' . $icon;
 		}
 
@@ -230,7 +232,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 					printf( '<input class="widefat social-icons-field-label" id="%1$s" name="%2$s[]" type="text" placeholder="%3$s" value="%4$s">', $args['label-field-id'], $args['label-field-name'], esc_attr( __( 'Label', 'social-icons' ) ), esc_attr( $args['label-value'] ) );
 				?></div>
 			</div>
-			<span class="social-icons-field-handle <?php echo $icon_class; ?>"></span>
+			<span class="social-icons-field-handle <?php echo $icon_class; ?>" style="background-color: <?php echo esc_attr( $icon_color ); ?>"></span>
 			<a class="social-icons-field-remove" href="#">
 				<span class="dashicons dashicons-no-alt"></span>
 			</a>
