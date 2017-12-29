@@ -71,7 +71,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
-= 1.7.0 - xx/xx/2017 =
+= 1.7.0 - xx/xx/2018 =
 * Fix - Support multiple social profile links.
 
 [See changelog for all versions](https://raw.githubusercontent.com/themegrill/social-icons/master/CHANGELOG.txt).
