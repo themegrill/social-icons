@@ -178,7 +178,8 @@ final class Social_Icons {
 	 */
 	public function allowed_protocols( $protocols ) {
 		$social_protocols = array(
-			'skype'
+			'skype',
+			'viber',
 		);
 
 		return array_merge( $protocols, $social_protocols );

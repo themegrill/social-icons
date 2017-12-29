@@ -845,147 +845,147 @@ function si_get_allowed_socicons_elements() {
 			'color' => '#000000',
 		),
 		'rss' => array(
-			'url'   => '',
+			'url'   => 'https://woocommerce.io/feed/',
 			'color' => '#f26109',
 		),
 		'sharethis' => array(
-			'url'   => '',
+			'url'   => 'http://platform-api.sharethis.com/js/sharethis.js',
 			'color' => '#01bf01',
 		),
 		'skype' => array(
-			'url'   => '',
+			'url'   => 'skype:username?chat',
 			'color' => '#28abe3',
 		),
 		'slideshare' => array(
-			'url'   => '',
+			'url'   => 'https://www.slideshare.net/',
 			'color' => '#4ba3a6',
 		),
 		'smugmug' => array(
-			'url'   => '',
+			'url'   => 'https://www.smugmug.com/',
 			'color' => '#acfd32',
 		),
 		'snapchat' => array(
-			'url'   => '',
+			'url'   => 'https://www.snapchat.com/',
 			'color' => '#fffa37',
 		),
 		'songkick' => array(
-			'url'   => '',
+			'url'   => 'https://www.songkick.com/',
 			'color' => '#f80046',
 		),
 		'soundcloud' => array(
-			'url'   => '',
+			'url'   => 'https://soundcloud.com/',
 			'color' => '#fe3801',
 		),
 		'spotify' => array(
-			'url'   => '',
+			'url'   => 'https://www.spotify.com/',
 			'color' => '#7bb342',
 		),
 		'stackexchange' => array(
-			'url'   => '',
+			'url'   => 'https://stackexchange.com/',
 			'color' => '#2f2f2f',
 		),
 		'stackoverflow' => array(
-			'url'   => '',
+			'url'   => 'https://stackoverflow.com/',
 			'color' => '#fd9827',
 		),
 		'starcraft' => array(
-			'url'   => '',
+			'url'   => 'https://starcraft2.com/',
 			'color' => '#002250',
 		),
 		'stayfriends' => array(
-			'url'   => '',
+			'url'   => 'https://www.stayfriends.com/',
 			'color' => '#f08a1c',
 		),
 		'steam' => array(
-			'url'   => '',
+			'url'   => 'http://store.steampowered.com/',
 			'color' => '#171a21',
 		),
 		'storehouse' => array(
-			'url'   => '',
+			'url'   => 'https://www.storehouse.co/',
 			'color' => '#25b0e6',
 		),
 		'strava' => array(
-			'url'   => '',
+			'url'   => 'https://www.strava.com/',
 			'color' => '#fc4c02',
 		),
 		'streamjar' => array(
-			'url'   => '',
+			'url'   => 'https://streamjar.tv/',
 			'color' => '#503a60',
 		),
 		'stumbleupon' => array(
-			'url'   => '',
+			'url'   => 'https://www.stumbleupon.com/',
 			'color' => '#e64011',
 		),
 		'swarm' => array(
-			'url'   => '',
+			'url'   => 'https://www.swarmapp.com/',
 			'color' => '#fc9d3c',
 		),
 		'teamspeak' => array(
-			'url'   => '',
+			'url'   => 'https://www.teamspeak.com/',
 			'color' => '#465674',
 		),
 		'teamviewer' => array(
-			'url'   => '',
+			'url'   => 'https://www.teamviewer.com/',
 			'color' => '#168ef4',
 		),
 		'technorati' => array(
-			'url'   => '',
+			'url'   => 'http://www.technorati.com/',
 			'color' => '#5cb030',
 		),
 		'telegram' => array(
-			'url'   => '',
+			'url'   => 'https://telegram.org/',
 			'color' => '#0088cc',
 		),
 		'tripadvisor' => array(
-			'url'   => '',
+			'url'   => 'https://www.tripadvisor.com/',
 			'color' => '#4b7e37',
 		),
 		'tripit' => array(
-			'url'   => '',
+			'url'   => 'https://www.tripit.com/',
 			'color' => '#1982c3',
 		),
 		'triplej' => array(
-			'url'   => '',
+			'url'   => 'http://www.abc.net.au/triplej/',
 			'color' => '#e53531',
 		),
 		'tumblr' => array(
-			'url'   => '',
+			'url'   => 'https://www.tumblr.com/',
 			'color' => '#45556c',
 		),
 		'twitch' => array(
-			'url'   => '',
+			'url'   => 'https://www.twitch.tv/',
 			'color' => '#6441a5',
 		),
 		'twitter' => array(
-			'url'   => '',
+			'url'   => 'https://twitter.com/',
 			'color' => '#4da7de',
 		),
 		'uber' => array(
-			'url'   => '',
+			'url'   => 'https://www.uber.com/',
 			'color' => '#000000',
 		),
 		'ventrilo' => array(
-			'url'   => '',
+			'url'   => 'http://www.ventrilo.com/',
 			'color' => '#77808a',
 		),
 		'viadeo' => array(
-			'url'   => '',
+			'url'   => 'http://viadeo.com/',
 			'color' => '#e4a000',
 		),
 		'viber' => array(
-			'url'   => '',
+			'url'   => 'viber://pa?chatURI=uri&text=message',
 			'color' => '#7b519d',
 		),
 		'viewbug' => array(
-			'url'   => '',
+			'url'   => 'https://www.viewbug.com/',
 			'color' => '#2f9fcf',
 		),
 		'vimeo' => array(
-			'url'   => '',
+			'url'   => 'https://vimeo.com/',
 			'color' => '#51b5e7',
 		),
 		'vine' => array(
-			'url'   => '',
+			'url'   => 'https://vine.co/',
 			'color' => '#00b389',
 		),
 		'vkontakte' => array(
@@ -993,7 +993,7 @@ function si_get_allowed_socicons_elements() {
 			'color' => '#5a7fa6',
 		),
 		'warcraft' => array(
-			'url'   => '',
+			'url'   => 'https://worldofwarcraft.com/',
 			'color' => '#1eb10a',
 		),
 		'wechat' => array(
@@ -1001,75 +1001,75 @@ function si_get_allowed_socicons_elements() {
 			'color' => '#09b507',
 		),
 		'weibo' => array(
-			'url'   => '',
+			'url'   => 'https://weibo.com/',
 			'color' => '#e31c34',
 		),
 		'whatsapp' => array(
-			'url'   => '',
+			'url'   => 'https://whatsapp.com/',
 			'color' => '#20b038',
 		),
 		'wikipedia' => array(
-			'url'   => '',
+			'url'   => 'https://wikipedia.org/',
 			'color' => '#000000',
 		),
 		'windows' => array(
-			'url'   => '',
+			'url'   => 'https://www.microsoft.com/en-us/windows/',
 			'color' => '#00bdf6',
 		),
 		'wordpress' => array(
-			'url'   => '',
+			'url'   => 'https://wordpress.org/',
 			'color' => '#464646',
 		),
 		'wykop' => array(
-			'url'   => '',
+			'url'   => 'https://www.wykop.pl/',
 			'color' => '#328efe',
 		),
 		'xbox' => array(
-			'url'   => '',
+			'url'   => 'https://www.xbox.com/',
 			'color' => '#92c83e',
 		),
 		'xing' => array(
-			'url'   => '',
+			'url'   => 'https://www.xing.com/',
 			'color' => '#005a60',
 		),
 		'yahoo' => array(
-			'url'   => '',
+			'url'   => 'https://www.yahoo.com/',
 			'color' => '#6e2a85',
 		),
 		'yammer' => array(
-			'url'   => '',
+			'url'   => 'https://www.yammer.com/',
 			'color' => '#1175c4',
 		),
 		'yandex' => array(
-			'url'   => '',
+			'url'   => 'https://www.yandex.com/',
 			'color' => '#ff0000',
 		),
 		'yelp' => array(
-			'url'   => '',
+			'url'   => 'https://www.yelp.com/',
 			'color' => '#c83218',
 		),
 		'younow' => array(
-			'url'   => '',
+			'url'   => 'https://www.younow.com/',
 			'color' => '#61c03e',
 		),
 		'youtube' => array(
-			'url'   => '',
+			'url'   => 'https://youtu.be/038jmlSH3iM',
 			'color' => '#e02a20',
 		),
 		'zapier' => array(
-			'url'   => '',
+			'url'   => 'https://zapier.com/',
 			'color' => '#ff4a00',
 		),
 		'zerply' => array(
-			'url'   => '',
+			'url'   => 'https://zerply.com/',
 			'color' => '#9dbc7a',
 		),
 		'zomato' => array(
-			'url'   => '',
+			'url'   => 'https://www.zomato.com/',
 			'color' => '#cb202d',
 		),
 		'zynga' => array(
-			'url'   => '',
+			'url'   => 'https://www.zynga.com/',
 			'color' => '#dc0606',
 		),
 	) );
