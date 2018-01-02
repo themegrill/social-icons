@@ -10,18 +10,24 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Social Icons provides you with an easy way to display various popular social icons via widgets and shortcode
 
 == Description ==
+
 Social Icons provides you with an easy way to display various popular social icons via widgets and shortcodes. You can drag the widget in your sidebars and change the settings from the widget form itself. Also you can use the shortcode and paste it on your page, post or wherever you like
 
-Get free support at https://themegrill.com/support-forum/
+View [All Features](https://themegrill.com/plugins/social-icons/)
 
-View features https://themegrill.com/plugins/social-icons/
+Check [Social Icons Plugin Demo](https://demo.themegrill.com/social-icons/)
 
-Check the demo at https://demo.themegrill.com/social-icons/
+Get access to [free support](https://themegrill.com/support-forum/)
 
-Check the docs at https://themegrill.com/docs/social-icons/
+Step by Step tutorial [Check documentation](https://themegrill.com/docs/social-icons/)
+
+### Icons
+
+Icons are provided by [socicon](http://socicon.com/) icon font.
 
 ### Features And Options:
-* Supports more than 100+ popular social icons.
+
+* Supports more than 200+ popular social icons.
 * Drag and drop for icon sorting.
 * Option to easily change icon size.
 * Supports square, rounded and greyscale background.
@@ -73,6 +79,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 = 1.7.0 - xx/xx/2018 =
 * Fix - Support multiple social profile links.
+* Fix - Socicon icon font updated to version 3.6.
 
 [See changelog for all versions](https://raw.githubusercontent.com/themegrill/social-icons/master/CHANGELOG.txt).
 
