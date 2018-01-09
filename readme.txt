@@ -77,7 +77,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
-= 1.7.0 - xx/xx/2018 =
+= 1.7.0 - 09/01/2018 =
 * Fix - Support multiple social profile links.
 * Fix - Socicon icon font updated to version 3.6.
 
