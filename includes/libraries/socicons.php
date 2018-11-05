@@ -17,6 +17,66 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function get_socicon( $icon = '', $type = 'color' ) {
 	$socicons = array(
+		'hackerone' => array(
+			'url'   => 'https://www.hackerone.com/',
+			'color' => '#ec1075',
+			'label' => '',
+		),
+		'beatport' => array(
+			'url'   => 'https://www.beatport.com/',
+			'color' => '#94d500',
+			'label' => '',
+		),
+		'napster' => array(
+			'url'   => 'https://www.napster.com/',
+			'color' => '#000000',
+			'label' => '',
+		),
+		'spip' => array(
+			'url'   => 'https://www.spip.net/',
+			'color' => '#E00D6F',
+			'label' => '',
+		),
+		'wickr' => array(
+			'url'   => 'https://wickr.com/',
+			'color' => '#F29100',
+			'label' => '',
+		),
+		'blackberry' => array(
+			'url'   => 'https://blackberry.com/',
+			'color' => '#000000',
+			'label' => '',
+		),
+		'pixiv' => array(
+			'url'   => 'https://www.pixiv.net/',
+			'color' => '#049CFF',
+			'label' => '',
+		),
+		'myanimelist' => array(
+			'url'   => 'https://myanimelist.net/',
+			'color' => '#2e51a2',
+			'label' => '',
+		),
+		'gamefor' => array(
+			'url'   => 'https://iamgamefor.com/',
+			'color' => '#506F82',
+			'label' => '',
+		),
+		'traxsource' => array(
+			'url'   => 'https://www.traxsource.com/',
+			'color' => '#40A0FF',
+			'label' => '',
+		),
+		'indiedb' => array(
+			'url'   => 'https://www.indiedb.com/',
+			'color' => '#77C628',
+			'label' => '',
+		),
+		'moddb' => array(
+			'url'   => 'https://www.moddb.com/',
+			'color' => '#CC0300',
+			'label' => '',
+		),
 		'hackernews' => array(
 			'url'   => 'https://news.ycombinator.com/',
 			'color' => '#FF6601',
