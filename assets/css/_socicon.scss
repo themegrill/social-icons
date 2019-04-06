@@ -42,6 +42,78 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.socicon-moddb {
+	&::before {
+		content: $socicon-moddb;
+	}
+}
+
+.socicon-indiedb {
+	&::before {
+		content: $socicon-indiedb;
+	}
+}
+
+.socicon-traxsource {
+	&::before {
+		content: $socicon-traxsource;
+	}
+}
+
+.socicon-gamefor {
+	&::before {
+		content: $socicon-gamefor;
+	}
+}
+
+.socicon-pixiv {
+	&::before {
+		content: $socicon-pixiv;
+	}
+}
+
+.socicon-myanimelist {
+	&::before {
+		content: $socicon-myanimelist;
+	}
+}
+
+.socicon-blackberry {
+	&::before {
+		content: $socicon-blackberry;
+	}
+}
+
+.socicon-wickr {
+	&::before {
+		content: $socicon-wickr;
+	}
+}
+
+.socicon-spip {
+	&::before {
+		content: $socicon-spip;
+	}
+}
+
+.socicon-napster {
+	&::before {
+		content: $socicon-napster;
+	}
+}
+
+.socicon-beatport {
+	&::before {
+		content: $socicon-beatport;
+	}
+}
+
+.socicon-hackerone {
+	&::before {
+		content: $socicon-hackerone;
+	}
+}
+
 .socicon-hackernews {
 	&::before {
 		content: $socicon-hackernews;

@@ -28,6 +28,7 @@
 		display: inline-block;
 		border: none !important;
 		list-style: none !important;
+		background: none !important; /* in case theme uses background feature instead of list-style. */
 
 		a.social-icon {
 			text-decoration: none;
