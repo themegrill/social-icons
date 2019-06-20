@@ -56,6 +56,11 @@ class SI_Widget_Social_Icons extends SI_Widget {
 				'std'   => 0,
 				'label' => __( 'Open links in new tab', 'social-icons' ),
 			),
+			'add_nofollow' => array(
+				'type'  => 'checkbox',
+				'std'   => 0,
+				'label' => __( 'Add nofollow', 'social-icons' ),
+			),
 			'background_style' => array(
 				'type'  => 'select',
 				'std'   => 'square',
@@ -291,10 +296,12 @@ class SI_Widget_Social_Icons extends SI_Widget {
 
 				$class      = str_replace( '_' . $count, '', $title );
 				$icon_color = false !== $icon_class ? $icon_class : get_socicon( $class );
-				$background = 'text' !== $color_type ? 'background-color: ' . $icon_color : 'color: ' . $icon_color; ?>
+				$background = 'text' !== $color_type ? 'background-color: ' . $icon_color : 'color: ' . $icon_color;
+				$nofollow   = ! empty( $instance['add_nofollow'] ) ? 'rel="nofollow"' : '';
+				?>
 
 				<li class="social-icons-list-item">
-					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( $instance['open_tab'] ? 'target="_blank"' : '' ); ?> class="social-icon">
+					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( $instance['open_tab'] ? 'target="_blank"' : '' ); ?> <?php echo $nofollow; ?> class="social-icon">
 						<span class="socicon socicon-<?php echo esc_attr( $class ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px; <?php echo esc_attr( $background ); ?>"></span>
 
 						<?php if ( $instance['show_label'] ) : ?>
