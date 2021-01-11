@@ -120,6 +120,9 @@ class SI_Meta_Box_Group_Data {
 					// Open in New tab
 					social_icons_wp_checkbox( array( 'id' => '_open_new_tab', 'label' => __( 'Open New Tab', 'social-icons' ), 'description' => __( 'Enable this to allow links to open in new tab.', 'social-icons' ) ) );
 
+					// nofollow Relation.
+					social_icons_wp_checkbox( array( 'id' => '_add_nofollow', 'label' => __( 'Add nofollow', 'social-icons' ), 'description' => __( 'Enable this to add nofollow relation for the social links.', 'social-icons' ) ) );
+
 				echo '</div>';
 
 				do_action( 'social_icons_group_options_general' );
@@ -196,6 +199,7 @@ class SI_Meta_Box_Group_Data {
 		$manage_label     = isset( $_POST['_manage_label'] ) ? 'yes' : 'no';
 		$greyscale_icons  = isset( $_POST['_greyscale_icons'] ) ? 'yes' : 'no';
 		$open_new_tab     = isset( $_POST['_open_new_tab'] ) ? 'yes' : 'no';
+		$add_nofollow     = isset( $_POST['_add_nofollow'] ) ? 'yes' : 'no';
 
 		// Sortable Icons.
 		$sortable_icons = array();
@@ -232,6 +236,7 @@ class SI_Meta_Box_Group_Data {
 		update_post_meta( $post_id, '_manage_label', $manage_label );
 		update_post_meta( $post_id, '_greyscale_icons', $greyscale_icons );
 		update_post_meta( $post_id, '_open_new_tab', $open_new_tab );
+		update_post_meta( $post_id, '_add_nofollow', $add_nofollow );
 		update_post_meta( $post_id, '_sortable_icons', $sortable_icons );
 
 		do_action( 'social_icons_group_options_save', $post_id );

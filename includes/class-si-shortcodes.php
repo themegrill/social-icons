@@ -57,6 +57,7 @@ class SI_Shortcodes {
 			$group_data['manage_label']     = get_post_meta( $group_id, '_manage_label', true );
 			$group_data['greyscale_icons']  = get_post_meta( $group_id, '_greyscale_icons', true );
 			$group_data['open_new_tab']     = get_post_meta( $group_id, '_open_new_tab', true );
+			$group_data['add_nofollow']     = get_post_meta( $group_id, '_add_nofollow', true );
 			$group_data['sortable_icons']   = get_post_meta( $group_id, '_sortable_icons', true );
 
 			// Output social icons.
@@ -115,10 +116,10 @@ class SI_Shortcodes {
 				$background = 'text' !== $color_type ? 'background-color: ' . $icon_color : 'color: ' . $icon_color; ?>
 
 				<li class="social-icons-list-item">
-					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( 'yes' == $group_data['open_new_tab'] ? 'target="_blank"' : '' ); ?> class="social-icon">
+					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( 'yes' === $group_data['open_new_tab'] ? 'target="_blank"' : '' ); ?> <?php echo ( 'yes' === $group_data['add_nofollow'] ? 'rel="nofollow"' : '' ); ?> class="social-icon">
 						<span class="socicon socicon-<?php echo esc_attr( $class ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px; <?php echo esc_attr( $background ); ?>"></span>
 
-						<?php if ( 'yes' == $group_data['manage_label'] ) : ?>
+						<?php if ( 'yes' === $group_data['manage_label'] ) : ?>
 							<span class="social-icons-list-label"><?php echo esc_html( $field['label'] ); ?></span>
 						<?php endif; ?>
 					</a>
