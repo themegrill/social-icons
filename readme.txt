@@ -77,6 +77,9 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
+= TBD =
+* Feature - Add option to have the social links nofollow relation using shortcodes.
+
 = 1.7.2 - 20/06/2019 =
 * Feature - Add option to have the social links nofollow relation.
 
