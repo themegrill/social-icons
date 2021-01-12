@@ -88,6 +88,8 @@ jQuery( function ( $ ) {
 	$( document.body ).on( 'click', '.social-icons-field-remove', function( e ) {
 		e.preventDefault();
 		$( this ).parents( '.social-icons-field' ).remove();
+
+		$( document.body ).trigger( 'si-init-hidden-options' );
 	});
 
 	// Event handler for widget open button.
