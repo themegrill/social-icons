@@ -79,6 +79,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 = TBD =
 * Feature - Option for allowing nofollow relation to social links while using shortcodes.
+* Fix     - Social Icons widget save option not triggered properly.
 
 = 1.7.2 - 20/06/2019 =
 * Feature - Add option to have the social links nofollow relation.
