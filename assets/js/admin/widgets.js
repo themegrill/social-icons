@@ -89,7 +89,7 @@ jQuery( function ( $ ) {
 		e.preventDefault();
 		$( this ).parents( '.social-icons-field' ).remove();
 
-		$( document.body ).trigger( 'si-init-hidden-options' );
+		$( 'div.widget[id*=themegrill_social_icons] .widget-control-save' ).trigger( 'change' );
 	});
 
 	// Event handler for widget open button.
