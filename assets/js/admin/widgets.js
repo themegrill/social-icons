@@ -121,7 +121,10 @@ jQuery( function ( $ ) {
 			scrollSensitivity: 40,
 			forcePlaceholderSize: true,
 			helper: 'clone',
-			opacity: 0.65
+			opacity: 0.65,
+			change: function( event, ui ) {
+				$( 'div.widget[id*=themegrill_social_icons] .widget-control-save' ).trigger( 'change' );
+			},
 		});
 	}
 });
