@@ -88,6 +88,8 @@ jQuery( function ( $ ) {
 	$( document.body ).on( 'click', '.social-icons-field-remove', function( e ) {
 		e.preventDefault();
 		$( this ).parents( '.social-icons-field' ).remove();
+
+		$( 'div.widget[id*=themegrill_social_icons] .widget-control-save' ).trigger( 'change' );
 	});
 
 	// Event handler for widget open button.
@@ -106,8 +108,21 @@ jQuery( function ( $ ) {
 			widgetSortable( widget );
 		}
 
-		// Trigger hidden options.
-		$( document.body ).trigger( 'si-init-hidden-options' );
+		$( 'input.show_label' ).change( function() {
+			var icons_list = $( this ).parents( '.widget-content' ).find( '.social-icons-list' );
+			if ( $( this ).is( ':checked' ) ) {
+				icons_list.removeClass( 'hide-icons-label' );
+			} else {
+				icons_list.addClass( 'hide-icons-label' );
+			}
+		});
+
+		var icons_list = $( 'input.show_label' ).parents( '.widget-content' ).find( '.social-icons-list' );
+		if ( $( 'input.show_label' ).is( ':checked' ) ) {
+			icons_list.removeClass( 'hide-icons-label' );
+		} else {
+			icons_list.addClass( 'hide-icons-label' );
+		}
 	});
 
 	function widgetSortable( widget ) {
@@ -119,7 +134,10 @@ jQuery( function ( $ ) {
 			scrollSensitivity: 40,
 			forcePlaceholderSize: true,
 			helper: 'clone',
-			opacity: 0.65
+			opacity: 0.65,
+			change: function( event, ui ) {
+				$( 'div.widget[id*=themegrill_social_icons] .widget-control-save' ).trigger( 'change' );
+			},
 		});
 	}
 });
