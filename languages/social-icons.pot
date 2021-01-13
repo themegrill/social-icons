@@ -1,17 +1,17 @@
-# Copyright (C) 2016 ThemeGrill
+# Copyright (C) 2021 ThemeGrill
 # This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Social Icons 1.4\n"
+"Project-Id-Version: Social Icons 1.7.2\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2016-05-21 16:11:35+00:00\n"
+"POT-Creation-Date: 2021-01-13 06:19:45+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
-"X-Generator: grunt-wp-i18n 0.5.3\n"
+"X-Generator: grunt-wp-i18n1.0.1\n"
 
 #: includes/admin/class-si-admin-meta-boxes.php:93
 msgid "Social Data"
@@ -109,7 +109,7 @@ msgid "Date"
 msgstr ""
 
 #: includes/admin/class-si-admin-post-types.php:159
-#: includes/class-si-post-types.php:51
+#: includes/class-si-post-types.php:56
 msgid "Edit"
 msgstr ""
 
@@ -148,8 +148,8 @@ msgstr ""
 #: includes/admin/class-si-admin.php:56
 msgid ""
 "If you like <strong>Social Icons</strong> please leave us a "
-"%s&#9733;&#9733;&#9733;&#9733;&#9733;%s rating. A huge thank you from "
-"ThemeGrill in advance!"
+"%1$s&#9733;&#9733;&#9733;&#9733;&#9733;%2$s rating. A huge thanks in "
+"advance!"
 msgstr ""
 
 #: includes/admin/class-si-admin.php:56
@@ -169,32 +169,32 @@ msgid "Linked Icons"
 msgstr ""
 
 #: includes/admin/meta-boxes/class-si-meta-box-group-data.php:68
-#: includes/widgets/class-si-widget-social-icons.php:62
+#: includes/widgets/class-si-widget-social-icons.php:67
 msgid "Background Style"
 msgstr ""
 
 #: includes/admin/meta-boxes/class-si-meta-box-group-data.php:70
-#: includes/widgets/class-si-widget-social-icons.php:64
+#: includes/widgets/class-si-widget-social-icons.php:69
 msgid "None"
 msgstr ""
 
 #: includes/admin/meta-boxes/class-si-meta-box-group-data.php:71
-#: includes/widgets/class-si-widget-social-icons.php:65
+#: includes/widgets/class-si-widget-social-icons.php:70
 msgid "Square"
 msgstr ""
 
 #: includes/admin/meta-boxes/class-si-meta-box-group-data.php:72
-#: includes/widgets/class-si-widget-social-icons.php:66
+#: includes/widgets/class-si-widget-social-icons.php:71
 msgid "Rounded"
 msgstr ""
 
 #: includes/admin/meta-boxes/class-si-meta-box-group-data.php:73
-#: includes/widgets/class-si-widget-social-icons.php:67
+#: includes/widgets/class-si-widget-social-icons.php:72
 msgid "Square Centre"
 msgstr ""
 
 #: includes/admin/meta-boxes/class-si-meta-box-group-data.php:74
-#: includes/widgets/class-si-widget-social-icons.php:68
+#: includes/widgets/class-si-widget-social-icons.php:73
 msgid "Rounded Centre"
 msgstr ""
 
@@ -204,80 +204,86 @@ msgid ""
 "with the default style."
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:81
-#: includes/widgets/class-si-widget-social-icons.php:77
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:83
+#: includes/widgets/class-si-widget-social-icons.php:82
 msgid "Choose Icon Size"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:81
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:84
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:99
 msgid "Default"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:81
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:86
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:101
 msgid "Leave blank for default icon font size."
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:92
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:98
+#: includes/widgets/class-si-widget-social-icons.php:90
+msgid "Choose Icon Padding"
+msgstr ""
+
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:115
 msgid "Manage Label"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:92
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:115
 msgid "Enable this to display social icons label."
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:95
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:118
 msgid "Greyscale Icon"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:95
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:118
 msgid "Enable this to allow greyscale social icons."
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:98
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:121
 msgid "Open New Tab"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:98
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:121
 msgid "Enable this to allow links to open in new tab."
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:111
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:124
+#: includes/widgets/class-si-widget-social-icons.php:62
+msgid "Add nofollow"
+msgstr ""
+
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:124
+msgid "Enable this to add nofollow relation for the social links."
+msgstr ""
+
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:137
 msgid "Sortable Icons"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:116
-#: includes/widgets/class-si-widget-social-icons.php:231
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:142
+#: includes/widgets/class-si-widget-social-icons.php:237
 msgid "Label"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:116
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:142
 msgid "This is the label of the social icon shown to the users."
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:117
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:143
 msgid "Social URL"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:117
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:143
 msgid "This is the URL to the social media which users will surf."
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:127
-#: includes/widgets/class-si-widget-social-icons.php:88
-msgid "Follow Me"
-msgstr ""
-
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:131
-#: includes/widgets/class-si-widget-social-icons.php:92
-msgid "Friend me on Facebook"
-msgstr ""
-
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:157
-#: includes/widgets/class-si-widget-social-icons.php:84
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:174
+#: includes/widgets/class-si-widget-social-icons.php:97
 msgid "Add Icon"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:203
+#: includes/admin/meta-boxes/class-si-meta-box-group-data.php:221
 msgid "The social url %s cannot be used as it does not have an allowed icon."
 msgstr ""
 
@@ -286,7 +292,7 @@ msgid "Social Label"
 msgstr ""
 
 #: includes/admin/meta-boxes/views/html-group-social-icon.php:4
-#: includes/widgets/class-si-widget-social-icons.php:230
+#: includes/widgets/class-si-widget-social-icons.php:236
 msgid "http://"
 msgstr ""
 
@@ -322,48 +328,56 @@ msgstr ""
 msgid "Social Icons"
 msgstr ""
 
-#: includes/class-si-post-types.php:47
+#: includes/class-si-post-types.php:52
 msgid "Social Icon"
 msgstr ""
 
-#: includes/class-si-post-types.php:49
+#: includes/class-si-post-types.php:54
 msgid "Add New"
 msgstr ""
 
-#: includes/class-si-post-types.php:50
+#: includes/class-si-post-types.php:55
 msgid "Add New Social Icon"
 msgstr ""
 
-#: includes/class-si-post-types.php:52
+#: includes/class-si-post-types.php:57
 msgid "Edit Social Icon"
 msgstr ""
 
-#: includes/class-si-post-types.php:53
+#: includes/class-si-post-types.php:58
 msgid "New Social Icon"
 msgstr ""
 
-#: includes/class-si-post-types.php:54 includes/class-si-post-types.php:55
+#: includes/class-si-post-types.php:59 includes/class-si-post-types.php:60
 msgid "View Social Icons"
 msgstr ""
 
-#: includes/class-si-post-types.php:56
+#: includes/class-si-post-types.php:61
 msgid "Search Social Icons"
 msgstr ""
 
-#: includes/class-si-post-types.php:57
+#: includes/class-si-post-types.php:62
 msgid "No Social Icons found"
 msgstr ""
 
-#: includes/class-si-post-types.php:58
+#: includes/class-si-post-types.php:63
 msgid "No Social Icons found in trash"
 msgstr ""
 
-#: includes/class-si-post-types.php:59
+#: includes/class-si-post-types.php:64
 msgid "Parent Social Icon"
 msgstr ""
 
-#: includes/class-si-post-types.php:61
+#: includes/class-si-post-types.php:66
 msgid "This is where you can add new icons set to your social icons."
+msgstr ""
+
+#: includes/functions-si-core.php:182 includes/libraries/socicons.php:1143
+msgid "Follow Me"
+msgstr ""
+
+#: includes/functions-si-core.php:186 includes/libraries/socicons.php:663
+msgid "Friend me on Facebook"
 msgstr ""
 
 #: includes/widgets/class-si-widget-social-icons.php:28
@@ -394,14 +408,14 @@ msgstr ""
 msgid "Open links in new tab"
 msgstr ""
 
-#: includes/widgets/class-si-widget-social-icons.php:82
+#: includes/widgets/class-si-widget-social-icons.php:95
 msgid "Sortable Socicon"
 msgstr ""
 
-#: includes/widgets/class-si-widget-social-icons.php:83
+#: includes/widgets/class-si-widget-social-icons.php:96
 msgid ""
 "Note that icons above are for reference and not how they will look on "
-"front-end. %sList of icons supported%s"
+"front-end. %1$sList of icons supported%2$s"
 msgstr ""
 
 #: social-icons.php:61 social-icons.php:69
@@ -409,7 +423,7 @@ msgid "Cheatin&#8217; huh?"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "http://themegrill.com/plugins/social-icons/"
+msgid "https://themegrill.com/plugins/social-icons/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -417,7 +431,7 @@ msgid ""
 "Social Icons provides you with an easy way to display various popular "
 "social icons via widgets and shortcodes. You can drag the widget in your "
 "sidebars and change the settings from the widget form itself. Also you can "
-"use the shortcode and paste it on your page, post or wherever you like"
+"use the shortcode and paste it on your page, post or wherever you like."
 msgstr ""
 
 #. Author of the plugin/theme
@@ -428,7 +442,7 @@ msgstr ""
 msgid "http://themegrill.com"
 msgstr ""
 
-#: includes/class-si-post-types.php:48
+#: includes/class-si-post-types.php:53
 msgctxt "Admin menu name"
 msgid "Social Icons"
 msgstr ""

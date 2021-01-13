@@ -65,6 +65,7 @@ module.exports = function( grunt ){
 		// Compile all .scss files.
 		sass: {
 			options: {
+				implementation: require( 'node-sass' ),
 				sourcemap: 'none'
 			},
 			compile: {

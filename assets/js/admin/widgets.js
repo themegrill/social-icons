@@ -135,9 +135,9 @@ jQuery( function ( $ ) {
 			forcePlaceholderSize: true,
 			helper: 'clone',
 			opacity: 0.65,
-			change: function( event, ui ) {
+			change: function() {
 				$( 'div.widget[id*=themegrill_social_icons] .widget-control-save' ).trigger( 'change' );
-			},
+			}
 		});
 	}
 });
