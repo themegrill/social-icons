@@ -3,7 +3,7 @@ Contributors: ThemeGrill, shivapoudel
 Tags: social, media, icons, brands, widget, social networking, social media, social icon, social icons, social profile, social icon widget, shortcode
 Requires at least: 4.7
 Tested up to: 5.6
-Stable tag: 1.7.2
+Stable tag: 1.7.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -77,7 +77,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
-= TBD =
+= 1.7.3 - 13/01/2021 =
 * Feature - Option for allowing nofollow relation to social links while using shortcodes.
 * Fix     - Social Icons widget save option not triggered properly.
 
