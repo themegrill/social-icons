@@ -25,7 +25,7 @@ class SI_Meta_Box_Data {
 		global $post;
 		$shortcode = '[social_icons_group id="' . $post->ID . '"]';
 
-		echo '<p>' . __( 'Copy and paste the shortcode on your post, page to render social icons.', 'social-icons' ) . '</p>';
+		echo '<p>' . esc_html__( 'Copy and paste the shortcode on your post, page to render social icons.', 'social-icons' ) . '</p>';
 		echo '<p><span class="shortcode"><input type="text" class="widefat code" onfocus="this.select();" readonly="readonly" value="' . esc_attr( $shortcode ) . '" /></span></p>';
 	}
 }
