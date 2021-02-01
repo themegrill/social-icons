@@ -91,6 +91,7 @@ class SI_Admin_Meta_Boxes {
 	 */
 	public function add_meta_boxes() {
 		add_meta_box( 'social-icons-group-data', __( 'Social Data', 'social-icons' ), 'SI_Meta_Box_Group_Data::output', 'social_icon', 'normal', 'high' );
+		add_meta_box( 'social-icons-shortcode', __( 'Shortcode', 'social-icons' ), 'SI_Meta_Box_Data::shortcode', 'social_icon', 'side', 'high' );
 	}
 
 	/**
