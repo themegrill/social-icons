@@ -23,5 +23,10 @@ class SI_Meta_Box_Data {
 	 */
 	public static function shortcode( $post ) {
 		global $post;
+		$shortcode = '[social_icons_group id="' . $post->ID . '"]';
+
+		if ( 'auto-draft' !== $post->post_status ) {
+			echo '<span class="shortcode"><input type="text" class="widefat code" onfocus="this.select();" readonly="readonly" value="' . esc_attr( $shortcode ) . '" /></span>';
+		}
 	}
 }
