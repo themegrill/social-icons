@@ -117,7 +117,7 @@ class SI_Shortcodes {
 
 				<li class="social-icons-list-item">
 					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( 'yes' === $group_data['open_new_tab'] ? 'target="_blank"' : '' ); ?> <?php echo ( 'yes' === $group_data['add_nofollow'] ? 'rel="nofollow"' : '' ); ?> class="social-icon">
-						<span class="socicon socicon-<?php echo esc_attr( $class ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px; <?php echo esc_attr( $background ); ?>"></span>
+						<span class="tgsi tgsi-<?php echo esc_attr( $class ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px; <?php echo esc_attr( $background ); ?>"></span>
 
 						<?php if ( 'yes' === $group_data['manage_label'] ) : ?>
 							<span class="social-icons-list-label"><?php echo esc_html( $field['label'] ); ?></span>
