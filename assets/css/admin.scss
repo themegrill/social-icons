@@ -192,6 +192,12 @@
 						}
 					}
 				}
+
+				&.tg-social-icons,
+				&[class*=" tgsi-"],
+				&[class^=tgsi-] {
+					display: revert !important;
+				}
 			}
 
 			td.sort {
