@@ -47,7 +47,7 @@ jQuery( function( $ ) {
 		}
 
 		if ( $_socicon ) {
-			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort socicon-' + $_socicon );
+			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort tgsi tgsi-' + $_socicon );
 		} else {
 			$this.parents( 'tr' ).find( '.sort' ).attr( 'class', 'sort dashicons-plus' );
 		}
