@@ -13,7 +13,7 @@
  */
 .social-icons-lists {
 
-	.socicon {
+	.tgsi {
 		position: relative;
 		top: 3px;
 		padding: 10px;
@@ -38,7 +38,7 @@
 				outline: none;
 			}
 
-			&:hover .socicon {
+			&:hover .tgsi {
 				opacity: 0.8;
 			}
 
@@ -57,14 +57,14 @@
 		list-style: outside;
 	}
 
-	&.icons-background-rounded .socicon {
+	&.icons-background-rounded .tgsi {
 		border-radius: 100%;
 	}
 
 	&.icons-background-square,
 	&.icons-background-rounded {
 
-		.socicon {
+		.tgsi {
 			color: #fff;
 		}
 
@@ -76,7 +76,7 @@
 
 	&.icons-background-none {
 
-		.socicon {
+		.tgsi {
 			padding: 0;
 			background: transparent;
 		}
