@@ -90,7 +90,15 @@ class SI_Admin_Meta_Boxes {
 	 * Add SI Meta boxes.
 	 */
 	public function add_meta_boxes() {
+		global $post;
+
+		// Group meta box.
 		add_meta_box( 'social-icons-group-data', __( 'Social Data', 'social-icons' ), 'SI_Meta_Box_Group_Data::output', 'social_icon', 'normal', 'high' );
+
+		// Shortcode meta box.
+		if ( 'publish' === $post->post_status ) {
+			add_meta_box( 'social-icons-shortcode', __( 'Shortcode', 'social-icons' ), 'SI_Meta_Box_Data::shortcode', 'social_icon', 'side', 'high' );
+		}
 	}
 
 	/**
