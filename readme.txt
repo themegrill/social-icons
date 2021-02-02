@@ -79,6 +79,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 = TBD =
 * Introduce - Shortcode option on editing the Social Icon sets.
+* Replace   - Socicon social icons library file with TG Social Icons library.
 
 = 1.7.3 - 13/01/2021 =
 * Feature - Option for allowing nofollow relation to social links while using shortcodes.
