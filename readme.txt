@@ -70,15 +70,15 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Screenshots ==
 
-1. Social Icons Widget Form.
-2. Social Icons Slick Frontend.
-3. Social Icons Data Panel
-4. Social Icons Admin Panel
+1. Social Icons Widget Form
+2. Social Icons Data Panel
+3. Social Icons Admin Panel
 
 == Changelog ==
 
 = TBD =
 * Introduce - Shortcode option on editing the Social Icon sets.
+* Tweak     - Modify screenshot, banner and icon images on wp.org plugin page to resolve trademark issues.
 
 = 1.7.3 - 13/01/2021 =
 * Feature - Option for allowing nofollow relation to social links while using shortcodes.
