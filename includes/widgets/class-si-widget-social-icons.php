@@ -227,7 +227,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 		$icon_class = 'dashicons dashicons-plus';
 		if ( $icon = si_get_social_icon_name( $args['url-value'] ) ) {
 			$icon_color = get_socicon( $icon );
-			$icon_class = 'socicon socicon-' . $icon;
+			$icon_class = 'tgsi tgsi-' . $icon;
 		}
 
 		?><li class="social-icons-field">
@@ -302,7 +302,7 @@ class SI_Widget_Social_Icons extends SI_Widget {
 
 				<li class="social-icons-list-item">
 					<a href="<?php echo esc_url( $field['url'] ); ?>" <?php echo ( $instance['open_tab'] ? 'target="_blank"' : '' ); ?> <?php echo $nofollow; ?> class="social-icon">
-						<span class="socicon socicon-<?php echo esc_attr( $class ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px; <?php echo esc_attr( $background ); ?>"></span>
+						<span class="tgsi tgsi-<?php echo esc_attr( $class ); ?>" style="padding: <?php echo esc_attr( $icon_padding ); ?>px; font-size: <?php echo esc_attr( $icon_font_size ); ?>px; <?php echo esc_attr( $background ); ?>"></span>
 
 						<?php if ( $instance['show_label'] ) : ?>
 							<span class="social-icons-list-label"><?php echo esc_html( $field['label'] ); ?></span>

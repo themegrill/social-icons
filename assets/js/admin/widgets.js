@@ -60,7 +60,7 @@ jQuery( function ( $ ) {
 
 		if ( $_socicon ) {
 			$( '.social-icons-add-button' ).find( 'button' ).removeAttr( 'disabled' );
-			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle socicon socicon-' + $_socicon );
+			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle tgsi tgsi-' + $_socicon );
 		} else {
 			$( '.social-icons-add-button' ).find( 'button' ).attr( 'disabled', 'disabled' );
 			$this.parents( '.social-icons-field' ).find( '.social-icons-field-handle' ).attr( 'class', 'social-icons-field-handle dashicons dashicons-plus' );
@@ -130,7 +130,7 @@ jQuery( function ( $ ) {
 			items: 'li',
 			cursor: 'move',
 			axis: 'y',
-			handle: 'span.socicon',
+			handle: 'span.tgsi',
 			scrollSensitivity: 40,
 			forcePlaceholderSize: true,
 			helper: 'clone',

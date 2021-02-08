@@ -76,6 +76,9 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
+= TBD =
+* Replace   - Socicon social icons library file with TG Social Icons library.
+
 = 1.7.4 - 08/02/2021 =
 * Introduce - Shortcode option on editing the Social Icon sets.
 * Tweak     - Modify screenshot, banner and icon images on wp.org plugin page to resolve trademark issues.

@@ -7,9 +7,8 @@
  * Imports
  */
 @import 'mixins';
-@import 'variables';
 @import 'animation';
-@import 'socicon';
+@import 'tg-social-icons';
 
 /**
  * Styling begins
@@ -191,6 +190,12 @@
 							color: #a00;
 						}
 					}
+				}
+
+				&.tg-social-icons,
+				&[class*=" tgsi-"],
+				&[class^=tgsi-] {
+					display: revert !important;
 				}
 			}
 
