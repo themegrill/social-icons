@@ -3,7 +3,7 @@ Contributors: ThemeGrill, shivapoudel
 Tags: social, media, icons, brands, widget, social networking, social media, social icon, social icons, social profile, social icon widget, shortcode
 Requires at least: 4.7
 Tested up to: 5.6
-Stable tag: 1.7.3
+Stable tag: 1.7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -70,16 +70,18 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Screenshots ==
 
-1. Social Icons Widget Form.
-2. Social Icons Slick Frontend.
-3. Social Icons Data Panel
-4. Social Icons Admin Panel
+1. Social Icons Widget Form
+2. Social Icons Data Panel
+3. Social Icons Admin Panel
 
 == Changelog ==
 
 = TBD =
-* Introduce - Shortcode option on editing the Social Icon sets.
 * Replace   - Socicon social icons library file with TG Social Icons library.
+
+= 1.7.4 - 08/02/2021 =
+* Introduce - Shortcode option on editing the Social Icon sets.
+* Tweak     - Modify screenshot, banner and icon images on wp.org plugin page to resolve trademark issues.
 
 = 1.7.3 - 13/01/2021 =
 * Feature - Option for allowing nofollow relation to social links while using shortcodes.
