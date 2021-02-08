@@ -1,4 +1,18 @@
 == Changelog ==
+= 1.7.4 - 08/02/2021 =
+* Introduce - Shortcode option on editing the Social Icon sets.
+* Tweak     - Modify screenshot, banner and icon images on wp.org plugin page to resolve trademark issues.
+
+= 1.7.3 - 13/01/2021 =
+* Feature - Option for allowing nofollow relation to social links while using shortcodes.
+* Fix     - Social Icons widget save option not triggered properly.
+
+= 1.7.2 - 20/06/2019 =
+* Feature - Add option to have the social links nofollow relation.
+
+= 1.7.0 - 09/01/2018 =
+* Fix - Support multiple social profile links.
+* Fix - Socicon icon font updated to version 3.6.
 
 = 1.6.0 - 25/05/2017 =
 * Fix - CSS conflict with width used in `.socicon:empty`.

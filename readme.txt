@@ -3,7 +3,7 @@ Contributors: ThemeGrill, shivapoudel
 Tags: social, media, icons, brands, widget, social networking, social media, social icon, social icons, social profile, social icon widget, shortcode
 Requires at least: 4.7
 Tested up to: 5.6
-Stable tag: 1.7.3
+Stable tag: 1.7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -76,7 +76,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Changelog ==
 
-= TBD =
+= 1.7.4 - 08/02/2021 =
 * Introduce - Shortcode option on editing the Social Icon sets.
 * Tweak     - Modify screenshot, banner and icon images on wp.org plugin page to resolve trademark issues.
 
