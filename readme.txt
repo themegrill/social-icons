@@ -78,7 +78,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 = TBD =
 * Introduce - Shortcode option on editing the Social Icon sets.
-* Tweak     - Modify screenshot, banner and icon images on wp.org plugin page.
+* Tweak     - Modify screenshot, banner and icon images on wp.org plugin page to resolve trademark issues.
 
 = 1.7.3 - 13/01/2021 =
 * Feature - Option for allowing nofollow relation to social links while using shortcodes.
