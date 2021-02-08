@@ -70,8 +70,7 @@ Yes you can! Join in on our [GitHub repository](https://github.com/themegrill/so
 
 == Screenshots ==
 
-1. Social Icons Widget Form.
-2. Social Icons Slick Frontend.
+1. Social Icons Widget Form
 2. Social Icons Data Panel
 3. Social Icons Admin Panel
 
